@@ -1,0 +1,63 @@
+2026-08-13 16:37:55,938 | INFO | Writing results to /home/elicer/ClusterTurboQuant/turboquant_plus/experiments/results/20260813T163755Z
+2026-08-13 16:37:55,939 | INFO | Loading NousResearch/Meta-Llama-3.1-8B at revision 1f47e50cdbe801ad8a5174156ec3a0655108fb9f
+2026-08-13 16:38:00,257 | INFO | Loaded 32 layers, 32 attention heads, 8 KV heads, head_dim=128
+2026-08-13 16:38:00,260 | INFO | Loading WikiText-2 train token stream (2048 tokens)
+2026-08-13 16:38:03,303 | INFO | Calibration forward: tokens 0..512
+2026-08-13 16:38:04,149 | INFO | Calibration forward: tokens 512..1024
+2026-08-13 16:38:04,261 | INFO | Calibration forward: tokens 1024..1536
+2026-08-13 16:38:04,372 | INFO | Calibration forward: tokens 1536..2048
+2026-08-13 16:38:04,485 | INFO | Calibration RMS range: 0.107004 .. 27.2664 from 2048 tokens/layer
+2026-08-13 16:38:11,189 | INFO | Loading WikiText-2 validation token stream (2560 tokens)
+2026-08-13 16:38:13,130 | INFO | Capturing held-out pre-RoPE projections at sequence length 512
+2026-08-13 16:38:13,435 | INFO | Capturing held-out pre-RoPE projections at sequence length 2048
+2026-08-13 16:38:14,208 | INFO | Offline evaluation: b3_k1_seed11
+2026-08-13 16:39:11,741 | INFO | b3_k1_seed11 seq=512 key_mse=0.14007 logit_mse=0.225051 effective=3.125 b/ch
+2026-08-13 16:39:12,152 | INFO | b3_k1_seed11 seq=2048 key_mse=0.152618 logit_mse=n/a effective=3.125 b/ch
+2026-08-13 16:39:12,152 | INFO | Offline evaluation: b3_k1_seed29
+2026-08-13 16:40:11,926 | INFO | b3_k1_seed29 seq=512 key_mse=0.138793 logit_mse=0.220466 effective=3.125 b/ch
+2026-08-13 16:40:12,336 | INFO | b3_k1_seed29 seq=2048 key_mse=0.151306 logit_mse=n/a effective=3.125 b/ch
+2026-08-13 16:40:12,336 | INFO | Offline evaluation: b3_k1_seed47
+2026-08-13 16:41:09,898 | INFO | b3_k1_seed47 seq=512 key_mse=0.139763 logit_mse=0.225169 effective=3.125 b/ch
+2026-08-13 16:41:10,310 | INFO | b3_k1_seed47 seq=2048 key_mse=0.15173 logit_mse=n/a effective=3.125 b/ch
+2026-08-13 16:41:10,310 | INFO | Offline evaluation: b3_k2_seed11
+2026-08-13 16:43:09,564 | INFO | b3_k2_seed11 seq=512 key_mse=0.11104 logit_mse=0.31195 effective=3.250 b/ch
+2026-08-13 16:43:12,276 | INFO | b3_k2_seed11 seq=2048 key_mse=0.119996 logit_mse=n/a effective=3.250 b/ch
+2026-08-13 16:43:12,277 | INFO | Offline evaluation: b3_k2_seed29
+2026-08-13 16:45:11,529 | INFO | b3_k2_seed29 seq=512 key_mse=0.111554 logit_mse=0.316567 effective=3.250 b/ch
+2026-08-13 16:45:14,254 | INFO | b3_k2_seed29 seq=2048 key_mse=0.120232 logit_mse=n/a effective=3.250 b/ch
+2026-08-13 16:45:14,254 | INFO | Offline evaluation: b3_k2_seed47
+2026-08-13 16:47:12,999 | INFO | b3_k2_seed47 seq=512 key_mse=0.112024 logit_mse=0.315614 effective=3.250 b/ch
+2026-08-13 16:47:15,727 | INFO | b3_k2_seed47 seq=2048 key_mse=0.120597 logit_mse=n/a effective=3.250 b/ch
+2026-08-13 16:47:15,727 | INFO | Offline evaluation: b3_k4_seed11
+2026-08-13 16:51:09,908 | INFO | b3_k4_seed11 seq=512 key_mse=0.0979783 logit_mse=0.27712 effective=3.500 b/ch
+2026-08-13 16:51:14,097 | INFO | b3_k4_seed11 seq=2048 key_mse=0.105186 logit_mse=n/a effective=3.500 b/ch
+2026-08-13 16:51:14,097 | INFO | Offline evaluation: b3_k4_seed29
+2026-08-13 16:55:08,643 | INFO | b3_k4_seed29 seq=512 key_mse=0.097626 logit_mse=0.276633 effective=3.500 b/ch
+2026-08-13 16:55:12,832 | INFO | b3_k4_seed29 seq=2048 key_mse=0.105019 logit_mse=n/a effective=3.500 b/ch
+2026-08-13 16:55:12,833 | INFO | Offline evaluation: b3_k4_seed47
+2026-08-13 16:59:07,396 | INFO | b3_k4_seed47 seq=512 key_mse=0.0972581 logit_mse=0.27808 effective=3.500 b/ch
+2026-08-13 16:59:11,577 | INFO | b3_k4_seed47 seq=2048 key_mse=0.104806 logit_mse=n/a effective=3.500 b/ch
+2026-08-13 16:59:11,582 | INFO | Loading WikiText-2 test token stream (4096 tokens)
+2026-08-13 16:59:13,393 | INFO | Running unquantized perplexity baseline
+2026-08-13 16:59:13,656 | INFO | Unquantized PPL 4.456848
+2026-08-13 16:59:13,657 | INFO | Running unquantized long-context retrieval baseline
+2026-08-13 16:59:18,984 | INFO | Unquantized retrieval 3/3
+2026-08-13 16:59:18,984 | INFO | Downstream evaluation: b3_k1_seed11
+2026-08-13 16:59:24,743 | INFO | b3_k1_seed11 PPL=4.697418 retrieval=3/3
+2026-08-13 16:59:24,743 | INFO | Downstream evaluation: b3_k1_seed29
+2026-08-13 16:59:30,500 | INFO | b3_k1_seed29 PPL=4.723725 retrieval=3/3
+2026-08-13 16:59:30,500 | INFO | Downstream evaluation: b3_k1_seed47
+2026-08-13 16:59:36,257 | INFO | b3_k1_seed47 PPL=4.676216 retrieval=3/3
+2026-08-13 16:59:36,257 | INFO | Downstream evaluation: b3_k2_seed11
+2026-08-13 16:59:42,092 | INFO | b3_k2_seed11 PPL=4.766048 retrieval=3/3
+2026-08-13 16:59:42,093 | INFO | Downstream evaluation: b3_k2_seed29
+2026-08-13 16:59:47,926 | INFO | b3_k2_seed29 PPL=4.749635 retrieval=3/3
+2026-08-13 16:59:47,926 | INFO | Downstream evaluation: b3_k2_seed47
+2026-08-13 16:59:53,759 | INFO | b3_k2_seed47 PPL=4.741457 retrieval=3/3
+2026-08-13 16:59:53,759 | INFO | Downstream evaluation: b3_k4_seed11
+2026-08-13 16:59:59,768 | INFO | b3_k4_seed11 PPL=4.680684 retrieval=3/3
+2026-08-13 16:59:59,768 | INFO | Downstream evaluation: b3_k4_seed29
+2026-08-13 17:00:05,774 | INFO | b3_k4_seed29 PPL=4.788611 retrieval=3/3
+2026-08-13 17:00:05,774 | INFO | Downstream evaluation: b3_k4_seed47
+2026-08-13 17:00:11,776 | INFO | b3_k4_seed47 PPL=4.718320 retrieval=3/3
+2026-08-13 17:00:11,781 | INFO | Experiment complete: /home/elicer/ClusterTurboQuant/turboquant_plus/experiments/results/20260813T163755Z

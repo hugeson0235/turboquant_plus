@@ -1,0 +1,17 @@
+{
+  "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-153-generic-x86_64-with-glibc2.35",
+  "torch": "2.5.1",
+  "torch_cuda": "12.1",
+  "cuda_available": true,
+  "gpu": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+  "transformers": "4.45.2",
+  "datasets": "3.1.0",
+  "numpy": "2.0.1",
+  "scipy": "1.15.3",
+  "scikit_learn": "1.5.2",
+  "model_name": "NousResearch/Meta-Llama-3.1-8B",
+  "requested_revision": "1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+  "loaded_commit_hash": "1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+  "conda_prefix": "/home/elicer/miniconda3"
+}

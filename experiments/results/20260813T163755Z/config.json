@@ -1,0 +1,40 @@
+{
+  "model": "NousResearch/Meta-Llama-3.1-8B",
+  "revision": "1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+  "output_root": "/home/elicer/ClusterTurboQuant/turboquant_plus/experiments/results",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "bit_widths": [
+    3
+  ],
+  "clusters": [
+    1,
+    2,
+    4
+  ],
+  "rotation_seeds": [
+    11,
+    29,
+    47
+  ],
+  "cluster_seed": 0,
+  "norm_bits": 16,
+  "calibration_tokens": 2048,
+  "calibration_seq_len": 512,
+  "eval_seq_lengths": [
+    512,
+    2048
+  ],
+  "attention_seq_len": 512,
+  "ppl_tokens": 1024,
+  "retrieval_tokens": 4096,
+  "retrieval_positions": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "skip_ppl": false,
+  "skip_retrieval": false,
+  "downstream_bit_widths": null,
+  "max_layers": null
+}
