@@ -17,6 +17,7 @@ coverage.xml
 *.so
 *.dylib
 .ipynb_checkpoints/
+experiments/spin_turboquant/results/
 niah_reference_v1/
 niah_results*/
 scripts/.turbo-diag-venv/
