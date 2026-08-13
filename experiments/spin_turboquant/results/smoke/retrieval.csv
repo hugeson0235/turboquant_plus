@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,retrieval_accuracy,retrieval_mean_target_margin,retrieval_tasks,elapsed_seconds
+fp16,fp16,,,1.0,12.609375,1,0.04554687812924385
+identity_b2_snone,identity,2,,1.0,11.625,1,0.03964848071336746
+random_b2_s17,random,2,17,1.0,10.75,1,0.0395151823759079
+learned_b2_s17,learned,2,17,1.0,10.3125,1,0.03941747173666954
+random_b2_s29,random,2,29,1.0,10.625,1,0.03931766748428345
+learned_b2_s29,learned,2,29,1.0,10.6875,1,0.03939502686262131

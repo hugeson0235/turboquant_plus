@@ -1,0 +1,9 @@
+{
+  "attention_logit_roundtrip_max_abs": 2.6702880859375e-05,
+  "attention_logit_roundtrip_mse": 1.4731502794701739e-12,
+  "dataset": "wikitext",
+  "pre_rope_key_roundtrip_max_abs": 1.1444091796875e-05,
+  "pre_rope_key_roundtrip_mse": 3.0834231720092316e-13,
+  "rotation_seed": 17,
+  "sequence_length": 256
+}

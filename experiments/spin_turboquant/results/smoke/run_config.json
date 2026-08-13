@@ -1,0 +1,97 @@
+{
+  "arguments": {
+    "attention_lengths": [
+      32,
+      64
+    ],
+    "bits": [
+      2
+    ],
+    "calibration_tokens": 64,
+    "device": "cuda",
+    "evaluation_tokens": 64,
+    "force": false,
+    "latency_tokens": 32,
+    "learning_rate": 0.005,
+    "model": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B/snapshots/1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+    "norm_correction": false,
+    "output_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/smoke",
+    "ppl_sequence_length": 64,
+    "ppl_tokens": 64,
+    "retrieval_cases_per_length": 1,
+    "retrieval_lengths": [
+      128
+    ],
+    "seeds": [
+      17,
+      29
+    ],
+    "stage": "all",
+    "train_batch_tokens": 32,
+    "train_steps": 2
+  },
+  "created_at": "2026-08-13T17:21:57.748467+00:00",
+  "environment": {
+    "command": [
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/run.py",
+      "--model",
+      "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B/snapshots/1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+      "--output-dir",
+      "experiments/spin_turboquant/results/smoke",
+      "--calibration-tokens",
+      "64",
+      "--evaluation-tokens",
+      "64",
+      "--ppl-tokens",
+      "64",
+      "--ppl-sequence-length",
+      "64",
+      "--bits",
+      "2",
+      "--seeds",
+      "17",
+      "29",
+      "--train-steps",
+      "2",
+      "--train-batch-tokens",
+      "32",
+      "--attention-lengths",
+      "32",
+      "64",
+      "--retrieval-lengths",
+      "128",
+      "--retrieval-cases-per-length",
+      "1",
+      "--latency-tokens",
+      "32"
+    ],
+    "cuda_runtime": "12.1",
+    "git_commit": "ba52ad107d1fdd02bc9be8fd85308226b75c905b",
+    "git_status": [
+      " M .gitignore",
+      "?? experiments/",
+      "?? tests/test_spin_turboquant.py"
+    ],
+    "gpu": {
+      "capability": [
+        8,
+        0
+      ],
+      "name": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+      "total_memory_bytes": 42412802048
+    },
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-153-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "timestamp": "2026-08-13T17:21:57.748537+00:00",
+    "torch": "2.5.1+cu121"
+  },
+  "model": {
+    "head_dim": 128,
+    "model_architecture": "LlamaForCausalLM",
+    "model_type": "llama",
+    "num_hidden_layers": 32,
+    "num_key_value_heads": 8,
+    "vocabulary_size": 128256
+  }
+}

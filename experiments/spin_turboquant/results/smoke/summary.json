@@ -1,0 +1,52 @@
+{
+  "attention": {
+    "2": {
+      "learned_mean": 0.061780161267961375,
+      "paired_win_rate": 1.0,
+      "pairs": 8,
+      "random_mean": 0.07759939707466401,
+      "relative_improvement_mean": 0.20570034563059258
+    }
+  },
+  "criterion_supported": true,
+  "generated_at": "2026-08-13T17:23:43.699954+00:00",
+  "perplexity": {
+    "2": {
+      "learned_mean": 10.20294193125056,
+      "paired_win_rate": 1.0,
+      "pairs": 2,
+      "random_mean": 11.341988101732685,
+      "relative_improvement_mean": 0.10064254033432046
+    }
+  },
+  "reconstruction": {
+    "tinystories": {
+      "2": {
+        "learned_mean": 0.0008092367207837015,
+        "paired_win_rate": 1.0,
+        "pairs": 2,
+        "random_mean": 0.0009059509549160794,
+        "relative_improvement_mean": 0.10675571544358972
+      }
+    },
+    "wikitext": {
+      "2": {
+        "learned_mean": 0.0007846282505852287,
+        "paired_win_rate": 1.0,
+        "pairs": 2,
+        "random_mean": 0.0009045602645301187,
+        "relative_improvement_mean": 0.13258394737588425
+      }
+    }
+  },
+  "retrieval": {
+    "2": {
+      "learned_mean": 1.0,
+      "paired_win_rate": 0.0,
+      "pairs": 2,
+      "random_mean": 1.0,
+      "relative_improvement_mean": 0.0
+    }
+  },
+  "verdict": "Supported in this initial experiment"
+}

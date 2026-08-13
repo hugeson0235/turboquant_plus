@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,task_id,length,position_fraction,target,prediction,correct,target_logit,target_margin
+fp16,fp16,,,length128_case0,128,0.1,avocado,avocado,1,16.375,12.609375
+identity_b2_snone,identity,2,,length128_case0,128,0.1,avocado,avocado,1,14.5625,11.625
+random_b2_s17,random,2,17,length128_case0,128,0.1,avocado,avocado,1,15.75,10.75
+learned_b2_s17,learned,2,17,length128_case0,128,0.1,avocado,avocado,1,15.625,10.3125
+random_b2_s29,random,2,29,length128_case0,128,0.1,avocado,avocado,1,16.5,10.625
+learned_b2_s29,learned,2,29,length128_case0,128,0.1,avocado,avocado,1,14.875,10.6875
