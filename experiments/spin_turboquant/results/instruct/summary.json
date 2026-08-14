@@ -1,0 +1,178 @@
+{
+  "attention": {
+    "2": {
+      "learned_mean": 0.08749775906471768,
+      "paired_win_rate": 1.0,
+      "pairs": 24,
+      "random_mean": 0.1346210615398983,
+      "relative_improvement_mean": 0.3473173661659749
+    },
+    "3": {
+      "learned_mean": 0.027492614230141044,
+      "paired_win_rate": 1.0,
+      "pairs": 24,
+      "random_mean": 0.0325006843910766,
+      "relative_improvement_mean": 0.15458219908206675
+    },
+    "4": {
+      "learned_mean": 0.007392813665925739,
+      "paired_win_rate": 1.0,
+      "pairs": 24,
+      "random_mean": 0.008434401172053185,
+      "relative_improvement_mean": 0.12447341566757353
+    }
+  },
+  "criterion_supported": true,
+  "generated_at": "2026-08-14T03:04:29.521836+00:00",
+  "headwise_reconstruction": {
+    "2": {
+      "learned_mean": 0.0006283853661296727,
+      "paired_win_rate": 1.0,
+      "pairs": 1536,
+      "random_mean": 0.0009054527479577246,
+      "relative_improvement_mean": 0.30340939265580735
+    },
+    "3": {
+      "learned_mean": 0.00022801548479260228,
+      "paired_win_rate": 1.0,
+      "pairs": 1536,
+      "random_mean": 0.0002654552818791937,
+      "relative_improvement_mean": 0.13520535343329157
+    },
+    "4": {
+      "learned_mean": 6.443276188861091e-05,
+      "paired_win_rate": 1.0,
+      "pairs": 1536,
+      "random_mean": 7.30169309619555e-05,
+      "relative_improvement_mean": 0.10871757241501502
+    }
+  },
+  "no_quantization_roundtrip": {
+    "attention_logit_roundtrip_max_abs": 2.288818359375e-05,
+    "attention_logit_roundtrip_mse": 1.3466464695335552e-12,
+    "dataset": "wikitext",
+    "pre_rope_key_roundtrip_max_abs": 1.33514404296875e-05,
+    "pre_rope_key_roundtrip_mse": 2.991120619553556e-13,
+    "rotation_seed": 17,
+    "sequence_length": 256
+  },
+  "perplexity": {
+    "2": {
+      "learned_mean": 5.941185893601055,
+      "paired_win_rate": 1.0,
+      "pairs": 3,
+      "random_mean": 6.600692119637326,
+      "relative_improvement_mean": 0.09922707174873112
+    },
+    "3": {
+      "learned_mean": 5.395281160602167,
+      "paired_win_rate": 1.0,
+      "pairs": 3,
+      "random_mean": 5.451083667232478,
+      "relative_improvement_mean": 0.01017255239791164
+    },
+    "4": {
+      "learned_mean": 5.236761188169851,
+      "paired_win_rate": 0.6666666666666666,
+      "pairs": 3,
+      "random_mean": 5.2650329746588005,
+      "relative_improvement_mean": 0.005342098597097923
+    }
+  },
+  "perplexity_consistent": false,
+  "reconstruction": {
+    "tinystories": {
+      "2": {
+        "learned_mean": 0.0006281097155304375,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 0.000906027488857338,
+        "relative_improvement_mean": 0.30673625816969946
+      },
+      "3": {
+        "learned_mean": 0.00022861872129927482,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 0.0002654780104146918,
+        "relative_improvement_mean": 0.13883676267470624
+      },
+      "4": {
+        "learned_mean": 6.444288844302075e-05,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 7.296532423121486e-05,
+        "relative_improvement_mean": 0.11679989420651678
+      }
+    },
+    "wikitext": {
+      "2": {
+        "learned_mean": 0.0006286610167289078,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 0.0009048780070581112,
+        "relative_improvement_mean": 0.30524873760591986
+      },
+      "3": {
+        "learned_mean": 0.00022741224828592976,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 0.0002654325533436956,
+        "relative_improvement_mean": 0.14323074180820475
+      },
+      "4": {
+        "learned_mean": 6.442263533420108e-05,
+        "paired_win_rate": 1.0,
+        "pairs": 3,
+        "random_mean": 7.306853769269613e-05,
+        "relative_improvement_mean": 0.11830832932599356
+      }
+    }
+  },
+  "retrieval": {
+    "2": {
+      "learned_mean": 0.8333333333333334,
+      "paired_win_rate": 0.0,
+      "pairs": 3,
+      "random_mean": 0.9444444444444445,
+      "relative_improvement_mean": -0.11111111111111109
+    },
+    "3": {
+      "learned_mean": 1.0,
+      "paired_win_rate": 0.3333333333333333,
+      "pairs": 3,
+      "random_mean": 0.9444444444444445,
+      "relative_improvement_mean": 0.06666666666666665
+    },
+    "4": {
+      "learned_mean": 1.0,
+      "paired_win_rate": 0.0,
+      "pairs": 3,
+      "random_mean": 1.0,
+      "relative_improvement_mean": 0.0
+    }
+  },
+  "retrieval_margin": {
+    "2": {
+      "learned_mean": 5.666666666666667,
+      "paired_win_rate": 0.0,
+      "pairs": 3,
+      "random_mean": 6.1024305555555545,
+      "relative_improvement_mean": -0.07486256283073633
+    },
+    "3": {
+      "learned_mean": 10.142361111111112,
+      "paired_win_rate": 0.3333333333333333,
+      "pairs": 3,
+      "random_mean": 10.090277777777779,
+      "relative_improvement_mean": 0.007096833971081779
+    },
+    "4": {
+      "learned_mean": 10.534722222222221,
+      "paired_win_rate": 0.3333333333333333,
+      "pairs": 3,
+      "random_mean": 10.798611111111112,
+      "relative_improvement_mean": -0.023288035556740166
+    }
+  },
+  "verdict": "Distortion hypothesis supported; end-to-end perplexity evidence is mixed"
+}

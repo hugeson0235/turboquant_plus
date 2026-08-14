@@ -13,5 +13,9 @@ dependencies:
       - numpy==1.26.4
       - scipy==1.15.3
       - sentencepiece==0.2.0
+      - rouge==1.0.1
+      - fuzzywuzzy==0.18.0
+      - python-Levenshtein==0.26.1
+      - jieba==0.42.1
+      - matplotlib==3.9.2
       - pytest==8.3.4
-

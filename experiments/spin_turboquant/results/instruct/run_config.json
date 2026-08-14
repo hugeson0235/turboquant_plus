@@ -1,0 +1,86 @@
+{
+  "arguments": {
+    "attention_lengths": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "bits": [
+      2,
+      3,
+      4
+    ],
+    "calibration_tokens": 4096,
+    "device": "cuda",
+    "evaluation_tokens": 1024,
+    "latency_tokens": 256,
+    "learning_rate": 0.005,
+    "model": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "norm_correction": false,
+    "output_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct",
+    "ppl_sequence_length": 512,
+    "ppl_tokens": 1024,
+    "retrieval_cases_per_length": 2,
+    "retrieval_lengths": [
+      512,
+      1024,
+      2048
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "train_batch_tokens": 256,
+    "train_steps": 80
+  },
+  "created_at": "2026-08-14T03:02:00.607273+00:00",
+  "environment": {
+    "command": [
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/run.py",
+      "--model",
+      "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "--output-dir",
+      "experiments/spin_turboquant/results/instruct"
+    ],
+    "cuda_runtime": "12.1",
+    "git_commit": "9e87e5b316a629ea003900571c38ed41b40e8d97",
+    "git_status": [
+      " M experiments/spin_turboquant/README.md",
+      " M experiments/spin_turboquant/environment.yml",
+      "?? experiments/spin_turboquant/longbench.py",
+      "?? tests/test_spin_turboquant_longbench.py"
+    ],
+    "gpu": {
+      "capability": [
+        8,
+        0
+      ],
+      "name": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+      "total_memory_bytes": 42412802048
+    },
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-133-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "timestamp": "2026-08-14T03:02:00.607301+00:00",
+    "torch": "2.5.1+cu121"
+  },
+  "last_invocation": [
+    "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/run.py",
+    "--model",
+    "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "--output-dir",
+    "experiments/spin_turboquant/results/instruct"
+  ],
+  "last_stage": "all",
+  "model": {
+    "head_dim": 128,
+    "model_architecture": "LlamaForCausalLM",
+    "model_type": "llama",
+    "num_hidden_layers": 32,
+    "num_key_value_heads": 8,
+    "vocabulary_size": 128256
+  },
+  "updated_at": "2026-08-14T03:02:00.607296+00:00"
+}

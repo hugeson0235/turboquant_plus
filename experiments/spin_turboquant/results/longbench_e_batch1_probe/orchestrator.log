@@ -1,0 +1,170 @@
+[2026-08-14T03:09:17.287352+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T03:09:22.741299+00:00] smoke fp16 already complete
+[2026-08-14T03:09:23.054610+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T03:09:28.721174+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.33it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 16.37it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 16.01it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-14T03:09:35.127295+00:00] full fp16 1/3668 qasper:0 prompt=4448 generated=45 seconds=3.226
+[2026-08-14T03:09:36.397175+00:00] full fp16 2/3668 qasper:1 prompt=4896 generated=8 seconds=1.245
+[2026-08-14T03:09:37.669158+00:00] full fp16 3/3668 qasper:2 prompt=4928 generated=8 seconds=1.248
+[2026-08-14T03:09:39.065620+00:00] full fp16 4/3668 qasper:3 prompt=4547 generated=13 seconds=1.375
+[2026-08-14T03:09:39.842216+00:00] full fp16 5/3668 qasper:4 prompt=3453 generated=4 seconds=0.759
+[2026-08-14T03:09:41.018582+00:00] full fp16 6/3668 qasper:5 prompt=5274 generated=4 seconds=1.151
+[2026-08-14T03:09:42.686378+00:00] full fp16 7/3668 qasper:6 prompt=3758 generated=25 seconds=1.650
+[2026-08-14T03:09:44.093118+00:00] full fp16 8/3668 qasper:7 prompt=3606 generated=19 seconds=1.388
+[2026-08-14T03:09:47.134437+00:00] full fp16 9/3668 qasper:8 prompt=4127 generated=56 seconds=3.020
+[2026-08-14T03:09:49.115776+00:00] full fp16 10/3668 qasper:9 prompt=4372 generated=28 seconds=1.959
+[2026-08-14T03:09:50.319826+00:00] full fp16 11/3668 qasper:10 prompt=4239 generated=10 seconds=1.183
+[2026-08-14T03:09:51.450402+00:00] full fp16 12/3668 qasper:11 prompt=5273 generated=3 seconds=1.106
+[2026-08-14T03:09:52.939390+00:00] full fp16 13/3668 qasper:12 prompt=5489 generated=10 seconds=1.462
+[2026-08-14T03:09:54.593632+00:00] full fp16 14/3668 qasper:13 prompt=4599 generated=19 seconds=1.632
+[2026-08-14T03:09:56.147354+00:00] full fp16 15/3668 qasper:14 prompt=5133 generated=13 seconds=1.529
+[2026-08-14T03:09:58.636277+00:00] full fp16 16/3668 qasper:15 prompt=5169 generated=34 seconds=2.464
+[2026-08-14T03:10:01.302169+00:00] full fp16 17/3668 qasper:16 prompt=5353 generated=37 seconds=2.642
+[2026-08-14T03:10:02.960954+00:00] full fp16 18/3668 qasper:17 prompt=4440 generated=20 seconds=1.637
+[2026-08-14T03:10:04.634904+00:00] full fp16 19/3668 qasper:18 prompt=2361 generated=37 seconds=1.659
+[2026-08-14T03:10:05.678300+00:00] full fp16 20/3668 qasper:19 prompt=4309 generated=6 seconds=1.023
+[2026-08-14T03:10:06.952307+00:00] full fp16 21/3668 qasper:20 prompt=5737 generated=4 seconds=1.249
+[2026-08-14T03:10:08.462992+00:00] full fp16 22/3668 qasper:21 prompt=5144 generated=12 seconds=1.485
+[2026-08-14T03:10:10.466510+00:00] full fp16 23/3668 qasper:22 prompt=3167 generated=38 seconds=1.965
+[2026-08-14T03:10:12.578421+00:00] full fp16 24/3668 qasper:23 prompt=4312 generated=32 seconds=2.091
+[2026-08-14T03:10:14.341283+00:00] full fp16 25/3668 qasper:24 prompt=4815 generated=20 seconds=1.735
+[2026-08-14T03:10:15.657905+00:00] full fp16 26/3668 qasper:25 prompt=5654 generated=5 seconds=1.290
+[2026-08-14T03:10:16.424576+00:00] full fp16 27/3668 qasper:26 prompt=2404 generated=10 seconds=0.752
+[2026-08-14T03:10:17.076818+00:00] full fp16 28/3668 qasper:27 prompt=3126 generated=2 seconds=0.636
+[2026-08-14T03:10:19.752119+00:00] full fp16 29/3668 qasper:28 prompt=4022 generated=48 seconds=2.653
+[2026-08-14T03:10:20.479440+00:00] full fp16 30/3668 qasper:29 prompt=3170 generated=4 seconds=0.711
+[2026-08-14T03:10:22.385711+00:00] full fp16 31/3668 qasper:30 prompt=4438 generated=26 seconds=1.885
+[2026-08-14T03:10:24.927089+00:00] full fp16 32/3668 qasper:31 prompt=4600 generated=40 seconds=2.518
+[2026-08-14T03:10:26.069119+00:00] full fp16 33/3668 qasper:32 prompt=4521 generated=7 seconds=1.120
+[2026-08-14T03:10:29.295145+00:00] full fp16 34/3668 qasper:33 prompt=3634 generated=66 seconds=3.207
+[2026-08-14T03:10:30.639504+00:00] full fp16 35/3668 qasper:34 prompt=4670 generated=11 seconds=1.323
+[2026-08-14T03:10:31.600885+00:00] full fp16 36/3668 qasper:35 prompt=4308 generated=4 seconds=0.940
+[2026-08-14T03:10:33.262920+00:00] full fp16 37/3668 qasper:36 prompt=4927 generated=17 seconds=1.636
+[2026-08-14T03:10:34.478974+00:00] full fp16 38/3668 qasper:37 prompt=5070 generated=5 seconds=1.147
+[2026-08-14T03:10:37.808819+00:00] full fp16 39/3668 qasper:38 prompt=5150 generated=53 seconds=3.304
+[2026-08-14T03:10:38.318501+00:00] full fp16 40/3668 qasper:39 prompt=2121 generated=4 seconds=0.497
+[2026-08-14T03:10:39.229196+00:00] full fp16 41/3668 qasper:40 prompt=2998 generated=10 seconds=0.896
+[2026-08-14T03:10:40.810534+00:00] full fp16 42/3668 qasper:41 prompt=5344 generated=13 seconds=1.558
+[2026-08-14T03:10:41.555904+00:00] full fp16 43/3668 qasper:42 prompt=3302 generated=4 seconds=0.729
+[2026-08-14T03:10:42.157338+00:00] full fp16 44/3668 qasper:43 prompt=2739 generated=3 seconds=0.587
+[2026-08-14T03:10:43.401131+00:00] full fp16 45/3668 qasper:44 prompt=3037 generated=19 seconds=1.226
+[2026-08-14T03:10:45.547451+00:00] full fp16 46/3668 qasper:45 prompt=4117 generated=34 seconds=2.126
+[2026-08-14T03:10:46.317923+00:00] full fp16 47/3668 qasper:46 prompt=3357 generated=4 seconds=0.753
+[2026-08-14T03:10:47.965411+00:00] full fp16 48/3668 qasper:47 prompt=2409 generated=36 seconds=1.634
+[2026-08-14T03:10:48.601776+00:00] full fp16 49/3668 qasper:48 prompt=2720 generated=4 seconds=0.622
+[2026-08-14T03:10:49.756318+00:00] full fp16 50/3668 qasper:49 prompt=5135 generated=4 seconds=1.130
+[2026-08-14T03:10:51.161772+00:00] full fp16 51/3668 qasper:50 prompt=5651 generated=7 seconds=1.380
+[2026-08-14T03:10:52.385314+00:00] full fp16 52/3668 qasper:51 prompt=3385 generated=16 seconds=1.206
+[2026-08-14T03:10:54.977715+00:00] full fp16 53/3668 qasper:52 prompt=4115 generated=45 seconds=2.570
+[2026-08-14T03:10:57.111016+00:00] full fp16 54/3668 qasper:53 prompt=3495 generated=39 seconds=2.115
+[2026-08-14T03:10:59.366857+00:00] full fp16 55/3668 qasper:54 prompt=5608 generated=26 seconds=2.231
+[2026-08-14T03:11:00.365588+00:00] full fp16 56/3668 qasper:55 prompt=2359 generated=17 seconds=0.985
+[2026-08-14T03:11:01.644342+00:00] full fp16 57/3668 qasper:56 prompt=3140 generated=19 seconds=1.262
+[2026-08-14T03:11:03.811380+00:00] full fp16 58/3668 qasper:57 prompt=4783 generated=29 seconds=2.122
+[2026-08-14T03:11:04.946345+00:00] full fp16 59/3668 qasper:58 prompt=5277 generated=3 seconds=1.107
+[2026-08-14T03:11:05.895900+00:00] full fp16 60/3668 qasper:59 prompt=3670 generated=4 seconds=0.815
+[2026-08-14T03:11:06.804724+00:00] full fp16 61/3668 qasper:60 prompt=3997 generated=4 seconds=0.888
+[2026-08-14T03:11:08.710758+00:00] full fp16 62/3668 qasper:61 prompt=3301 generated=35 seconds=1.890
+[2026-08-14T03:11:09.246874+00:00] full fp16 63/3668 qasper:62 prompt=2290 generated=4 seconds=0.523
+[2026-08-14T03:11:10.201750+00:00] full fp16 64/3668 qasper:63 prompt=2735 generated=13 seconds=0.940
+[2026-08-14T03:11:11.745338+00:00] full fp16 65/3668 qasper:64 prompt=2803 generated=29 seconds=1.515
+[2026-08-14T03:11:12.960141+00:00] full fp16 66/3668 qasper:65 prompt=5464 generated=4 seconds=1.188
+[2026-08-14T03:11:14.489324+00:00] full fp16 67/3668 qasper:66 prompt=3397 generated=24 seconds=1.511
+[2026-08-14T03:11:16.043941+00:00] full fp16 68/3668 qasper:67 prompt=2733 generated=30 seconds=1.539
+[2026-08-14T03:11:17.503800+00:00] full fp16 69/3668 qasper:68 prompt=2805 generated=27 seconds=1.443
+[2026-08-14T03:11:18.732048+00:00] full fp16 70/3668 qasper:69 prompt=3583 generated=15 seconds=1.210
+[2026-08-14T03:11:20.445860+00:00] full fp16 71/3668 qasper:70 prompt=5273 generated=16 seconds=1.688
+[2026-08-14T03:11:22.698305+00:00] full fp16 72/3668 qasper:71 prompt=4732 generated=32 seconds=2.227
+[2026-08-14T03:11:24.732526+00:00] full fp16 73/3668 qasper:72 prompt=4446 generated=29 seconds=2.012
+[2026-08-14T03:13:27.038761+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T03:13:32.437937+00:00] smoke fp16 already complete
+[2026-08-14T03:13:32.758508+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T03:13:38.450636+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 14.29it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 16.27it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 15.93it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-14T03:13:43.878877+00:00] full fp16 74/3668 qasper:73 prompt=5303 generated=15 seconds=2.257
+[2026-08-14T03:13:45.428651+00:00] full fp16 75/3668 qasper:74 prompt=3982 generated=20 seconds=1.525
+[2026-08-14T03:13:46.625564+00:00] full fp16 76/3668 qasper:75 prompt=4379 generated=9 seconds=1.174
+[2026-08-14T03:13:47.651800+00:00] full fp16 77/3668 qasper:76 prompt=4764 generated=3 seconds=1.002
+[2026-08-14T03:13:48.814365+00:00] full fp16 78/3668 qasper:77 prompt=2840 generated=18 seconds=1.148
+[2026-08-14T03:13:50.719777+00:00] full fp16 79/3668 qasper:78 prompt=2665 generated=41 seconds=1.891
+[2026-08-14T03:13:51.641218+00:00] full fp16 80/3668 qasper:79 prompt=3378 generated=8 seconds=0.904
+[2026-08-14T03:13:53.717047+00:00] full fp16 81/3668 qasper:80 prompt=4454 generated=30 seconds=2.054
+[2026-08-14T03:13:55.367585+00:00] full fp16 82/3668 qasper:81 prompt=5507 generated=13 seconds=1.623
+[2026-08-14T03:13:56.802801+00:00] full fp16 83/3668 qasper:82 prompt=3928 generated=18 seconds=1.415
+[2026-08-14T03:13:58.669534+00:00] full fp16 84/3668 qasper:83 prompt=4310 generated=26 seconds=1.845
+[2026-08-14T03:13:59.245202+00:00] full fp16 85/3668 qasper:84 prompt=2667 generated=3 seconds=0.562
+[2026-08-14T03:14:01.505821+00:00] full fp16 86/3668 qasper:85 prompt=5631 generated=26 seconds=2.234
+[2026-08-14T03:14:03.764482+00:00] full fp16 87/3668 qasper:86 prompt=5630 generated=26 seconds=2.233
+[2026-08-14T03:14:04.780445+00:00] full fp16 88/3668 qasper:87 prompt=4519 generated=4 seconds=0.994
+[2026-08-14T03:14:05.691936+00:00] full fp16 89/3668 qasper:88 prompt=2986 generated=10 seconds=0.895
+[2026-08-14T03:14:06.269053+00:00] full fp16 90/3668 qasper:89 prompt=2637 generated=3 seconds=0.560
+[2026-08-14T03:14:06.726518+00:00] full fp16 91/3668 qasper:90 prompt=2036 generated=3 seconds=0.446
+[2026-08-14T03:14:09.534010+00:00] full fp16 92/3668 qasper:91 prompt=2558 generated=68 seconds=2.794
+[2026-08-14T03:14:10.944741+00:00] full fp16 93/3668 qasper:92 prompt=2722 generated=26 seconds=1.396
+[2026-08-14T03:14:12.997480+00:00] full fp16 94/3668 qasper:93 prompt=4741 generated=27 seconds=2.028
+[2026-08-14T03:14:14.496018+00:00] full fp16 95/3668 qasper:94 prompt=2317 generated=32 seconds=1.484
+[2026-08-14T03:14:16.288047+00:00] full fp16 96/3668 qasper:95 prompt=3387 generated=31 seconds=1.774
+[2026-08-14T03:14:18.070384+00:00] full fp16 97/3668 qasper:96 prompt=2562 generated=38 seconds=1.767
+[2026-08-14T03:14:20.444027+00:00] full fp16 98/3668 qasper:97 prompt=3035 generated=50 seconds=2.356
+[2026-08-14T03:14:22.379689+00:00] full fp16 99/3668 qasper:98 prompt=4243 generated=21 seconds=1.635
+[2026-08-14T03:14:23.836498+00:00] full fp16 100/3668 qasper:99 prompt=3683 generated=20 seconds=1.435
+[2026-08-14T03:14:27.062110+00:00] full fp16 101/3668 qasper:100 prompt=5978 generated=44 seconds=3.197
+[2026-08-14T03:14:29.121866+00:00] full fp16 102/3668 qasper:101 prompt=6389 generated=17 seconds=2.029
+[2026-08-14T03:14:31.055674+00:00] full fp16 103/3668 qasper:102 prompt=5905 generated=17 seconds=1.907
+[2026-08-14T03:14:32.612860+00:00] full fp16 104/3668 qasper:103 prompt=5566 generated=7 seconds=1.354
+[2026-08-14T03:14:34.579742+00:00] full fp16 105/3668 qasper:104 prompt=7052 generated=11 seconds=1.913
+[2026-08-14T03:14:37.042015+00:00] full fp16 106/3668 qasper:105 prompt=8053 generated=14 seconds=2.309
+[2026-08-14T03:14:38.498446+00:00] full fp16 107/3668 qasper:106 prompt=5680 generated=8 seconds=1.430
+[2026-08-14T03:14:39.803759+00:00] full fp16 108/3668 qasper:107 prompt=5842 generated=4 seconds=1.275
+[2026-08-14T03:14:41.580370+00:00] full fp16 109/3668 qasper:108 prompt=6651 generated=10 seconds=1.742
+[2026-08-14T03:14:43.290170+00:00] full fp16 110/3668 qasper:109 prompt=6962 generated=7 seconds=1.677
+[2026-08-14T03:14:45.144459+00:00] full fp16 111/3668 qasper:110 prompt=6290 generated=13 seconds=1.823
+[2026-08-14T03:14:46.841330+00:00] full fp16 112/3668 qasper:111 prompt=5741 generated=13 seconds=1.668
+[2026-08-14T03:14:49.063403+00:00] full fp16 113/3668 qasper:112 prompt=6975 generated=17 seconds=2.188
+[2026-08-14T03:14:52.402920+00:00] full fp16 114/3668 qasper:113 prompt=8050 generated=32 seconds=3.300
+[2026-08-14T03:14:54.833562+00:00] full fp16 115/3668 qasper:114 prompt=10226 generated=3 seconds=2.383
+[2026-08-14T03:14:56.770384+00:00] full fp16 116/3668 qasper:115 prompt=6508 generated=14 seconds=1.905
+[2026-08-14T03:14:59.894062+00:00] full fp16 117/3668 qasper:116 prompt=7823 generated=29 seconds=3.087
+[2026-08-14T03:15:01.451714+00:00] full fp16 118/3668 qasper:117 prompt=6980 generated=4 seconds=1.524
+[2026-08-14T03:15:02.722733+00:00] full fp16 119/3668 qasper:118 prompt=5341 generated=6 seconds=1.244
+[2026-08-14T03:15:04.162886+00:00] full fp16 120/3668 qasper:119 prompt=5798 generated=7 seconds=1.412
+[2026-08-14T03:15:06.032923+00:00] full fp16 121/3668 qasper:120 prompt=6625 generated=12 seconds=1.837
+[2026-08-14T03:15:07.870731+00:00] full fp16 122/3668 qasper:121 prompt=5565 generated=17 seconds=1.811
+[2026-08-14T03:15:10.361002+00:00] full fp16 123/3668 qasper:122 prompt=6330 generated=26 seconds=2.458
+[2026-08-14T03:15:12.415155+00:00] full fp16 124/3668 qasper:123 prompt=6344 generated=17 seconds=2.021
+[2026-08-14T03:15:15.147129+00:00] full fp16 125/3668 qasper:124 prompt=6975 generated=27 seconds=2.698
+[2026-08-14T03:15:16.610139+00:00] full fp16 126/3668 qasper:125 prompt=5736 generated=8 seconds=1.434
+[2026-08-14T03:15:19.214190+00:00] full fp16 127/3668 qasper:126 prompt=6579 generated=26 seconds=2.530
+[2026-08-14T03:15:25.129129+00:00] full fp16 128/3668 qasper:127 prompt=6658 generated=92 seconds=5.879
+[2026-08-14T03:15:27.210680+00:00] full fp16 129/3668 qasper:128 prompt=6471 generated=17 seconds=2.049
+[2026-08-14T03:15:28.742497+00:00] full fp16 130/3668 qasper:129 prompt=6820 generated=4 seconds=1.499
+[2026-08-14T03:15:30.658267+00:00] full fp16 131/3668 qasper:130 prompt=6986 generated=11 seconds=1.881
+[2026-08-14T03:15:34.017068+00:00] full fp16 132/3668 qasper:131 prompt=9661 generated=23 seconds=3.313
+[2026-08-14T03:15:36.555271+00:00] full fp16 133/3668 qasper:132 prompt=6320 generated=27 seconds=2.506
+[2026-08-14T03:15:38.584721+00:00] full fp16 134/3668 qasper:133 prompt=5896 generated=19 seconds=1.999
+[2026-08-14T03:15:40.408688+00:00] full fp16 135/3668 qasper:134 prompt=6585 generated=11 seconds=1.786
+[2026-08-14T03:15:43.347118+00:00] full fp16 136/3668 qasper:135 prompt=6984 generated=31 seconds=2.904
+[2026-08-14T03:15:45.508529+00:00] full fp16 137/3668 qasper:136 prompt=9240 generated=5 seconds=2.119
+[2026-08-14T03:15:47.389420+00:00] full fp16 138/3668 qasper:137 prompt=5741 generated=17 seconds=1.852
+[2026-08-14T03:15:48.899322+00:00] full fp16 139/3668 qasper:138 prompt=5891 generated=8 seconds=1.480
+[2026-08-14T03:15:51.423555+00:00] full fp16 140/3668 qasper:139 prompt=6291 generated=26 seconds=2.453
+[2026-08-14T03:15:52.969934+00:00] full fp16 141/3668 qasper:140 prompt=5644 generated=10 seconds=1.518
+[2026-08-14T03:15:54.585780+00:00] full fp16 142/3668 qasper:141 prompt=5628 generated=12 seconds=1.587
+[2026-08-14T03:15:56.014674+00:00] full fp16 143/3668 qasper:142 prompt=5587 generated=8 seconds=1.400
+[2026-08-14T03:15:57.942260+00:00] full fp16 144/3668 qasper:143 prompt=5731 generated=18 seconds=1.898
+[2026-08-14T03:16:00.445948+00:00] full fp16 145/3668 qasper:144 prompt=6337 generated=24 seconds=2.362
+[2026-08-14T03:16:03.102964+00:00] full fp16 146/3668 qasper:145 prompt=7195 generated=24 seconds=2.621
+[2026-08-14T03:16:05.469274+00:00] full fp16 147/3668 qasper:146 prompt=7867 generated=15 seconds=2.331
+[2026-08-14T03:16:09.197545+00:00] full fp16 148/3668 qasper:147 prompt=6719 generated=48 seconds=3.682

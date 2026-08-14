@@ -63,3 +63,35 @@ Run the focused tests with:
 ```bash
 conda run -n stq python -m pytest tests/test_spin_turboquant.py -q
 ```
+
+## LongBench-E downstream experiment
+
+`../../../LongBench.md` is implemented by the resumable LongBench runner. It
+pins the official LongBench code and dataset revisions, performs one smoke
+example per task, and then runs all 22 conditions in separate processes before
+building the paired bootstrap report.
+
+The rotation directory must have been produced from the exact same model
+snapshot. For the Instruct checkpoint used by LongBench, first create its
+rotation artifacts with the full command above and a separate output directory,
+then run:
+
+```bash
+conda activate stq
+python -m experiments.spin_turboquant.longbench \
+  --stage orchestrate \
+  --model /path/to/Meta-Llama-3.1-8B-Instruct/snapshot \
+  --rotation-dir experiments/spin_turboquant/results/instruct \
+  --longbench-repo ../LongBench_official \
+  --data-dir ../LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data \
+  --output-dir experiments/spin_turboquant/results/longbench_e
+```
+
+Each completed condition contains `run_config.json`, `predictions.jsonl`,
+`scores.csv`, `task_summary.csv`, `category_summary.csv`,
+`paired_comparison.csv`, `system_metrics.csv`, and `report.md`. The study root
+contains the final tables, plots, paired rows, bootstrap intervals, and verdicts.
+Full runs use deterministic contiguous batches only for generation-heavy or
+fixed-cap tasks; variable-length QA remains batch size 1. Batch membership is
+fixed before resume filtering, and implementation, dataset, codebook, model,
+and rotation hashes are recorded in the run configuration.
