@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+random_K2_V16_s43,random,2,43,qasper,Single QA,15,41.35723229774681,41.36,38.11937261719453
+random_K2_V16_s43,random,2,43,multifieldqa_en,Single QA,15,35.32890075263772,35.33,26.95719027758141
+random_K2_V16_s43,random,2,43,hotpotqa,Multi QA,15,32.37037037037037,32.37,38.785824627612286
+random_K2_V16_s43,random,2,43,2wikimqa,Multi QA,15,40.0,40.0,48.98979485566356
+random_K2_V16_s43,random,2,43,gov_report,Summarization,15,31.37506469891972,31.38,4.339945688392692
+random_K2_V16_s43,random,2,43,multi_news,Summarization,15,22.008819660950156,22.01,6.01889659984726
+random_K2_V16_s43,random,2,43,trec,Few-shot,15,53.333333333333336,53.33,49.88876515698588
+random_K2_V16_s43,random,2,43,triviaqa,Few-shot,15,93.33333333333333,93.33,24.94438257849294
+random_K2_V16_s43,random,2,43,samsum,Few-shot,15,40.80639302687656,40.81,20.19876604361874
+random_K2_V16_s43,random,2,43,passage_count,Synthetic,15,0.0,0.0,0.0
+random_K2_V16_s43,random,2,43,passage_retrieval_en,Synthetic,15,73.33333333333333,73.33,44.22166387140533
+random_K2_V16_s43,random,2,43,lcc,Code,15,55.46666666666667,55.47,32.23841738602495
+random_K2_V16_s43,random,2,43,repobench-p,Code,15,42.06666666666667,42.07,28.08669119391286

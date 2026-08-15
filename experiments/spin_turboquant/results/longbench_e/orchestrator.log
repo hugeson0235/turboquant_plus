@@ -1203,3 +1203,36 @@ We detected that you are passing `past_key_values` as a tuple of tuples. This is
 [2026-08-14T07:16:22.066252+00:00] full fp16 batch=1171 multi_news_batch0068_examples212-212 size=1 completed=1487/3668 padded_prompt_tokens=16402 seconds=47.744
 [2026-08-14T07:17:02.030878+00:00] full fp16 batch=1172 multi_news_batch0069_examples213-213 size=1 completed=1488/3668 padded_prompt_tokens=12612 seconds=39.715
 [2026-08-14T07:18:29.074856+00:00] full fp16 batch=1173 multi_news_batch0070_examples214-214 size=1 completed=1489/3668 padded_prompt_tokens=34081 seconds=86.946
+[2026-08-14T09:25:21.290056+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --batch-size 8 --batch-token-budget 32768 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T09:25:28.094065+00:00] smoke fp16 already complete
+[2026-08-14T09:25:36.961006+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --rotation-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e --device cuda --bootstrap-samples 10000 --batch-size 8 --batch-token-budget 32768 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --condition fp16
+[2026-08-14T09:25:43.518395+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.42s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.68s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:03,  3.47s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.20s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.69s/it]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-14T09:30:10.813935+00:00] full fp16 batch=1174 multi_news_batch0071_examples215-216 size=2 completed=1491/3668 padded_prompt_tokens=26462 seconds=84.348
+[2026-08-14T09:31:32.255952+00:00] full fp16 batch=1175 multi_news_batch0072_examples217-218 size=2 completed=1493/3668 padded_prompt_tokens=27344 seconds=81.293
+[2026-08-14T09:33:02.540617+00:00] full fp16 batch=1176 multi_news_batch0073_examples219-220 size=2 completed=1495/3668 padded_prompt_tokens=28906 seconds=90.121
+[2026-08-14T09:34:23.865018+00:00] full fp16 batch=1177 multi_news_batch0074_examples221-222 size=2 completed=1497/3668 padded_prompt_tokens=27128 seconds=81.201
+[2026-08-14T09:35:41.155027+00:00] full fp16 batch=1178 multi_news_batch0075_examples223-224 size=2 completed=1499/3668 padded_prompt_tokens=24298 seconds=77.059
+[2026-08-14T09:36:18.049372+00:00] full fp16 batch=1179 multi_news_batch0076_examples225-225 size=1 completed=1500/3668 padded_prompt_tokens=11072 seconds=36.796
+[2026-08-14T09:37:05.166776+00:00] full fp16 batch=1180 multi_news_batch0077_examples226-226 size=1 completed=1501/3668 padded_prompt_tokens=15974 seconds=47.042
+[2026-08-14T09:37:44.762417+00:00] full fp16 batch=1181 multi_news_batch0078_examples227-227 size=1 completed=1502/3668 padded_prompt_tokens=12403 seconds=39.492
+[2026-08-14T09:38:33.359960+00:00] full fp16 batch=1182 multi_news_batch0079_examples228-228 size=1 completed=1503/3668 padded_prompt_tokens=16803 seconds=48.497
+[2026-08-14T09:40:07.455680+00:00] full fp16 batch=1183 multi_news_batch0080_examples229-230 size=2 completed=1505/3668 padded_prompt_tokens=30214 seconds=93.944
+[2026-08-14T09:41:24.478167+00:00] full fp16 batch=1184 multi_news_batch0081_examples231-232 size=2 completed=1507/3668 padded_prompt_tokens=24242 seconds=76.871
+[2026-08-14T09:42:49.307144+00:00] full fp16 batch=1185 multi_news_batch0082_examples233-234 size=2 completed=1509/3668 padded_prompt_tokens=28032 seconds=84.671
+[2026-08-14T09:43:28.909217+00:00] full fp16 batch=1186 multi_news_batch0083_examples235-235 size=1 completed=1510/3668 padded_prompt_tokens=12411 seconds=39.495
+[2026-08-14T09:44:18.284997+00:00] full fp16 batch=1187 multi_news_batch0084_examples236-236 size=1 completed=1511/3668 padded_prompt_tokens=17014 seconds=49.286
+[2026-08-14T09:45:02.099888+00:00] full fp16 batch=1188 multi_news_batch0085_examples237-237 size=1 completed=1512/3668 padded_prompt_tokens=14375 seconds=43.599
+[2026-08-14T09:46:33.447342+00:00] full fp16 batch=1189 multi_news_batch0086_examples238-238 size=1 completed=1513/3668 padded_prompt_tokens=35895 seconds=91.272
+[2026-08-14T09:47:10.753646+00:00] full fp16 batch=1190 multi_news_batch0087_examples239-239 size=1 completed=1514/3668 padded_prompt_tokens=11341 seconds=37.191
+[2026-08-14T09:48:02.794582+00:00] full fp16 batch=1191 multi_news_batch0088_examples240-240 size=1 completed=1515/3668 padded_prompt_tokens=18217 seconds=51.953
+[2026-08-14T09:49:28.806805+00:00] full fp16 batch=1192 multi_news_batch0089_examples241-242 size=2 completed=1517/3668 padded_prompt_tokens=27878 seconds=85.851
+[2026-08-14T09:50:52.160399+00:00] full fp16 batch=1193 multi_news_batch0090_examples243-244 size=2 completed=1519/3668 padded_prompt_tokens=27656 seconds=83.187

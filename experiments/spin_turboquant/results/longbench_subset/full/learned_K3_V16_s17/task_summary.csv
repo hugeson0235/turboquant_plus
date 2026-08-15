@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+learned_K3_V16_s17,learned,3,17,qasper,Single QA,15,47.95117845117845,47.95,38.18094818697883
+learned_K3_V16_s17,learned,3,17,multifieldqa_en,Single QA,15,37.89380950496626,37.89,25.172009905499735
+learned_K3_V16_s17,learned,3,17,hotpotqa,Multi QA,15,38.55555555555555,38.56,41.000752778394954
+learned_K3_V16_s17,learned,3,17,2wikimqa,Multi QA,15,44.51282051282052,44.51,46.431529336241994
+learned_K3_V16_s17,learned,3,17,gov_report,Summarization,15,33.9661926654027,33.97,4.372101636806171
+learned_K3_V16_s17,learned,3,17,multi_news,Summarization,15,23.230681148168358,23.23,5.703360069711786
+learned_K3_V16_s17,learned,3,17,trec,Few-shot,15,73.33333333333333,73.33,44.22166387140533
+learned_K3_V16_s17,learned,3,17,triviaqa,Few-shot,15,94.60317460317461,94.6,16.756372343360823
+learned_K3_V16_s17,learned,3,17,samsum,Few-shot,15,53.64751620330387,53.65,14.912486602226858
+learned_K3_V16_s17,learned,3,17,passage_count,Synthetic,15,10.0,10.0,27.0801280154532
+learned_K3_V16_s17,learned,3,17,passage_retrieval_en,Synthetic,15,93.33333333333333,93.33,24.94438257849294
+learned_K3_V16_s17,learned,3,17,lcc,Code,15,77.46666666666667,77.47,28.246219019346444
+learned_K3_V16_s17,learned,3,17,repobench-p,Code,15,63.6,63.6,29.544993935803518

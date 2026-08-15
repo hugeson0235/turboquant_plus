@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+identity_K2_V16,identity,2,,0-4k,13,65,8.352624893519693
+identity_K2_V16,identity,2,,4-8k,13,65,3.320774373007623
+identity_K2_V16,identity,2,,8k+,13,65,10.011095933195223

@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+random_K4_V16_s29,random,4,29,0-4k,13,65,57.28061563937811
+random_K4_V16_s29,random,4,29,4-8k,13,65,55.54511325033468
+random_K4_V16_s29,random,4,29,8k+,13,65,52.79167900628753

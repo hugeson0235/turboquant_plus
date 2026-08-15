@@ -1,4 +1,4 @@
-"""Run the pinned LongBench-E study from ``LongBench.md``.
+"""Run the pinned LongBench-E subset study from ``LongBenchSubset.md``.
 
 The inference implementation deliberately reuses the codec hooks and learned
 rotation artifacts from :mod:`experiments.spin_turboquant`.  Every benchmark
@@ -13,7 +13,7 @@ Typical invocation (from the TurboQuant+ repository root)::
       --rotation-dir experiments/spin_turboquant/results/instruct \
       --longbench-repo ../LongBench_official \
       --data-dir ../LongBench_data/<revision>/data \
-      --output-dir experiments/spin_turboquant/results/longbench_e
+      --output-dir experiments/spin_turboquant/results/longbench_subset
 """
 
 from __future__ import annotations
@@ -50,8 +50,12 @@ from experiments.spin_turboquant.core import (
 
 LONG_BENCH_COMMIT = "2e00731f8d0bff23dc4325161044d0ed8af94c1e"
 LONG_BENCH_DATASET_REVISION = "5e628be450b7e67fb7ae6e201bd6d8f7056f7672"
+SUBSET_SEED = 20_020_305
+SAMPLES_PER_LENGTH_BUCKET = 5
 BITS = (2, 3, 4)
 SEEDS = (17, 29, 43)
+LENGTH_BUCKETS = ("0-4k", "4-8k", "8k+")
+SPECIFICATION_PATH = Path(__file__).resolve().parents[3] / "LongBenchSubset.md"
 TASKS = (
     "qasper",
     "multifieldqa_en",
@@ -159,9 +163,9 @@ class Condition:
     @property
     def condition_id(self) -> str:
         if self.method == "fp16":
-            return "fp16"
-        seed = "none" if self.seed is None else str(self.seed)
-        return f"{self.method}_b{self.bit_width}_s{seed}"
+            return "fp16_K16_V16"
+        suffix = "" if self.seed is None else f"_s{self.seed}"
+        return f"{self.method}_K{self.bit_width}_V16{suffix}"
 
     @property
     def rotation_key(self) -> str | None:
@@ -208,8 +212,8 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def all_conditions() -> list[Condition]:
     result = [Condition("fp16")]
-    result.extend(Condition("identity", bit) for bit in BITS)
     for bit in BITS:
+        result.append(Condition("identity", bit))
         for seed in SEEDS:
             result.append(Condition("random", bit, seed))
             result.append(Condition("learned", bit, seed))
@@ -359,7 +363,7 @@ def model_dimensions(model_path: Path) -> dict[str, Any]:
         "head_dim": 128,
     }
     if actual != expected:
-        raise ValueError(f"LongBench.md requires {expected}, but model has {actual}")
+        raise ValueError(f"LongBenchSubset.md requires {expected}, but model has {actual}")
     return {
         **actual,
         "model_type": str(config.model_type),
@@ -378,6 +382,8 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
     }.items():
         if not path.exists():
             raise FileNotFoundError(f"{label} does not exist: {path}")
+    if not SPECIFICATION_PATH.is_file():
+        raise FileNotFoundError(f"experiment specification is missing: {SPECIFICATION_PATH}")
     if not torch.cuda.is_available() and str(args.device).startswith("cuda"):
         raise RuntimeError("CUDA was requested but torch.cuda.is_available() is false")
 
@@ -391,7 +397,7 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
     if not tokenizer.chat_template:
         raise RuntimeError(
-            "LongBench.md requires the model's instruct chat template, but this "
+            "LongBenchSubset.md requires the model's instruct chat template, but this "
             f"tokenizer has none: {args.model}"
         )
     dimensions = model_dimensions(args.model)
@@ -475,6 +481,10 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
         "implementation_hashes": {
             name: sha256_file(path) for name, path in implementation_files.items()
         },
+        "specification": {
+            "path": str(SPECIFICATION_PATH),
+            "sha256": sha256_file(SPECIFICATION_PATH),
+        },
         "longbench": {
             "repository": str(args.longbench_repo),
             "commit": actual_commit,
@@ -531,6 +541,105 @@ def length_bucket(length: int) -> str:
     if length < 8000:
         return "4-8k"
     return "8k+"
+
+
+def build_subset_manifest(
+    data_dir: Path,
+    *,
+    dataset_revision: str,
+    data_hashes: dict[str, str],
+) -> dict[str, Any]:
+    """Build the deterministic, task/bucket-stratified subset specification."""
+
+    generator = random.Random(SUBSET_SEED)
+    selected_rows: list[dict[str, Any]] = []
+    for task_index, task in enumerate(TASKS):
+        examples = load_examples(data_dir, task)
+        task_example_order = 0
+        for bucket in LENGTH_BUCKETS:
+            candidates = [
+                (dataset_index, example)
+                for dataset_index, example in enumerate(examples)
+                if length_bucket(int(example["length"])) == bucket
+            ]
+            if len(candidates) < SAMPLES_PER_LENGTH_BUCKET:
+                raise RuntimeError(
+                    f"{task}:{bucket} has {len(candidates)} examples; "
+                    f"{SAMPLES_PER_LENGTH_BUCKET} are required"
+                )
+            # Sampling is random without replacement. Sorting only fixes execution
+            # order after selection; it does not change the sampled identities.
+            chosen = sorted(
+                generator.sample(candidates, SAMPLES_PER_LENGTH_BUCKET),
+                key=lambda value: value[0],
+            )
+            for dataset_index, example in chosen:
+                selected_rows.append(
+                    {
+                        "manifest_index": len(selected_rows),
+                        "task": task,
+                        "task_index": task_index,
+                        "task_example_order": task_example_order,
+                        "length_bucket": bucket,
+                        "dataset_index": dataset_index,
+                        "example_id": str(example["_id"]),
+                        "dataset_length": int(example["length"]),
+                    }
+                )
+                task_example_order += 1
+
+    expected_count = (
+        len(TASKS) * len(LENGTH_BUCKETS) * SAMPLES_PER_LENGTH_BUCKET
+    )
+    if len(selected_rows) != expected_count:
+        raise AssertionError(
+            f"subset construction produced {len(selected_rows)}, expected {expected_count}"
+        )
+    return {
+        "schema_version": 1,
+        "sampling_seed": SUBSET_SEED,
+        "sampling_method": (
+            "one Python random.Random stream; random.sample without replacement "
+            "in canonical task and length-bucket order; selected source indexes "
+            "sorted within each task/bucket"
+        ),
+        "samples_per_length_bucket": SAMPLES_PER_LENGTH_BUCKET,
+        "samples_per_task": len(LENGTH_BUCKETS) * SAMPLES_PER_LENGTH_BUCKET,
+        "example_count": expected_count,
+        "task_order": list(TASKS),
+        "length_bucket_order": list(LENGTH_BUCKETS),
+        "length_bucket_boundaries": {
+            "0-4k": {"minimum_inclusive": 0, "maximum_exclusive": 4000},
+            "4-8k": {"minimum_inclusive": 4000, "maximum_exclusive": 8000},
+            "8k+": {"minimum_inclusive": 8000, "maximum_exclusive": None},
+        },
+        "dataset_revision": dataset_revision,
+        "data_hashes": data_hashes,
+        "examples": selected_rows,
+    }
+
+
+def ensure_subset_manifest(
+    output_dir: Path,
+    data_dir: Path,
+    *,
+    dataset_revision: str,
+    data_hashes: dict[str, str],
+) -> dict[str, Any]:
+    expected = build_subset_manifest(
+        data_dir,
+        dataset_revision=dataset_revision,
+        data_hashes=data_hashes,
+    )
+    path = output_dir / "subset_manifest.json"
+    existing = read_json(path)
+    if existing is None:
+        write_json(path, expected)
+    elif existing != expected:
+        raise RuntimeError(
+            f"existing subset manifest does not match the pinned sampling protocol: {path}"
+        )
+    return expected
 
 
 def middle_truncate(token_ids: Sequence[int], maximum: int) -> list[int]:
@@ -822,6 +931,15 @@ def append_prediction_batch(path: Path, records: Sequence[dict[str, Any]]) -> No
         os.fsync(handle.fileno())
 
 
+def write_jsonl(path: Path, records: Iterable[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("w", encoding="utf-8") as handle:
+        for record in records:
+            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    temporary.replace(path)
+
+
 def read_predictions(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -842,13 +960,44 @@ def read_predictions(path: Path) -> list[dict[str, Any]]:
 
 
 def canonical_examples(
-    data_dir: Path, *, smoke: bool
+    data_dir: Path,
+    manifest: dict[str, Any],
+    *,
+    smoke: bool,
 ) -> list[tuple[str, int, dict[str, Any]]]:
     ordered: list[tuple[str, int, dict[str, Any]]] = []
-    for task in TASKS:
-        examples = load_examples(data_dir, task)
-        selected = examples[:1] if smoke else examples
-        ordered.extend((task, index, example) for index, example in enumerate(selected))
+    by_task = {task: load_examples(data_dir, task) for task in TASKS}
+    seen_smoke_tasks: set[str] = set()
+    for row in manifest["examples"]:
+        task = str(row["task"])
+        if smoke and task in seen_smoke_tasks:
+            continue
+        dataset_index = int(row["dataset_index"])
+        examples = by_task.get(task)
+        if examples is None or not 0 <= dataset_index < len(examples):
+            raise RuntimeError(
+                f"manifest points outside pinned data: {task}:{dataset_index}"
+            )
+        example = examples[dataset_index]
+        if str(example["_id"]) != str(row["example_id"]):
+            raise RuntimeError(
+                "manifest identity mismatch at "
+                f"{task}:{dataset_index}: {example['_id']} != {row['example_id']}"
+            )
+        if (
+            int(example["length"]) != int(row["dataset_length"])
+            or length_bucket(int(example["length"])) != str(row["length_bucket"])
+        ):
+            raise RuntimeError(f"manifest length mismatch at {task}:{dataset_index}")
+        ordered.append((task, dataset_index, example))
+        seen_smoke_tasks.add(task)
+
+    expected = len(TASKS) if smoke else int(manifest["example_count"])
+    if len(ordered) != expected:
+        raise RuntimeError(
+            f"manifest selected {len(ordered)} {'smoke' if smoke else 'full'} "
+            f"examples, expected {expected}"
+        )
     return ordered
 
 
@@ -938,6 +1087,7 @@ def run_directory(output_dir: Path, mode: str, condition: Condition) -> Path:
 def protocol_payload(
     args: argparse.Namespace,
     assets: dict[str, Any],
+    manifest: dict[str, Any],
     condition: Condition,
     mode: str,
 ) -> dict[str, Any]:
@@ -947,17 +1097,28 @@ def protocol_payload(
             f"bit{condition.bit_width}_seed{condition.seed}"
         ]
     return {
-        "specification": str((Path.cwd().parent / "LongBench.md").resolve()),
+        "specification": assets["specification"],
         "mode": mode,
         "condition": {
             "condition_id": condition.condition_id,
             "method": condition.method,
-            "bit_width": condition.bit_width,
+            "key_bit_width": 16 if condition.method == "fp16" else condition.bit_width,
+            "value_bit_width": 16,
             "seed": condition.seed,
         },
         "model": assets["model"],
         "implementation_hashes": assets["implementation_hashes"],
         "longbench": assets["longbench"],
+        "subset": {
+            "manifest": str((args.output_dir / "subset_manifest.json").resolve()),
+            "manifest_sha256": sha256_json(manifest),
+            "sampling_seed": int(manifest["sampling_seed"]),
+            "examples_per_condition": int(manifest["example_count"]),
+            "samples_per_task": int(manifest["samples_per_task"]),
+            "samples_per_length_bucket": int(
+                manifest["samples_per_length_bucket"]
+            ),
+        },
         "rotation_artifact_sha256": artifact_hash,
         "rotation_artifact_key": condition.rotation_key,
         "codebook_sha256": (
@@ -1126,6 +1287,38 @@ def score_condition(
         )
     write_csv(run_dir / "category_summary.csv", category_rows)
 
+    length_rows: list[dict[str, Any]] = []
+    length_means: dict[str, float] = {}
+    for bucket in LENGTH_BUCKETS:
+        per_task: list[float] = []
+        example_count = 0
+        for task in TASKS:
+            values = [
+                float(row["score"])
+                for row in score_rows
+                if row["task"] == task and row["length_bucket"] == bucket
+            ]
+            if values:
+                per_task.append(statistics.fmean(values))
+                example_count += len(values)
+        if not per_task:
+            continue
+        mean = statistics.fmean(per_task)
+        length_means[bucket] = mean
+        length_rows.append(
+            {
+                "condition_id": predictions[0]["condition_id"],
+                "method": predictions[0]["method"],
+                "bit_width": predictions[0]["bit_width"],
+                "seed": predictions[0]["seed"],
+                "length_bucket": bucket,
+                "tasks": len(per_task),
+                "examples": example_count,
+                "macro_average": mean,
+            }
+        )
+    write_csv(run_dir / "length_summary.csv", length_rows)
+
     system_rows = [
         {
             key: row[key]
@@ -1196,6 +1389,7 @@ def score_condition(
         "empty_outputs": empty_outputs,
         "task_scores": task_means,
         "category_scores": category_means,
+        "length_scores": length_means,
     }
 
 
@@ -1207,9 +1401,19 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
     device = torch.device(args.device)
     run_dir = run_directory(args.output_dir, mode, condition)
     run_dir.mkdir(parents=True, exist_ok=True)
-    protocol = protocol_payload(args, assets, condition, mode)
+    manifest = ensure_subset_manifest(
+        args.output_dir,
+        args.data_dir,
+        dataset_revision=args.dataset_revision,
+        data_hashes=assets["longbench"]["data_hashes"],
+    )
+    protocol = protocol_payload(args, assets, manifest, condition, mode)
     config = initialize_run_config(run_dir, protocol, environment_metadata(device))
-    expected = canonical_examples(args.data_dir, smoke=mode == "smoke")
+    expected = canonical_examples(
+        args.data_dir,
+        manifest,
+        smoke=mode == "smoke",
+    )
     update_run_status(run_dir, expected_predictions=len(expected), status="running")
     prediction_path = run_dir / "predictions.jsonl"
     existing = read_predictions(prediction_path)
@@ -1495,6 +1699,44 @@ def bootstrap_ci(
     return float(low), float(high)
 
 
+def paired_task_bootstrap_ci(
+    task_seed_differences: Sequence[np.ndarray],
+    *,
+    samples: int,
+    seed: int,
+) -> tuple[float, float]:
+    """Bootstrap tasks independently while sharing example draws across seeds.
+
+    Each array is shaped ``(rotation seeds, examples in one task)``. A task's
+    example indexes are sampled once per replicate and reused for every paired
+    Random/Learned seed, as required by the subset protocol.
+    """
+
+    if samples < 100:
+        raise ValueError("at least 100 bootstrap samples are required")
+    if not task_seed_differences:
+        raise ValueError("at least one task is required")
+    seed_count: int | None = None
+    for array in task_seed_differences:
+        if array.ndim != 2 or array.shape[0] == 0 or array.shape[1] == 0:
+            raise ValueError("task/seed difference arrays must be non-empty 2D arrays")
+        if seed_count is None:
+            seed_count = int(array.shape[0])
+        elif int(array.shape[0]) != seed_count:
+            raise ValueError("all tasks must contain the same rotation seeds")
+
+    rng = np.random.default_rng(seed)
+    distribution = np.empty(samples, dtype=np.float64)
+    for sample_index in range(samples):
+        task_means: list[float] = []
+        for array in task_seed_differences:
+            indexes = rng.integers(0, array.shape[1], size=array.shape[1])
+            task_means.append(float(np.mean(array[:, indexes])))
+        distribution[sample_index] = statistics.fmean(task_means)
+    low, high = np.percentile(distribution, [2.5, 97.5])
+    return float(low), float(high)
+
+
 def markdown_table(headers: Sequence[str], rows: Sequence[Sequence[str]]) -> str:
     lines = [
         "| " + " | ".join(headers) + " |",
@@ -1509,14 +1751,23 @@ def verdict_for_bit(
     seed_differences: Sequence[float],
     confidence_low: float,
     repeated_large_category_regression: bool,
+    long_context_difference: float | None = None,
 ) -> str:
+    seed_wins = sum(value > 0 for value in seed_differences)
+    direction_is_consistent = (
+        not repeated_large_category_regression
+        and (long_context_difference is None or long_context_difference >= 0)
+    )
     if (
         learned_minus_random > 0
-        and all(value > 0 for value in seed_differences)
+        and seed_wins >= 2
         and confidence_low > 0
+        and direction_is_consistent
     ):
         return "Supported"
-    if learned_minus_random <= 0 or repeated_large_category_regression:
+    if learned_minus_random > 0 and seed_wins >= 2 and direction_is_consistent:
+        return "Promising pilot"
+    if learned_minus_random <= 0:
         return "Not supported"
     return "Mixed"
 
@@ -1541,7 +1792,7 @@ def write_plots(
     axis.bar(x + width, [row["learned_mean"] for row in overall_rows], width, label="Learned")
     axis.axhline(float(overall_rows[0]["fp16"]), color="black", linestyle="--", label="FP16")
     axis.set_xticks(x, [str(bit) for bit in bits])
-    axis.set_xlabel("KV key codebook bits")
+    axis.set_xlabel("Key bit width (Values BF16)")
     axis.set_ylabel("LongBench-E task macro score")
     axis.legend(ncol=4, fontsize=8)
     axis.grid(axis="y", alpha=0.2)
@@ -1561,7 +1812,7 @@ def write_plots(
         )
     axis.axhline(0.0, color="black", linewidth=0.8)
     axis.set_xticks(list(BITS))
-    axis.set_xlabel("KV key codebook bits")
+    axis.set_xlabel("Key bit width (Values BF16)")
     axis.set_ylabel("Learned minus Random category score")
     axis.legend(ncol=2, fontsize=8)
     axis.grid(alpha=0.2)
@@ -1581,7 +1832,7 @@ def write_plots(
         )
     axis.axhline(0.0, color="black", linewidth=0.8)
     axis.set_xticks(list(BITS))
-    axis.set_xlabel("KV key codebook bits")
+    axis.set_xlabel("Key bit width (Values BF16)")
     axis.set_ylabel("Learned minus Random task macro score")
     axis.legend()
     axis.grid(alpha=0.2)
@@ -1593,7 +1844,17 @@ def write_plots(
 def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
     assets = validate_assets(args, deep=False)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    expected_count = sum(assets["longbench"]["data_counts"].values())
+    manifest = ensure_subset_manifest(
+        args.output_dir,
+        args.data_dir,
+        dataset_revision=args.dataset_revision,
+        data_hashes=assets["longbench"]["data_hashes"],
+    )
+    expected_count = int(manifest["example_count"])
+    expected_examples = canonical_examples(args.data_dir, manifest, smoke=False)
+    expected_keys = [
+        (task, str(example["_id"])) for task, _, example in expected_examples
+    ]
     predictions_by_condition: dict[str, list[dict[str, Any]]] = {}
     scores_by_condition: dict[str, list[dict[str, str]]] = {}
     task_means_by_condition: dict[str, dict[str, float]] = {}
@@ -1601,11 +1862,18 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
         predictions, scores = completed_full_run(
             args.output_dir, condition, expected_count
         )
+        actual_keys = [
+            (str(row["task"]), str(row["example_id"])) for row in predictions
+        ]
+        if actual_keys != expected_keys:
+            raise RuntimeError(
+                f"{condition.condition_id} does not use the exact manifest order"
+            )
         predictions_by_condition[condition.condition_id] = predictions
         scores_by_condition[condition.condition_id] = scores
         task_means_by_condition[condition.condition_id] = task_means(scores)
 
-    fp16_tasks = task_means_by_condition["fp16"]
+    fp16_tasks = task_means_by_condition[Condition("fp16").condition_id]
     fp16_overall = macro_average(fp16_tasks)
     paired_rows: list[dict[str, Any]] = []
     seed_rows: list[dict[str, Any]] = []
@@ -1617,7 +1885,6 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
         identity_id = Condition("identity", bit).condition_id
         identity_tasks = task_means_by_condition[identity_id]
         seed_differences: list[float] = []
-        overall_bootstrap_arrays: list[np.ndarray] = []
         random_overalls: list[float] = []
         learned_overalls: list[float] = []
         per_task_arrays: dict[str, list[np.ndarray]] = {task: [] for task in TASKS}
@@ -1686,7 +1953,6 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                     differences.append(learned_score - random_score)
                 array = np.asarray(differences, dtype=np.float64)
                 per_task_arrays[task].append(array)
-                overall_bootstrap_arrays.append(array)
             for category, category_tasks in CATEGORIES.items():
                 per_category_seed_differences[category].append(
                     macro_average(learned_task_means, category_tasks)
@@ -1696,8 +1962,11 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
         random_mean = statistics.fmean(random_overalls)
         learned_mean = statistics.fmean(learned_overalls)
         overall_difference = learned_mean - random_mean
-        overall_low, overall_high = bootstrap_ci(
-            overall_bootstrap_arrays,
+        stacked_task_arrays = {
+            task: np.stack(per_task_arrays[task], axis=0) for task in TASKS
+        }
+        overall_low, overall_high = paired_task_bootstrap_ci(
+            [stacked_task_arrays[task] for task in TASKS],
             samples=args.bootstrap_samples,
             seed=20260814 + bit,
         )
@@ -1711,8 +1980,8 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 task_means_by_condition[Condition("learned", bit, seed).condition_id][task]
                 for seed in SEEDS
             ]
-            low, high = bootstrap_ci(
-                per_task_arrays[task],
+            low, high = paired_task_bootstrap_ci(
+                [stacked_task_arrays[task]],
                 samples=args.bootstrap_samples,
                 seed=20260814 + bit * 100 + TASKS.index(task),
             )
@@ -1774,13 +2043,30 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 }
             )
 
+        bit_pairs = [row for row in paired_rows if int(row["bit_width"]) == bit]
+        long_context_differences = [
+            float(row["difference"])
+            for row in bit_pairs
+            if row["length_bucket"] == "8k+"
+        ]
+        long_context_difference = statistics.fmean(long_context_differences)
+        positive_task_count = sum(
+            float(row["difference"]) > 0
+            for row in task_paired_rows
+            if int(row["bit_width"]) == bit
+        )
+        positive_category_count = sum(
+            float(row["learned_minus_random"]) > 0
+            for row in category_rows
+            if int(row["bit_width"]) == bit
+        )
         verdict = verdict_for_bit(
             overall_difference,
             seed_differences,
             overall_low,
             repeated_large_category_regression,
+            long_context_difference,
         )
-        bit_pairs = [row for row in paired_rows if int(row["bit_width"]) == bit]
         wins = sum(float(row["difference"]) > 0 for row in bit_pairs)
         ties = sum(float(row["difference"]) == 0 for row in bit_pairs)
         losses = len(bit_pairs) - wins - ties
@@ -1795,12 +2081,34 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 "confidence_interval_low": overall_low,
                 "confidence_interval_high": overall_high,
                 "seed_wins": sum(value > 0 for value in seed_differences),
+                "positive_tasks": positive_task_count,
+                "positive_categories": positive_category_count,
+                "long_8k_learned_minus_random": long_context_difference,
                 "example_wins": wins,
                 "example_ties": ties,
                 "example_losses": losses,
                 "verdict": verdict,
             }
         )
+
+    combined_predictions: list[dict[str, Any]] = []
+    combined_scores: list[dict[str, Any]] = []
+    combined_task_rows: list[dict[str, Any]] = []
+    combined_category_rows: list[dict[str, Any]] = []
+    combined_length_rows: list[dict[str, Any]] = []
+    for condition in all_conditions():
+        condition_id = condition.condition_id
+        run_dir = run_directory(args.output_dir, "full", condition)
+        combined_predictions.extend(predictions_by_condition[condition_id])
+        combined_scores.extend(scores_by_condition[condition_id])
+        combined_task_rows.extend(read_csv(run_dir / "task_summary.csv"))
+        combined_category_rows.extend(read_csv(run_dir / "category_summary.csv"))
+        combined_length_rows.extend(read_csv(run_dir / "length_summary.csv"))
+    write_jsonl(args.output_dir / "predictions.jsonl", combined_predictions)
+    write_csv(args.output_dir / "scores.csv", combined_scores)
+    write_csv(args.output_dir / "task_summary.csv", combined_task_rows)
+    write_csv(args.output_dir / "category_summary.csv", combined_category_rows)
+    write_csv(args.output_dir / "length_summary.csv", combined_length_rows)
 
     write_csv(args.output_dir / "paired_comparison.csv", paired_rows)
     write_csv(args.output_dir / "seed_summary.csv", seed_rows)
@@ -1821,7 +2129,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 )
                 write_csv(run_dir / "paired_comparison.csv", rows)
 
-    length_rows: list[dict[str, Any]] = []
+    length_paired_rows: list[dict[str, Any]] = []
     for bit in BITS:
         for bucket in ("0-4k", "4-8k", "8k+"):
             for method in ("random", "learned"):
@@ -1831,7 +2139,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                     if int(row["bit_width"]) == bit
                     and row["length_bucket"] == bucket
                 ]
-                length_rows.append(
+                length_paired_rows.append(
                     {
                         "bit_width": bit,
                         "method": method,
@@ -1840,7 +2148,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                         "mean_score": statistics.fmean(values) if values else math.nan,
                     }
                 )
-    write_csv(args.output_dir / "length_summary.csv", length_rows)
+    write_csv(args.output_dir / "length_paired_summary.csv", length_paired_rows)
 
     system_summary_rows: list[dict[str, Any]] = []
     for condition in all_conditions():
@@ -1870,12 +2178,13 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 "empty_outputs": sum(not str(row["prediction"]).strip() for row in rows),
             }
         )
+    write_csv(args.output_dir / "system_metrics.csv", system_summary_rows)
     write_csv(args.output_dir / "system_summary.csv", system_summary_rows)
     write_plots(args.output_dir, overall_rows, category_rows, seed_rows)
 
     overall_table = markdown_table(
         (
-            "Bits",
+            "Key bits",
             "FP16",
             "Identity",
             "Random mean",
@@ -1883,6 +2192,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
             "Learned vs Random",
             "95% CI",
             "Seed wins",
+            "8k+ difference",
             "Verdict",
         ),
         [
@@ -1895,13 +2205,14 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
                 f"{row['learned_minus_random']:+.3f}",
                 f"[{row['confidence_interval_low']:+.3f}, {row['confidence_interval_high']:+.3f}]",
                 f"{row['seed_wins']}/3",
+                f"{row['long_8k_learned_minus_random']:+.3f}",
                 str(row["verdict"]),
             )
             for row in overall_rows
         ],
     )
     category_table = markdown_table(
-        ("Bits", "Method", *CATEGORIES.keys(), "Average"),
+        ("Key bits", "Method", *CATEGORIES.keys(), "Average"),
         [
             (
                 str(bit),
@@ -1922,7 +2233,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
         ],
     )
     task_table = markdown_table(
-        ("Bits", "Task", "Random mean", "Learned mean", "Difference", "95% CI", "Wins"),
+        ("Key bits", "Task", "Random mean", "Learned mean", "Difference", "95% CI", "Wins"),
         [
             (
                 str(row["bit_width"]),
@@ -1938,7 +2249,7 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
     )
     report = "\n".join(
         [
-            "# Head-wise learned rotation: LongBench-E",
+            "# Head-wise learned rotation: LongBench-E 195-example subset",
             "",
             f"Generated: {utc_now()}",
             "",
@@ -1965,9 +2276,11 @@ def analyze_full_study(args: argparse.Namespace) -> dict[str, Any]:
             f"- Model revision: `{assets['model']['revision']}`.",
             f"- LongBench commit: `{assets['longbench']['commit']}`.",
             f"- LongBench dataset revision: `{assets['longbench']['dataset_revision']}`.",
+            f"- Subset seed: `{manifest['sampling_seed']}`; exactly 5 examples per "
+            "task and length interval.",
             f"- Evaluated examples per condition: {expected_count:,} across 13 tasks.",
-            "- All model conditions use BF16 model/cache tensors; `fp16` denotes "
-            "the unquantized 16-bit KV baseline.",
+            "- Precision labels are K16/V16, K2/V16, K3/V16, and K4/V16. Values "
+            "remain BF16 in every condition.",
             "- Quantized conditions emulate packed key-cache quality by "
             "quantizing and reconstructing every pre-RoPE key before BF16 cache "
             "storage. Values remain BF16. Reported KV bytes/token are theoretical; "
@@ -2059,21 +2372,52 @@ def run_child(args: argparse.Namespace, stage: str, condition: Condition | None)
 def write_study_config(
     args: argparse.Namespace, assets: dict[str, Any], status: str, **updates: Any
 ) -> None:
+    manifest = ensure_subset_manifest(
+        args.output_dir,
+        args.data_dir,
+        dataset_revision=args.dataset_revision,
+        data_hashes=assets["longbench"]["data_hashes"],
+    )
     path = args.output_dir / "study_config.json"
     existing = read_json(path, {})
     payload = {
         "created_at": existing.get("created_at", utc_now()),
         "updated_at": utc_now(),
         "status": status,
-        "specification": str((Path.cwd().parent / "LongBench.md").resolve()),
+        "specification": assets["specification"],
+        "subset_manifest": {
+            "path": str((args.output_dir / "subset_manifest.json").resolve()),
+            "sha256": sha256_json(manifest),
+            "sampling_seed": int(manifest["sampling_seed"]),
+            "example_count": int(manifest["example_count"]),
+            "samples_per_task": int(manifest["samples_per_task"]),
+            "samples_per_length_bucket": int(
+                manifest["samples_per_length_bucket"]
+            ),
+        },
         "model": assets["model"],
         "rotation_artifact_hashes": assets["rotation_artifact_hashes"],
         "codebook_hashes": assets["codebook_hashes"],
         "implementation_hashes": assets["implementation_hashes"],
         "longbench": assets["longbench"],
         "conditions": [condition.condition_id for condition in all_conditions()],
+        "condition_matrix": [
+            {
+                "condition_id": condition.condition_id,
+                "method": condition.method,
+                "key_bit_width": (
+                    16 if condition.method == "fp16" else condition.bit_width
+                ),
+                "value_bit_width": 16,
+                "seed": condition.seed,
+            }
+            for condition in all_conditions()
+        ],
         "condition_count": len(all_conditions()),
-        "execution_order": "each condition smoke then full; Random/Learned paired adjacently",
+        "execution_order": (
+            "all 22 condition smoke tests first; then FP16 and, for each key "
+            "width, Identity followed by adjacent Random/Learned seed pairs"
+        ),
         "batch_size": args.batch_size,
         "batch_token_budget": args.batch_token_budget,
         "bootstrap_samples": args.bootstrap_samples,
@@ -2089,6 +2433,7 @@ def orchestrate(args: argparse.Namespace) -> None:
     try:
         for condition in all_conditions():
             run_child(args, "smoke", condition)
+        for condition in all_conditions():
             run_child(args, "full", condition)
         run_child(args, "report", None)
     except BaseException as error:
@@ -2120,6 +2465,12 @@ def main(argv: Sequence[str] | None = None) -> None:
     if args.stage == "validate":
         assets = validate_assets(args, deep=True)
         args.output_dir.mkdir(parents=True, exist_ok=True)
+        manifest = ensure_subset_manifest(
+            args.output_dir,
+            args.data_dir,
+            dataset_revision=args.dataset_revision,
+            data_hashes=assets["longbench"]["data_hashes"],
+        )
         write_study_config(args, assets, "validated")
         print(
             json.dumps(
@@ -2127,9 +2478,7 @@ def main(argv: Sequence[str] | None = None) -> None:
                     "model_revision": assets["model"]["revision"],
                     "longbench_commit": assets["longbench"]["commit"],
                     "dataset_revision": assets["longbench"]["dataset_revision"],
-                    "examples_per_condition": sum(
-                        assets["longbench"]["data_counts"].values()
-                    ),
+                    "examples_per_condition": int(manifest["example_count"]),
                     "conditions": len(all_conditions()),
                 },
                 indent=2,

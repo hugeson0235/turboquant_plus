@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+identity_K2_V16,identity,2,,qasper,Single QA,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,hotpotqa,Multi QA,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,2wikimqa,Multi QA,1,18.18181818181818,18.18,0.0
+identity_K2_V16,identity,2,,gov_report,Summarization,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,multi_news,Summarization,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,trec,Few-shot,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,triviaqa,Few-shot,1,8.695652173913041,8.7,0.0
+identity_K2_V16,identity,2,,samsum,Few-shot,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,passage_count,Synthetic,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,passage_retrieval_en,Synthetic,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,lcc,Code,1,0.0,0.0,0.0
+identity_K2_V16,identity,2,,repobench-p,Code,1,33.0,33.0,0.0

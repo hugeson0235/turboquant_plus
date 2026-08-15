@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+random_K2_V16_s17,random,2,17,qasper,Single QA,7,1bd9a082bd7b5ab6c152dbda3db38c0c3bc92cddf82383a3,2720,0-4k,30.0
+random_K2_V16_s17,random,2,17,multifieldqa_en,Single QA,11,94ccf4d54b36e7e9d4aa594a7bc426528630a5b8aff296a4,3422,0-4k,100.0
+random_K2_V16_s17,random,2,17,hotpotqa,Multi QA,0,1dae9ec530a93f43f85bd215a5c0e6737dbcf226cd3541d8,3745,0-4k,0.0
+random_K2_V16_s17,random,2,17,2wikimqa,Multi QA,21,0bc3341fffaad3e92d14d64b539df741528ef4e2b76e9632,1529,0-4k,29.629629629629633
+random_K2_V16_s17,random,2,17,gov_report,Summarization,54,a3a11ee5de13be1f6ab405e8e1b29f2cd07929fe9112561a,3679,0-4k,29.875518265310514
+random_K2_V16_s17,random,2,17,multi_news,Summarization,0,3cfe6d5139ea2e17d17b9c8d040c015c3db4936578091cf6,951,0-4k,20.281689649609213
+random_K2_V16_s17,random,2,17,trec,Few-shot,49,7dfc677d5d152f68d56844b67c26eae5ade79afb3e99f801,3725,0-4k,0.0
+random_K2_V16_s17,random,2,17,triviaqa,Few-shot,25,37a77de08c5dc62fc4b4d08ab6066e178e82d32387ce084f,3179,0-4k,0.0
+random_K2_V16_s17,random,2,17,samsum,Few-shot,19,0bf52d18ccff2e111ad516892321685343c9dac7140bdef0,3439,0-4k,31.37254851980008
+random_K2_V16_s17,random,2,17,passage_count,Synthetic,22,288f4e37f101d146d77c62f996e4e9570b2771c27bc81979,2375,0-4k,0.0
+random_K2_V16_s17,random,2,17,passage_retrieval_en,Synthetic,0,f363b5cfe63d7095514d7273aaa2e31dbfa73f10a71fd7d8,3446,0-4k,100.0
+random_K2_V16_s17,random,2,17,lcc,Code,42,94f103d8d6177a4ab0d0ed90f9dbd86d375978f8e3f81181,386,0-4k,28.999999999999996
+random_K2_V16_s17,random,2,17,repobench-p,Code,1,4d2668d05f3f636a1bb6b0389a03b382f3f3e06b19dec51d,2012,0-4k,33.0

@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+learned_K4_V16_s43,learned,4,43,Single QA,2,61.53846153846154
+learned_K4_V16_s43,learned,4,43,Multi QA,2,0.0
+learned_K4_V16_s43,learned,4,43,Summarization,2,27.11604588077762
+learned_K4_V16_s43,learned,4,43,Few-shot,3,46.96969680612947
+learned_K4_V16_s43,learned,4,43,Synthetic,2,50.0
+learned_K4_V16_s43,learned,4,43,Code,2,47.5

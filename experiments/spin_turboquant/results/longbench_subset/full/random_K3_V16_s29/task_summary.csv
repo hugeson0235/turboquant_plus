@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+random_K3_V16_s29,random,3,29,qasper,Single QA,15,59.89557601647934,59.9,38.358731981467905
+random_K3_V16_s29,random,3,29,multifieldqa_en,Single QA,15,37.66559845067181,37.67,27.597390369179756
+random_K3_V16_s29,random,3,29,hotpotqa,Multi QA,15,38.37037037037037,38.37,41.06777829717743
+random_K3_V16_s29,random,3,29,2wikimqa,Multi QA,15,42.807017543859644,42.81,47.18743853173439
+random_K3_V16_s29,random,3,29,gov_report,Summarization,15,33.97118193202127,33.97,3.6634207078142227
+random_K3_V16_s29,random,3,29,multi_news,Summarization,15,22.69543471134809,22.7,5.626243364140563
+random_K3_V16_s29,random,3,29,trec,Few-shot,15,73.33333333333333,73.33,44.22166387140533
+random_K3_V16_s29,random,3,29,triviaqa,Few-shot,15,89.75468975468975,89.75,23.612548281376053
+random_K3_V16_s29,random,3,29,samsum,Few-shot,15,50.557665494031006,50.56,18.200153790987393
+random_K3_V16_s29,random,3,29,passage_count,Synthetic,15,27.619047619047617,27.62,43.78881498122914
+random_K3_V16_s29,random,3,29,passage_retrieval_en,Synthetic,15,93.33333333333333,93.33,24.94438257849294
+random_K3_V16_s29,random,3,29,lcc,Code,15,76.6,76.6,25.48149655468977
+random_K3_V16_s29,random,3,29,repobench-p,Code,15,69.73333333333333,69.73,26.284258068703828

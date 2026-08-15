@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+identity_K3_V16,identity,3,,qasper,Single QA,15,4.074315472856651,4.07,5.559317538380944
+identity_K3_V16,identity,3,,multifieldqa_en,Single QA,15,20.303470192904637,20.3,23.23687358724767
+identity_K3_V16,identity,3,,hotpotqa,Multi QA,15,5.373119408207128,5.37,6.930574686498543
+identity_K3_V16,identity,3,,2wikimqa,Multi QA,15,4.212121212121213,4.21,8.52231985558186
+identity_K3_V16,identity,3,,gov_report,Summarization,15,13.093958031639035,13.09,10.789684809730602
+identity_K3_V16,identity,3,,multi_news,Summarization,15,9.196007555224105,9.2,7.54980852844619
+identity_K3_V16,identity,3,,trec,Few-shot,15,40.0,40.0,48.98979485566356
+identity_K3_V16,identity,3,,triviaqa,Few-shot,15,18.087301587301585,18.09,29.771187970199755
+identity_K3_V16,identity,3,,samsum,Few-shot,15,25.168354466120334,25.17,14.881509530256071
+identity_K3_V16,identity,3,,passage_count,Synthetic,15,0.0,0.0,0.0
+identity_K3_V16,identity,3,,passage_retrieval_en,Synthetic,15,10.0,10.0,20.0
+identity_K3_V16,identity,3,,lcc,Code,15,13.133333333333333,13.13,17.204133870155225
+identity_K3_V16,identity,3,,repobench-p,Code,15,15.933333333333334,15.93,15.13259910113116

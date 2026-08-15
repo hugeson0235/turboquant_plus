@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+fp16_K16_V16,fp16,,,0-4k,13,65,61.36144551699405
+fp16_K16_V16,fp16,,,4-8k,13,65,55.35792136782071
+fp16_K16_V16,fp16,,,8k+,13,65,54.53608723067006

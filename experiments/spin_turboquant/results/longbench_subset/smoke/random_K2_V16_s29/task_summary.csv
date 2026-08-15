@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+random_K2_V16_s29,random,2,29,qasper,Single QA,1,25.0,25.0,0.0
+random_K2_V16_s29,random,2,29,multifieldqa_en,Single QA,1,100.0,100.0,0.0
+random_K2_V16_s29,random,2,29,hotpotqa,Multi QA,1,66.66666666666666,66.67,0.0
+random_K2_V16_s29,random,2,29,2wikimqa,Multi QA,1,0.0,0.0,0.0
+random_K2_V16_s29,random,2,29,gov_report,Summarization,1,27.79922735435519,27.8,0.0
+random_K2_V16_s29,random,2,29,multi_news,Summarization,1,17.751478807867386,17.75,0.0
+random_K2_V16_s29,random,2,29,trec,Few-shot,1,0.0,0.0,0.0
+random_K2_V16_s29,random,2,29,triviaqa,Few-shot,1,100.0,100.0,0.0
+random_K2_V16_s29,random,2,29,samsum,Few-shot,1,43.24324280496713,43.24,0.0
+random_K2_V16_s29,random,2,29,passage_count,Synthetic,1,0.0,0.0,0.0
+random_K2_V16_s29,random,2,29,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+random_K2_V16_s29,random,2,29,lcc,Code,1,47.0,47.0,0.0
+random_K2_V16_s29,random,2,29,repobench-p,Code,1,62.0,62.0,0.0

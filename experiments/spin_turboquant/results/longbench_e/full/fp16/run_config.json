@@ -1,5 +1,5 @@
 {
-  "completed_predictions": 1489,
+  "completed_predictions": 1519,
   "created_at": "2026-08-14T03:29:40.887910+00:00",
   "environment": {
     "Levenshtein": "0.26.1",
@@ -44,25 +44,17 @@
     },
     "jieba": "0.42.1",
     "numpy": "1.26.4",
-    "platform": "Linux-5.15.0-133-generic-x86_64-with-glibc2.35",
+    "platform": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
     "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
     "rouge": "1.0.1",
-    "timestamp": "2026-08-14T03:29:40.762574+00:00",
+    "timestamp": "2026-08-14T09:25:42.011264+00:00",
     "torch": "2.5.1+cu121",
     "transformers": "4.45.2",
-    "turboquant_plus_commit": "9e87e5b316a629ea003900571c38ed41b40e8d97",
+    "turboquant_plus_commit": "22b45a9d869a64686c4e06bfe4db922e5cd0db55",
     "turboquant_plus_status": [
-      "M experiments/spin_turboquant/README.md",
-      " M experiments/spin_turboquant/environment.yml",
-      "?? experiments/spin_turboquant/longbench.py",
-      "?? experiments/spin_turboquant/results/instruct/",
-      "?? experiments/spin_turboquant/results/longbench_e/",
-      "?? experiments/spin_turboquant/results/longbench_e_batch1_probe/",
-      "?? experiments/spin_turboquant/results/longbench_e_compacted_batch_probe/",
-      "?? experiments/spin_turboquant/results/longbench_e_fixed_batch_probe/",
-      "?? experiments/spin_turboquant/results/longbench_e_pre_hash_probe/",
-      "?? experiments/spin_turboquant/results/longbench_e_static_cache_probe/",
-      "?? tests/test_spin_turboquant_longbench.py"
+      "M experiments/spin_turboquant/results/longbench_e/orchestrator.log",
+      " M experiments/spin_turboquant/results/longbench_e/smoke/fp16/run_config.json",
+      " M experiments/spin_turboquant/results/longbench_e/study_config.json"
     ]
   },
   "expected_predictions": 3668,
@@ -241,5 +233,5 @@
   },
   "protocol_sha256": "ae5a526e0be8bb159f4a6b7e5b45ac5d7e06dbdb712c7341a45c158ebce8d787",
   "status": "running",
-  "updated_at": "2026-08-14T07:18:29.074317+00:00"
+  "updated_at": "2026-08-14T09:50:52.159806+00:00"
 }

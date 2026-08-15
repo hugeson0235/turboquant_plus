@@ -1,0 +1,133 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+fp16_K16_V16,fp16,,,Single QA,2,53.01906170874707
+fp16_K16_V16,fp16,,,Multi QA,2,53.44444444444444
+fp16_K16_V16,fp16,,,Summarization,2,28.40135417549732
+fp16_K16_V16,fp16,,,Few-shot,3,73.25908239212997
+fp16_K16_V16,fp16,,,Synthetic,2,56.666666666666664
+fp16_K16_V16,fp16,,,Code,2,69.63333333333333
+identity_K2_V16,identity,2,,Single QA,2,2.7378536108263294
+identity_K2_V16,identity,2,,Multi QA,2,1.9114351535404168
+identity_K2_V16,identity,2,,Summarization,2,1.5593088241025983
+identity_K2_V16,identity,2,,Few-shot,3,8.027428007286327
+identity_K2_V16,identity,2,,Synthetic,2,6.0
+identity_K2_V16,identity,2,,Code,2,22.733333333333334
+random_K2_V16_s17,random,2,17,Single QA,2,24.28387917010344
+random_K2_V16_s17,random,2,17,Multi QA,2,29.14320987654321
+random_K2_V16_s17,random,2,17,Summarization,2,26.81773192880004
+random_K2_V16_s17,random,2,17,Few-shot,3,69.28253284170593
+random_K2_V16_s17,random,2,17,Synthetic,2,36.666666666666664
+random_K2_V16_s17,random,2,17,Code,2,48.9
+learned_K2_V16_s17,learned,2,17,Single QA,2,41.89602244957585
+learned_K2_V16_s17,learned,2,17,Multi QA,2,37.62962962962963
+learned_K2_V16_s17,learned,2,17,Summarization,2,26.711131205389385
+learned_K2_V16_s17,learned,2,17,Few-shot,3,64.911867440979
+learned_K2_V16_s17,learned,2,17,Synthetic,2,51.666666666666664
+learned_K2_V16_s17,learned,2,17,Code,2,67.56666666666666
+random_K2_V16_s29,random,2,29,Single QA,2,39.364827006175105
+random_K2_V16_s29,random,2,29,Multi QA,2,21.386939571150094
+random_K2_V16_s29,random,2,29,Summarization,2,25.24515452360192
+random_K2_V16_s29,random,2,29,Few-shot,3,66.03000793034973
+random_K2_V16_s29,random,2,29,Synthetic,2,31.666666666666668
+random_K2_V16_s29,random,2,29,Code,2,53.03333333333333
+learned_K2_V16_s29,learned,2,29,Single QA,2,40.985328640879175
+learned_K2_V16_s29,learned,2,29,Multi QA,2,30.22027290448343
+learned_K2_V16_s29,learned,2,29,Summarization,2,27.115231258024842
+learned_K2_V16_s29,learned,2,29,Few-shot,3,66.32032467586977
+learned_K2_V16_s29,learned,2,29,Synthetic,2,52.98611111111111
+learned_K2_V16_s29,learned,2,29,Code,2,54.53333333333333
+random_K2_V16_s43,random,2,43,Single QA,2,38.34306652519227
+random_K2_V16_s43,random,2,43,Multi QA,2,36.18518518518518
+random_K2_V16_s43,random,2,43,Summarization,2,26.691942179934937
+random_K2_V16_s43,random,2,43,Few-shot,3,62.49101989784774
+random_K2_V16_s43,random,2,43,Synthetic,2,36.666666666666664
+random_K2_V16_s43,random,2,43,Code,2,48.766666666666666
+learned_K2_V16_s43,learned,2,43,Single QA,2,43.27549088203645
+learned_K2_V16_s43,learned,2,43,Multi QA,2,41.25661375661375
+learned_K2_V16_s43,learned,2,43,Summarization,2,27.054708505081535
+learned_K2_V16_s43,learned,2,43,Few-shot,3,68.1448002403444
+learned_K2_V16_s43,learned,2,43,Synthetic,2,46.666666666666664
+learned_K2_V16_s43,learned,2,43,Code,2,47.63333333333333
+identity_K3_V16,identity,3,,Single QA,2,12.188892832880644
+identity_K3_V16,identity,3,,Multi QA,2,4.79262031016417
+identity_K3_V16,identity,3,,Summarization,2,11.14498279343157
+identity_K3_V16,identity,3,,Few-shot,3,27.75188535114064
+identity_K3_V16,identity,3,,Synthetic,2,5.0
+identity_K3_V16,identity,3,,Code,2,14.533333333333333
+random_K3_V16_s17,random,3,17,Single QA,2,46.77315202875016
+random_K3_V16_s17,random,3,17,Multi QA,2,40.25730994152047
+random_K3_V16_s17,random,3,17,Summarization,2,28.77707149532966
+random_K3_V16_s17,random,3,17,Few-shot,3,70.694914674906
+random_K3_V16_s17,random,3,17,Synthetic,2,51.666666666666664
+random_K3_V16_s17,random,3,17,Code,2,65.6
+learned_K3_V16_s17,learned,3,17,Single QA,2,42.92249397807235
+learned_K3_V16_s17,learned,3,17,Multi QA,2,41.534188034188034
+learned_K3_V16_s17,learned,3,17,Summarization,2,28.59843690678553
+learned_K3_V16_s17,learned,3,17,Few-shot,3,73.86134137993727
+learned_K3_V16_s17,learned,3,17,Synthetic,2,51.666666666666664
+learned_K3_V16_s17,learned,3,17,Code,2,70.53333333333333
+random_K3_V16_s29,random,3,29,Single QA,2,48.780587233575574
+random_K3_V16_s29,random,3,29,Multi QA,2,40.588693957115005
+random_K3_V16_s29,random,3,29,Summarization,2,28.333308321684676
+random_K3_V16_s29,random,3,29,Few-shot,3,71.21522952735135
+random_K3_V16_s29,random,3,29,Synthetic,2,60.476190476190474
+random_K3_V16_s29,random,3,29,Code,2,73.16666666666666
+learned_K3_V16_s29,learned,3,29,Single QA,2,48.79915355947608
+learned_K3_V16_s29,learned,3,29,Multi QA,2,45.074074074074076
+learned_K3_V16_s29,learned,3,29,Summarization,2,27.757782300201825
+learned_K3_V16_s29,learned,3,29,Few-shot,3,71.29553458180908
+learned_K3_V16_s29,learned,3,29,Synthetic,2,54.58333333333333
+learned_K3_V16_s29,learned,3,29,Code,2,73.5
+random_K3_V16_s43,random,3,43,Single QA,2,42.117855360347946
+random_K3_V16_s43,random,3,43,Multi QA,2,37.96296296296296
+random_K3_V16_s43,random,3,43,Summarization,2,27.69199204899615
+random_K3_V16_s43,random,3,43,Few-shot,3,75.28742094102557
+random_K3_V16_s43,random,3,43,Synthetic,2,53.33333333333333
+random_K3_V16_s43,random,3,43,Code,2,72.96666666666667
+learned_K3_V16_s43,learned,3,43,Single QA,2,44.599073705055574
+learned_K3_V16_s43,learned,3,43,Multi QA,2,37.590643274853804
+learned_K3_V16_s43,learned,3,43,Summarization,2,28.734494343164272
+learned_K3_V16_s43,learned,3,43,Few-shot,3,71.64995110452882
+learned_K3_V16_s43,learned,3,43,Synthetic,2,57.083333333333336
+learned_K3_V16_s43,learned,3,43,Code,2,69.8
+identity_K4_V16,identity,4,,Single QA,2,25.810143742240186
+identity_K4_V16,identity,4,,Multi QA,2,6.226323281122042
+identity_K4_V16,identity,4,,Summarization,2,23.51749516299777
+identity_K4_V16,identity,4,,Few-shot,3,59.1628585304752
+identity_K4_V16,identity,4,,Synthetic,2,7.986111111111111
+identity_K4_V16,identity,4,,Code,2,39.8
+random_K4_V16_s17,random,4,17,Single QA,2,44.508413047814585
+random_K4_V16_s17,random,4,17,Multi QA,2,42.888888888888886
+random_K4_V16_s17,random,4,17,Summarization,2,28.411884136829435
+random_K4_V16_s17,random,4,17,Few-shot,3,70.83534879220572
+random_K4_V16_s17,random,4,17,Synthetic,2,62.222222222222214
+random_K4_V16_s17,random,4,17,Code,2,67.86666666666667
+learned_K4_V16_s17,learned,4,17,Single QA,2,52.22745291513482
+learned_K4_V16_s17,learned,4,17,Multi QA,2,43.30033416875523
+learned_K4_V16_s17,learned,4,17,Summarization,2,28.873382410160225
+learned_K4_V16_s17,learned,4,17,Few-shot,3,72.63755984449911
+learned_K4_V16_s17,learned,4,17,Synthetic,2,50.0
+learned_K4_V16_s17,learned,4,17,Code,2,65.2
+random_K4_V16_s29,random,4,29,Single QA,2,50.05557091115306
+random_K4_V16_s29,random,4,29,Multi QA,2,45.61764705882353
+random_K4_V16_s29,random,4,29,Summarization,2,28.52193443065515
+random_K4_V16_s29,random,4,29,Few-shot,3,73.2283764715793
+random_K4_V16_s29,random,4,29,Synthetic,2,56.666666666666664
+random_K4_V16_s29,random,4,29,Code,2,68.13333333333333
+learned_K4_V16_s29,learned,4,29,Single QA,2,53.05787512132503
+learned_K4_V16_s29,learned,4,29,Multi QA,2,37.590643274853804
+learned_K4_V16_s29,learned,4,29,Summarization,2,28.260977221864483
+learned_K4_V16_s29,learned,4,29,Few-shot,3,72.77414334861125
+learned_K4_V16_s29,learned,4,29,Synthetic,2,57.77777777777777
+learned_K4_V16_s29,learned,4,29,Code,2,69.9
+random_K4_V16_s43,random,4,43,Single QA,2,47.35946296533483
+random_K4_V16_s43,random,4,43,Multi QA,2,43.51851851851852
+random_K4_V16_s43,random,4,43,Summarization,2,28.11599299522678
+random_K4_V16_s43,random,4,43,Few-shot,3,73.05581151566383
+random_K4_V16_s43,random,4,43,Synthetic,2,58.33333333333333
+random_K4_V16_s43,random,4,43,Code,2,67.9
+learned_K4_V16_s43,learned,4,43,Single QA,2,47.45572992660735
+learned_K4_V16_s43,learned,4,43,Multi QA,2,46.92397660818713
+learned_K4_V16_s43,learned,4,43,Summarization,2,28.267745145841523
+learned_K4_V16_s43,learned,4,43,Few-shot,3,73.68615230539488
+learned_K4_V16_s43,learned,4,43,Synthetic,2,55.0
+learned_K4_V16_s43,learned,4,43,Code,2,69.23333333333333

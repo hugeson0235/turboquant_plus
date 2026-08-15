@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+fp16_K16_V16,fp16,,,Single QA,2,98.0
+fp16_K16_V16,fp16,,,Multi QA,2,33.33333333333333
+fp16_K16_V16,fp16,,,Summarization,2,26.20235501320668
+fp16_K16_V16,fp16,,,Few-shot,3,49.99999983362269
+fp16_K16_V16,fp16,,,Synthetic,2,50.0
+fp16_K16_V16,fp16,,,Code,2,69.0

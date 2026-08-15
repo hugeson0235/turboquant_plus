@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+random_K3_V16_s43,random,3,43,qasper,Single QA,1,96.00000000000001,96.0,0.0
+random_K3_V16_s43,random,3,43,multifieldqa_en,Single QA,1,80.0,80.0,0.0
+random_K3_V16_s43,random,3,43,hotpotqa,Multi QA,1,0.0,0.0,0.0
+random_K3_V16_s43,random,3,43,2wikimqa,Multi QA,1,0.0,0.0,0.0
+random_K3_V16_s43,random,3,43,gov_report,Summarization,1,27.50929322020841,27.51,0.0
+random_K3_V16_s43,random,3,43,multi_news,Summarization,1,25.123152209408143,25.12,0.0
+random_K3_V16_s43,random,3,43,trec,Few-shot,1,0.0,0.0,0.0
+random_K3_V16_s43,random,3,43,triviaqa,Few-shot,1,100.0,100.0,0.0
+random_K3_V16_s43,random,3,43,samsum,Few-shot,1,55.55555505829904,55.56,0.0
+random_K3_V16_s43,random,3,43,passage_count,Synthetic,1,0.0,0.0,0.0
+random_K3_V16_s43,random,3,43,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+random_K3_V16_s43,random,3,43,lcc,Code,1,64.0,64.0,0.0
+random_K3_V16_s43,random,3,43,repobench-p,Code,1,35.0,35.0,0.0

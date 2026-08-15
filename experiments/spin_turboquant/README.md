@@ -64,12 +64,14 @@ Run the focused tests with:
 conda run -n stq python -m pytest tests/test_spin_turboquant.py -q
 ```
 
-## LongBench-E downstream experiment
+## LongBench-E subset downstream experiment
 
-`../../../LongBench.md` is implemented by the resumable LongBench runner. It
-pins the official LongBench code and dataset revisions, performs one smoke
-example per task, and then runs all 22 conditions in separate processes before
-building the paired bootstrap report.
+`../../../LongBenchSubset.md` is implemented by the resumable LongBench runner.
+It pins the official LongBench code and dataset revisions, writes one immutable
+`subset_manifest.json` using sampling seed `20020305`, selects 5 examples from
+each of the 3 length intervals for every task (195 examples per condition),
+performs one smoke example per task, and then runs all 22 conditions in the
+specified paired order before building the paired bootstrap report.
 
 The rotation directory must have been produced from the exact same model
 snapshot. For the Instruct checkpoint used by LongBench, first create its
@@ -84,13 +86,14 @@ python -m experiments.spin_turboquant.longbench \
   --rotation-dir experiments/spin_turboquant/results/instruct \
   --longbench-repo ../LongBench_official \
   --data-dir ../LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data \
-  --output-dir experiments/spin_turboquant/results/longbench_e
+  --output-dir experiments/spin_turboquant/results/longbench_subset
 ```
 
 Each completed condition contains `run_config.json`, `predictions.jsonl`,
 `scores.csv`, `task_summary.csv`, `category_summary.csv`,
-`paired_comparison.csv`, `system_metrics.csv`, and `report.md`. The study root
-contains the final tables, plots, paired rows, bootstrap intervals, and verdicts.
+`length_summary.csv`, `paired_comparison.csv`, `system_metrics.csv`, and
+`report.md`. The study root contains combined copies of the required artifacts,
+the final tables, plots, paired rows, bootstrap intervals, and verdicts.
 Full runs use deterministic contiguous batches only for generation-heavy or
 fixed-cap tasks; variable-length QA remains batch size 1. Batch membership is
 fixed before resume filtering, and implementation, dataset, codebook, model,

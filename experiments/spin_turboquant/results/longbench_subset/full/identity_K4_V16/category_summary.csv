@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+identity_K4_V16,identity,4,,Single QA,2,25.810143742240186
+identity_K4_V16,identity,4,,Multi QA,2,6.226323281122042
+identity_K4_V16,identity,4,,Summarization,2,23.51749516299777
+identity_K4_V16,identity,4,,Few-shot,3,59.1628585304752
+identity_K4_V16,identity,4,,Synthetic,2,7.986111111111111
+identity_K4_V16,identity,4,,Code,2,39.8

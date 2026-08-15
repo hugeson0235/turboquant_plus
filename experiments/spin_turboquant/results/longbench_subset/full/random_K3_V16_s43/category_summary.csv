@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+random_K3_V16_s43,random,3,43,Single QA,2,42.117855360347946
+random_K3_V16_s43,random,3,43,Multi QA,2,37.96296296296296
+random_K3_V16_s43,random,3,43,Summarization,2,27.69199204899615
+random_K3_V16_s43,random,3,43,Few-shot,3,75.28742094102557
+random_K3_V16_s43,random,3,43,Synthetic,2,53.33333333333333
+random_K3_V16_s43,random,3,43,Code,2,72.96666666666667

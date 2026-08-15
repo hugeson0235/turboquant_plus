@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+learned_K4_V16_s17,learned,4,17,qasper,Single QA,1,81.81818181818183,81.82,0.0
+learned_K4_V16_s17,learned,4,17,multifieldqa_en,Single QA,1,100.0,100.0,0.0
+learned_K4_V16_s17,learned,4,17,hotpotqa,Multi QA,1,66.66666666666666,66.67,0.0
+learned_K4_V16_s17,learned,4,17,2wikimqa,Multi QA,1,42.10526315789474,42.11,0.0
+learned_K4_V16_s17,learned,4,17,gov_report,Summarization,1,26.24254430071658,26.24,0.0
+learned_K4_V16_s17,learned,4,17,multi_news,Summarization,1,23.589743090216974,23.59,0.0
+learned_K4_V16_s17,learned,4,17,trec,Few-shot,1,0.0,0.0,0.0
+learned_K4_V16_s17,learned,4,17,triviaqa,Few-shot,1,100.0,100.0,0.0
+learned_K4_V16_s17,learned,4,17,samsum,Few-shot,1,49.99999950073965,50.0,0.0
+learned_K4_V16_s17,learned,4,17,passage_count,Synthetic,1,0.0,0.0,0.0
+learned_K4_V16_s17,learned,4,17,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+learned_K4_V16_s17,learned,4,17,lcc,Code,1,64.0,64.0,0.0
+learned_K4_V16_s17,learned,4,17,repobench-p,Code,1,77.0,77.0,0.0

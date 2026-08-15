@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+learned_K4_V16_s17,learned,4,17,0-4k,13,65,57.43846111711068
+learned_K4_V16_s17,learned,4,17,4-8k,13,65,53.342365295563276
+learned_K4_V16_s17,learned,4,17,8k+,13,65,50.09187016923324
