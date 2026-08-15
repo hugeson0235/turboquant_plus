@@ -1,0 +1,18 @@
+{
+  "attention_kl": "mean KL(p_BF16 || p_quantized) over layers, GQA query heads, and query positions",
+  "attention_logits": "scaled QK.T/sqrt(128), causal positions only",
+  "attention_output": "values remain BF16; only attention probabilities differ",
+  "channel_metrics": "computed on normalized rotated Key z = k_hat @ R",
+  "generated_at": "2026-08-15T05:36:25.486875+00:00",
+  "heldout_manifest_sha256": "a4a6bc22394302ddde7657f359deac47e2d42d0423302931193860a3723c56ba",
+  "optional_tinystories_domain_shift": "not run; optional in specification",
+  "protocol_sha256": "66c75781cd52a9770ee54c1a43cc61c7c90300db8d4f4602af49e830c85ab6f9",
+  "rotation_artifact_hashes": {
+    "activation_k_pca_h": "f9c87cc37ff28fba7b612b570c42da93025556b79081c5ac6398c1199a0ec483",
+    "attention_q_pca_h": "0ab4331a5e4c4963557dd83e2dab6d04c03f941e1849057d2b16cd839d378439",
+    "wk_pca_h": "92387dedf970abee1eb965b27e7b7ec8f9823e3b676a61e8ae18f4b1556d5edd"
+  },
+  "sequences": 8,
+  "tokens_per_sequence": 512,
+  "total_tokens": 4096
+}

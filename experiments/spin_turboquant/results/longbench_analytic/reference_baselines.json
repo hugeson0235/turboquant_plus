@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "batch_size": true,
+    "batch_token_budget": true,
+    "codebook_k2": true,
+    "dataset_revision": true,
+    "greedy_decoding": true,
+    "key_quantization_scope": true,
+    "longbench_commit": true,
+    "manifest": true,
+    "max_generation_config": true,
+    "model_revision": true,
+    "norm_correction": true,
+    "prompt_config": true,
+    "shared_longbench_implementation": true,
+    "study_complete": true
+  },
+  "compatible": true,
+  "note": "reference only; no FP16/Identity/Random/Learned condition was rerun",
+  "reference_study_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset",
+  "scores": {
+    "fp16_K16_V16": 57.08515137182827,
+    "identity_K2_V16": 7.22816506657418,
+    "learned_K2_V16_three_seed_mean": 48.0134715664247,
+    "random_K2_V16_three_seed_mean": 42.044475742130324
+  },
+  "source_overall_summary_sha256": "adabdd87c48c2267963bded09f714c2cedb7f1384898fa8d1a2c0496bf0b3f18"
+}

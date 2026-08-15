@@ -1,0 +1,10 @@
+pair_id,length_bucket,tasks,examples,macro_difference
+activation_k_pca_h_minus_wk_pca_h,0-4k,13,65,-5.949630147975853
+activation_k_pca_h_minus_wk_pca_h,4-8k,13,65,0.6077822611903476
+activation_k_pca_h_minus_wk_pca_h,8k+,13,65,2.3953989958363584
+attention_q_pca_h_minus_wk_pca_h,0-4k,13,65,-3.8962106153326155
+attention_q_pca_h_minus_wk_pca_h,4-8k,13,65,2.8405122916868843
+attention_q_pca_h_minus_wk_pca_h,8k+,13,65,-0.2195251929000738
+attention_q_pca_h_minus_activation_k_pca_h,0-4k,13,65,2.053419532643238
+attention_q_pca_h_minus_activation_k_pca_h,4-8k,13,65,2.2327300304965365
+attention_q_pca_h_minus_activation_k_pca_h,8k+,13,65,-2.614924188736432

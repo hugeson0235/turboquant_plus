@@ -1,0 +1,4 @@
+pair_id,first_condition_id,second_condition_id,first_minus_second_macro_average,confidence_interval_low,confidence_interval_high,bootstrap_samples,bootstrap_seed,positive_tasks,example_wins,example_ties,example_losses
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,-0.9821496303163827,-5.693809602401921,3.5712146118093915,10000,20020305,5,55,77,63
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,-0.42507450551526854,-4.938098038345127,4.112486551315094,10000,20020306,7,60,82,53
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,0.5570751248011142,-4.350532771951551,5.420415180192643,10000,20020307,7,59,75,61

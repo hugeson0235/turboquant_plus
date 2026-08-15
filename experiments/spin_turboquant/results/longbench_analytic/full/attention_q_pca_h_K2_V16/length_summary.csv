@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,0-4k,13,65,49.23301958488244
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,4-8k,13,65,38.73734293996488
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,8k+,13,65,42.61430426602941

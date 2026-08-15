@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+wk_pca_h_K2_V16,wk_pca_h,2,,qasper,Single QA,1,28.571428571428577,28.57,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,multifieldqa_en,Single QA,1,80.0,80.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,hotpotqa,Multi QA,1,0.0,0.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,2wikimqa,Multi QA,1,100.0,100.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,gov_report,Summarization,1,24.101479520670104,24.1,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,multi_news,Summarization,1,27.586206398750434,27.59,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,trec,Few-shot,1,0.0,0.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,triviaqa,Few-shot,1,100.0,100.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,samsum,Few-shot,1,41.02564056541749,41.03,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,passage_count,Synthetic,1,0.0,0.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,passage_retrieval_en,Synthetic,1,0.0,0.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,lcc,Code,1,70.0,70.0,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,repobench-p,Code,1,33.0,33.0,0.0

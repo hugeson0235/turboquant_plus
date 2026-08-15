@@ -1,0 +1,480 @@
+[2026-08-15T05:37:02.333130+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage rotations --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset
+analytic rotation artifacts already complete
+[2026-08-15T05:37:07.532495+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage diagnostics --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset
+held-out diagnostics already complete
+[2026-08-15T05:37:12.474280+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition wk_pca_h_K2_V16
+[2026-08-15T05:37:18.289093+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  9.36it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 11.02it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 11.22it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T05:37:24.663649+00:00] smoke wk_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/13 padded_prompt_tokens=3606 seconds=1.487
+[2026-08-15T05:37:25.742938+00:00] smoke wk_pca_h_K2_V16 batch=2 multifieldqa_en_batch0000_examples11-11 size=1 completed=2/13 padded_prompt_tokens=4473 seconds=1.050
+[2026-08-15T05:37:27.020828+00:00] smoke wk_pca_h_K2_V16 batch=3 hotpotqa_batch0000_examples0-0 size=1 completed=3/13 padded_prompt_tokens=6122 seconds=1.264
+[2026-08-15T05:37:27.701070+00:00] smoke wk_pca_h_K2_V16 batch=4 2wikimqa_batch0000_examples21-21 size=1 completed=4/13 padded_prompt_tokens=2343 seconds=0.658
+[2026-08-15T05:37:44.927165+00:00] smoke wk_pca_h_K2_V16 batch=5 gov_report_batch0000_examples54-54 size=1 completed=5/13 padded_prompt_tokens=3962 seconds=17.200
+[2026-08-15T05:37:58.775415+00:00] smoke wk_pca_h_K2_V16 batch=6 multi_news_batch0000_examples0-0 size=1 completed=6/13 padded_prompt_tokens=1010 seconds=13.817
+[2026-08-15T05:38:02.589660+00:00] smoke wk_pca_h_K2_V16 batch=7 trec_batch0000_examples49-49 size=1 completed=7/13 padded_prompt_tokens=4917 seconds=3.788
+[2026-08-15T05:38:04.787087+00:00] smoke wk_pca_h_K2_V16 batch=8 triviaqa_batch0000_examples25-25 size=1 completed=8/13 padded_prompt_tokens=4393 seconds=2.172
+[2026-08-15T05:38:11.684711+00:00] smoke wk_pca_h_K2_V16 batch=9 samsum_batch0000_examples19-19 size=1 completed=9/13 padded_prompt_tokens=5127 seconds=6.870
+[2026-08-15T05:38:12.351876+00:00] smoke wk_pca_h_K2_V16 batch=10 passage_count_batch0000_examples22-22 size=1 completed=10/13 padded_prompt_tokens=3258 seconds=0.643
+[2026-08-15T05:38:13.351060+00:00] smoke wk_pca_h_K2_V16 batch=11 passage_retrieval_en_batch0000_examples0-0 size=1 completed=11/13 padded_prompt_tokens=4596 seconds=0.988
+[2026-08-15T05:38:16.036095+00:00] smoke wk_pca_h_K2_V16 batch=12 lcc_batch0000_examples42-42 size=1 completed=12/13 padded_prompt_tokens=2180 seconds=2.657
+[2026-08-15T05:38:20.510428+00:00] smoke wk_pca_h_K2_V16 batch=13 repobench-p_batch0000_examples1-1 size=1 completed=13/13 padded_prompt_tokens=6470 seconds=4.471
+[2026-08-15T05:38:20.833363+00:00] completed smoke wk_pca_h_K2_V16
+[2026-08-15T05:38:21.422859+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition activation_k_pca_h_K2_V16
+[2026-08-15T05:38:27.138096+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  9.73it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 12.16it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 12.59it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T05:38:34.043675+00:00] smoke activation_k_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/13 padded_prompt_tokens=3606 seconds=2.011
+[2026-08-15T05:38:35.166206+00:00] smoke activation_k_pca_h_K2_V16 batch=2 multifieldqa_en_batch0000_examples11-11 size=1 completed=2/13 padded_prompt_tokens=4473 seconds=1.093
+[2026-08-15T05:38:36.542516+00:00] smoke activation_k_pca_h_K2_V16 batch=3 hotpotqa_batch0000_examples0-0 size=1 completed=3/13 padded_prompt_tokens=6122 seconds=1.363
+[2026-08-15T05:38:37.216788+00:00] smoke activation_k_pca_h_K2_V16 batch=4 2wikimqa_batch0000_examples21-21 size=1 completed=4/13 padded_prompt_tokens=2343 seconds=0.653
+[2026-08-15T05:38:54.909403+00:00] smoke activation_k_pca_h_K2_V16 batch=5 gov_report_batch0000_examples54-54 size=1 completed=5/13 padded_prompt_tokens=3962 seconds=17.682
+[2026-08-15T05:39:04.680499+00:00] smoke activation_k_pca_h_K2_V16 batch=6 multi_news_batch0000_examples0-0 size=1 completed=6/13 padded_prompt_tokens=1010 seconds=9.742
+[2026-08-15T05:39:08.493374+00:00] smoke activation_k_pca_h_K2_V16 batch=7 trec_batch0000_examples49-49 size=1 completed=7/13 padded_prompt_tokens=4917 seconds=3.787
+[2026-08-15T05:39:10.708776+00:00] smoke activation_k_pca_h_K2_V16 batch=8 triviaqa_batch0000_examples25-25 size=1 completed=8/13 padded_prompt_tokens=4393 seconds=2.174
+[2026-08-15T05:39:17.619702+00:00] smoke activation_k_pca_h_K2_V16 batch=9 samsum_batch0000_examples19-19 size=1 completed=9/13 padded_prompt_tokens=5127 seconds=6.868
+[2026-08-15T05:39:18.285877+00:00] smoke activation_k_pca_h_K2_V16 batch=10 passage_count_batch0000_examples22-22 size=1 completed=10/13 padded_prompt_tokens=3258 seconds=0.642
+[2026-08-15T05:39:20.520507+00:00] smoke activation_k_pca_h_K2_V16 batch=11 passage_retrieval_en_batch0000_examples0-0 size=1 completed=11/13 padded_prompt_tokens=4596 seconds=2.224
+[2026-08-15T05:39:23.222790+00:00] smoke activation_k_pca_h_K2_V16 batch=12 lcc_batch0000_examples42-42 size=1 completed=12/13 padded_prompt_tokens=2180 seconds=2.673
+[2026-08-15T05:39:27.693820+00:00] smoke activation_k_pca_h_K2_V16 batch=13 repobench-p_batch0000_examples1-1 size=1 completed=13/13 padded_prompt_tokens=6470 seconds=4.468
+[2026-08-15T05:39:27.998688+00:00] completed smoke activation_k_pca_h_K2_V16
+[2026-08-15T05:39:28.549720+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage smoke --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition attention_q_pca_h_K2_V16
+[2026-08-15T05:39:34.238045+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 12.00it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 13.48it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 13.23it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T05:39:40.614515+00:00] smoke attention_q_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/13 padded_prompt_tokens=3606 seconds=1.601
+[2026-08-15T05:39:41.822901+00:00] smoke attention_q_pca_h_K2_V16 batch=2 multifieldqa_en_batch0000_examples11-11 size=1 completed=2/13 padded_prompt_tokens=4473 seconds=1.180
+[2026-08-15T05:39:43.099363+00:00] smoke attention_q_pca_h_K2_V16 batch=3 hotpotqa_batch0000_examples0-0 size=1 completed=3/13 padded_prompt_tokens=6122 seconds=1.263
+[2026-08-15T05:39:43.771324+00:00] smoke attention_q_pca_h_K2_V16 batch=4 2wikimqa_batch0000_examples21-21 size=1 completed=4/13 padded_prompt_tokens=2343 seconds=0.651
+[2026-08-15T05:39:54.926945+00:00] smoke attention_q_pca_h_K2_V16 batch=5 gov_report_batch0000_examples54-54 size=1 completed=5/13 padded_prompt_tokens=3962 seconds=11.146
+[2026-08-15T05:40:06.978491+00:00] smoke attention_q_pca_h_K2_V16 batch=6 multi_news_batch0000_examples0-0 size=1 completed=6/13 padded_prompt_tokens=1010 seconds=12.022
+[2026-08-15T05:40:10.791002+00:00] smoke attention_q_pca_h_K2_V16 batch=7 trec_batch0000_examples49-49 size=1 completed=7/13 padded_prompt_tokens=4917 seconds=3.787
+[2026-08-15T05:40:12.989057+00:00] smoke attention_q_pca_h_K2_V16 batch=8 triviaqa_batch0000_examples25-25 size=1 completed=8/13 padded_prompt_tokens=4393 seconds=2.172
+[2026-08-15T05:40:19.880224+00:00] smoke attention_q_pca_h_K2_V16 batch=9 samsum_batch0000_examples19-19 size=1 completed=9/13 padded_prompt_tokens=5127 seconds=6.870
+[2026-08-15T05:40:21.725231+00:00] smoke attention_q_pca_h_K2_V16 batch=10 passage_count_batch0000_examples22-22 size=1 completed=10/13 padded_prompt_tokens=3258 seconds=1.819
+[2026-08-15T05:40:22.723645+00:00] smoke attention_q_pca_h_K2_V16 batch=11 passage_retrieval_en_batch0000_examples0-0 size=1 completed=11/13 padded_prompt_tokens=4596 seconds=0.987
+[2026-08-15T05:40:25.419049+00:00] smoke attention_q_pca_h_K2_V16 batch=12 lcc_batch0000_examples42-42 size=1 completed=12/13 padded_prompt_tokens=2180 seconds=2.667
+[2026-08-15T05:40:29.891014+00:00] smoke attention_q_pca_h_K2_V16 batch=13 repobench-p_batch0000_examples1-1 size=1 completed=13/13 padded_prompt_tokens=6470 seconds=4.468
+[2026-08-15T05:40:30.153810+00:00] completed smoke attention_q_pca_h_K2_V16
+[2026-08-15T05:40:30.719807+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition wk_pca_h_K2_V16
+[2026-08-15T05:40:36.465207+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 11.65it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 13.06it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 12.82it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T05:40:42.738801+00:00] full wk_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/195 padded_prompt_tokens=3606 seconds=1.492
+[2026-08-15T05:40:43.792968+00:00] full wk_pca_h_K2_V16 batch=2 qasper_batch0001_examples51-51 size=1 completed=2/195 padded_prompt_tokens=3385 seconds=1.025
+[2026-08-15T05:40:45.641216+00:00] full wk_pca_h_K2_V16 batch=3 qasper_batch0002_examples54-54 size=1 completed=3/195 padded_prompt_tokens=5608 seconds=1.827
+[2026-08-15T05:40:46.846608+00:00] full wk_pca_h_K2_V16 batch=4 qasper_batch0003_examples75-75 size=1 completed=4/195 padded_prompt_tokens=4379 seconds=1.178
+[2026-08-15T05:40:48.392361+00:00] full wk_pca_h_K2_V16 batch=5 qasper_batch0004_examples99-99 size=1 completed=5/195 padded_prompt_tokens=3683 seconds=1.499
+[2026-08-15T05:40:50.560087+00:00] full wk_pca_h_K2_V16 batch=6 qasper_batch0005_examples114-114 size=1 completed=6/195 padded_prompt_tokens=10226 seconds=2.117
+[2026-08-15T05:40:51.718631+00:00] full wk_pca_h_K2_V16 batch=7 qasper_batch0006_examples140-140 size=1 completed=7/195 padded_prompt_tokens=5644 seconds=1.129
+[2026-08-15T05:40:53.986830+00:00] full wk_pca_h_K2_V16 batch=8 qasper_batch0007_examples144-144 size=1 completed=8/195 padded_prompt_tokens=6337 seconds=2.230
+[2026-08-15T05:40:58.004280+00:00] full wk_pca_h_K2_V16 batch=9 qasper_batch0008_examples145-145 size=1 completed=9/195 padded_prompt_tokens=7195 seconds=3.985
+[2026-08-15T05:41:00.191943+00:00] full wk_pca_h_K2_V16 batch=10 qasper_batch0009_examples159-159 size=1 completed=10/195 padded_prompt_tokens=6024 seconds=2.100
+[2026-08-15T05:41:06.238984+00:00] full wk_pca_h_K2_V16 batch=11 qasper_batch0010_examples209-209 size=1 completed=11/195 padded_prompt_tokens=19550 seconds=5.968
+[2026-08-15T05:41:10.328267+00:00] full wk_pca_h_K2_V16 batch=12 qasper_batch0011_examples212-212 size=1 completed=12/195 padded_prompt_tokens=17349 seconds=4.040
+[2026-08-15T05:41:13.113566+00:00] full wk_pca_h_K2_V16 batch=13 qasper_batch0012_examples217-217 size=1 completed=13/195 padded_prompt_tokens=10666 seconds=2.695
+[2026-08-15T05:41:20.957593+00:00] full wk_pca_h_K2_V16 batch=14 qasper_batch0013_examples221-221 size=1 completed=14/195 padded_prompt_tokens=21283 seconds=7.753
+[2026-08-15T05:41:29.159803+00:00] full wk_pca_h_K2_V16 batch=15 qasper_batch0014_examples223-223 size=1 completed=15/195 padded_prompt_tokens=21285 seconds=8.176
+[2026-08-15T05:41:30.225200+00:00] full wk_pca_h_K2_V16 batch=16 multifieldqa_en_batch0000_examples11-11 size=1 completed=16/195 padded_prompt_tokens=4473 seconds=1.050
+[2026-08-15T05:41:31.014130+00:00] full wk_pca_h_K2_V16 batch=17 multifieldqa_en_batch0001_examples38-38 size=1 completed=17/195 padded_prompt_tokens=2746 seconds=0.769
+[2026-08-15T05:41:34.721889+00:00] full wk_pca_h_K2_V16 batch=18 multifieldqa_en_batch0002_examples44-44 size=1 completed=18/195 padded_prompt_tokens=4666 seconds=3.687
+[2026-08-15T05:41:35.382495+00:00] full wk_pca_h_K2_V16 batch=19 multifieldqa_en_batch0003_examples45-45 size=1 completed=19/195 padded_prompt_tokens=3065 seconds=0.640
+[2026-08-15T05:41:36.867934+00:00] full wk_pca_h_K2_V16 batch=20 multifieldqa_en_batch0004_examples53-53 size=1 completed=20/195 padded_prompt_tokens=3801 seconds=1.442
+[2026-08-15T05:41:38.849221+00:00] full wk_pca_h_K2_V16 batch=21 multifieldqa_en_batch0005_examples89-89 size=1 completed=21/195 padded_prompt_tokens=9216 seconds=1.940
+[2026-08-15T05:41:44.016204+00:00] full wk_pca_h_K2_V16 batch=22 multifieldqa_en_batch0006_examples90-90 size=1 completed=22/195 padded_prompt_tokens=9141 seconds=5.120
+[2026-08-15T05:41:47.172847+00:00] full wk_pca_h_K2_V16 batch=23 multifieldqa_en_batch0007_examples119-119 size=1 completed=23/195 padded_prompt_tokens=11001 seconds=3.116
+[2026-08-15T05:41:50.011728+00:00] full wk_pca_h_K2_V16 batch=24 multifieldqa_en_batch0008_examples129-129 size=1 completed=24/195 padded_prompt_tokens=9137 seconds=2.792
+[2026-08-15T05:41:53.900482+00:00] full wk_pca_h_K2_V16 batch=25 multifieldqa_en_batch0009_examples134-134 size=1 completed=25/195 padded_prompt_tokens=9119 seconds=3.830
+[2026-08-15T05:41:58.213710+00:00] full wk_pca_h_K2_V16 batch=26 multifieldqa_en_batch0010_examples137-137 size=1 completed=26/195 padded_prompt_tokens=11768 seconds=4.256
+[2026-08-15T05:42:02.746287+00:00] full wk_pca_h_K2_V16 batch=27 multifieldqa_en_batch0011_examples138-138 size=1 completed=27/195 padded_prompt_tokens=14030 seconds=4.478
+[2026-08-15T05:42:06.943006+00:00] full wk_pca_h_K2_V16 batch=28 multifieldqa_en_batch0012_examples141-141 size=1 completed=28/195 padded_prompt_tokens=11161 seconds=4.139
+[2026-08-15T05:42:13.809267+00:00] full wk_pca_h_K2_V16 batch=29 multifieldqa_en_batch0013_examples144-144 size=1 completed=29/195 padded_prompt_tokens=11545 seconds=6.799
+[2026-08-15T05:42:21.245497+00:00] full wk_pca_h_K2_V16 batch=30 multifieldqa_en_batch0014_examples147-147 size=1 completed=30/195 padded_prompt_tokens=12837 seconds=7.402
+[2026-08-15T05:42:22.523926+00:00] full wk_pca_h_K2_V16 batch=31 hotpotqa_batch0000_examples0-0 size=1 completed=31/195 padded_prompt_tokens=6122 seconds=1.264
+[2026-08-15T05:42:23.032762+00:00] full wk_pca_h_K2_V16 batch=32 hotpotqa_batch0001_examples31-31 size=1 completed=32/195 padded_prompt_tokens=2260 seconds=0.486
+[2026-08-15T05:42:23.835660+00:00] full wk_pca_h_K2_V16 batch=33 hotpotqa_batch0002_examples61-61 size=1 completed=33/195 padded_prompt_tokens=3810 seconds=0.783
+[2026-08-15T05:42:24.616166+00:00] full wk_pca_h_K2_V16 batch=34 hotpotqa_batch0003_examples73-73 size=1 completed=34/195 padded_prompt_tokens=3428 seconds=0.752
+[2026-08-15T05:42:25.918595+00:00] full wk_pca_h_K2_V16 batch=35 hotpotqa_batch0004_examples96-96 size=1 completed=35/195 padded_prompt_tokens=5818 seconds=1.257
+[2026-08-15T05:42:28.109830+00:00] full wk_pca_h_K2_V16 batch=36 hotpotqa_batch0005_examples102-102 size=1 completed=36/195 padded_prompt_tokens=9472 seconds=2.130
+[2026-08-15T05:42:30.011738+00:00] full wk_pca_h_K2_V16 batch=37 hotpotqa_batch0006_examples118-118 size=1 completed=37/195 padded_prompt_tokens=8753 seconds=1.854
+[2026-08-15T05:42:32.500297+00:00] full wk_pca_h_K2_V16 batch=38 hotpotqa_batch0007_examples126-126 size=1 completed=38/195 padded_prompt_tokens=9701 seconds=2.439
+[2026-08-15T05:42:34.985447+00:00] full wk_pca_h_K2_V16 batch=39 hotpotqa_batch0008_examples169-169 size=1 completed=39/195 padded_prompt_tokens=10436 seconds=2.440
+[2026-08-15T05:42:37.219398+00:00] full wk_pca_h_K2_V16 batch=40 hotpotqa_batch0009_examples173-173 size=1 completed=40/195 padded_prompt_tokens=9487 seconds=2.156
+[2026-08-15T05:42:43.419552+00:00] full wk_pca_h_K2_V16 batch=41 hotpotqa_batch0010_examples213-213 size=1 completed=41/195 padded_prompt_tokens=15880 seconds=6.140
+[2026-08-15T05:42:46.063525+00:00] full wk_pca_h_K2_V16 batch=42 hotpotqa_batch0011_examples217-217 size=1 completed=42/195 padded_prompt_tokens=12069 seconds=2.579
+[2026-08-15T05:42:49.309410+00:00] full wk_pca_h_K2_V16 batch=43 hotpotqa_batch0012_examples222-222 size=1 completed=43/195 padded_prompt_tokens=14129 seconds=3.173
+[2026-08-15T05:42:52.876483+00:00] full wk_pca_h_K2_V16 batch=44 hotpotqa_batch0013_examples227-227 size=1 completed=44/195 padded_prompt_tokens=15089 seconds=3.491
+[2026-08-15T05:42:56.485003+00:00] full wk_pca_h_K2_V16 batch=45 hotpotqa_batch0014_examples242-242 size=1 completed=45/195 padded_prompt_tokens=14839 seconds=3.593
+[2026-08-15T05:42:57.159066+00:00] full wk_pca_h_K2_V16 batch=46 2wikimqa_batch0000_examples21-21 size=1 completed=46/195 padded_prompt_tokens=2343 seconds=0.650
+[2026-08-15T05:42:58.056566+00:00] full wk_pca_h_K2_V16 batch=47 2wikimqa_batch0001_examples60-60 size=1 completed=47/195 padded_prompt_tokens=4420 seconds=0.872
+[2026-08-15T05:42:59.434443+00:00] full wk_pca_h_K2_V16 batch=48 2wikimqa_batch0002_examples65-65 size=1 completed=48/195 padded_prompt_tokens=5230 seconds=1.355
+[2026-08-15T05:43:00.356964+00:00] full wk_pca_h_K2_V16 batch=49 2wikimqa_batch0003_examples80-80 size=1 completed=49/195 padded_prompt_tokens=4165 seconds=0.908
+[2026-08-15T05:43:01.025215+00:00] full wk_pca_h_K2_V16 batch=50 2wikimqa_batch0004_examples89-89 size=1 completed=50/195 padded_prompt_tokens=2468 seconds=0.606
+[2026-08-15T05:43:03.529200+00:00] full wk_pca_h_K2_V16 batch=51 2wikimqa_batch0005_examples129-129 size=1 completed=51/195 padded_prompt_tokens=9498 seconds=2.466
+[2026-08-15T05:43:05.107519+00:00] full wk_pca_h_K2_V16 batch=52 2wikimqa_batch0006_examples130-130 size=1 completed=52/195 padded_prompt_tokens=7668 seconds=1.536
+[2026-08-15T05:43:06.954086+00:00] full wk_pca_h_K2_V16 batch=53 2wikimqa_batch0007_examples131-131 size=1 completed=53/195 padded_prompt_tokens=8588 seconds=1.816
+[2026-08-15T05:43:08.277393+00:00] full wk_pca_h_K2_V16 batch=54 2wikimqa_batch0008_examples162-162 size=1 completed=54/195 padded_prompt_tokens=6386 seconds=1.270
+[2026-08-15T05:43:10.629509+00:00] full wk_pca_h_K2_V16 batch=55 2wikimqa_batch0009_examples186-186 size=1 completed=55/195 padded_prompt_tokens=10916 seconds=2.298
+[2026-08-15T05:43:13.647829+00:00] full wk_pca_h_K2_V16 batch=56 2wikimqa_batch0010_examples207-207 size=1 completed=56/195 padded_prompt_tokens=11867 seconds=2.938
+[2026-08-15T05:43:17.179565+00:00] full wk_pca_h_K2_V16 batch=57 2wikimqa_batch0011_examples245-245 size=1 completed=57/195 padded_prompt_tokens=15318 seconds=3.477
+[2026-08-15T05:43:19.886363+00:00] full wk_pca_h_K2_V16 batch=58 2wikimqa_batch0012_examples261-261 size=1 completed=58/195 padded_prompt_tokens=11159 seconds=2.632
+[2026-08-15T05:43:23.335169+00:00] full wk_pca_h_K2_V16 batch=59 2wikimqa_batch0013_examples264-264 size=1 completed=59/195 padded_prompt_tokens=15313 seconds=3.393
+[2026-08-15T05:43:27.888283+00:00] full wk_pca_h_K2_V16 batch=60 2wikimqa_batch0014_examples265-265 size=1 completed=60/195 padded_prompt_tokens=12152 seconds=4.529
+[2026-08-15T05:44:08.873668+00:00] full wk_pca_h_K2_V16 batch=61 gov_report_batch0000_examples54-73 size=4 completed=64/195 padded_prompt_tokens=15848 seconds=40.910
+[2026-08-15T05:45:02.967457+00:00] full wk_pca_h_K2_V16 batch=62 gov_report_batch0001_examples76-144 size=3 completed=67/195 padded_prompt_tokens=24948 seconds=53.997
+[2026-08-15T05:46:00.597676+00:00] full wk_pca_h_K2_V16 batch=63 gov_report_batch0002_examples175-194 size=3 completed=70/195 padded_prompt_tokens=22893 seconds=57.509
+[2026-08-15T05:46:53.680882+00:00] full wk_pca_h_K2_V16 batch=64 gov_report_batch0003_examples208-238 size=2 completed=72/195 padded_prompt_tokens=24664 seconds=52.960
+[2026-08-15T05:48:03.186773+00:00] full wk_pca_h_K2_V16 batch=65 gov_report_batch0004_examples239-287 size=2 completed=74/195 padded_prompt_tokens=23578 seconds=69.300
+[2026-08-15T05:48:59.038523+00:00] full wk_pca_h_K2_V16 batch=66 gov_report_batch0005_examples296-296 size=1 completed=75/195 padded_prompt_tokens=26157 seconds=55.837
+[2026-08-15T05:49:41.693757+00:00] full wk_pca_h_K2_V16 batch=67 multi_news_batch0000_examples0-90 size=4 completed=79/195 padded_prompt_tokens=12892 seconds=42.608
+[2026-08-15T05:51:03.761492+00:00] full wk_pca_h_K2_V16 batch=68 multi_news_batch0001_examples97-107 size=4 completed=83/195 padded_prompt_tokens=28332 seconds=81.921
+[2026-08-15T05:52:10.489697+00:00] full wk_pca_h_K2_V16 batch=69 multi_news_batch0002_examples140-196 size=2 completed=85/195 padded_prompt_tokens=20170 seconds=66.607
+[2026-08-15T05:53:34.811553+00:00] full wk_pca_h_K2_V16 batch=70 multi_news_batch0003_examples213-215 size=2 completed=87/195 padded_prompt_tokens=26462 seconds=84.159
+[2026-08-15T05:55:00.986288+00:00] full wk_pca_h_K2_V16 batch=71 multi_news_batch0004_examples221-231 size=2 completed=89/195 padded_prompt_tokens=27128 seconds=86.044
+[2026-08-15T05:55:45.292768+00:00] full wk_pca_h_K2_V16 batch=72 multi_news_batch0005_examples253-253 size=1 completed=90/195 padded_prompt_tokens=14321 seconds=44.261
+[2026-08-15T05:55:59.766869+00:00] full wk_pca_h_K2_V16 batch=73 trec_batch0000_examples49-98 size=5 completed=95/195 padded_prompt_tokens=24585 seconds=14.354
+[2026-08-15T05:56:19.280105+00:00] full wk_pca_h_K2_V16 batch=74 trec_batch0001_examples144-167 size=3 completed=98/195 padded_prompt_tokens=28737 seconds=19.393
+[2026-08-15T05:56:32.252958+00:00] full wk_pca_h_K2_V16 batch=75 trec_batch0002_examples176-197 size=2 completed=100/195 padded_prompt_tokens=18520 seconds=12.845
+[2026-08-15T05:56:55.226942+00:00] full wk_pca_h_K2_V16 batch=76 trec_batch0003_examples204-206 size=2 completed=102/195 padded_prompt_tokens=30182 seconds=22.846
+[2026-08-15T05:57:18.135220+00:00] full wk_pca_h_K2_V16 batch=77 trec_batch0004_examples241-267 size=2 completed=104/195 padded_prompt_tokens=30092 seconds=22.784
+[2026-08-15T05:57:26.333965+00:00] full wk_pca_h_K2_V16 batch=78 trec_batch0005_examples270-270 size=1 completed=105/195 padded_prompt_tokens=14467 seconds=8.170
+[2026-08-15T05:57:37.267690+00:00] full wk_pca_h_K2_V16 batch=79 triviaqa_batch0000_examples25-80 size=5 completed=110/195 padded_prompt_tokens=25860 seconds=10.818
+[2026-08-15T05:57:50.299806+00:00] full wk_pca_h_K2_V16 batch=80 triviaqa_batch0001_examples108-163 size=3 completed=113/195 padded_prompt_tokens=26370 seconds=12.913
+[2026-08-15T05:57:58.658698+00:00] full wk_pca_h_K2_V16 batch=81 triviaqa_batch0002_examples171-192 size=2 completed=115/195 padded_prompt_tokens=16598 seconds=8.243
+[2026-08-15T05:58:04.443073+00:00] full wk_pca_h_K2_V16 batch=82 triviaqa_batch0003_examples206-206 size=1 completed=116/195 padded_prompt_tokens=14747 seconds=5.707
+[2026-08-15T05:58:12.291647+00:00] full wk_pca_h_K2_V16 batch=83 triviaqa_batch0004_examples226-226 size=1 completed=117/195 padded_prompt_tokens=20002 seconds=7.751
+[2026-08-15T05:58:19.264418+00:00] full wk_pca_h_K2_V16 batch=84 triviaqa_batch0005_examples248-248 size=1 completed=118/195 padded_prompt_tokens=17808 seconds=6.875
+[2026-08-15T05:58:27.156436+00:00] full wk_pca_h_K2_V16 batch=85 triviaqa_batch0006_examples258-258 size=1 completed=119/195 padded_prompt_tokens=20203 seconds=7.822
+[2026-08-15T05:58:32.747342+00:00] full wk_pca_h_K2_V16 batch=86 triviaqa_batch0007_examples290-290 size=1 completed=120/195 padded_prompt_tokens=14340 seconds=5.562
+[2026-08-15T05:58:56.499527+00:00] full wk_pca_h_K2_V16 batch=87 samsum_batch0000_examples19-89 size=5 completed=125/195 padded_prompt_tokens=25635 seconds=23.635
+[2026-08-15T05:59:28.665211+00:00] full wk_pca_h_K2_V16 batch=88 samsum_batch0001_examples143-154 size=3 completed=128/195 padded_prompt_tokens=31230 seconds=32.061
+[2026-08-15T05:59:46.705843+00:00] full wk_pca_h_K2_V16 batch=89 samsum_batch0002_examples190-194 size=2 completed=130/195 padded_prompt_tokens=16816 seconds=17.953
+[2026-08-15T06:00:17.925734+00:00] full wk_pca_h_K2_V16 batch=90 samsum_batch0003_examples215-220 size=2 completed=132/195 padded_prompt_tokens=28644 seconds=31.080
+[2026-08-15T06:00:32.595141+00:00] full wk_pca_h_K2_V16 batch=91 samsum_batch0004_examples228-228 size=1 completed=133/195 padded_prompt_tokens=18226 seconds=14.592
+[2026-08-15T06:01:06.554511+00:00] full wk_pca_h_K2_V16 batch=92 samsum_batch0005_examples257-283 size=2 completed=135/195 padded_prompt_tokens=30872 seconds=33.877
+[2026-08-15T06:01:10.905430+00:00] full wk_pca_h_K2_V16 batch=93 passage_count_batch0000_examples22-69 size=4 completed=139/195 padded_prompt_tokens=13032 seconds=4.290
+[2026-08-15T06:01:20.986046+00:00] full wk_pca_h_K2_V16 batch=94 passage_count_batch0001_examples79-119 size=3 completed=142/195 padded_prompt_tokens=29352 seconds=9.972
+[2026-08-15T06:01:30.627609+00:00] full wk_pca_h_K2_V16 batch=95 passage_count_batch0002_examples155-195 size=3 completed=145/195 padded_prompt_tokens=26298 seconds=9.478
+[2026-08-15T06:01:35.465007+00:00] full wk_pca_h_K2_V16 batch=96 passage_count_batch0003_examples214-214 size=1 completed=146/195 padded_prompt_tokens=20155 seconds=4.763
+[2026-08-15T06:01:48.797897+00:00] full wk_pca_h_K2_V16 batch=97 passage_count_batch0004_examples221-248 size=2 completed=148/195 padded_prompt_tokens=26338 seconds=13.217
+[2026-08-15T06:01:58.003328+00:00] full wk_pca_h_K2_V16 batch=98 passage_count_batch0005_examples257-267 size=2 completed=150/195 padded_prompt_tokens=24208 seconds=9.127
+[2026-08-15T06:02:05.552312+00:00] full wk_pca_h_K2_V16 batch=99 passage_retrieval_en_batch0000_examples0-78 size=5 completed=155/195 padded_prompt_tokens=26880 seconds=7.408
+[2026-08-15T06:02:15.694980+00:00] full wk_pca_h_K2_V16 batch=100 passage_retrieval_en_batch0001_examples110-169 size=3 completed=158/195 padded_prompt_tokens=28509 seconds=10.040
+[2026-08-15T06:02:20.212797+00:00] full wk_pca_h_K2_V16 batch=101 passage_retrieval_en_batch0002_examples184-194 size=2 completed=160/195 padded_prompt_tokens=13648 seconds=4.413
+[2026-08-15T06:02:29.269433+00:00] full wk_pca_h_K2_V16 batch=102 passage_retrieval_en_batch0003_examples220-239 size=2 completed=162/195 padded_prompt_tokens=23242 seconds=8.927
+[2026-08-15T06:02:38.448563+00:00] full wk_pca_h_K2_V16 batch=103 passage_retrieval_en_batch0004_examples281-285 size=2 completed=164/195 padded_prompt_tokens=23508 seconds=9.066
+[2026-08-15T06:02:41.293345+00:00] full wk_pca_h_K2_V16 batch=104 passage_retrieval_en_batch0005_examples293-293 size=1 completed=165/195 padded_prompt_tokens=12247 seconds=2.831
+[2026-08-15T06:02:51.186531+00:00] full wk_pca_h_K2_V16 batch=105 lcc_batch0000_examples42-98 size=5 completed=170/195 padded_prompt_tokens=16470 seconds=9.780
+[2026-08-15T06:03:10.073695+00:00] full wk_pca_h_K2_V16 batch=106 lcc_batch0001_examples105-111 size=2 completed=172/195 padded_prompt_tokens=25734 seconds=18.804
+[2026-08-15T06:03:15.636446+00:00] full wk_pca_h_K2_V16 batch=107 lcc_batch0002_examples116-116 size=1 completed=173/195 padded_prompt_tokens=8671 seconds=5.453
+[2026-08-15T06:03:25.492532+00:00] full wk_pca_h_K2_V16 batch=108 lcc_batch0003_examples153-153 size=1 completed=174/195 padded_prompt_tokens=17722 seconds=9.786
+[2026-08-15T06:03:32.979953+00:00] full wk_pca_h_K2_V16 batch=109 lcc_batch0004_examples166-166 size=1 completed=175/195 padded_prompt_tokens=12726 seconds=7.342
+[2026-08-15T06:03:51.289929+00:00] full wk_pca_h_K2_V16 batch=110 lcc_batch0005_examples235-235 size=1 completed=176/195 padded_prompt_tokens=32651 seconds=18.204
+[2026-08-15T06:04:04.318110+00:00] full wk_pca_h_K2_V16 batch=111 lcc_batch0006_examples253-253 size=1 completed=177/195 padded_prompt_tokens=23446 seconds=12.841
+[2026-08-15T06:04:29.675738+00:00] full wk_pca_h_K2_V16 batch=112 lcc_batch0007_examples261-261 size=1 completed=178/195 padded_prompt_tokens=42254 seconds=25.255
+[2026-08-15T06:04:41.915441+00:00] full wk_pca_h_K2_V16 batch=113 lcc_batch0008_examples272-272 size=1 completed=179/195 padded_prompt_tokens=22146 seconds=12.139
+[2026-08-15T06:04:52.564020+00:00] full wk_pca_h_K2_V16 batch=114 lcc_batch0009_examples279-279 size=1 completed=180/195 padded_prompt_tokens=19320 seconds=10.614
+[2026-08-15T06:05:12.121627+00:00] full wk_pca_h_K2_V16 batch=115 repobench-p_batch0000_examples1-28 size=3 completed=183/195 padded_prompt_tokens=28992 seconds=19.441
+[2026-08-15T06:05:21.085611+00:00] full wk_pca_h_K2_V16 batch=116 repobench-p_batch0001_examples65-96 size=2 completed=185/195 padded_prompt_tokens=12880 seconds=8.844
+[2026-08-15T06:05:45.278886+00:00] full wk_pca_h_K2_V16 batch=117 repobench-p_batch0002_examples126-135 size=2 completed=187/195 padded_prompt_tokens=31664 seconds=24.080
+[2026-08-15T06:05:51.924424+00:00] full wk_pca_h_K2_V16 batch=118 repobench-p_batch0003_examples160-160 size=1 completed=188/195 padded_prompt_tokens=11072 seconds=6.552
+[2026-08-15T06:06:02.825297+00:00] full wk_pca_h_K2_V16 batch=119 repobench-p_batch0004_examples172-172 size=1 completed=189/195 padded_prompt_tokens=19721 seconds=10.850
+[2026-08-15T06:06:09.391691+00:00] full wk_pca_h_K2_V16 batch=120 repobench-p_batch0005_examples193-193 size=1 completed=190/195 padded_prompt_tokens=10864 seconds=6.447
+[2026-08-15T06:06:23.341297+00:00] full wk_pca_h_K2_V16 batch=121 repobench-p_batch0006_examples204-204 size=1 completed=191/195 padded_prompt_tokens=25315 seconds=13.846
+[2026-08-15T06:06:35.182158+00:00] full wk_pca_h_K2_V16 batch=122 repobench-p_batch0007_examples252-252 size=1 completed=192/195 padded_prompt_tokens=21471 seconds=11.745
+[2026-08-15T06:06:46.988027+00:00] full wk_pca_h_K2_V16 batch=123 repobench-p_batch0008_examples253-253 size=1 completed=193/195 padded_prompt_tokens=21246 seconds=11.661
+[2026-08-15T06:07:03.000299+00:00] full wk_pca_h_K2_V16 batch=124 repobench-p_batch0009_examples276-276 size=1 completed=194/195 padded_prompt_tokens=28905 seconds=15.908
+[2026-08-15T06:07:14.672397+00:00] full wk_pca_h_K2_V16 batch=125 repobench-p_batch0010_examples291-291 size=1 completed=195/195 padded_prompt_tokens=21245 seconds=11.647
+[2026-08-15T06:07:16.977231+00:00] completed full wk_pca_h_K2_V16
+[2026-08-15T06:07:17.676780+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition activation_k_pca_h_K2_V16
+[2026-08-15T06:07:23.555894+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  9.24it/s]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 10.24it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 10.51it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T06:07:30.547400+00:00] full activation_k_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/195 padded_prompt_tokens=3606 seconds=2.026
+[2026-08-15T06:07:31.602017+00:00] full activation_k_pca_h_K2_V16 batch=2 qasper_batch0001_examples51-51 size=1 completed=2/195 padded_prompt_tokens=3385 seconds=1.028
+[2026-08-15T06:07:32.826692+00:00] full activation_k_pca_h_K2_V16 batch=3 qasper_batch0002_examples54-54 size=1 completed=3/195 padded_prompt_tokens=5608 seconds=1.203
+[2026-08-15T06:07:33.758659+00:00] full activation_k_pca_h_K2_V16 batch=4 qasper_batch0003_examples75-75 size=1 completed=4/195 padded_prompt_tokens=4379 seconds=0.913
+[2026-08-15T06:07:34.979638+00:00] full activation_k_pca_h_K2_V16 batch=5 qasper_batch0004_examples99-99 size=1 completed=5/195 padded_prompt_tokens=3683 seconds=1.175
+[2026-08-15T06:07:37.124140+00:00] full activation_k_pca_h_K2_V16 batch=6 qasper_batch0005_examples114-114 size=1 completed=6/195 padded_prompt_tokens=10226 seconds=2.117
+[2026-08-15T06:07:38.379312+00:00] full activation_k_pca_h_K2_V16 batch=7 qasper_batch0006_examples140-140 size=1 completed=7/195 padded_prompt_tokens=5644 seconds=1.225
+[2026-08-15T06:07:39.781352+00:00] full activation_k_pca_h_K2_V16 batch=8 qasper_batch0007_examples144-144 size=1 completed=8/195 padded_prompt_tokens=6337 seconds=1.369
+[2026-08-15T06:07:42.618238+00:00] full activation_k_pca_h_K2_V16 batch=9 qasper_batch0008_examples145-145 size=1 completed=9/195 padded_prompt_tokens=7195 seconds=2.805
+[2026-08-15T06:07:45.561167+00:00] full activation_k_pca_h_K2_V16 batch=10 qasper_batch0009_examples159-159 size=1 completed=10/195 padded_prompt_tokens=6024 seconds=2.850
+[2026-08-15T06:07:52.105695+00:00] full activation_k_pca_h_K2_V16 batch=11 qasper_batch0010_examples209-209 size=1 completed=11/195 padded_prompt_tokens=19550 seconds=6.465
+[2026-08-15T06:07:56.196048+00:00] full activation_k_pca_h_K2_V16 batch=12 qasper_batch0011_examples212-212 size=1 completed=12/195 padded_prompt_tokens=17349 seconds=4.039
+[2026-08-15T06:07:58.649427+00:00] full activation_k_pca_h_K2_V16 batch=13 qasper_batch0012_examples217-217 size=1 completed=13/195 padded_prompt_tokens=10666 seconds=2.362
+[2026-08-15T06:08:06.178652+00:00] full activation_k_pca_h_K2_V16 batch=14 qasper_batch0013_examples221-221 size=1 completed=14/195 padded_prompt_tokens=21283 seconds=7.438
+[2026-08-15T06:08:14.492623+00:00] full activation_k_pca_h_K2_V16 batch=15 qasper_batch0014_examples223-223 size=1 completed=15/195 padded_prompt_tokens=21285 seconds=8.288
+[2026-08-15T06:08:15.603403+00:00] full activation_k_pca_h_K2_V16 batch=16 multifieldqa_en_batch0000_examples11-11 size=1 completed=16/195 padded_prompt_tokens=4473 seconds=1.094
+[2026-08-15T06:08:16.429317+00:00] full activation_k_pca_h_K2_V16 batch=17 multifieldqa_en_batch0001_examples38-38 size=1 completed=17/195 padded_prompt_tokens=2746 seconds=0.807
+[2026-08-15T06:08:17.773372+00:00] full activation_k_pca_h_K2_V16 batch=18 multifieldqa_en_batch0002_examples44-44 size=1 completed=18/195 padded_prompt_tokens=4666 seconds=1.328
+[2026-08-15T06:08:18.434487+00:00] full activation_k_pca_h_K2_V16 batch=19 multifieldqa_en_batch0003_examples45-45 size=1 completed=19/195 padded_prompt_tokens=3065 seconds=0.640
+[2026-08-15T06:08:20.001651+00:00] full activation_k_pca_h_K2_V16 batch=20 multifieldqa_en_batch0004_examples53-53 size=1 completed=20/195 padded_prompt_tokens=3801 seconds=1.525
+[2026-08-15T06:08:21.982007+00:00] full activation_k_pca_h_K2_V16 batch=21 multifieldqa_en_batch0005_examples89-89 size=1 completed=21/195 padded_prompt_tokens=9216 seconds=1.939
+[2026-08-15T06:08:26.294052+00:00] full activation_k_pca_h_K2_V16 batch=22 multifieldqa_en_batch0006_examples90-90 size=1 completed=22/195 padded_prompt_tokens=9141 seconds=4.264
+[2026-08-15T06:08:30.901853+00:00] full activation_k_pca_h_K2_V16 batch=23 multifieldqa_en_batch0007_examples119-119 size=1 completed=23/195 padded_prompt_tokens=11001 seconds=4.543
+[2026-08-15T06:08:33.741206+00:00] full activation_k_pca_h_K2_V16 batch=24 multifieldqa_en_batch0008_examples129-129 size=1 completed=24/195 padded_prompt_tokens=9137 seconds=2.793
+[2026-08-15T06:08:38.182815+00:00] full activation_k_pca_h_K2_V16 batch=25 multifieldqa_en_batch0009_examples134-134 size=1 completed=25/195 padded_prompt_tokens=9119 seconds=4.383
+[2026-08-15T06:08:45.117968+00:00] full activation_k_pca_h_K2_V16 batch=26 multifieldqa_en_batch0010_examples137-137 size=1 completed=26/195 padded_prompt_tokens=11768 seconds=6.876
+[2026-08-15T06:08:50.117877+00:00] full activation_k_pca_h_K2_V16 batch=27 multifieldqa_en_batch0011_examples138-138 size=1 completed=27/195 padded_prompt_tokens=14030 seconds=4.949
+[2026-08-15T06:08:54.449602+00:00] full activation_k_pca_h_K2_V16 batch=28 multifieldqa_en_batch0012_examples141-141 size=1 completed=28/195 padded_prompt_tokens=11161 seconds=4.276
+[2026-08-15T06:08:57.738913+00:00] full activation_k_pca_h_K2_V16 batch=29 multifieldqa_en_batch0013_examples144-144 size=1 completed=29/195 padded_prompt_tokens=11545 seconds=3.222
+[2026-08-15T06:09:04.800241+00:00] full activation_k_pca_h_K2_V16 batch=30 multifieldqa_en_batch0014_examples147-147 size=1 completed=30/195 padded_prompt_tokens=12837 seconds=7.028
+[2026-08-15T06:09:06.176941+00:00] full activation_k_pca_h_K2_V16 batch=31 hotpotqa_batch0000_examples0-0 size=1 completed=31/195 padded_prompt_tokens=6122 seconds=1.363
+[2026-08-15T06:09:06.753819+00:00] full activation_k_pca_h_K2_V16 batch=32 hotpotqa_batch0001_examples31-31 size=1 completed=32/195 padded_prompt_tokens=2260 seconds=0.557
+[2026-08-15T06:09:07.555562+00:00] full activation_k_pca_h_K2_V16 batch=33 hotpotqa_batch0002_examples61-61 size=1 completed=33/195 padded_prompt_tokens=3810 seconds=0.783
+[2026-08-15T06:09:08.375648+00:00] full activation_k_pca_h_K2_V16 batch=34 hotpotqa_batch0003_examples73-73 size=1 completed=34/195 padded_prompt_tokens=3428 seconds=0.792
+[2026-08-15T06:09:09.728118+00:00] full activation_k_pca_h_K2_V16 batch=35 hotpotqa_batch0004_examples96-96 size=1 completed=35/195 padded_prompt_tokens=5818 seconds=1.307
+[2026-08-15T06:09:11.902861+00:00] full activation_k_pca_h_K2_V16 batch=36 hotpotqa_batch0005_examples102-102 size=1 completed=36/195 padded_prompt_tokens=9472 seconds=2.130
+[2026-08-15T06:09:13.803441+00:00] full activation_k_pca_h_K2_V16 batch=37 hotpotqa_batch0006_examples118-118 size=1 completed=37/195 padded_prompt_tokens=8753 seconds=1.854
+[2026-08-15T06:09:15.976322+00:00] full activation_k_pca_h_K2_V16 batch=38 hotpotqa_batch0007_examples126-126 size=1 completed=38/195 padded_prompt_tokens=9701 seconds=2.123
+[2026-08-15T06:09:20.105812+00:00] full activation_k_pca_h_K2_V16 batch=39 hotpotqa_batch0008_examples169-169 size=1 completed=39/195 padded_prompt_tokens=10436 seconds=4.084
+[2026-08-15T06:09:22.333730+00:00] full activation_k_pca_h_K2_V16 batch=40 hotpotqa_batch0009_examples173-173 size=1 completed=40/195 padded_prompt_tokens=9487 seconds=2.155
+[2026-08-15T06:09:26.297094+00:00] full activation_k_pca_h_K2_V16 batch=41 hotpotqa_batch0010_examples213-213 size=1 completed=41/195 padded_prompt_tokens=15880 seconds=3.907
+[2026-08-15T06:09:28.942161+00:00] full activation_k_pca_h_K2_V16 batch=42 hotpotqa_batch0011_examples217-217 size=1 completed=42/195 padded_prompt_tokens=12069 seconds=2.580
+[2026-08-15T06:09:32.191435+00:00] full activation_k_pca_h_K2_V16 batch=43 hotpotqa_batch0012_examples222-222 size=1 completed=43/195 padded_prompt_tokens=14129 seconds=3.174
+[2026-08-15T06:09:35.756972+00:00] full activation_k_pca_h_K2_V16 batch=44 hotpotqa_batch0013_examples227-227 size=1 completed=44/195 padded_prompt_tokens=15089 seconds=3.491
+[2026-08-15T06:09:39.388907+00:00] full activation_k_pca_h_K2_V16 batch=45 hotpotqa_batch0014_examples242-242 size=1 completed=45/195 padded_prompt_tokens=14839 seconds=3.594
+[2026-08-15T06:09:40.067627+00:00] full activation_k_pca_h_K2_V16 batch=46 2wikimqa_batch0000_examples21-21 size=1 completed=46/195 padded_prompt_tokens=2343 seconds=0.652
+[2026-08-15T06:09:40.967456+00:00] full activation_k_pca_h_K2_V16 batch=47 2wikimqa_batch0001_examples60-60 size=1 completed=47/195 padded_prompt_tokens=4420 seconds=0.872
+[2026-08-15T06:09:42.393198+00:00] full activation_k_pca_h_K2_V16 batch=48 2wikimqa_batch0002_examples65-65 size=1 completed=48/195 padded_prompt_tokens=5230 seconds=1.403
+[2026-08-15T06:09:43.359961+00:00] full activation_k_pca_h_K2_V16 batch=49 2wikimqa_batch0003_examples80-80 size=1 completed=49/195 padded_prompt_tokens=4165 seconds=0.951
+[2026-08-15T06:09:44.016902+00:00] full activation_k_pca_h_K2_V16 batch=50 2wikimqa_batch0004_examples89-89 size=1 completed=50/195 padded_prompt_tokens=2468 seconds=0.609
+[2026-08-15T06:09:46.276483+00:00] full activation_k_pca_h_K2_V16 batch=51 2wikimqa_batch0005_examples129-129 size=1 completed=51/195 padded_prompt_tokens=9498 seconds=2.218
+[2026-08-15T06:09:47.856560+00:00] full activation_k_pca_h_K2_V16 batch=52 2wikimqa_batch0006_examples130-130 size=1 completed=52/195 padded_prompt_tokens=7668 seconds=1.537
+[2026-08-15T06:09:49.944142+00:00] full activation_k_pca_h_K2_V16 batch=53 2wikimqa_batch0007_examples131-131 size=1 completed=53/195 padded_prompt_tokens=8588 seconds=2.053
+[2026-08-15T06:09:51.318670+00:00] full activation_k_pca_h_K2_V16 batch=54 2wikimqa_batch0008_examples162-162 size=1 completed=54/195 padded_prompt_tokens=6386 seconds=1.321
+[2026-08-15T06:09:53.673213+00:00] full activation_k_pca_h_K2_V16 batch=55 2wikimqa_batch0009_examples186-186 size=1 completed=55/195 padded_prompt_tokens=10916 seconds=2.298
+[2026-08-15T06:09:56.547870+00:00] full activation_k_pca_h_K2_V16 batch=56 2wikimqa_batch0010_examples207-207 size=1 completed=56/195 padded_prompt_tokens=11867 seconds=2.798
+[2026-08-15T06:10:00.082066+00:00] full activation_k_pca_h_K2_V16 batch=57 2wikimqa_batch0011_examples245-245 size=1 completed=57/195 padded_prompt_tokens=15318 seconds=3.477
+[2026-08-15T06:10:02.791911+00:00] full activation_k_pca_h_K2_V16 batch=58 2wikimqa_batch0012_examples261-261 size=1 completed=58/195 padded_prompt_tokens=11159 seconds=2.633
+[2026-08-15T06:10:06.245589+00:00] full activation_k_pca_h_K2_V16 batch=59 2wikimqa_batch0013_examples264-264 size=1 completed=59/195 padded_prompt_tokens=15313 seconds=3.394
+[2026-08-15T06:10:08.925959+00:00] full activation_k_pca_h_K2_V16 batch=60 2wikimqa_batch0014_examples265-265 size=1 completed=60/195 padded_prompt_tokens=12152 seconds=2.655
+[2026-08-15T06:10:49.619785+00:00] full activation_k_pca_h_K2_V16 batch=61 gov_report_batch0000_examples54-73 size=4 completed=64/195 padded_prompt_tokens=15848 seconds=40.625
+[2026-08-15T06:11:49.914646+00:00] full activation_k_pca_h_K2_V16 batch=62 gov_report_batch0001_examples76-144 size=3 completed=67/195 padded_prompt_tokens=24948 seconds=60.183
+[2026-08-15T06:12:59.794524+00:00] full activation_k_pca_h_K2_V16 batch=63 gov_report_batch0002_examples175-194 size=3 completed=70/195 padded_prompt_tokens=22893 seconds=69.754
+[2026-08-15T06:13:48.846445+00:00] full activation_k_pca_h_K2_V16 batch=64 gov_report_batch0003_examples208-238 size=2 completed=72/195 padded_prompt_tokens=24664 seconds=48.915
+[2026-08-15T06:14:41.681896+00:00] full activation_k_pca_h_K2_V16 batch=65 gov_report_batch0004_examples239-287 size=2 completed=74/195 padded_prompt_tokens=23578 seconds=52.637
+[2026-08-15T06:15:32.045847+00:00] full activation_k_pca_h_K2_V16 batch=66 gov_report_batch0005_examples296-296 size=1 completed=75/195 padded_prompt_tokens=26157 seconds=50.350
+[2026-08-15T06:16:11.641277+00:00] full activation_k_pca_h_K2_V16 batch=67 multi_news_batch0000_examples0-90 size=4 completed=79/195 padded_prompt_tokens=12892 seconds=39.547
+[2026-08-15T06:17:32.773678+00:00] full activation_k_pca_h_K2_V16 batch=68 multi_news_batch0001_examples97-107 size=4 completed=83/195 padded_prompt_tokens=28332 seconds=80.961
+[2026-08-15T06:18:39.353029+00:00] full activation_k_pca_h_K2_V16 batch=69 multi_news_batch0002_examples140-196 size=2 completed=85/195 padded_prompt_tokens=20170 seconds=66.453
+[2026-08-15T06:20:03.691191+00:00] full activation_k_pca_h_K2_V16 batch=70 multi_news_batch0003_examples213-215 size=2 completed=87/195 padded_prompt_tokens=26462 seconds=84.196
+[2026-08-15T06:21:25.291488+00:00] full activation_k_pca_h_K2_V16 batch=71 multi_news_batch0004_examples221-231 size=2 completed=89/195 padded_prompt_tokens=27128 seconds=81.468
+[2026-08-15T06:22:09.670207+00:00] full activation_k_pca_h_K2_V16 batch=72 multi_news_batch0005_examples253-253 size=1 completed=90/195 padded_prompt_tokens=14321 seconds=44.344
+[2026-08-15T06:22:24.141925+00:00] full activation_k_pca_h_K2_V16 batch=73 trec_batch0000_examples49-98 size=5 completed=95/195 padded_prompt_tokens=24585 seconds=14.363
+[2026-08-15T06:22:43.644741+00:00] full activation_k_pca_h_K2_V16 batch=74 trec_batch0001_examples144-167 size=3 completed=98/195 padded_prompt_tokens=28737 seconds=19.371
+[2026-08-15T06:22:56.592257+00:00] full activation_k_pca_h_K2_V16 batch=75 trec_batch0002_examples176-197 size=2 completed=100/195 padded_prompt_tokens=18520 seconds=12.850
+[2026-08-15T06:23:19.583144+00:00] full activation_k_pca_h_K2_V16 batch=76 trec_batch0003_examples204-206 size=2 completed=102/195 padded_prompt_tokens=30182 seconds=22.860
+[2026-08-15T06:23:42.491295+00:00] full activation_k_pca_h_K2_V16 batch=77 trec_batch0004_examples241-267 size=2 completed=104/195 padded_prompt_tokens=30092 seconds=22.785
+[2026-08-15T06:23:50.705133+00:00] full activation_k_pca_h_K2_V16 batch=78 trec_batch0005_examples270-270 size=1 completed=105/195 padded_prompt_tokens=14467 seconds=8.187
+[2026-08-15T06:24:01.650985+00:00] full activation_k_pca_h_K2_V16 batch=79 triviaqa_batch0000_examples25-80 size=5 completed=110/195 padded_prompt_tokens=25860 seconds=10.817
+[2026-08-15T06:24:14.686835+00:00] full activation_k_pca_h_K2_V16 batch=80 triviaqa_batch0001_examples108-163 size=3 completed=113/195 padded_prompt_tokens=26370 seconds=12.916
+[2026-08-15T06:24:23.032306+00:00] full activation_k_pca_h_K2_V16 batch=81 triviaqa_batch0002_examples171-192 size=2 completed=115/195 padded_prompt_tokens=16598 seconds=8.247
+[2026-08-15T06:24:28.823540+00:00] full activation_k_pca_h_K2_V16 batch=82 triviaqa_batch0003_examples206-206 size=1 completed=116/195 padded_prompt_tokens=14747 seconds=5.713
+[2026-08-15T06:24:36.664430+00:00] full activation_k_pca_h_K2_V16 batch=83 triviaqa_batch0004_examples226-226 size=1 completed=117/195 padded_prompt_tokens=20002 seconds=7.755
+[2026-08-15T06:24:43.641322+00:00] full activation_k_pca_h_K2_V16 batch=84 triviaqa_batch0005_examples248-248 size=1 completed=118/195 padded_prompt_tokens=17808 seconds=6.877
+[2026-08-15T06:24:51.538621+00:00] full activation_k_pca_h_K2_V16 batch=85 triviaqa_batch0006_examples258-258 size=1 completed=119/195 padded_prompt_tokens=20203 seconds=7.825
+[2026-08-15T06:24:57.155621+00:00] full activation_k_pca_h_K2_V16 batch=86 triviaqa_batch0007_examples290-290 size=1 completed=120/195 padded_prompt_tokens=14340 seconds=5.574
+[2026-08-15T06:25:19.586587+00:00] full activation_k_pca_h_K2_V16 batch=87 samsum_batch0000_examples19-89 size=5 completed=125/195 padded_prompt_tokens=25635 seconds=22.306
+[2026-08-15T06:25:51.893421+00:00] full activation_k_pca_h_K2_V16 batch=88 samsum_batch0001_examples143-154 size=3 completed=128/195 padded_prompt_tokens=31230 seconds=32.187
+[2026-08-15T06:26:09.999589+00:00] full activation_k_pca_h_K2_V16 batch=89 samsum_batch0002_examples190-194 size=2 completed=130/195 padded_prompt_tokens=16816 seconds=18.001
+[2026-08-15T06:26:36.922680+00:00] full activation_k_pca_h_K2_V16 batch=90 samsum_batch0003_examples215-220 size=2 completed=132/195 padded_prompt_tokens=28644 seconds=26.783
+[2026-08-15T06:26:53.106162+00:00] full activation_k_pca_h_K2_V16 batch=91 samsum_batch0004_examples228-228 size=1 completed=133/195 padded_prompt_tokens=18226 seconds=16.109
+[2026-08-15T06:27:27.025060+00:00] full activation_k_pca_h_K2_V16 batch=92 samsum_batch0005_examples257-283 size=2 completed=135/195 padded_prompt_tokens=30872 seconds=33.837
+[2026-08-15T06:27:31.595963+00:00] full activation_k_pca_h_K2_V16 batch=93 passage_count_batch0000_examples22-69 size=4 completed=139/195 padded_prompt_tokens=13032 seconds=4.507
+[2026-08-15T06:27:43.146181+00:00] full activation_k_pca_h_K2_V16 batch=94 passage_count_batch0001_examples79-119 size=3 completed=142/195 padded_prompt_tokens=29352 seconds=11.435
+[2026-08-15T06:27:52.367178+00:00] full activation_k_pca_h_K2_V16 batch=95 passage_count_batch0002_examples155-195 size=3 completed=145/195 padded_prompt_tokens=26298 seconds=9.049
+[2026-08-15T06:27:57.186779+00:00] full activation_k_pca_h_K2_V16 batch=96 passage_count_batch0003_examples214-214 size=1 completed=146/195 padded_prompt_tokens=20155 seconds=4.763
+[2026-08-15T06:28:07.803494+00:00] full activation_k_pca_h_K2_V16 batch=97 passage_count_batch0004_examples221-248 size=2 completed=148/195 padded_prompt_tokens=26338 seconds=10.500
+[2026-08-15T06:28:17.009914+00:00] full activation_k_pca_h_K2_V16 batch=98 passage_count_batch0005_examples257-267 size=2 completed=150/195 padded_prompt_tokens=24208 seconds=9.127
+[2026-08-15T06:28:24.521014+00:00] full activation_k_pca_h_K2_V16 batch=99 passage_retrieval_en_batch0000_examples0-78 size=5 completed=155/195 padded_prompt_tokens=26880 seconds=7.381
+[2026-08-15T06:28:34.608519+00:00] full activation_k_pca_h_K2_V16 batch=100 passage_retrieval_en_batch0001_examples110-169 size=3 completed=158/195 padded_prompt_tokens=28509 seconds=9.986
+[2026-08-15T06:28:39.676534+00:00] full activation_k_pca_h_K2_V16 batch=101 passage_retrieval_en_batch0002_examples184-194 size=2 completed=160/195 padded_prompt_tokens=13648 seconds=4.986
+[2026-08-15T06:28:48.930982+00:00] full activation_k_pca_h_K2_V16 batch=102 passage_retrieval_en_batch0003_examples220-239 size=2 completed=162/195 padded_prompt_tokens=23242 seconds=9.150
+[2026-08-15T06:28:58.242051+00:00] full activation_k_pca_h_K2_V16 batch=103 passage_retrieval_en_batch0004_examples281-285 size=2 completed=164/195 padded_prompt_tokens=23508 seconds=9.195
+[2026-08-15T06:29:01.156558+00:00] full activation_k_pca_h_K2_V16 batch=104 passage_retrieval_en_batch0005_examples293-293 size=1 completed=165/195 padded_prompt_tokens=12247 seconds=2.901
+[2026-08-15T06:29:11.026565+00:00] full activation_k_pca_h_K2_V16 batch=105 lcc_batch0000_examples42-98 size=5 completed=170/195 padded_prompt_tokens=16470 seconds=9.763
+[2026-08-15T06:29:29.889630+00:00] full activation_k_pca_h_K2_V16 batch=106 lcc_batch0001_examples105-111 size=2 completed=172/195 padded_prompt_tokens=25734 seconds=18.782
+[2026-08-15T06:29:35.440707+00:00] full activation_k_pca_h_K2_V16 batch=107 lcc_batch0002_examples116-116 size=1 completed=173/195 padded_prompt_tokens=8671 seconds=5.447
+[2026-08-15T06:29:45.297324+00:00] full activation_k_pca_h_K2_V16 batch=108 lcc_batch0003_examples153-153 size=1 completed=174/195 padded_prompt_tokens=17722 seconds=9.791
+[2026-08-15T06:29:52.792735+00:00] full activation_k_pca_h_K2_V16 batch=109 lcc_batch0004_examples166-166 size=1 completed=175/195 padded_prompt_tokens=12726 seconds=7.348
+[2026-08-15T06:30:11.091388+00:00] full activation_k_pca_h_K2_V16 batch=110 lcc_batch0005_examples235-235 size=1 completed=176/195 padded_prompt_tokens=32651 seconds=18.196
+[2026-08-15T06:30:24.125340+00:00] full activation_k_pca_h_K2_V16 batch=111 lcc_batch0006_examples253-253 size=1 completed=177/195 padded_prompt_tokens=23446 seconds=12.847
+[2026-08-15T06:30:49.487568+00:00] full activation_k_pca_h_K2_V16 batch=112 lcc_batch0007_examples261-261 size=1 completed=178/195 padded_prompt_tokens=42254 seconds=25.258
+[2026-08-15T06:31:01.733308+00:00] full activation_k_pca_h_K2_V16 batch=113 lcc_batch0008_examples272-272 size=1 completed=179/195 padded_prompt_tokens=22146 seconds=12.145
+[2026-08-15T06:31:12.381206+00:00] full activation_k_pca_h_K2_V16 batch=114 lcc_batch0009_examples279-279 size=1 completed=180/195 padded_prompt_tokens=19320 seconds=10.615
+[2026-08-15T06:31:31.938173+00:00] full activation_k_pca_h_K2_V16 batch=115 repobench-p_batch0000_examples1-28 size=3 completed=183/195 padded_prompt_tokens=28992 seconds=19.423
+[2026-08-15T06:31:40.866283+00:00] full activation_k_pca_h_K2_V16 batch=116 repobench-p_batch0001_examples65-96 size=2 completed=185/195 padded_prompt_tokens=12880 seconds=8.819
+[2026-08-15T06:32:05.062601+00:00] full activation_k_pca_h_K2_V16 batch=117 repobench-p_batch0002_examples126-135 size=2 completed=187/195 padded_prompt_tokens=31664 seconds=24.084
+[2026-08-15T06:32:11.710437+00:00] full activation_k_pca_h_K2_V16 batch=118 repobench-p_batch0003_examples160-160 size=1 completed=188/195 padded_prompt_tokens=11072 seconds=6.556
+[2026-08-15T06:32:22.613281+00:00] full activation_k_pca_h_K2_V16 batch=119 repobench-p_batch0004_examples172-172 size=1 completed=189/195 padded_prompt_tokens=19721 seconds=10.850
+[2026-08-15T06:32:29.180159+00:00] full activation_k_pca_h_K2_V16 batch=120 repobench-p_batch0005_examples193-193 size=1 completed=190/195 padded_prompt_tokens=10864 seconds=6.452
+[2026-08-15T06:32:43.135846+00:00] full activation_k_pca_h_K2_V16 batch=121 repobench-p_batch0006_examples204-204 size=1 completed=191/195 padded_prompt_tokens=25315 seconds=13.848
+[2026-08-15T06:32:54.982202+00:00] full activation_k_pca_h_K2_V16 batch=122 repobench-p_batch0007_examples252-252 size=1 completed=192/195 padded_prompt_tokens=21471 seconds=11.750
+[2026-08-15T06:33:06.751471+00:00] full activation_k_pca_h_K2_V16 batch=123 repobench-p_batch0008_examples253-253 size=1 completed=193/195 padded_prompt_tokens=21246 seconds=11.630
+[2026-08-15T06:33:22.737018+00:00] full activation_k_pca_h_K2_V16 batch=124 repobench-p_batch0009_examples276-276 size=1 completed=194/195 padded_prompt_tokens=28905 seconds=15.887
+[2026-08-15T06:33:34.374492+00:00] full activation_k_pca_h_K2_V16 batch=125 repobench-p_batch0010_examples291-291 size=1 completed=195/195 padded_prompt_tokens=21245 seconds=11.632
+[2026-08-15T06:33:36.615715+00:00] completed full activation_k_pca_h_K2_V16
+[2026-08-15T06:33:37.228908+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage full --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset --condition attention_q_pca_h_K2_V16
+[2026-08-15T06:33:43.070173+00:00] loading /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 on cuda
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 11.93it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 13.55it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 13.27it/s]
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+[2026-08-15T06:33:49.610202+00:00] full attention_q_pca_h_K2_V16 batch=1 qasper_batch0000_examples7-7 size=1 completed=1/195 padded_prompt_tokens=3606 seconds=1.610
+[2026-08-15T06:33:50.702143+00:00] full attention_q_pca_h_K2_V16 batch=2 qasper_batch0001_examples51-51 size=1 completed=2/195 padded_prompt_tokens=3385 seconds=1.065
+[2026-08-15T06:33:51.829784+00:00] full attention_q_pca_h_K2_V16 batch=3 qasper_batch0002_examples54-54 size=1 completed=3/195 padded_prompt_tokens=5608 seconds=1.107
+[2026-08-15T06:33:52.933697+00:00] full attention_q_pca_h_K2_V16 batch=4 qasper_batch0003_examples75-75 size=1 completed=4/195 padded_prompt_tokens=4379 seconds=1.086
+[2026-08-15T06:33:54.804766+00:00] full attention_q_pca_h_K2_V16 batch=5 qasper_batch0004_examples99-99 size=1 completed=5/195 padded_prompt_tokens=3683 seconds=1.825
+[2026-08-15T06:33:57.012410+00:00] full attention_q_pca_h_K2_V16 batch=6 qasper_batch0005_examples114-114 size=1 completed=6/195 padded_prompt_tokens=10226 seconds=2.181
+[2026-08-15T06:33:58.266061+00:00] full attention_q_pca_h_K2_V16 batch=7 qasper_batch0006_examples140-140 size=1 completed=7/195 padded_prompt_tokens=5644 seconds=1.225
+[2026-08-15T06:34:00.834528+00:00] full attention_q_pca_h_K2_V16 batch=8 qasper_batch0007_examples144-144 size=1 completed=8/195 padded_prompt_tokens=6337 seconds=2.534
+[2026-08-15T06:34:03.286449+00:00] full attention_q_pca_h_K2_V16 batch=9 qasper_batch0008_examples145-145 size=1 completed=9/195 padded_prompt_tokens=7195 seconds=2.420
+[2026-08-15T06:34:10.844549+00:00] full attention_q_pca_h_K2_V16 batch=10 qasper_batch0009_examples159-159 size=1 completed=10/195 padded_prompt_tokens=6024 seconds=7.471
+[2026-08-15T06:34:15.497420+00:00] full attention_q_pca_h_K2_V16 batch=11 qasper_batch0010_examples209-209 size=1 completed=11/195 padded_prompt_tokens=19550 seconds=4.574
+[2026-08-15T06:34:19.586670+00:00] full attention_q_pca_h_K2_V16 batch=12 qasper_batch0011_examples212-212 size=1 completed=12/195 padded_prompt_tokens=17349 seconds=4.039
+[2026-08-15T06:34:22.374132+00:00] full attention_q_pca_h_K2_V16 batch=13 qasper_batch0012_examples217-217 size=1 completed=13/195 padded_prompt_tokens=10666 seconds=2.694
+[2026-08-15T06:34:30.638184+00:00] full attention_q_pca_h_K2_V16 batch=14 qasper_batch0013_examples221-221 size=1 completed=14/195 padded_prompt_tokens=21283 seconds=8.174
+[2026-08-15T06:34:39.154021+00:00] full attention_q_pca_h_K2_V16 batch=15 qasper_batch0014_examples223-223 size=1 completed=15/195 padded_prompt_tokens=21285 seconds=8.490
+[2026-08-15T06:34:40.348986+00:00] full attention_q_pca_h_K2_V16 batch=16 multifieldqa_en_batch0000_examples11-11 size=1 completed=16/195 padded_prompt_tokens=4473 seconds=1.180
+[2026-08-15T06:34:40.949249+00:00] full attention_q_pca_h_K2_V16 batch=17 multifieldqa_en_batch0001_examples38-38 size=1 completed=17/195 padded_prompt_tokens=2746 seconds=0.583
+[2026-08-15T06:34:42.601568+00:00] full attention_q_pca_h_K2_V16 batch=18 multifieldqa_en_batch0002_examples44-44 size=1 completed=18/195 padded_prompt_tokens=4666 seconds=1.637
+[2026-08-15T06:34:44.146583+00:00] full attention_q_pca_h_K2_V16 batch=19 multifieldqa_en_batch0003_examples45-45 size=1 completed=19/195 padded_prompt_tokens=3065 seconds=1.523
+[2026-08-15T06:34:46.742989+00:00] full attention_q_pca_h_K2_V16 batch=20 multifieldqa_en_batch0004_examples53-53 size=1 completed=20/195 padded_prompt_tokens=3801 seconds=2.553
+[2026-08-15T06:34:48.722543+00:00] full attention_q_pca_h_K2_V16 batch=21 multifieldqa_en_batch0005_examples89-89 size=1 completed=21/195 padded_prompt_tokens=9216 seconds=1.939
+[2026-08-15T06:34:52.779908+00:00] full attention_q_pca_h_K2_V16 batch=22 multifieldqa_en_batch0006_examples90-90 size=1 completed=22/195 padded_prompt_tokens=9141 seconds=4.012
+[2026-08-15T06:34:55.933299+00:00] full attention_q_pca_h_K2_V16 batch=23 multifieldqa_en_batch0007_examples119-119 size=1 completed=23/195 padded_prompt_tokens=11001 seconds=3.114
+[2026-08-15T06:34:58.524993+00:00] full attention_q_pca_h_K2_V16 batch=24 multifieldqa_en_batch0008_examples129-129 size=1 completed=24/195 padded_prompt_tokens=9137 seconds=2.547
+[2026-08-15T06:35:02.834884+00:00] full attention_q_pca_h_K2_V16 batch=25 multifieldqa_en_batch0009_examples134-134 size=1 completed=25/195 padded_prompt_tokens=9119 seconds=4.252
+[2026-08-15T06:35:09.754563+00:00] full attention_q_pca_h_K2_V16 batch=26 multifieldqa_en_batch0010_examples137-137 size=1 completed=26/195 padded_prompt_tokens=11768 seconds=6.864
+[2026-08-15T06:35:14.435025+00:00] full attention_q_pca_h_K2_V16 batch=27 multifieldqa_en_batch0011_examples138-138 size=1 completed=27/195 padded_prompt_tokens=14030 seconds=4.630
+[2026-08-15T06:35:19.720948+00:00] full attention_q_pca_h_K2_V16 batch=28 multifieldqa_en_batch0012_examples141-141 size=1 completed=28/195 padded_prompt_tokens=11161 seconds=5.229
+[2026-08-15T06:35:23.909874+00:00] full attention_q_pca_h_K2_V16 batch=29 multifieldqa_en_batch0013_examples144-144 size=1 completed=29/195 padded_prompt_tokens=11545 seconds=4.126
+[2026-08-15T06:35:29.612095+00:00] full attention_q_pca_h_K2_V16 batch=30 multifieldqa_en_batch0014_examples147-147 size=1 completed=30/195 padded_prompt_tokens=12837 seconds=5.672
+[2026-08-15T06:35:30.888267+00:00] full attention_q_pca_h_K2_V16 batch=31 hotpotqa_batch0000_examples0-0 size=1 completed=31/195 padded_prompt_tokens=6122 seconds=1.262
+[2026-08-15T06:35:31.462280+00:00] full attention_q_pca_h_K2_V16 batch=32 hotpotqa_batch0001_examples31-31 size=1 completed=32/195 padded_prompt_tokens=2260 seconds=0.555
+[2026-08-15T06:35:32.261122+00:00] full attention_q_pca_h_K2_V16 batch=33 hotpotqa_batch0002_examples61-61 size=1 completed=33/195 padded_prompt_tokens=3810 seconds=0.782
+[2026-08-15T06:35:33.316312+00:00] full attention_q_pca_h_K2_V16 batch=34 hotpotqa_batch0003_examples73-73 size=1 completed=34/195 padded_prompt_tokens=3428 seconds=1.029
+[2026-08-15T06:35:34.616611+00:00] full attention_q_pca_h_K2_V16 batch=35 hotpotqa_batch0004_examples96-96 size=1 completed=35/195 padded_prompt_tokens=5818 seconds=1.256
+[2026-08-15T06:35:36.785531+00:00] full attention_q_pca_h_K2_V16 batch=36 hotpotqa_batch0005_examples102-102 size=1 completed=36/195 padded_prompt_tokens=9472 seconds=2.130
+[2026-08-15T06:35:38.682696+00:00] full attention_q_pca_h_K2_V16 batch=37 hotpotqa_batch0006_examples118-118 size=1 completed=37/195 padded_prompt_tokens=8753 seconds=1.853
+[2026-08-15T06:35:42.635408+00:00] full attention_q_pca_h_K2_V16 batch=38 hotpotqa_batch0007_examples126-126 size=1 completed=38/195 padded_prompt_tokens=9701 seconds=3.888
+[2026-08-15T06:35:44.919128+00:00] full attention_q_pca_h_K2_V16 batch=39 hotpotqa_batch0008_examples169-169 size=1 completed=39/195 padded_prompt_tokens=10436 seconds=2.242
+[2026-08-15T06:35:47.145339+00:00] full attention_q_pca_h_K2_V16 batch=40 hotpotqa_batch0009_examples173-173 size=1 completed=40/195 padded_prompt_tokens=9487 seconds=2.155
+[2026-08-15T06:35:51.194206+00:00] full attention_q_pca_h_K2_V16 batch=41 hotpotqa_batch0010_examples213-213 size=1 completed=41/195 padded_prompt_tokens=15880 seconds=3.992
+[2026-08-15T06:35:53.836523+00:00] full attention_q_pca_h_K2_V16 batch=42 hotpotqa_batch0011_examples217-217 size=1 completed=42/195 padded_prompt_tokens=12069 seconds=2.578
+[2026-08-15T06:35:57.159232+00:00] full attention_q_pca_h_K2_V16 batch=43 hotpotqa_batch0012_examples222-222 size=1 completed=43/195 padded_prompt_tokens=14129 seconds=3.252
+[2026-08-15T06:36:00.726329+00:00] full attention_q_pca_h_K2_V16 batch=44 hotpotqa_batch0013_examples227-227 size=1 completed=44/195 padded_prompt_tokens=15089 seconds=3.491
+[2026-08-15T06:36:04.336401+00:00] full attention_q_pca_h_K2_V16 batch=45 hotpotqa_batch0014_examples242-242 size=1 completed=45/195 padded_prompt_tokens=14839 seconds=3.593
+[2026-08-15T06:36:05.011206+00:00] full attention_q_pca_h_K2_V16 batch=46 2wikimqa_batch0000_examples21-21 size=1 completed=46/195 padded_prompt_tokens=2343 seconds=0.650
+[2026-08-15T06:36:05.911176+00:00] full attention_q_pca_h_K2_V16 batch=47 2wikimqa_batch0001_examples60-60 size=1 completed=47/195 padded_prompt_tokens=4420 seconds=0.872
+[2026-08-15T06:36:07.333659+00:00] full attention_q_pca_h_K2_V16 batch=48 2wikimqa_batch0002_examples65-65 size=1 completed=48/195 padded_prompt_tokens=5230 seconds=1.401
+[2026-08-15T06:36:08.298421+00:00] full attention_q_pca_h_K2_V16 batch=49 2wikimqa_batch0003_examples80-80 size=1 completed=49/195 padded_prompt_tokens=4165 seconds=0.951
+[2026-08-15T06:36:08.950391+00:00] full attention_q_pca_h_K2_V16 batch=50 2wikimqa_batch0004_examples89-89 size=1 completed=50/195 padded_prompt_tokens=2468 seconds=0.606
+[2026-08-15T06:36:12.823983+00:00] full attention_q_pca_h_K2_V16 batch=51 2wikimqa_batch0005_examples129-129 size=1 completed=51/195 padded_prompt_tokens=9498 seconds=3.835
+[2026-08-15T06:36:14.456681+00:00] full attention_q_pca_h_K2_V16 batch=52 2wikimqa_batch0006_examples130-130 size=1 completed=52/195 padded_prompt_tokens=7668 seconds=1.592
+[2026-08-15T06:36:16.422924+00:00] full attention_q_pca_h_K2_V16 batch=53 2wikimqa_batch0007_examples131-131 size=1 completed=53/195 padded_prompt_tokens=8588 seconds=1.935
+[2026-08-15T06:36:17.746169+00:00] full attention_q_pca_h_K2_V16 batch=54 2wikimqa_batch0008_examples162-162 size=1 completed=54/195 padded_prompt_tokens=6386 seconds=1.270
+[2026-08-15T06:36:20.097966+00:00] full attention_q_pca_h_K2_V16 batch=55 2wikimqa_batch0009_examples186-186 size=1 completed=55/195 padded_prompt_tokens=10916 seconds=2.297
+[2026-08-15T06:36:23.109229+00:00] full attention_q_pca_h_K2_V16 batch=56 2wikimqa_batch0010_examples207-207 size=1 completed=56/195 padded_prompt_tokens=11867 seconds=2.939
+[2026-08-15T06:36:26.804624+00:00] full attention_q_pca_h_K2_V16 batch=57 2wikimqa_batch0011_examples245-245 size=1 completed=57/195 padded_prompt_tokens=15318 seconds=3.644
+[2026-08-15T06:36:29.510248+00:00] full attention_q_pca_h_K2_V16 batch=58 2wikimqa_batch0012_examples261-261 size=1 completed=58/195 padded_prompt_tokens=11159 seconds=2.632
+[2026-08-15T06:36:32.962831+00:00] full attention_q_pca_h_K2_V16 batch=59 2wikimqa_batch0013_examples264-264 size=1 completed=59/195 padded_prompt_tokens=15313 seconds=3.393
+[2026-08-15T06:36:35.581398+00:00] full attention_q_pca_h_K2_V16 batch=60 2wikimqa_batch0014_examples265-265 size=1 completed=60/195 padded_prompt_tokens=12152 seconds=2.583
+[2026-08-15T06:37:25.985873+00:00] full attention_q_pca_h_K2_V16 batch=61 gov_report_batch0000_examples54-73 size=4 completed=64/195 padded_prompt_tokens=15848 seconds=50.337
+[2026-08-15T06:38:41.003873+00:00] full attention_q_pca_h_K2_V16 batch=62 gov_report_batch0001_examples76-144 size=3 completed=67/195 padded_prompt_tokens=24948 seconds=74.899
+[2026-08-15T06:39:49.000623+00:00] full attention_q_pca_h_K2_V16 batch=63 gov_report_batch0002_examples175-194 size=3 completed=70/195 padded_prompt_tokens=22893 seconds=67.872
+[2026-08-15T06:40:51.118800+00:00] full attention_q_pca_h_K2_V16 batch=64 gov_report_batch0003_examples208-238 size=2 completed=72/195 padded_prompt_tokens=24664 seconds=61.996
+[2026-08-15T06:41:57.837837+00:00] full attention_q_pca_h_K2_V16 batch=65 gov_report_batch0004_examples239-287 size=2 completed=74/195 padded_prompt_tokens=23578 seconds=66.519
+[2026-08-15T06:43:08.187476+00:00] full attention_q_pca_h_K2_V16 batch=66 gov_report_batch0005_examples296-296 size=1 completed=75/195 padded_prompt_tokens=26157 seconds=70.336
+[2026-08-15T06:43:42.298018+00:00] full attention_q_pca_h_K2_V16 batch=67 multi_news_batch0000_examples0-90 size=4 completed=79/195 padded_prompt_tokens=12892 seconds=34.064
+[2026-08-15T06:45:03.421678+00:00] full attention_q_pca_h_K2_V16 batch=68 multi_news_batch0001_examples97-107 size=4 completed=83/195 padded_prompt_tokens=28332 seconds=80.975
+[2026-08-15T06:46:10.065275+00:00] full attention_q_pca_h_K2_V16 batch=69 multi_news_batch0002_examples140-196 size=2 completed=85/195 padded_prompt_tokens=20170 seconds=66.521
+[2026-08-15T06:47:34.291541+00:00] full attention_q_pca_h_K2_V16 batch=70 multi_news_batch0003_examples213-215 size=2 completed=87/195 padded_prompt_tokens=26462 seconds=84.068
+[2026-08-15T06:49:00.292624+00:00] full attention_q_pca_h_K2_V16 batch=71 multi_news_batch0004_examples221-231 size=2 completed=89/195 padded_prompt_tokens=27128 seconds=85.869
+[2026-08-15T06:49:44.583254+00:00] full attention_q_pca_h_K2_V16 batch=72 multi_news_batch0005_examples253-253 size=1 completed=90/195 padded_prompt_tokens=14321 seconds=44.259
+[2026-08-15T06:49:59.043620+00:00] full attention_q_pca_h_K2_V16 batch=73 trec_batch0000_examples49-98 size=5 completed=95/195 padded_prompt_tokens=24585 seconds=14.352
+[2026-08-15T06:50:18.535777+00:00] full attention_q_pca_h_K2_V16 batch=74 trec_batch0001_examples144-167 size=3 completed=98/195 padded_prompt_tokens=28737 seconds=19.360
+[2026-08-15T06:50:31.473587+00:00] full attention_q_pca_h_K2_V16 batch=75 trec_batch0002_examples176-197 size=2 completed=100/195 padded_prompt_tokens=18520 seconds=12.839
+[2026-08-15T06:50:54.439669+00:00] full attention_q_pca_h_K2_V16 batch=76 trec_batch0003_examples204-206 size=2 completed=102/195 padded_prompt_tokens=30182 seconds=22.824
+[2026-08-15T06:51:17.325815+00:00] full attention_q_pca_h_K2_V16 batch=77 trec_batch0004_examples241-267 size=2 completed=104/195 padded_prompt_tokens=30092 seconds=22.766
+[2026-08-15T06:51:25.521959+00:00] full attention_q_pca_h_K2_V16 batch=78 trec_batch0005_examples270-270 size=1 completed=105/195 padded_prompt_tokens=14467 seconds=8.167
+[2026-08-15T06:51:36.447598+00:00] full attention_q_pca_h_K2_V16 batch=79 triviaqa_batch0000_examples25-80 size=5 completed=110/195 padded_prompt_tokens=25860 seconds=10.815
+[2026-08-15T06:51:49.491634+00:00] full attention_q_pca_h_K2_V16 batch=80 triviaqa_batch0001_examples108-163 size=3 completed=113/195 padded_prompt_tokens=26370 seconds=12.910
+[2026-08-15T06:51:57.834640+00:00] full attention_q_pca_h_K2_V16 batch=81 triviaqa_batch0002_examples171-192 size=2 completed=115/195 padded_prompt_tokens=16598 seconds=8.241
+[2026-08-15T06:52:03.615751+00:00] full attention_q_pca_h_K2_V16 batch=82 triviaqa_batch0003_examples206-206 size=1 completed=116/195 padded_prompt_tokens=14747 seconds=5.705
+[2026-08-15T06:52:11.448256+00:00] full attention_q_pca_h_K2_V16 batch=83 triviaqa_batch0004_examples226-226 size=1 completed=117/195 padded_prompt_tokens=20002 seconds=7.749
+[2026-08-15T06:52:18.419434+00:00] full attention_q_pca_h_K2_V16 batch=84 triviaqa_batch0005_examples248-248 size=1 completed=118/195 padded_prompt_tokens=17808 seconds=6.874
+[2026-08-15T06:52:26.309780+00:00] full attention_q_pca_h_K2_V16 batch=85 triviaqa_batch0006_examples258-258 size=1 completed=119/195 padded_prompt_tokens=20203 seconds=7.820
+[2026-08-15T06:52:31.893775+00:00] full attention_q_pca_h_K2_V16 batch=86 triviaqa_batch0007_examples290-290 size=1 completed=120/195 padded_prompt_tokens=14340 seconds=5.557
+[2026-08-15T06:52:55.632309+00:00] full attention_q_pca_h_K2_V16 batch=87 samsum_batch0000_examples19-89 size=5 completed=125/195 padded_prompt_tokens=25635 seconds=23.624
+[2026-08-15T06:53:27.804309+00:00] full attention_q_pca_h_K2_V16 batch=88 samsum_batch0001_examples143-154 size=3 completed=128/195 padded_prompt_tokens=31230 seconds=32.063
+[2026-08-15T06:53:45.871455+00:00] full attention_q_pca_h_K2_V16 batch=89 samsum_batch0002_examples190-194 size=2 completed=130/195 padded_prompt_tokens=16816 seconds=17.976
+[2026-08-15T06:54:17.083335+00:00] full attention_q_pca_h_K2_V16 batch=90 samsum_batch0003_examples215-220 size=2 completed=132/195 padded_prompt_tokens=28644 seconds=31.066
+[2026-08-15T06:54:33.263190+00:00] full attention_q_pca_h_K2_V16 batch=91 samsum_batch0004_examples228-228 size=1 completed=133/195 padded_prompt_tokens=18226 seconds=16.105
+[2026-08-15T06:55:07.178277+00:00] full attention_q_pca_h_K2_V16 batch=92 samsum_batch0005_examples257-283 size=2 completed=135/195 padded_prompt_tokens=30872 seconds=33.832
+[2026-08-15T06:55:12.529095+00:00] full attention_q_pca_h_K2_V16 batch=93 passage_count_batch0000_examples22-69 size=4 completed=139/195 padded_prompt_tokens=13032 seconds=5.286
+[2026-08-15T06:55:25.078539+00:00] full attention_q_pca_h_K2_V16 batch=94 passage_count_batch0001_examples79-119 size=3 completed=142/195 padded_prompt_tokens=29352 seconds=12.420
+[2026-08-15T06:55:35.377706+00:00] full attention_q_pca_h_K2_V16 batch=95 passage_count_batch0002_examples155-195 size=3 completed=145/195 padded_prompt_tokens=26298 seconds=10.137
+[2026-08-15T06:55:40.197962+00:00] full attention_q_pca_h_K2_V16 batch=96 passage_count_batch0003_examples214-214 size=1 completed=146/195 padded_prompt_tokens=20155 seconds=4.763
+[2026-08-15T06:55:53.091511+00:00] full attention_q_pca_h_K2_V16 batch=97 passage_count_batch0004_examples221-248 size=2 completed=148/195 padded_prompt_tokens=26338 seconds=12.781
+[2026-08-15T06:56:04.622820+00:00] full attention_q_pca_h_K2_V16 batch=98 passage_count_batch0005_examples257-267 size=2 completed=150/195 padded_prompt_tokens=24208 seconds=11.453
+[2026-08-15T06:56:12.136603+00:00] full attention_q_pca_h_K2_V16 batch=99 passage_retrieval_en_batch0000_examples0-78 size=5 completed=155/195 padded_prompt_tokens=26880 seconds=7.381
+[2026-08-15T06:56:24.238379+00:00] full attention_q_pca_h_K2_V16 batch=100 passage_retrieval_en_batch0001_examples110-169 size=3 completed=158/195 padded_prompt_tokens=28509 seconds=11.999
+[2026-08-15T06:56:28.542383+00:00] full attention_q_pca_h_K2_V16 batch=101 passage_retrieval_en_batch0002_examples184-194 size=2 completed=160/195 padded_prompt_tokens=13648 seconds=4.203
+[2026-08-15T06:56:37.655063+00:00] full attention_q_pca_h_K2_V16 batch=102 passage_retrieval_en_batch0003_examples220-239 size=2 completed=162/195 padded_prompt_tokens=23242 seconds=9.009
+[2026-08-15T06:56:46.833104+00:00] full attention_q_pca_h_K2_V16 batch=103 passage_retrieval_en_batch0004_examples281-285 size=2 completed=164/195 padded_prompt_tokens=23508 seconds=9.067
+[2026-08-15T06:56:51.630720+00:00] full attention_q_pca_h_K2_V16 batch=104 passage_retrieval_en_batch0005_examples293-293 size=1 completed=165/195 padded_prompt_tokens=12247 seconds=4.782
+[2026-08-15T06:57:01.502968+00:00] full attention_q_pca_h_K2_V16 batch=105 lcc_batch0000_examples42-98 size=5 completed=170/195 padded_prompt_tokens=16470 seconds=9.762
+[2026-08-15T06:57:20.362590+00:00] full attention_q_pca_h_K2_V16 batch=106 lcc_batch0001_examples105-111 size=2 completed=172/195 padded_prompt_tokens=25734 seconds=18.779
+[2026-08-15T06:57:25.891260+00:00] full attention_q_pca_h_K2_V16 batch=107 lcc_batch0002_examples116-116 size=1 completed=173/195 padded_prompt_tokens=8671 seconds=5.441
+[2026-08-15T06:57:35.746511+00:00] full attention_q_pca_h_K2_V16 batch=108 lcc_batch0003_examples153-153 size=1 completed=174/195 padded_prompt_tokens=17722 seconds=9.788
+[2026-08-15T06:57:43.235550+00:00] full attention_q_pca_h_K2_V16 batch=109 lcc_batch0004_examples166-166 size=1 completed=175/195 padded_prompt_tokens=12726 seconds=7.343
+[2026-08-15T06:58:01.541385+00:00] full attention_q_pca_h_K2_V16 batch=110 lcc_batch0005_examples235-235 size=1 completed=176/195 padded_prompt_tokens=32651 seconds=18.199
+[2026-08-15T06:58:14.572124+00:00] full attention_q_pca_h_K2_V16 batch=111 lcc_batch0006_examples253-253 size=1 completed=177/195 padded_prompt_tokens=23446 seconds=12.841
+[2026-08-15T06:58:39.927181+00:00] full attention_q_pca_h_K2_V16 batch=112 lcc_batch0007_examples261-261 size=1 completed=178/195 padded_prompt_tokens=42254 seconds=25.254
+[2026-08-15T06:58:52.164063+00:00] full attention_q_pca_h_K2_V16 batch=113 lcc_batch0008_examples272-272 size=1 completed=179/195 padded_prompt_tokens=22146 seconds=12.139
+[2026-08-15T06:59:02.808063+00:00] full attention_q_pca_h_K2_V16 batch=114 lcc_batch0009_examples279-279 size=1 completed=180/195 padded_prompt_tokens=19320 seconds=10.609
+[2026-08-15T06:59:22.349093+00:00] full attention_q_pca_h_K2_V16 batch=115 repobench-p_batch0000_examples1-28 size=3 completed=183/195 padded_prompt_tokens=28992 seconds=19.416
+[2026-08-15T06:59:31.271050+00:00] full attention_q_pca_h_K2_V16 batch=116 repobench-p_batch0001_examples65-96 size=2 completed=185/195 padded_prompt_tokens=12880 seconds=8.811
+[2026-08-15T06:59:55.429036+00:00] full attention_q_pca_h_K2_V16 batch=117 repobench-p_batch0002_examples126-135 size=2 completed=187/195 padded_prompt_tokens=31664 seconds=24.047
+[2026-08-15T07:00:02.071576+00:00] full attention_q_pca_h_K2_V16 batch=118 repobench-p_batch0003_examples160-160 size=1 completed=188/195 padded_prompt_tokens=11072 seconds=6.548
+[2026-08-15T07:00:12.960999+00:00] full attention_q_pca_h_K2_V16 batch=119 repobench-p_batch0004_examples172-172 size=1 completed=189/195 padded_prompt_tokens=19721 seconds=10.838
+[2026-08-15T07:00:19.520783+00:00] full attention_q_pca_h_K2_V16 batch=120 repobench-p_batch0005_examples193-193 size=1 completed=190/195 padded_prompt_tokens=10864 seconds=6.442
+[2026-08-15T07:00:33.493137+00:00] full attention_q_pca_h_K2_V16 batch=121 repobench-p_batch0006_examples204-204 size=1 completed=191/195 padded_prompt_tokens=25315 seconds=13.833
+[2026-08-15T07:00:45.337841+00:00] full attention_q_pca_h_K2_V16 batch=122 repobench-p_batch0007_examples252-252 size=1 completed=192/195 padded_prompt_tokens=21471 seconds=11.743
+[2026-08-15T07:00:57.100186+00:00] full attention_q_pca_h_K2_V16 batch=123 repobench-p_batch0008_examples253-253 size=1 completed=193/195 padded_prompt_tokens=21246 seconds=11.624
+[2026-08-15T07:01:13.078283+00:00] full attention_q_pca_h_K2_V16 batch=124 repobench-p_batch0009_examples276-276 size=1 completed=194/195 padded_prompt_tokens=28905 seconds=15.879
+[2026-08-15T07:01:24.707618+00:00] full attention_q_pca_h_K2_V16 batch=125 repobench-p_batch0010_examples291-291 size=1 completed=195/195 padded_prompt_tokens=21245 seconds=11.624
+[2026-08-15T07:01:27.299541+00:00] completed full attention_q_pca_h_K2_V16
+[2026-08-15T07:01:27.915108+00:00] $ /home/elicer/miniconda3/envs/stq/bin/python -m experiments.spin_turboquant.longbench_analytic --stage report --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 --longbench-repo /home/elicer/SpinTurboQuant/LongBench_official --data-dir /home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data --reference-subset-manifest /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset/subset_manifest.json --output-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_analytic --device cuda --batch-size 8 --batch-token-budget 32768 --bootstrap-samples 10000 --dataset-revision 5e628be450b7e67fb7ae6e201bd6d8f7056f7672 --longbench-commit 2e00731f8d0bff23dc4325161044d0ed8af94c1e --wikitext-revision b08601e04326c79dfdd32d625aee71d232d685c3 --reference-study-dir /home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_subset
+[2026-08-15T07:01:37.499009+00:00] analytic report complete

@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,qasper,Single QA,15,29.946978792065046,29.95,37.05881324102828
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,multifieldqa_en,Single QA,15,37.92423253004727,37.92,27.131889887121083
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,hotpotqa,Multi QA,15,29.925925925925924,29.93,35.123454620408275
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,2wikimqa,Multi QA,15,40.0,40.0,48.98979485566356
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,gov_report,Summarization,15,29.924588914092215,29.92,4.67062239284013
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,multi_news,Summarization,15,20.483767223100653,20.48,5.181714243297126
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,trec,Few-shot,15,60.0,60.0,48.98979485566356
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,triviaqa,Few-shot,15,87.93650793650794,87.94,28.82777418348315
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,samsum,Few-shot,15,42.54217074223823,42.54,15.176352511731572
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,passage_count,Synthetic,15,17.407407407407405,17.41,34.71617231244589
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,passage_retrieval_en,Synthetic,15,63.333333333333336,63.33,46.42796092394706
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,lcc,Code,15,50.666666666666664,50.67,28.845950996437765
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,repobench-p,Code,15,48.53333333333333,48.53,26.98114568031206

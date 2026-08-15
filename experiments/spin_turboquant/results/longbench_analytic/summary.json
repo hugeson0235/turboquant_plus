@@ -1,0 +1,116 @@
+{
+  "all_conditions_complete": true,
+  "bootstrap": [
+    {
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 20020305,
+      "confidence_interval_high": 3.5712146118093915,
+      "confidence_interval_low": -5.693809602401921,
+      "example_losses": 63,
+      "example_ties": 77,
+      "example_wins": 55,
+      "first_condition_id": "activation_k_pca_h_K2_V16",
+      "first_minus_second_macro_average": -0.9821496303163827,
+      "pair_id": "activation_k_pca_h_minus_wk_pca_h",
+      "positive_tasks": 5,
+      "second_condition_id": "wk_pca_h_K2_V16"
+    },
+    {
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 20020306,
+      "confidence_interval_high": 4.112486551315094,
+      "confidence_interval_low": -4.938098038345127,
+      "example_losses": 53,
+      "example_ties": 82,
+      "example_wins": 60,
+      "first_condition_id": "attention_q_pca_h_K2_V16",
+      "first_minus_second_macro_average": -0.42507450551526854,
+      "pair_id": "attention_q_pca_h_minus_wk_pca_h",
+      "positive_tasks": 7,
+      "second_condition_id": "wk_pca_h_K2_V16"
+    },
+    {
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 20020307,
+      "confidence_interval_high": 5.420415180192643,
+      "confidence_interval_low": -4.350532771951551,
+      "example_losses": 61,
+      "example_ties": 75,
+      "example_wins": 59,
+      "first_condition_id": "attention_q_pca_h_K2_V16",
+      "first_minus_second_macro_average": 0.5570751248011142,
+      "pair_id": "attention_q_pca_h_minus_activation_k_pca_h",
+      "positive_tasks": 7,
+      "second_condition_id": "activation_k_pca_h_K2_V16"
+    }
+  ],
+  "conditions": 3,
+  "examples_per_condition": 195,
+  "generated_at": "2026-08-15T07:01:37.497047+00:00",
+  "heldout_tokens": 4096,
+  "hypotheses": [
+    {
+      "evidence": "Activation normalized Key MSE 0.00076310773 vs Wk 0.00081237415",
+      "hypothesis": "H1",
+      "supported": true
+    },
+    {
+      "evidence": "Attention-aware is not lowest on both held-out logit MSE and KL",
+      "hypothesis": "H2",
+      "supported": false
+    },
+    {
+      "evidence": "Attention-aware LongBench macro 43.528222; best macro 43.953297",
+      "hypothesis": "H3",
+      "supported": false
+    },
+    {
+      "evidence": "Both calibration-method vs Wk pilot confidence intervals include zero",
+      "hypothesis": "H4",
+      "supported": true
+    }
+  ],
+  "overall": [
+    {
+      "attention_output_mse": 0.00150045264919485,
+      "attention_pre_softmax_logit_mse": 0.8146412674824164,
+      "attention_probability_kl": 0.1270409857206687,
+      "condition_id": "wk_pca_h_K2_V16",
+      "empty_outputs": 0,
+      "label": "Wk-PCA+H",
+      "longbench_macro_average": 43.95329676914085,
+      "method": "wk_pca_h",
+      "norm_restored_key_mse": 0.42055937135592103,
+      "normalized_key_mse": 0.000812374153355222,
+      "relative_key_mse": 0.10349631495899662
+    },
+    {
+      "attention_output_mse": 0.001628059424837236,
+      "attention_pre_softmax_logit_mse": 0.645689834555571,
+      "attention_probability_kl": 0.11509695119411845,
+      "condition_id": "activation_k_pca_h_K2_V16",
+      "empty_outputs": 0,
+      "label": "Activation-K-PCA+H",
+      "longbench_macro_average": 42.971147138824456,
+      "method": "activation_k_pca_h",
+      "norm_restored_key_mse": 0.39848292622264125,
+      "normalized_key_mse": 0.0007631077264420583,
+      "relative_key_mse": 0.09806347747086164
+    },
+    {
+      "attention_output_mse": 0.0012322580557183604,
+      "attention_pre_softmax_logit_mse": 1.1157660930913094,
+      "attention_probability_kl": 0.12032487234318978,
+      "condition_id": "attention_q_pca_h_K2_V16",
+      "empty_outputs": 0,
+      "label": "Attention-aware-Q-PCA+H",
+      "longbench_macro_average": 43.52822226362558,
+      "method": "attention_q_pca_h",
+      "norm_restored_key_mse": 0.4607010386243928,
+      "normalized_key_mse": 0.0008848091790696344,
+      "relative_key_mse": 0.11337485987217374
+    }
+  ],
+  "reference_baselines_compatible": true,
+  "total_predictions": 585
+}

@@ -27,3 +27,9 @@ niah_v2_results/
 wikitext-103-raw/
 benchmark-results-raw/*.kld
 *.draft.md
+# Analytic PCA regenerable tensors and checkpoints
+experiments/spin_turboquant/results/longbench_analytic/calibration_moments.pt
+experiments/spin_turboquant/results/longbench_analytic/calibration_half_rotations.pt
+experiments/spin_turboquant/results/longbench_analytic/covariance_eigenvalues.npz
+experiments/spin_turboquant/results/longbench_analytic/*_pca_rotations.pt
+experiments/spin_turboquant/results/longbench_analytic/heldout_diagnostic_accumulators.pt

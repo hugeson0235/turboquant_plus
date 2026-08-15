@@ -98,3 +98,38 @@ Full runs use deterministic contiguous batches only for generation-heavy or
 fixed-cap tasks; variable-length QA remains batch size 1. Batch membership is
 fixed before resume filtering, and implementation, dataset, codebook, model,
 and rotation hashes are recorded in the run configuration.
+
+## Analytic PCA LongBench pilot
+
+`../../../LongBenchAnalytic.md` is implemented separately so the completed
+22-condition study remains immutable. The analytic runner constructs exactly
+three K2/V16 row-vector rotations (`Wk-PCA+H`, `Activation-K-PCA+H`, and
+`Attention-aware-Q-PCA+H`), using deterministic float64 eigendecomposition and
+the same normalized Sylvester `H_128` for every method. Activation and
+attention targets share an immutable WikiText-2 train manifest containing 8
+unique 512-token document spans; held-out diagnostics use an independently
+manifested 4,096 tokens from WikiText-2 validation.
+
+```bash
+conda activate stq
+python -m experiments.spin_turboquant.longbench_analytic \
+  --stage orchestrate \
+  --model /path/to/Meta-Llama-3.1-8B-Instruct/snapshot \
+  --longbench-repo ../LongBench_official \
+  --data-dir ../LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data \
+  --reference-subset-manifest experiments/spin_turboquant/results/longbench_subset/subset_manifest.json \
+  --reference-study-dir experiments/spin_turboquant/results/longbench_subset \
+  --output-dir experiments/spin_turboquant/results/longbench_analytic
+```
+
+Stages are `validate`, `rotations`, `diagnostics`, `smoke`, `full`, `report`,
+and `orchestrate`. Moment construction and held-out diagnostics checkpoint after
+every 512-token sequence; LongBench predictions checkpoint after every batch.
+The root output includes the calibration/subset manifests, three rotation
+artifacts, covariance/eigenvalue archive, per-head rotation metadata,
+calibration stability, held-out diagnostics, 585 matched predictions, all
+three pairwise 10,000-sample bootstrap comparisons, and `report.md`.
+
+This path is a quality emulation: Keys are reconstructed before BF16 cache
+storage and Values remain BF16. Reported packed-cache size is theoretical; GPU
+memory and latency are not compressed-cache measurements.

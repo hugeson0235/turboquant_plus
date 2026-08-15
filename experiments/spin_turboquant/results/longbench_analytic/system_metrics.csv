@@ -1,0 +1,4 @@
+condition_id,method,bit_width,examples,prompt_tokens,generated_tokens,prefill_seconds,decode_seconds,decode_seconds_per_token,total_seconds,peak_gpu_memory_bytes,theoretical_kv_bytes_per_token,empty_outputs,generation_failures
+wk_pca_h_K2_V16,wk_pca_h,2,195,1854926,18905,547.5176361575725,1033.8203072696924,0.0546850202205603,1584.1184415221214,27875635200,74752,0,0
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,195,1854926,18393,547.552312746644,1006.4060373157262,0.054716796461465024,1556.630468815565,27875635200,74752,0,0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,195,1854926,20034,547.4344442859292,1097.7076386883853,0.05479223513469029,1647.6135960072286,27875635200,74752,0,0

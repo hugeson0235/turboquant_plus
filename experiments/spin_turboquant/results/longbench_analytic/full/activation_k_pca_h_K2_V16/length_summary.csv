@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,0-4k,13,65,47.1796000522392
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,4-8k,13,65,36.50461290946835
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,8k+,13,65,45.22922845476584

@@ -1,0 +1,19 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+wk_pca_h_K2_V16,wk_pca_h,2,,Single QA,2,40.97316811055201
+wk_pca_h_K2_V16,wk_pca_h,2,,Multi QA,2,41.55555555555556
+wk_pca_h_K2_V16,wk_pca_h,2,,Summarization,2,26.139953238713623
+wk_pca_h_K2_V16,wk_pca_h,2,,Few-shot,3,64.50492114948263
+wk_pca_h_K2_V16,wk_pca_h,2,,Synthetic,2,30.37037037037037
+wk_pca_h_K2_V16,wk_pca_h,2,,Code,2,49.900000000000006
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Single QA,2,33.93560566105616
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Multi QA,2,34.96296296296296
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Summarization,2,25.204178068596434
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Few-shot,3,63.49289289291539
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Synthetic,2,40.37037037037037
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,Code,2,49.599999999999994
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Single QA,2,37.40557211439819
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Multi QA,2,43.78111946532999
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Summarization,2,27.0405104510884
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Few-shot,3,59.38193956627756
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Synthetic,2,30.833333333333332
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,Code,2,54.8

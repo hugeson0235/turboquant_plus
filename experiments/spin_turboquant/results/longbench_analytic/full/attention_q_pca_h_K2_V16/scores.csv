@@ -1,0 +1,196 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,7,1bd9a082bd7b5ab6c152dbda3db38c0c3bc92cddf82383a3,2720,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,51,d95b33cbe3496fb98638b3c3b1a956847b6472aa8d18a5cc,2393,0-4k,80.00000000000001
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,54,b959a2ca0687fbe1c4f11a6fda00eb9341525f1502c9afc6,3566,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,75,b1fdb80cd96f455762f4f3be78a4932e7ae5edb2802d9e5c,3244,0-4k,88.8888888888889
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,99,d9c7574b1ed1ebd6eb755e6bbeee3513c9c912771059348c,2533,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,114,e28df0e3283943b1e011e1dba7a231e35269588b73697ca4,7837,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,140,755daa298cdf770c8ed19ddf39270f07e077d88a82aaa0dc,4263,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,144,0225501ce54ac2c95a557a5691a4322482af24748391e6e9,4104,4-8k,66.66666666666666
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,145,34c5eb16ccc55869a263dfda28d028267e29ee243880c9d5,5136,4-8k,13.333333333333334
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,159,d5e92fcef6747ba1518ae7d8a46ad274b585425b2c889d5b,4738,4-8k,25.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,209,074b526f101518a8f5c810fed1e28f757dacb7805b161e22,14472,8k+,33.333333333333336
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,212,21fc5caf7a80aa10b3d9e86ca96d466edb09ae8961c22c85,12952,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,217,3a92f5b9ebedea5d5efd1f4af956b59b4e0ae6ee33db136f,8555,8k+,4.761904761904761
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,221,1bb7cd04a893fe2a5497bdf7d0dcb064da2ef56144b44bdd,14722,8k+,23.404255319148934
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,223,6fd8cd7777d0b6f36ccdfc044d9b5056e519fd11feb2a750,14660,8k+,64.51612903225806
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,11,94ccf4d54b36e7e9d4aa594a7bc426528630a5b8aff296a4,3422,0-4k,66.66666666666666
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,38,235a5c99cd7fae9e2b410ad99c1b1fafea43799d3f1138a8,1810,0-4k,18.181818181818183
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,44,ec016e90ac78727f3c4aa176db472724bda53c07cb8cb696,682,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,45,4c9131da4fb2a9dbc8dadce39d20bdc302a092b5740c414a,1860,0-4k,52.17391304347827
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,53,6caa98612cf0e2ddf58e1ba70daaf79a3ac616280fb48188,2947,0-4k,4.545454545454545
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,89,566881d2138d7e29cd6dd2b661b6f7ffe4c515c92fdaf837,5523,4-8k,10.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,90,d427e3ab7584a0e253bfb6a9d76626b726c79b57d5e39f2a,6102,4-8k,25.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,119,f9b9a553107eed5b994a9aaf07e8ccac487feaa8ff108ec6,5917,4-8k,26.086956521739125
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,129,df53ff06fbc99dbae6bfe13a946420321d4542480eeb56f3,6101,4-8k,66.66666666666666
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,134,c60792f391b389a1c44b0a8f62f4a792d9ed82286b1b7f95,6706,4-8k,35.294117647058826
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,137,a9f124fabc341d61e359af8e8badf79dd63a97896c28842e,9607,8k+,30.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,138,bda4a6b251a601b7f7f956f298b59d8e99993845c1eaf7d6,8281,8k+,70.58823529411764
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,141,110688fd7522324ef26cbf3ec4f4b7ab29aa0b687aa1ade5,8366,8k+,50.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,144,46a2207a7a3f6d98effa73491cf83b63f92e29e0023c6e52,9437,8k+,47.05882352941176
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,147,25d54c0a145838996b56def82126f35b3fabe3e100d10fc0,10003,8k+,20.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,0,1dae9ec530a93f43f85bd215a5c0e6737dbcf226cd3541d8,3745,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,31,f349d7bdea5f38b858c69ddae4698a287f9d201869c14919,1541,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,61,406311f7ab0d87c7aa2a4886827e640bc0848e8206f816c2,2519,0-4k,66.66666666666666
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,73,8333f3e9e6703387546f30d78b61e07f326a7ea0aecdf557,2202,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,96,ad3b0ce8a9aaed70ba9db2fdae6d812ae61d39b7cb409376,3730,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,102,515a5cbf646c2891fde47be6b8fa3442571938d8dac8827a,6860,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,118,4beefe473acde45f1accb31e6f45cff16e0a8b47eefd032e,5913,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,126,a96ab885a132aad0f22735dad044516f01929c6be656b11a,7110,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,169,c18c76f9efb43dc4d15ce54891af6a60178be55f1eec2656,7002,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,173,74f2fce3240dd7e91f9522b9cbb9e10f43f16fdb0c22e7fa,6333,4-8k,40.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,213,ce41e73398410371a755f618a953a68b14f75b8f2e8a62cc,11543,8k+,85.71428571428571
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,217,7cdceb45cfb9439bd41148788e5cf2f0e8a5cb99a0e09729,9019,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,222,82a1a48996ef392d6abe74ea1d2b0a807c0f4d859c4026ac,9314,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,227,192e872cf190ea4e64fd401a32a3ea0426dc488afe3702ad,10290,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,242,ecde9842060b9101fa9edceed35332413b01be43d4940652,11497,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,21,0bc3341fffaad3e92d14d64b539df741528ef4e2b76e9632,1529,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,60,37eb33998e8bd7ffe40969ac3161ad695983fcf651dac639,2859,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,65,d7159102f8034cb0ad4834df59b0734f052a63c3a1d0f0bb,3621,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,80,9a74e9b9111e3d13efa2b9b43c522354f7d5f3dae6ca5e96,2753,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,89,f479830ec67206a7edd48ae2ac6f8fc1f639da89caf1a0d2,1405,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,129,d64ce42f72497e502a412d395566e55a3793d05b35004cb4,6417,4-8k,21.052631578947366
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,130,fe284936ae55063527821e9ee610ae67958789167aa4ba1a,5421,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,131,d524ca109e5ac6284dec16931f2403ef7859225cfde19e9e,5848,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,162,78877dc3800b31f7831cf2f941219ee29493e35b53b059a1,4421,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,186,7022cbda00a72169cc470d7879da58fc0673ff175aa1f19f,7764,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,207,3a4153b2cd645e567d268c92fc153be937caefb93ac238df,8135,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,245,4ced3912f614aca56f95eb0431c22e53c24c05717bf75f62,10959,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,261,e367499fba5b229051bc79021a1ad30bbd066b1f89c277f6,8053,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,264,3809f116856e090121b8d2d54cb0416076a8916013f06997,10696,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,265,ee5c0b8fe31f40bbf2579439858229041ea769a46d82f49b,8703,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,54,a3a11ee5de13be1f6ab405e8e1b29f2cd07929fe9112561a,3679,0-4k,27.586206448341922
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,56,a52b972a6051b61f61eefad3a6358e3f4f89c1a6872dd5a9,2999,0-4k,31.999999558558027
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,57,5a1f14be3b3a06a0573d307579eda8216fb13f3e418abe97,2790,0-4k,27.6056334188296
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,73,13416da54e1ad4f7681a4e30e66a3973ed3f812bf2af6f7a,1799,0-4k,31.578946875260772
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,76,cd96d8a3dbb09bac127d9aa3bb5c62856940380d8722160e,2961,0-4k,33.52272677855437
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,112,357977aac62ac12b4958584d44cddcdeeb3c3b2835ed1358,7426,4-8k,28.499999596800002
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,144,24581c7640a62446ef310e19c657fde28f428e2cdde9927c,4743,4-8k,33.106575530360296
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,175,925cc92d4d68438d5beff9441c206f98fbf1adf8c3a2319c,4349,4-8k,31.52941131367197
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,182,380b8a11402167f3806aee3eca9dbd8feae82a13a1e009d8,5455,4-8k,32.71767766559688
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,194,1345903bbe6b1a4bc816f5b2431912f0377f2e1c188ad933,6790,4-8k,34.3749995138889
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,208,3cd2e850cddd4722470f29c62dd23ec7e5740d89575b4128,8253,8k+,26.91415275667121
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,238,931127a19bd12e3e1831db946f7f0d3f6a8e8a2760708c03,10555,8k+,30.819671643020698
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,239,95108834ba59cae5c2f46634c3785c3aefe9fdd1d8656b9e,8737,8k+,36.363635943833046
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,287,7bb19ba82bff13f027337b76e32661a2028a80f224f1d7b9,10552,8k+,29.629629256268963
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,296,2d74ce64491ea67c0b42a06ef439cd49bc7da7f9768661a4,22560,8k+,26.99386466985961
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,0,3cfe6d5139ea2e17d17b9c8d040c015c3db4936578091cf6,951,0-4k,21.176470104861604
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,31,b723a6f6b48314b21c4142104e17776b8d24371546fd842e,1804,0-4k,33.80281640150764
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,88,129345ac116bd3d12d86321b7bb7d8ec257ec2d4ee951b79,695,0-4k,27.34374950686646
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,90,b284f77807027c80d9052f3116a5f1945a921b333262a44f,1375,0-4k,23.456789635364284
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,97,9b05a23597d81978bb62a7d42cf8a829ab8c00dbd9936af1,836,0-4k,30.246913085124223
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,100,a7679b6195dde9c6472dfcb5a9b0f7301010ad575d82f481,5411,4-8k,24.2990649211479
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,101,e8ae3a32f6723be9e54aa66700703b5010e6a24337e6387c,5553,4-8k,27.343749517578132
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,107,a0eda52afcd3721a2791dacaee59ff9d0b57b2f89744e190,4795,4-8k,19.886363137154582
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,140,22c4f915fbec56cff0c26b9814a2e8ef79640588ac70d521,6253,4-8k,23.030302545748405
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,196,29930ff7fc60809fcb40fa0d8fc2415ba9d1dc6435cdea4f,7740,4-8k,29.104477125417695
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,213,3b3c748f3eb38ad864d61971e37e3a353350c67bbf60705f,8992,8k+,17.24137883356868
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,215,4d2e3653c3c14982a2a316fdec16de82af22d4e610f04842,9464,8k+,9.160304883398426
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,221,4f5bef9de35675cccb7f0ab2422f5766b9f8a0c6fb983678,10507,8k+,24.999999502045032
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,231,c44cd4b3d05e349d96d0107750992323e358891d05732948,8571,8k+,16.509433476682112
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,253,928d14dff96c5f6c99a1f9d845d00c2642bc704d7434506e,10683,8k+,20.370369886670538
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,49,7dfc677d5d152f68d56844b67c26eae5ade79afb3e99f801,3725,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,50,6920dc5ab1fc7c4eb0768f2ac5ba7f65fa1ad44168b31380,1870,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,67,68092da2a4729b3ceec74cdbeee8f882103816527070990f,3432,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,74,2b2f0ca1e20f6ff8114ae89d62d0f7d510a6d50aac79de79,3083,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,98,f6928484791855eaafa05bf0e14fda717f1326cd4a5b954d,1764,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,144,d48bdadde67f73518786f0df7a1f2e79d58b6615ce9985b6,6553,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,151,6e70bede9da423c098179dd992a1c019ce1810d9a1a7767b,5424,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,167,4a318078c552864ccd4dbc99ac5b3c21c509258d4bffd94d,7299,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,176,9675fef9b4fe163692b249c040670706b17cd5d1bb99dbae,7085,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,197,50456a7c27c94c95d96ef4d681ba513cda242b95dc75f3a1,4038,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,204,ae4cc6dd54de82c93ecd6c6d139386e206f44c5cc61c802c,11578,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,206,9de729a8f3f2817e417b4ac0ea3812d988fed35c66e225be,9264,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,241,d395acf86c300e844f6c49160568b1d1fadc04bd53a0b362,11531,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,267,1bf27d1e48e7006f3b7f382cf3e91427cef1a74623a09816,8357,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,270,5e58ff1515261ae7ed493f212c894749dd03c8bcadac517e,11040,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,25,37a77de08c5dc62fc4b4d08ab6066e178e82d32387ce084f,3179,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,49,2dfb8c6ad47144c07050d7707ba7bd71896c09947f5c9e49,1546,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,60,108c5fba3e6f442ee6e0a2e9495934a7e1ac483c1f4fadc2,1438,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,61,35d5132c126a2bef8991410216b5980a9c20273a9ff1ab1a,3872,0-4k,66.66666666666666
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,80,6e69d198ca0848e40be166b102d12edc3120a04b0f5da0c0,3453,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,108,8ab0169f638e98dc69b9bf89237c12a1fee1e417b2ae802c,6085,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,147,9018807f19ee02d865950c595bf1a259de22640430bc74ed,6427,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,163,ddff3655b6d29132f991bc6f4f6552c2e252f0ffac1bafba,6011,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,171,6c3854fc6c64a01c1c738ed10b29b0065a39f1b4173eb3a0,5925,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,192,8dd7e008bda0f1085ad933907ff73985a4d50c50d6578815,4185,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,206,b76cc838bf517e13bdf35517a991e7dadab853cdbf3951d2,10091,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,226,a14acc130b6f9fafa9fad828a40751edad4d1a283ffcac30,8033,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,248,1be41635f109463aad4ac2d71b524edcbdeabced54a0cdc3,12438,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,258,c5e835c6d30d0278c1832351580689ffdd46d71bda1bbdfd,14026,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,290,ee606dca7a956b661e19b36859b1916cd0f1cfbef4352380,9846,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,19,0bf52d18ccff2e111ad516892321685343c9dac7140bdef0,3439,0-4k,53.33333283950618
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,21,40232983571b8ce83adcb03ef9ef55c99dc4a019a368f310,2053,0-4k,59.4594589890431
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,31,018c19631933484203fb50ea1c66e51f3d6e3b1ce9420578,2337,0-4k,49.99999950154322
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,65,2b739f373d44d8f8925d26449fd0eb1a32d67e167d29b257,3318,0-4k,51.8518513580247
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,89,982a8057dcf8707ee1d1f2d3bcb3f295bb2751a1eca7dbcd,2784,0-4k,17.39130385633272
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,143,cf9464373a128bf26c8d2778f9e4a37c5a15dbed12ad01ae,7046,4-8k,66.6666661688889
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,151,b7ae56266199a707fdf23df4b8db02a7f80f40c5fa92a349,6091,4-8k,27.027026632578526
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,154,fa2c3e8009a275c4b1263f41043d94b748ddba1755dc2c20,4428,4-8k,39.9999995008
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,190,c4199640b2f017d470c8f1a2e2b91ad294bf054a4b91c93c,5696,4-8k,16.216215719503303
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,194,4de277f16be3a9e4bd9a7e59f75599ebca199a86b015958c,4234,4-8k,39.02438979417014
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,215,04964a5fefa4ee8e434769f3a928c8b72d7ed3aeb182ed46,8363,8k+,24.99999950347222
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,220,0c5ef0430cfb35865d7a7089d0680dffca5c6fc47617d4d1,9891,8k+,20.68965470154579
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,228,b2511670a4ccc1403baa33711fe2dbd5892eababde2e39ee,12403,8k+,58.33333284722223
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,257,1893a577539617a31f49735422c235b4db2b8e84f3d7c3c3,10584,8k+,52.94117597750866
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,283,7af7246701130f0eb2a76bd4b15664820e989acefe181a5e,10072,8k+,27.586206425683713
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,22,288f4e37f101d146d77c62f996e4e9570b2771c27bc81979,2375,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,36,935778f03f2632c87b080ee9b2f452ea83fbbfb5c77332a2,1851,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,55,b5632108341c1ca7995b00fe559e6281d6076c327973356f,2124,0-4k,16.666666666666664
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,69,f1405e58115865757f93e3e1aba86e546d594fb7bc99f26c,2383,0-4k,8.333333333333332
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,79,cab713d4812f7c19a4e2fa511895ac02eff30509bb174327,2725,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,103,90a34e79c780c2df4d2dad95609a596c6098240e94842bf6,7562,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,119,9512ca779f519aebfa07a9f90ce689daa359a4bde1151349,4295,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,155,741cb2c3e808fe3dce2bf119bb0a580b5f5c4aa50202d55f,5469,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,168,f585832d9c78624dd328e1ad307cb6a6a33f3ef90f350c42,6770,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,195,965c084901ab3e093e057dfe806affec32c1d9014ceb9552,5715,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,214,8ea4a507b131b2f8770360c9568652bad67e1411207d48ab,14537,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,221,6cd9e99b1214827e24c3b0d2fbacadb7f2d0e47c75783162,8606,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,248,9257294f738fd5ccbed674b18aa2f4ab0301d77e4e3d8290,8152,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,257,8041f459bf8570173d461b909735356d06ff64d510806517,8691,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,267,e1ae4a4f72237062a4fb609d1b8699981447754d4dad536a,9017,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,0,f363b5cfe63d7095514d7273aaa2e31dbfa73f10a71fd7d8,3446,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,3,707ae2fed6a206720c3afb70facc02c376eeca4fd6859740,3428,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,8,83f6186ca8e6173b7466b5dd60738f6810d9b900642e6476,3711,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,50,31426afc717058adc13fce3a7307c5bdad89bc5be71735b1,3535,0-4k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,78,a83340ad80a9e187029262c34b831c17116cf743c30a2d26,3686,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,110,de23e2b1d2dd91ee82fbc68d8a5a15aca03f8c6afccc5c91,6093,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,142,33299d35937a468625623f198d3b800951cf021f2761ea45,7054,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,169,6643e514e454e85491bbdac3a52955ef916568e019cb3a98,4166,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,184,20abfe1e2d178e67c2a8a9871e735df4b419e063c491937a,4943,4-8k,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,194,25acb3749765e2827ffb105da857a646a2e19952abe53cde,4480,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,220,62419a34c63e8b5c583352a1aa5e43cc881f7546c5c5f442,8185,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,239,763cf6ac464e16d4f5d61b69b685a6771fef3cfbe5fc326d,8723,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,281,d33bbbcd5871126b551f3307f79c353bf30ec0f18fa96cb7,8192,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,285,2dca86e4858483b4b2dde86f486bb055c47e4921ca331621,8539,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,293,9f0af99cc14eda16266159a1a5505c0664c7bdeb6b34a34d,9125,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,42,94f103d8d6177a4ab0d0ed90f9dbd86d375978f8e3f81181,386,0-4k,46.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,63,aab6e3b1dcab2261ae6d783a39b356522fa6e32c6b4b0579,648,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,73,50511e2d36d05cdb890a54b72403a62d4a131cdfd6350426,833,0-4k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,97,b1a3b5f96b79841d13ee9fa68ce3fa8ff64333803d491dd6,1411,0-4k,76.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,98,50c8a624b72c93ccf1b9dc94cc56cefefc09ed423276260c,826,0-4k,51.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,105,e34212aa3077645a24fe01119b2d8f3d6d7e068bc2300179,6878,4-8k,41.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,111,6c7fc0dfbb754f9bc08f08a9190c83e8e7012dfd598e020a,4005,4-8k,81.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,116,64bac47b1e1bb0e0c8c9689439872cd09890eb9060b9d0cb,4434,4-8k,11.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,153,a5259ab50b36a4e831982b6a99431c696ecaced8866bf553,5413,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,166,2197048d64edac7618fb8a6df59fb407b0a27af2a7c74a9a,4125,4-8k,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,235,7c4c9949f60f4f327a48f2671410466485a03f060befc851,9452,8k+,25.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,253,510fda46c7dd55d3196a9e71e2f528e1627ff2d61c2ef425,9425,8k+,65.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,261,f08a124a114577d3ad44ab0eb8109ad143afa1725e636790,20316,8k+,56.99999999999999
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,272,8b7ce360028e8b36fb6f5ee805af7d92897c3d743f66e101,11381,8k+,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,279,2666edb375a0bdb0c84b3a8c808c36f7ada53856d1793385,8731,8k+,41.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,1,4d2668d05f3f636a1bb6b0389a03b382f3f3e06b19dec51d,2012,0-4k,28.000000000000004
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,5,baa8de84ab065678542bc7eba856ad8688646323f9d230bd,2526,0-4k,70.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,28,10293155fe04c32cb8085fd71357b5f0ca2693104e6232aa,3533,0-4k,35.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,65,56c45bfed224c26bb617b8089df613586ae55fa518b1a991,2605,0-4k,18.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,96,4ff1104206a9b1f6a1cb7d9678a99f21614ecc8091c224c4,2012,0-4k,87.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,126,6be916e353b46483c181ef52e63b82a1b30edf08ded51e81,5932,4-8k,12.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,135,25e27a4553ca2c4de07c1adc6668d82e9973eeb747409030,4307,4-8k,21.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,160,c5b3c8bd713b960704e3fe39f8f59a429f3f8b431eab3ca8,4364,4-8k,36.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,172,3cd8fefa66ffe61edf15dd8ce125f6e4933fb96d398da6b5,7126,4-8k,56.00000000000001
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,193,4518bfc339e5258b92b49b1eb715e0fb08e7ee42c084945a,4061,4-8k,57.99999999999999
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,204,ace65979c3c0ae8afbc6363afc51e185369db91ce49614eb,12028,8k+,7.000000000000001
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,252,5829ad887bad026190dbd3ef02f586b05826e8ec720bbc47,8881,8k+,100.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,253,b2acea6b02472a0a56410ca98ebc6dd1cdbf06755ca7e0d1,9203,8k+,86.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,276,3f7ee1f4f34a645dbe506c2cefdd92884333284e3a2946a8,10553,8k+,52.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,291,01f7b97f4816935c226b88e63484f4f48a98b76054d3cf45,9175,8k+,84.0

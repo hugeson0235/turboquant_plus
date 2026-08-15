@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,15,39.9936340890356,39.99,37.77121672723102
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,15,34.81751013976078,34.82,22.251286780102117
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,15,39.492063492063494,39.49,44.71915103326317
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,15,48.07017543859649,48.07,48.84129864226053
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,15,30.882875397967755,30.88,2.8213535430830934
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,15,23.198145504209048,23.2,5.979348085705721
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,15,53.333333333333336,53.33,49.88876515698588
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,15,84.44444444444444,84.44,34.1384255460827
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,15,40.36804092105489,40.37,16.3455237333583
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,15,1.6666666666666665,1.67,4.5133546692422
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,15,60.0,60.0,48.98979485566356
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,15,59.6,59.6,31.993332638744175
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,15,50.0,50.0,29.312113536898018

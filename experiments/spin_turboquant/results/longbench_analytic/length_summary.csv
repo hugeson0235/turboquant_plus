@@ -1,0 +1,10 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+wk_pca_h_K2_V16,wk_pca_h,2,,0-4k,13,65,53.12923020021506
+wk_pca_h_K2_V16,wk_pca_h,2,,4-8k,13,65,35.896830648278
+wk_pca_h_K2_V16,wk_pca_h,2,,8k+,13,65,42.83382945892947
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,0-4k,13,65,47.1796000522392
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,4-8k,13,65,36.50461290946835
+activation_k_pca_h_K2_V16,activation_k_pca_h,2,,8k+,13,65,45.22922845476584
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,0-4k,13,65,49.23301958488244
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,4-8k,13,65,38.73734293996488
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,8k+,13,65,42.61430426602941

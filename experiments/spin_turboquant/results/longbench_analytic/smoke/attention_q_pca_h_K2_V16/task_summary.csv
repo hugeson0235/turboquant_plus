@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,qasper,Single QA,1,0.0,0.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multifieldqa_en,Single QA,1,66.66666666666666,66.67,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,hotpotqa,Multi QA,1,0.0,0.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,2wikimqa,Multi QA,1,100.0,100.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,gov_report,Summarization,1,23.736263369641353,23.74,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,multi_news,Summarization,1,21.85792300210518,21.86,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,trec,Few-shot,1,0.0,0.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,triviaqa,Few-shot,1,100.0,100.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,samsum,Few-shot,1,50.90909041322315,50.91,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_count,Synthetic,1,0.0,0.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,passage_retrieval_en,Synthetic,1,0.0,0.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,lcc,Code,1,55.00000000000001,55.0,0.0
+attention_q_pca_h_K2_V16,attention_q_pca_h,2,,repobench-p,Code,1,35.0,35.0,0.0

@@ -1,0 +1,40 @@
+pair_id,first_condition_id,second_condition_id,task,category,examples,mean_difference,example_wins,example_ties,example_losses
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,qasper,Single QA,15,-18.494816885024754,1,5,9
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,multifieldqa_en,Single QA,15,4.419691986033043,6,5,4
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,hotpotqa,Multi QA,15,-6.518518518518518,4,8,3
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,2wikimqa,Multi QA,15,-6.666666666666667,1,12,2
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,gov_report,Summarization,15,0.0592331695466432,7,0,8
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,multi_news,Summarization,15,-1.9307835097810215,4,0,11
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,trec,Few-shot,15,0.0,1,13,1
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,triviaqa,Few-shot,15,-0.9523809523809528,0,14,1
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,samsum,Few-shot,15,-2.0837038173207474,9,0,6
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,passage_count,Synthetic,15,16.666666666666664,4,10,1
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,passage_retrieval_en,Synthetic,15,3.3333333333333335,4,8,3
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,lcc,Code,15,2.933333333333334,6,1,8
+activation_k_pca_h_minus_wk_pca_h,activation_k_pca_h_K2_V16,wk_pca_h_K2_V16,repobench-p,Code,15,-3.533333333333333,8,1,6
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,qasper,Single QA,15,-8.448161588054194,3,4,8
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,multifieldqa_en,Single QA,15,1.3129695957465486,7,3,5
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,hotpotqa,Multi QA,15,3.047619047619047,3,10,2
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,2wikimqa,Multi QA,15,1.4035087719298247,1,13,1
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,gov_report,Summarization,15,1.0175196534221809,10,0,5
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,multi_news,Summarization,15,0.7835947713273718,8,0,7
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,trec,Few-shot,15,-6.666666666666667,0,14,1
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,triviaqa,Few-shot,15,-4.4444444444444455,1,12,2
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,samsum,Few-shot,15,-4.257833638504083,7,0,8
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,passage_count,Synthetic,15,0.9259259259259257,2,12,1
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,passage_retrieval_en,Synthetic,15,0.0,3,9,3
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,lcc,Code,15,11.866666666666667,8,3,4
+attention_q_pca_h_minus_wk_pca_h,attention_q_pca_h_K2_V16,wk_pca_h_K2_V16,repobench-p,Code,15,-2.066666666666667,7,2,6
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,qasper,Single QA,15,10.046655296970558,5,5,5
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,multifieldqa_en,Single QA,15,-3.1067223902864933,5,2,8
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,hotpotqa,Multi QA,15,9.566137566137566,3,9,3
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,2wikimqa,Multi QA,15,8.070175438596491,3,11,1
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,gov_report,Summarization,15,0.9582864838755377,7,0,8
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,multi_news,Summarization,15,2.7143782811083934,10,0,5
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,trec,Few-shot,15,-6.666666666666667,0,14,1
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,triviaqa,Few-shot,15,-3.492063492063493,2,11,2
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,samsum,Few-shot,15,-2.174129821183335,5,0,10
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,passage_count,Synthetic,15,-15.74074074074074,1,10,4
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,passage_retrieval_en,Synthetic,15,-3.3333333333333335,3,9,3
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,lcc,Code,15,8.933333333333334,9,3,3
+attention_q_pca_h_minus_activation_k_pca_h,attention_q_pca_h_K2_V16,activation_k_pca_h_K2_V16,repobench-p,Code,15,1.4666666666666666,6,1,8

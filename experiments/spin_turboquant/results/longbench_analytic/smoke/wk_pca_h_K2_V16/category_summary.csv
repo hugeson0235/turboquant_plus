@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+wk_pca_h_K2_V16,wk_pca_h,2,,Single QA,2,54.28571428571429
+wk_pca_h_K2_V16,wk_pca_h,2,,Multi QA,2,50.0
+wk_pca_h_K2_V16,wk_pca_h,2,,Summarization,2,25.84384295971027
+wk_pca_h_K2_V16,wk_pca_h,2,,Few-shot,3,47.008546855139166
+wk_pca_h_K2_V16,wk_pca_h,2,,Synthetic,2,0.0
+wk_pca_h_K2_V16,wk_pca_h,2,,Code,2,51.5

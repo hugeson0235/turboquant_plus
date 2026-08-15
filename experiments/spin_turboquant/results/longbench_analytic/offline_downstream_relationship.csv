@@ -1,0 +1,10 @@
+offline_metric,lower_is_better,methods,pearson_r_raw_metric_vs_longbench,spearman_r_raw_metric_vs_longbench,best_offline_method,best_downstream_method,same_best_method,interpretation
+normalized_key_mse,True,3,0.4720080652837743,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+norm_restored_key_mse,True,3,0.42136340789885685,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+relative_key_mse,True,3,0.42136340789885673,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+maximum_channel_magnitude,True,3,0.9013570545052901,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+max_over_rms,True,3,0.9013570548445082,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+channel_second_moment_max_over_mean,True,3,0.7171432909361062,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+attention_pre_softmax_logit_mse,True,3,0.42603635466276124,0.5,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+attention_probability_kl,True,3,0.9888824317601294,1.0,activation_k_pca_h,wk_pca_h,False,three-condition exploratory association only
+attention_output_mse,True,3,-0.38828520705590447,-0.5,attention_q_pca_h,wk_pca_h,False,three-condition exploratory association only

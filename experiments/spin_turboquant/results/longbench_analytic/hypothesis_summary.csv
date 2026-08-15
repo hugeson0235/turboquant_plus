@@ -1,0 +1,5 @@
+hypothesis,supported,evidence
+H1,True,Activation normalized Key MSE 0.00076310773 vs Wk 0.00081237415
+H2,False,Attention-aware is not lowest on both held-out logit MSE and KL
+H3,False,Attention-aware LongBench macro 43.528222; best macro 43.953297
+H4,True,Both calibration-method vs Wk pilot confidence intervals include zero
