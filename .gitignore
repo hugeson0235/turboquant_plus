@@ -33,3 +33,9 @@ experiments/spin_turboquant/results/longbench_analytic/calibration_half_rotation
 experiments/spin_turboquant/results/longbench_analytic/covariance_eigenvalues.npz
 experiments/spin_turboquant/results/longbench_analytic/*_pca_rotations.pt
 experiments/spin_turboquant/results/longbench_analytic/heldout_diagnostic_accumulators.pt
+# Training-length sweep: large/regenerable artifacts
+experiments/spin_turboquant/results/training_length_sweep/head_checkpoint_metrics.csv
+experiments/spin_turboquant/results/training_length_sweep/runs/
+experiments/spin_turboquant/results/training_length_sweep/.best_candidates/
+experiments/spin_turboquant/results/training_length_sweep/final_rotation_artifacts/
+experiments/spin_turboquant/results/training_length_sweep/longbench_selected_rotations/

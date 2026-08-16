@@ -1,4 +1,4 @@
-"""Run the pinned LongBench-E subset study from ``LongBenchSubset.md``.
+"""Run the pinned LongBench-E subset study from its checked-in plan.
 
 The inference implementation deliberately reuses the codec hooks and learned
 rotation artifacts from :mod:`experiments.spin_turboquant`.  Every benchmark
@@ -55,7 +55,9 @@ SAMPLES_PER_LENGTH_BUCKET = 5
 BITS = (2, 3, 4)
 SEEDS = (17, 29, 43)
 LENGTH_BUCKETS = ("0-4k", "4-8k", "8k+")
-SPECIFICATION_PATH = Path(__file__).resolve().parents[3] / "LongBenchSubset.md"
+SPECIFICATION_PATH = (
+    Path(__file__).resolve().parents[3] / "longbench_subset_experiment_plan.md"
+)
 TASKS = (
     "qasper",
     "multifieldqa_en",

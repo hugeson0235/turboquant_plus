@@ -1,0 +1,2010 @@
+{
+  "data_hashes": {
+    "2wikimqa": "525b5b182089a4012cc7429c33f4208358778615173c4a09349429fc80c89641",
+    "gov_report": "0a3902fcf3d49f228549f02a2ef1ae84dbe8578b8be3d4611d54459487bdef84",
+    "hotpotqa": "26a90a291cca5b2515bf466c6c3d1f57d8a4e67b0cf5aa39e1834913a15e6309",
+    "lcc": "d6f21d2a1d6d52a350f134bfafc71e7d13ec6eacbe317556cfa6395808e9a8cc",
+    "multi_news": "029d5e2d44d381ba817ad3dcd753d8da7773ad87bbd0f6beb512afedf48a70f5",
+    "multifieldqa_en": "678a51335e3c90e0dd43bf1131045e4f2859cc693e7eded89cc6a1ee8d18faff",
+    "passage_count": "160525cc4b6bb4e8c584eb012097c5b96574290d0cae52eeafdc8d16d29bb9ee",
+    "passage_retrieval_en": "46af1c77465170fb8ffffe3d488bb9c52cc3684118ab0d8a1ed490b39ce97512",
+    "qasper": "97d95c01221a17a2ce51f9180d65a671bf2998504a2ff0cccffe97e9b08444d8",
+    "repobench-p": "83c6bde23707f190b4ba04cf5fefc9c3779b26be5aed333bc5ac98d5952b233b",
+    "samsum": "2ea79e3cfba856aa0dfe588972acbef915f12aef90d949807a2deac4ea65b9fa",
+    "trec": "bb1a5afbcd7f6e89411b16663d08f083e14019075e4ac40a6160944d1aecd66e",
+    "triviaqa": "3c4cc5ca18f2578d1f6458d1219387c741c6fafad7e8518addea898c08ff0d73"
+  },
+  "dataset_revision": "5e628be450b7e67fb7ae6e201bd6d8f7056f7672",
+  "example_count": 195,
+  "examples": [
+    {
+      "dataset_index": 7,
+      "dataset_length": 2720,
+      "example_id": "1bd9a082bd7b5ab6c152dbda3db38c0c3bc92cddf82383a3",
+      "length_bucket": "0-4k",
+      "manifest_index": 0,
+      "task": "qasper",
+      "task_example_order": 0,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 51,
+      "dataset_length": 2393,
+      "example_id": "d95b33cbe3496fb98638b3c3b1a956847b6472aa8d18a5cc",
+      "length_bucket": "0-4k",
+      "manifest_index": 1,
+      "task": "qasper",
+      "task_example_order": 1,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 54,
+      "dataset_length": 3566,
+      "example_id": "b959a2ca0687fbe1c4f11a6fda00eb9341525f1502c9afc6",
+      "length_bucket": "0-4k",
+      "manifest_index": 2,
+      "task": "qasper",
+      "task_example_order": 2,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 75,
+      "dataset_length": 3244,
+      "example_id": "b1fdb80cd96f455762f4f3be78a4932e7ae5edb2802d9e5c",
+      "length_bucket": "0-4k",
+      "manifest_index": 3,
+      "task": "qasper",
+      "task_example_order": 3,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 99,
+      "dataset_length": 2533,
+      "example_id": "d9c7574b1ed1ebd6eb755e6bbeee3513c9c912771059348c",
+      "length_bucket": "0-4k",
+      "manifest_index": 4,
+      "task": "qasper",
+      "task_example_order": 4,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 114,
+      "dataset_length": 7837,
+      "example_id": "e28df0e3283943b1e011e1dba7a231e35269588b73697ca4",
+      "length_bucket": "4-8k",
+      "manifest_index": 5,
+      "task": "qasper",
+      "task_example_order": 5,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 140,
+      "dataset_length": 4263,
+      "example_id": "755daa298cdf770c8ed19ddf39270f07e077d88a82aaa0dc",
+      "length_bucket": "4-8k",
+      "manifest_index": 6,
+      "task": "qasper",
+      "task_example_order": 6,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 144,
+      "dataset_length": 4104,
+      "example_id": "0225501ce54ac2c95a557a5691a4322482af24748391e6e9",
+      "length_bucket": "4-8k",
+      "manifest_index": 7,
+      "task": "qasper",
+      "task_example_order": 7,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 145,
+      "dataset_length": 5136,
+      "example_id": "34c5eb16ccc55869a263dfda28d028267e29ee243880c9d5",
+      "length_bucket": "4-8k",
+      "manifest_index": 8,
+      "task": "qasper",
+      "task_example_order": 8,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 159,
+      "dataset_length": 4738,
+      "example_id": "d5e92fcef6747ba1518ae7d8a46ad274b585425b2c889d5b",
+      "length_bucket": "4-8k",
+      "manifest_index": 9,
+      "task": "qasper",
+      "task_example_order": 9,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 209,
+      "dataset_length": 14472,
+      "example_id": "074b526f101518a8f5c810fed1e28f757dacb7805b161e22",
+      "length_bucket": "8k+",
+      "manifest_index": 10,
+      "task": "qasper",
+      "task_example_order": 10,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 212,
+      "dataset_length": 12952,
+      "example_id": "21fc5caf7a80aa10b3d9e86ca96d466edb09ae8961c22c85",
+      "length_bucket": "8k+",
+      "manifest_index": 11,
+      "task": "qasper",
+      "task_example_order": 11,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 217,
+      "dataset_length": 8555,
+      "example_id": "3a92f5b9ebedea5d5efd1f4af956b59b4e0ae6ee33db136f",
+      "length_bucket": "8k+",
+      "manifest_index": 12,
+      "task": "qasper",
+      "task_example_order": 12,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 221,
+      "dataset_length": 14722,
+      "example_id": "1bb7cd04a893fe2a5497bdf7d0dcb064da2ef56144b44bdd",
+      "length_bucket": "8k+",
+      "manifest_index": 13,
+      "task": "qasper",
+      "task_example_order": 13,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 223,
+      "dataset_length": 14660,
+      "example_id": "6fd8cd7777d0b6f36ccdfc044d9b5056e519fd11feb2a750",
+      "length_bucket": "8k+",
+      "manifest_index": 14,
+      "task": "qasper",
+      "task_example_order": 14,
+      "task_index": 0
+    },
+    {
+      "dataset_index": 11,
+      "dataset_length": 3422,
+      "example_id": "94ccf4d54b36e7e9d4aa594a7bc426528630a5b8aff296a4",
+      "length_bucket": "0-4k",
+      "manifest_index": 15,
+      "task": "multifieldqa_en",
+      "task_example_order": 0,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 38,
+      "dataset_length": 1810,
+      "example_id": "235a5c99cd7fae9e2b410ad99c1b1fafea43799d3f1138a8",
+      "length_bucket": "0-4k",
+      "manifest_index": 16,
+      "task": "multifieldqa_en",
+      "task_example_order": 1,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 44,
+      "dataset_length": 682,
+      "example_id": "ec016e90ac78727f3c4aa176db472724bda53c07cb8cb696",
+      "length_bucket": "0-4k",
+      "manifest_index": 17,
+      "task": "multifieldqa_en",
+      "task_example_order": 2,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 45,
+      "dataset_length": 1860,
+      "example_id": "4c9131da4fb2a9dbc8dadce39d20bdc302a092b5740c414a",
+      "length_bucket": "0-4k",
+      "manifest_index": 18,
+      "task": "multifieldqa_en",
+      "task_example_order": 3,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 53,
+      "dataset_length": 2947,
+      "example_id": "6caa98612cf0e2ddf58e1ba70daaf79a3ac616280fb48188",
+      "length_bucket": "0-4k",
+      "manifest_index": 19,
+      "task": "multifieldqa_en",
+      "task_example_order": 4,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 89,
+      "dataset_length": 5523,
+      "example_id": "566881d2138d7e29cd6dd2b661b6f7ffe4c515c92fdaf837",
+      "length_bucket": "4-8k",
+      "manifest_index": 20,
+      "task": "multifieldqa_en",
+      "task_example_order": 5,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 90,
+      "dataset_length": 6102,
+      "example_id": "d427e3ab7584a0e253bfb6a9d76626b726c79b57d5e39f2a",
+      "length_bucket": "4-8k",
+      "manifest_index": 21,
+      "task": "multifieldqa_en",
+      "task_example_order": 6,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 119,
+      "dataset_length": 5917,
+      "example_id": "f9b9a553107eed5b994a9aaf07e8ccac487feaa8ff108ec6",
+      "length_bucket": "4-8k",
+      "manifest_index": 22,
+      "task": "multifieldqa_en",
+      "task_example_order": 7,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 129,
+      "dataset_length": 6101,
+      "example_id": "df53ff06fbc99dbae6bfe13a946420321d4542480eeb56f3",
+      "length_bucket": "4-8k",
+      "manifest_index": 23,
+      "task": "multifieldqa_en",
+      "task_example_order": 8,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 134,
+      "dataset_length": 6706,
+      "example_id": "c60792f391b389a1c44b0a8f62f4a792d9ed82286b1b7f95",
+      "length_bucket": "4-8k",
+      "manifest_index": 24,
+      "task": "multifieldqa_en",
+      "task_example_order": 9,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 137,
+      "dataset_length": 9607,
+      "example_id": "a9f124fabc341d61e359af8e8badf79dd63a97896c28842e",
+      "length_bucket": "8k+",
+      "manifest_index": 25,
+      "task": "multifieldqa_en",
+      "task_example_order": 10,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 138,
+      "dataset_length": 8281,
+      "example_id": "bda4a6b251a601b7f7f956f298b59d8e99993845c1eaf7d6",
+      "length_bucket": "8k+",
+      "manifest_index": 26,
+      "task": "multifieldqa_en",
+      "task_example_order": 11,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 141,
+      "dataset_length": 8366,
+      "example_id": "110688fd7522324ef26cbf3ec4f4b7ab29aa0b687aa1ade5",
+      "length_bucket": "8k+",
+      "manifest_index": 27,
+      "task": "multifieldqa_en",
+      "task_example_order": 12,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 144,
+      "dataset_length": 9437,
+      "example_id": "46a2207a7a3f6d98effa73491cf83b63f92e29e0023c6e52",
+      "length_bucket": "8k+",
+      "manifest_index": 28,
+      "task": "multifieldqa_en",
+      "task_example_order": 13,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 147,
+      "dataset_length": 10003,
+      "example_id": "25d54c0a145838996b56def82126f35b3fabe3e100d10fc0",
+      "length_bucket": "8k+",
+      "manifest_index": 29,
+      "task": "multifieldqa_en",
+      "task_example_order": 14,
+      "task_index": 1
+    },
+    {
+      "dataset_index": 0,
+      "dataset_length": 3745,
+      "example_id": "1dae9ec530a93f43f85bd215a5c0e6737dbcf226cd3541d8",
+      "length_bucket": "0-4k",
+      "manifest_index": 30,
+      "task": "hotpotqa",
+      "task_example_order": 0,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 31,
+      "dataset_length": 1541,
+      "example_id": "f349d7bdea5f38b858c69ddae4698a287f9d201869c14919",
+      "length_bucket": "0-4k",
+      "manifest_index": 31,
+      "task": "hotpotqa",
+      "task_example_order": 1,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 61,
+      "dataset_length": 2519,
+      "example_id": "406311f7ab0d87c7aa2a4886827e640bc0848e8206f816c2",
+      "length_bucket": "0-4k",
+      "manifest_index": 32,
+      "task": "hotpotqa",
+      "task_example_order": 2,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 73,
+      "dataset_length": 2202,
+      "example_id": "8333f3e9e6703387546f30d78b61e07f326a7ea0aecdf557",
+      "length_bucket": "0-4k",
+      "manifest_index": 33,
+      "task": "hotpotqa",
+      "task_example_order": 3,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 96,
+      "dataset_length": 3730,
+      "example_id": "ad3b0ce8a9aaed70ba9db2fdae6d812ae61d39b7cb409376",
+      "length_bucket": "0-4k",
+      "manifest_index": 34,
+      "task": "hotpotqa",
+      "task_example_order": 4,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 102,
+      "dataset_length": 6860,
+      "example_id": "515a5cbf646c2891fde47be6b8fa3442571938d8dac8827a",
+      "length_bucket": "4-8k",
+      "manifest_index": 35,
+      "task": "hotpotqa",
+      "task_example_order": 5,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 118,
+      "dataset_length": 5913,
+      "example_id": "4beefe473acde45f1accb31e6f45cff16e0a8b47eefd032e",
+      "length_bucket": "4-8k",
+      "manifest_index": 36,
+      "task": "hotpotqa",
+      "task_example_order": 6,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 126,
+      "dataset_length": 7110,
+      "example_id": "a96ab885a132aad0f22735dad044516f01929c6be656b11a",
+      "length_bucket": "4-8k",
+      "manifest_index": 37,
+      "task": "hotpotqa",
+      "task_example_order": 7,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 169,
+      "dataset_length": 7002,
+      "example_id": "c18c76f9efb43dc4d15ce54891af6a60178be55f1eec2656",
+      "length_bucket": "4-8k",
+      "manifest_index": 38,
+      "task": "hotpotqa",
+      "task_example_order": 8,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 173,
+      "dataset_length": 6333,
+      "example_id": "74f2fce3240dd7e91f9522b9cbb9e10f43f16fdb0c22e7fa",
+      "length_bucket": "4-8k",
+      "manifest_index": 39,
+      "task": "hotpotqa",
+      "task_example_order": 9,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 213,
+      "dataset_length": 11543,
+      "example_id": "ce41e73398410371a755f618a953a68b14f75b8f2e8a62cc",
+      "length_bucket": "8k+",
+      "manifest_index": 40,
+      "task": "hotpotqa",
+      "task_example_order": 10,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 217,
+      "dataset_length": 9019,
+      "example_id": "7cdceb45cfb9439bd41148788e5cf2f0e8a5cb99a0e09729",
+      "length_bucket": "8k+",
+      "manifest_index": 41,
+      "task": "hotpotqa",
+      "task_example_order": 11,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 222,
+      "dataset_length": 9314,
+      "example_id": "82a1a48996ef392d6abe74ea1d2b0a807c0f4d859c4026ac",
+      "length_bucket": "8k+",
+      "manifest_index": 42,
+      "task": "hotpotqa",
+      "task_example_order": 12,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 227,
+      "dataset_length": 10290,
+      "example_id": "192e872cf190ea4e64fd401a32a3ea0426dc488afe3702ad",
+      "length_bucket": "8k+",
+      "manifest_index": 43,
+      "task": "hotpotqa",
+      "task_example_order": 13,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 242,
+      "dataset_length": 11497,
+      "example_id": "ecde9842060b9101fa9edceed35332413b01be43d4940652",
+      "length_bucket": "8k+",
+      "manifest_index": 44,
+      "task": "hotpotqa",
+      "task_example_order": 14,
+      "task_index": 2
+    },
+    {
+      "dataset_index": 21,
+      "dataset_length": 1529,
+      "example_id": "0bc3341fffaad3e92d14d64b539df741528ef4e2b76e9632",
+      "length_bucket": "0-4k",
+      "manifest_index": 45,
+      "task": "2wikimqa",
+      "task_example_order": 0,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 60,
+      "dataset_length": 2859,
+      "example_id": "37eb33998e8bd7ffe40969ac3161ad695983fcf651dac639",
+      "length_bucket": "0-4k",
+      "manifest_index": 46,
+      "task": "2wikimqa",
+      "task_example_order": 1,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 65,
+      "dataset_length": 3621,
+      "example_id": "d7159102f8034cb0ad4834df59b0734f052a63c3a1d0f0bb",
+      "length_bucket": "0-4k",
+      "manifest_index": 47,
+      "task": "2wikimqa",
+      "task_example_order": 2,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 80,
+      "dataset_length": 2753,
+      "example_id": "9a74e9b9111e3d13efa2b9b43c522354f7d5f3dae6ca5e96",
+      "length_bucket": "0-4k",
+      "manifest_index": 48,
+      "task": "2wikimqa",
+      "task_example_order": 3,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 89,
+      "dataset_length": 1405,
+      "example_id": "f479830ec67206a7edd48ae2ac6f8fc1f639da89caf1a0d2",
+      "length_bucket": "0-4k",
+      "manifest_index": 49,
+      "task": "2wikimqa",
+      "task_example_order": 4,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 129,
+      "dataset_length": 6417,
+      "example_id": "d64ce42f72497e502a412d395566e55a3793d05b35004cb4",
+      "length_bucket": "4-8k",
+      "manifest_index": 50,
+      "task": "2wikimqa",
+      "task_example_order": 5,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 130,
+      "dataset_length": 5421,
+      "example_id": "fe284936ae55063527821e9ee610ae67958789167aa4ba1a",
+      "length_bucket": "4-8k",
+      "manifest_index": 51,
+      "task": "2wikimqa",
+      "task_example_order": 6,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 131,
+      "dataset_length": 5848,
+      "example_id": "d524ca109e5ac6284dec16931f2403ef7859225cfde19e9e",
+      "length_bucket": "4-8k",
+      "manifest_index": 52,
+      "task": "2wikimqa",
+      "task_example_order": 7,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 162,
+      "dataset_length": 4421,
+      "example_id": "78877dc3800b31f7831cf2f941219ee29493e35b53b059a1",
+      "length_bucket": "4-8k",
+      "manifest_index": 53,
+      "task": "2wikimqa",
+      "task_example_order": 8,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 186,
+      "dataset_length": 7764,
+      "example_id": "7022cbda00a72169cc470d7879da58fc0673ff175aa1f19f",
+      "length_bucket": "4-8k",
+      "manifest_index": 54,
+      "task": "2wikimqa",
+      "task_example_order": 9,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 207,
+      "dataset_length": 8135,
+      "example_id": "3a4153b2cd645e567d268c92fc153be937caefb93ac238df",
+      "length_bucket": "8k+",
+      "manifest_index": 55,
+      "task": "2wikimqa",
+      "task_example_order": 10,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 245,
+      "dataset_length": 10959,
+      "example_id": "4ced3912f614aca56f95eb0431c22e53c24c05717bf75f62",
+      "length_bucket": "8k+",
+      "manifest_index": 56,
+      "task": "2wikimqa",
+      "task_example_order": 11,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 261,
+      "dataset_length": 8053,
+      "example_id": "e367499fba5b229051bc79021a1ad30bbd066b1f89c277f6",
+      "length_bucket": "8k+",
+      "manifest_index": 57,
+      "task": "2wikimqa",
+      "task_example_order": 12,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 264,
+      "dataset_length": 10696,
+      "example_id": "3809f116856e090121b8d2d54cb0416076a8916013f06997",
+      "length_bucket": "8k+",
+      "manifest_index": 58,
+      "task": "2wikimqa",
+      "task_example_order": 13,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 265,
+      "dataset_length": 8703,
+      "example_id": "ee5c0b8fe31f40bbf2579439858229041ea769a46d82f49b",
+      "length_bucket": "8k+",
+      "manifest_index": 59,
+      "task": "2wikimqa",
+      "task_example_order": 14,
+      "task_index": 3
+    },
+    {
+      "dataset_index": 54,
+      "dataset_length": 3679,
+      "example_id": "a3a11ee5de13be1f6ab405e8e1b29f2cd07929fe9112561a",
+      "length_bucket": "0-4k",
+      "manifest_index": 60,
+      "task": "gov_report",
+      "task_example_order": 0,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 56,
+      "dataset_length": 2999,
+      "example_id": "a52b972a6051b61f61eefad3a6358e3f4f89c1a6872dd5a9",
+      "length_bucket": "0-4k",
+      "manifest_index": 61,
+      "task": "gov_report",
+      "task_example_order": 1,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 57,
+      "dataset_length": 2790,
+      "example_id": "5a1f14be3b3a06a0573d307579eda8216fb13f3e418abe97",
+      "length_bucket": "0-4k",
+      "manifest_index": 62,
+      "task": "gov_report",
+      "task_example_order": 2,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 73,
+      "dataset_length": 1799,
+      "example_id": "13416da54e1ad4f7681a4e30e66a3973ed3f812bf2af6f7a",
+      "length_bucket": "0-4k",
+      "manifest_index": 63,
+      "task": "gov_report",
+      "task_example_order": 3,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 76,
+      "dataset_length": 2961,
+      "example_id": "cd96d8a3dbb09bac127d9aa3bb5c62856940380d8722160e",
+      "length_bucket": "0-4k",
+      "manifest_index": 64,
+      "task": "gov_report",
+      "task_example_order": 4,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 112,
+      "dataset_length": 7426,
+      "example_id": "357977aac62ac12b4958584d44cddcdeeb3c3b2835ed1358",
+      "length_bucket": "4-8k",
+      "manifest_index": 65,
+      "task": "gov_report",
+      "task_example_order": 5,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 144,
+      "dataset_length": 4743,
+      "example_id": "24581c7640a62446ef310e19c657fde28f428e2cdde9927c",
+      "length_bucket": "4-8k",
+      "manifest_index": 66,
+      "task": "gov_report",
+      "task_example_order": 6,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 175,
+      "dataset_length": 4349,
+      "example_id": "925cc92d4d68438d5beff9441c206f98fbf1adf8c3a2319c",
+      "length_bucket": "4-8k",
+      "manifest_index": 67,
+      "task": "gov_report",
+      "task_example_order": 7,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 182,
+      "dataset_length": 5455,
+      "example_id": "380b8a11402167f3806aee3eca9dbd8feae82a13a1e009d8",
+      "length_bucket": "4-8k",
+      "manifest_index": 68,
+      "task": "gov_report",
+      "task_example_order": 8,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 194,
+      "dataset_length": 6790,
+      "example_id": "1345903bbe6b1a4bc816f5b2431912f0377f2e1c188ad933",
+      "length_bucket": "4-8k",
+      "manifest_index": 69,
+      "task": "gov_report",
+      "task_example_order": 9,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 208,
+      "dataset_length": 8253,
+      "example_id": "3cd2e850cddd4722470f29c62dd23ec7e5740d89575b4128",
+      "length_bucket": "8k+",
+      "manifest_index": 70,
+      "task": "gov_report",
+      "task_example_order": 10,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 238,
+      "dataset_length": 10555,
+      "example_id": "931127a19bd12e3e1831db946f7f0d3f6a8e8a2760708c03",
+      "length_bucket": "8k+",
+      "manifest_index": 71,
+      "task": "gov_report",
+      "task_example_order": 11,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 239,
+      "dataset_length": 8737,
+      "example_id": "95108834ba59cae5c2f46634c3785c3aefe9fdd1d8656b9e",
+      "length_bucket": "8k+",
+      "manifest_index": 72,
+      "task": "gov_report",
+      "task_example_order": 12,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 287,
+      "dataset_length": 10552,
+      "example_id": "7bb19ba82bff13f027337b76e32661a2028a80f224f1d7b9",
+      "length_bucket": "8k+",
+      "manifest_index": 73,
+      "task": "gov_report",
+      "task_example_order": 13,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 296,
+      "dataset_length": 22560,
+      "example_id": "2d74ce64491ea67c0b42a06ef439cd49bc7da7f9768661a4",
+      "length_bucket": "8k+",
+      "manifest_index": 74,
+      "task": "gov_report",
+      "task_example_order": 14,
+      "task_index": 4
+    },
+    {
+      "dataset_index": 0,
+      "dataset_length": 951,
+      "example_id": "3cfe6d5139ea2e17d17b9c8d040c015c3db4936578091cf6",
+      "length_bucket": "0-4k",
+      "manifest_index": 75,
+      "task": "multi_news",
+      "task_example_order": 0,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 31,
+      "dataset_length": 1804,
+      "example_id": "b723a6f6b48314b21c4142104e17776b8d24371546fd842e",
+      "length_bucket": "0-4k",
+      "manifest_index": 76,
+      "task": "multi_news",
+      "task_example_order": 1,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 88,
+      "dataset_length": 695,
+      "example_id": "129345ac116bd3d12d86321b7bb7d8ec257ec2d4ee951b79",
+      "length_bucket": "0-4k",
+      "manifest_index": 77,
+      "task": "multi_news",
+      "task_example_order": 2,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 90,
+      "dataset_length": 1375,
+      "example_id": "b284f77807027c80d9052f3116a5f1945a921b333262a44f",
+      "length_bucket": "0-4k",
+      "manifest_index": 78,
+      "task": "multi_news",
+      "task_example_order": 3,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 97,
+      "dataset_length": 836,
+      "example_id": "9b05a23597d81978bb62a7d42cf8a829ab8c00dbd9936af1",
+      "length_bucket": "0-4k",
+      "manifest_index": 79,
+      "task": "multi_news",
+      "task_example_order": 4,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 100,
+      "dataset_length": 5411,
+      "example_id": "a7679b6195dde9c6472dfcb5a9b0f7301010ad575d82f481",
+      "length_bucket": "4-8k",
+      "manifest_index": 80,
+      "task": "multi_news",
+      "task_example_order": 5,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 101,
+      "dataset_length": 5553,
+      "example_id": "e8ae3a32f6723be9e54aa66700703b5010e6a24337e6387c",
+      "length_bucket": "4-8k",
+      "manifest_index": 81,
+      "task": "multi_news",
+      "task_example_order": 6,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 107,
+      "dataset_length": 4795,
+      "example_id": "a0eda52afcd3721a2791dacaee59ff9d0b57b2f89744e190",
+      "length_bucket": "4-8k",
+      "manifest_index": 82,
+      "task": "multi_news",
+      "task_example_order": 7,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 140,
+      "dataset_length": 6253,
+      "example_id": "22c4f915fbec56cff0c26b9814a2e8ef79640588ac70d521",
+      "length_bucket": "4-8k",
+      "manifest_index": 83,
+      "task": "multi_news",
+      "task_example_order": 8,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 196,
+      "dataset_length": 7740,
+      "example_id": "29930ff7fc60809fcb40fa0d8fc2415ba9d1dc6435cdea4f",
+      "length_bucket": "4-8k",
+      "manifest_index": 84,
+      "task": "multi_news",
+      "task_example_order": 9,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 213,
+      "dataset_length": 8992,
+      "example_id": "3b3c748f3eb38ad864d61971e37e3a353350c67bbf60705f",
+      "length_bucket": "8k+",
+      "manifest_index": 85,
+      "task": "multi_news",
+      "task_example_order": 10,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 215,
+      "dataset_length": 9464,
+      "example_id": "4d2e3653c3c14982a2a316fdec16de82af22d4e610f04842",
+      "length_bucket": "8k+",
+      "manifest_index": 86,
+      "task": "multi_news",
+      "task_example_order": 11,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 221,
+      "dataset_length": 10507,
+      "example_id": "4f5bef9de35675cccb7f0ab2422f5766b9f8a0c6fb983678",
+      "length_bucket": "8k+",
+      "manifest_index": 87,
+      "task": "multi_news",
+      "task_example_order": 12,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 231,
+      "dataset_length": 8571,
+      "example_id": "c44cd4b3d05e349d96d0107750992323e358891d05732948",
+      "length_bucket": "8k+",
+      "manifest_index": 88,
+      "task": "multi_news",
+      "task_example_order": 13,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 253,
+      "dataset_length": 10683,
+      "example_id": "928d14dff96c5f6c99a1f9d845d00c2642bc704d7434506e",
+      "length_bucket": "8k+",
+      "manifest_index": 89,
+      "task": "multi_news",
+      "task_example_order": 14,
+      "task_index": 5
+    },
+    {
+      "dataset_index": 49,
+      "dataset_length": 3725,
+      "example_id": "7dfc677d5d152f68d56844b67c26eae5ade79afb3e99f801",
+      "length_bucket": "0-4k",
+      "manifest_index": 90,
+      "task": "trec",
+      "task_example_order": 0,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 50,
+      "dataset_length": 1870,
+      "example_id": "6920dc5ab1fc7c4eb0768f2ac5ba7f65fa1ad44168b31380",
+      "length_bucket": "0-4k",
+      "manifest_index": 91,
+      "task": "trec",
+      "task_example_order": 1,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 67,
+      "dataset_length": 3432,
+      "example_id": "68092da2a4729b3ceec74cdbeee8f882103816527070990f",
+      "length_bucket": "0-4k",
+      "manifest_index": 92,
+      "task": "trec",
+      "task_example_order": 2,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 74,
+      "dataset_length": 3083,
+      "example_id": "2b2f0ca1e20f6ff8114ae89d62d0f7d510a6d50aac79de79",
+      "length_bucket": "0-4k",
+      "manifest_index": 93,
+      "task": "trec",
+      "task_example_order": 3,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 98,
+      "dataset_length": 1764,
+      "example_id": "f6928484791855eaafa05bf0e14fda717f1326cd4a5b954d",
+      "length_bucket": "0-4k",
+      "manifest_index": 94,
+      "task": "trec",
+      "task_example_order": 4,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 144,
+      "dataset_length": 6553,
+      "example_id": "d48bdadde67f73518786f0df7a1f2e79d58b6615ce9985b6",
+      "length_bucket": "4-8k",
+      "manifest_index": 95,
+      "task": "trec",
+      "task_example_order": 5,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 151,
+      "dataset_length": 5424,
+      "example_id": "6e70bede9da423c098179dd992a1c019ce1810d9a1a7767b",
+      "length_bucket": "4-8k",
+      "manifest_index": 96,
+      "task": "trec",
+      "task_example_order": 6,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 167,
+      "dataset_length": 7299,
+      "example_id": "4a318078c552864ccd4dbc99ac5b3c21c509258d4bffd94d",
+      "length_bucket": "4-8k",
+      "manifest_index": 97,
+      "task": "trec",
+      "task_example_order": 7,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 176,
+      "dataset_length": 7085,
+      "example_id": "9675fef9b4fe163692b249c040670706b17cd5d1bb99dbae",
+      "length_bucket": "4-8k",
+      "manifest_index": 98,
+      "task": "trec",
+      "task_example_order": 8,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 197,
+      "dataset_length": 4038,
+      "example_id": "50456a7c27c94c95d96ef4d681ba513cda242b95dc75f3a1",
+      "length_bucket": "4-8k",
+      "manifest_index": 99,
+      "task": "trec",
+      "task_example_order": 9,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 204,
+      "dataset_length": 11578,
+      "example_id": "ae4cc6dd54de82c93ecd6c6d139386e206f44c5cc61c802c",
+      "length_bucket": "8k+",
+      "manifest_index": 100,
+      "task": "trec",
+      "task_example_order": 10,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 206,
+      "dataset_length": 9264,
+      "example_id": "9de729a8f3f2817e417b4ac0ea3812d988fed35c66e225be",
+      "length_bucket": "8k+",
+      "manifest_index": 101,
+      "task": "trec",
+      "task_example_order": 11,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 241,
+      "dataset_length": 11531,
+      "example_id": "d395acf86c300e844f6c49160568b1d1fadc04bd53a0b362",
+      "length_bucket": "8k+",
+      "manifest_index": 102,
+      "task": "trec",
+      "task_example_order": 12,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 267,
+      "dataset_length": 8357,
+      "example_id": "1bf27d1e48e7006f3b7f382cf3e91427cef1a74623a09816",
+      "length_bucket": "8k+",
+      "manifest_index": 103,
+      "task": "trec",
+      "task_example_order": 13,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 270,
+      "dataset_length": 11040,
+      "example_id": "5e58ff1515261ae7ed493f212c894749dd03c8bcadac517e",
+      "length_bucket": "8k+",
+      "manifest_index": 104,
+      "task": "trec",
+      "task_example_order": 14,
+      "task_index": 6
+    },
+    {
+      "dataset_index": 25,
+      "dataset_length": 3179,
+      "example_id": "37a77de08c5dc62fc4b4d08ab6066e178e82d32387ce084f",
+      "length_bucket": "0-4k",
+      "manifest_index": 105,
+      "task": "triviaqa",
+      "task_example_order": 0,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 49,
+      "dataset_length": 1546,
+      "example_id": "2dfb8c6ad47144c07050d7707ba7bd71896c09947f5c9e49",
+      "length_bucket": "0-4k",
+      "manifest_index": 106,
+      "task": "triviaqa",
+      "task_example_order": 1,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 60,
+      "dataset_length": 1438,
+      "example_id": "108c5fba3e6f442ee6e0a2e9495934a7e1ac483c1f4fadc2",
+      "length_bucket": "0-4k",
+      "manifest_index": 107,
+      "task": "triviaqa",
+      "task_example_order": 2,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 61,
+      "dataset_length": 3872,
+      "example_id": "35d5132c126a2bef8991410216b5980a9c20273a9ff1ab1a",
+      "length_bucket": "0-4k",
+      "manifest_index": 108,
+      "task": "triviaqa",
+      "task_example_order": 3,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 80,
+      "dataset_length": 3453,
+      "example_id": "6e69d198ca0848e40be166b102d12edc3120a04b0f5da0c0",
+      "length_bucket": "0-4k",
+      "manifest_index": 109,
+      "task": "triviaqa",
+      "task_example_order": 4,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 108,
+      "dataset_length": 6085,
+      "example_id": "8ab0169f638e98dc69b9bf89237c12a1fee1e417b2ae802c",
+      "length_bucket": "4-8k",
+      "manifest_index": 110,
+      "task": "triviaqa",
+      "task_example_order": 5,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 147,
+      "dataset_length": 6427,
+      "example_id": "9018807f19ee02d865950c595bf1a259de22640430bc74ed",
+      "length_bucket": "4-8k",
+      "manifest_index": 111,
+      "task": "triviaqa",
+      "task_example_order": 6,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 163,
+      "dataset_length": 6011,
+      "example_id": "ddff3655b6d29132f991bc6f4f6552c2e252f0ffac1bafba",
+      "length_bucket": "4-8k",
+      "manifest_index": 112,
+      "task": "triviaqa",
+      "task_example_order": 7,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 171,
+      "dataset_length": 5925,
+      "example_id": "6c3854fc6c64a01c1c738ed10b29b0065a39f1b4173eb3a0",
+      "length_bucket": "4-8k",
+      "manifest_index": 113,
+      "task": "triviaqa",
+      "task_example_order": 8,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 192,
+      "dataset_length": 4185,
+      "example_id": "8dd7e008bda0f1085ad933907ff73985a4d50c50d6578815",
+      "length_bucket": "4-8k",
+      "manifest_index": 114,
+      "task": "triviaqa",
+      "task_example_order": 9,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 206,
+      "dataset_length": 10091,
+      "example_id": "b76cc838bf517e13bdf35517a991e7dadab853cdbf3951d2",
+      "length_bucket": "8k+",
+      "manifest_index": 115,
+      "task": "triviaqa",
+      "task_example_order": 10,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 226,
+      "dataset_length": 8033,
+      "example_id": "a14acc130b6f9fafa9fad828a40751edad4d1a283ffcac30",
+      "length_bucket": "8k+",
+      "manifest_index": 116,
+      "task": "triviaqa",
+      "task_example_order": 11,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 248,
+      "dataset_length": 12438,
+      "example_id": "1be41635f109463aad4ac2d71b524edcbdeabced54a0cdc3",
+      "length_bucket": "8k+",
+      "manifest_index": 117,
+      "task": "triviaqa",
+      "task_example_order": 12,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 258,
+      "dataset_length": 14026,
+      "example_id": "c5e835c6d30d0278c1832351580689ffdd46d71bda1bbdfd",
+      "length_bucket": "8k+",
+      "manifest_index": 118,
+      "task": "triviaqa",
+      "task_example_order": 13,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 290,
+      "dataset_length": 9846,
+      "example_id": "ee606dca7a956b661e19b36859b1916cd0f1cfbef4352380",
+      "length_bucket": "8k+",
+      "manifest_index": 119,
+      "task": "triviaqa",
+      "task_example_order": 14,
+      "task_index": 7
+    },
+    {
+      "dataset_index": 19,
+      "dataset_length": 3439,
+      "example_id": "0bf52d18ccff2e111ad516892321685343c9dac7140bdef0",
+      "length_bucket": "0-4k",
+      "manifest_index": 120,
+      "task": "samsum",
+      "task_example_order": 0,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 21,
+      "dataset_length": 2053,
+      "example_id": "40232983571b8ce83adcb03ef9ef55c99dc4a019a368f310",
+      "length_bucket": "0-4k",
+      "manifest_index": 121,
+      "task": "samsum",
+      "task_example_order": 1,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 31,
+      "dataset_length": 2337,
+      "example_id": "018c19631933484203fb50ea1c66e51f3d6e3b1ce9420578",
+      "length_bucket": "0-4k",
+      "manifest_index": 122,
+      "task": "samsum",
+      "task_example_order": 2,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 65,
+      "dataset_length": 3318,
+      "example_id": "2b739f373d44d8f8925d26449fd0eb1a32d67e167d29b257",
+      "length_bucket": "0-4k",
+      "manifest_index": 123,
+      "task": "samsum",
+      "task_example_order": 3,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 89,
+      "dataset_length": 2784,
+      "example_id": "982a8057dcf8707ee1d1f2d3bcb3f295bb2751a1eca7dbcd",
+      "length_bucket": "0-4k",
+      "manifest_index": 124,
+      "task": "samsum",
+      "task_example_order": 4,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 143,
+      "dataset_length": 7046,
+      "example_id": "cf9464373a128bf26c8d2778f9e4a37c5a15dbed12ad01ae",
+      "length_bucket": "4-8k",
+      "manifest_index": 125,
+      "task": "samsum",
+      "task_example_order": 5,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 151,
+      "dataset_length": 6091,
+      "example_id": "b7ae56266199a707fdf23df4b8db02a7f80f40c5fa92a349",
+      "length_bucket": "4-8k",
+      "manifest_index": 126,
+      "task": "samsum",
+      "task_example_order": 6,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 154,
+      "dataset_length": 4428,
+      "example_id": "fa2c3e8009a275c4b1263f41043d94b748ddba1755dc2c20",
+      "length_bucket": "4-8k",
+      "manifest_index": 127,
+      "task": "samsum",
+      "task_example_order": 7,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 190,
+      "dataset_length": 5696,
+      "example_id": "c4199640b2f017d470c8f1a2e2b91ad294bf054a4b91c93c",
+      "length_bucket": "4-8k",
+      "manifest_index": 128,
+      "task": "samsum",
+      "task_example_order": 8,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 194,
+      "dataset_length": 4234,
+      "example_id": "4de277f16be3a9e4bd9a7e59f75599ebca199a86b015958c",
+      "length_bucket": "4-8k",
+      "manifest_index": 129,
+      "task": "samsum",
+      "task_example_order": 9,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 215,
+      "dataset_length": 8363,
+      "example_id": "04964a5fefa4ee8e434769f3a928c8b72d7ed3aeb182ed46",
+      "length_bucket": "8k+",
+      "manifest_index": 130,
+      "task": "samsum",
+      "task_example_order": 10,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 220,
+      "dataset_length": 9891,
+      "example_id": "0c5ef0430cfb35865d7a7089d0680dffca5c6fc47617d4d1",
+      "length_bucket": "8k+",
+      "manifest_index": 131,
+      "task": "samsum",
+      "task_example_order": 11,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 228,
+      "dataset_length": 12403,
+      "example_id": "b2511670a4ccc1403baa33711fe2dbd5892eababde2e39ee",
+      "length_bucket": "8k+",
+      "manifest_index": 132,
+      "task": "samsum",
+      "task_example_order": 12,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 257,
+      "dataset_length": 10584,
+      "example_id": "1893a577539617a31f49735422c235b4db2b8e84f3d7c3c3",
+      "length_bucket": "8k+",
+      "manifest_index": 133,
+      "task": "samsum",
+      "task_example_order": 13,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 283,
+      "dataset_length": 10072,
+      "example_id": "7af7246701130f0eb2a76bd4b15664820e989acefe181a5e",
+      "length_bucket": "8k+",
+      "manifest_index": 134,
+      "task": "samsum",
+      "task_example_order": 14,
+      "task_index": 8
+    },
+    {
+      "dataset_index": 22,
+      "dataset_length": 2375,
+      "example_id": "288f4e37f101d146d77c62f996e4e9570b2771c27bc81979",
+      "length_bucket": "0-4k",
+      "manifest_index": 135,
+      "task": "passage_count",
+      "task_example_order": 0,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 36,
+      "dataset_length": 1851,
+      "example_id": "935778f03f2632c87b080ee9b2f452ea83fbbfb5c77332a2",
+      "length_bucket": "0-4k",
+      "manifest_index": 136,
+      "task": "passage_count",
+      "task_example_order": 1,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 55,
+      "dataset_length": 2124,
+      "example_id": "b5632108341c1ca7995b00fe559e6281d6076c327973356f",
+      "length_bucket": "0-4k",
+      "manifest_index": 137,
+      "task": "passage_count",
+      "task_example_order": 2,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 69,
+      "dataset_length": 2383,
+      "example_id": "f1405e58115865757f93e3e1aba86e546d594fb7bc99f26c",
+      "length_bucket": "0-4k",
+      "manifest_index": 138,
+      "task": "passage_count",
+      "task_example_order": 3,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 79,
+      "dataset_length": 2725,
+      "example_id": "cab713d4812f7c19a4e2fa511895ac02eff30509bb174327",
+      "length_bucket": "0-4k",
+      "manifest_index": 139,
+      "task": "passage_count",
+      "task_example_order": 4,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 103,
+      "dataset_length": 7562,
+      "example_id": "90a34e79c780c2df4d2dad95609a596c6098240e94842bf6",
+      "length_bucket": "4-8k",
+      "manifest_index": 140,
+      "task": "passage_count",
+      "task_example_order": 5,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 119,
+      "dataset_length": 4295,
+      "example_id": "9512ca779f519aebfa07a9f90ce689daa359a4bde1151349",
+      "length_bucket": "4-8k",
+      "manifest_index": 141,
+      "task": "passage_count",
+      "task_example_order": 6,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 155,
+      "dataset_length": 5469,
+      "example_id": "741cb2c3e808fe3dce2bf119bb0a580b5f5c4aa50202d55f",
+      "length_bucket": "4-8k",
+      "manifest_index": 142,
+      "task": "passage_count",
+      "task_example_order": 7,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 168,
+      "dataset_length": 6770,
+      "example_id": "f585832d9c78624dd328e1ad307cb6a6a33f3ef90f350c42",
+      "length_bucket": "4-8k",
+      "manifest_index": 143,
+      "task": "passage_count",
+      "task_example_order": 8,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 195,
+      "dataset_length": 5715,
+      "example_id": "965c084901ab3e093e057dfe806affec32c1d9014ceb9552",
+      "length_bucket": "4-8k",
+      "manifest_index": 144,
+      "task": "passage_count",
+      "task_example_order": 9,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 214,
+      "dataset_length": 14537,
+      "example_id": "8ea4a507b131b2f8770360c9568652bad67e1411207d48ab",
+      "length_bucket": "8k+",
+      "manifest_index": 145,
+      "task": "passage_count",
+      "task_example_order": 10,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 221,
+      "dataset_length": 8606,
+      "example_id": "6cd9e99b1214827e24c3b0d2fbacadb7f2d0e47c75783162",
+      "length_bucket": "8k+",
+      "manifest_index": 146,
+      "task": "passage_count",
+      "task_example_order": 11,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 248,
+      "dataset_length": 8152,
+      "example_id": "9257294f738fd5ccbed674b18aa2f4ab0301d77e4e3d8290",
+      "length_bucket": "8k+",
+      "manifest_index": 147,
+      "task": "passage_count",
+      "task_example_order": 12,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 257,
+      "dataset_length": 8691,
+      "example_id": "8041f459bf8570173d461b909735356d06ff64d510806517",
+      "length_bucket": "8k+",
+      "manifest_index": 148,
+      "task": "passage_count",
+      "task_example_order": 13,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 267,
+      "dataset_length": 9017,
+      "example_id": "e1ae4a4f72237062a4fb609d1b8699981447754d4dad536a",
+      "length_bucket": "8k+",
+      "manifest_index": 149,
+      "task": "passage_count",
+      "task_example_order": 14,
+      "task_index": 9
+    },
+    {
+      "dataset_index": 0,
+      "dataset_length": 3446,
+      "example_id": "f363b5cfe63d7095514d7273aaa2e31dbfa73f10a71fd7d8",
+      "length_bucket": "0-4k",
+      "manifest_index": 150,
+      "task": "passage_retrieval_en",
+      "task_example_order": 0,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 3,
+      "dataset_length": 3428,
+      "example_id": "707ae2fed6a206720c3afb70facc02c376eeca4fd6859740",
+      "length_bucket": "0-4k",
+      "manifest_index": 151,
+      "task": "passage_retrieval_en",
+      "task_example_order": 1,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 8,
+      "dataset_length": 3711,
+      "example_id": "83f6186ca8e6173b7466b5dd60738f6810d9b900642e6476",
+      "length_bucket": "0-4k",
+      "manifest_index": 152,
+      "task": "passage_retrieval_en",
+      "task_example_order": 2,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 50,
+      "dataset_length": 3535,
+      "example_id": "31426afc717058adc13fce3a7307c5bdad89bc5be71735b1",
+      "length_bucket": "0-4k",
+      "manifest_index": 153,
+      "task": "passage_retrieval_en",
+      "task_example_order": 3,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 78,
+      "dataset_length": 3686,
+      "example_id": "a83340ad80a9e187029262c34b831c17116cf743c30a2d26",
+      "length_bucket": "0-4k",
+      "manifest_index": 154,
+      "task": "passage_retrieval_en",
+      "task_example_order": 4,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 110,
+      "dataset_length": 6093,
+      "example_id": "de23e2b1d2dd91ee82fbc68d8a5a15aca03f8c6afccc5c91",
+      "length_bucket": "4-8k",
+      "manifest_index": 155,
+      "task": "passage_retrieval_en",
+      "task_example_order": 5,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 142,
+      "dataset_length": 7054,
+      "example_id": "33299d35937a468625623f198d3b800951cf021f2761ea45",
+      "length_bucket": "4-8k",
+      "manifest_index": 156,
+      "task": "passage_retrieval_en",
+      "task_example_order": 6,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 169,
+      "dataset_length": 4166,
+      "example_id": "6643e514e454e85491bbdac3a52955ef916568e019cb3a98",
+      "length_bucket": "4-8k",
+      "manifest_index": 157,
+      "task": "passage_retrieval_en",
+      "task_example_order": 7,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 184,
+      "dataset_length": 4943,
+      "example_id": "20abfe1e2d178e67c2a8a9871e735df4b419e063c491937a",
+      "length_bucket": "4-8k",
+      "manifest_index": 158,
+      "task": "passage_retrieval_en",
+      "task_example_order": 8,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 194,
+      "dataset_length": 4480,
+      "example_id": "25acb3749765e2827ffb105da857a646a2e19952abe53cde",
+      "length_bucket": "4-8k",
+      "manifest_index": 159,
+      "task": "passage_retrieval_en",
+      "task_example_order": 9,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 220,
+      "dataset_length": 8185,
+      "example_id": "62419a34c63e8b5c583352a1aa5e43cc881f7546c5c5f442",
+      "length_bucket": "8k+",
+      "manifest_index": 160,
+      "task": "passage_retrieval_en",
+      "task_example_order": 10,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 239,
+      "dataset_length": 8723,
+      "example_id": "763cf6ac464e16d4f5d61b69b685a6771fef3cfbe5fc326d",
+      "length_bucket": "8k+",
+      "manifest_index": 161,
+      "task": "passage_retrieval_en",
+      "task_example_order": 11,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 281,
+      "dataset_length": 8192,
+      "example_id": "d33bbbcd5871126b551f3307f79c353bf30ec0f18fa96cb7",
+      "length_bucket": "8k+",
+      "manifest_index": 162,
+      "task": "passage_retrieval_en",
+      "task_example_order": 12,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 285,
+      "dataset_length": 8539,
+      "example_id": "2dca86e4858483b4b2dde86f486bb055c47e4921ca331621",
+      "length_bucket": "8k+",
+      "manifest_index": 163,
+      "task": "passage_retrieval_en",
+      "task_example_order": 13,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 293,
+      "dataset_length": 9125,
+      "example_id": "9f0af99cc14eda16266159a1a5505c0664c7bdeb6b34a34d",
+      "length_bucket": "8k+",
+      "manifest_index": 164,
+      "task": "passage_retrieval_en",
+      "task_example_order": 14,
+      "task_index": 10
+    },
+    {
+      "dataset_index": 42,
+      "dataset_length": 386,
+      "example_id": "94f103d8d6177a4ab0d0ed90f9dbd86d375978f8e3f81181",
+      "length_bucket": "0-4k",
+      "manifest_index": 165,
+      "task": "lcc",
+      "task_example_order": 0,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 63,
+      "dataset_length": 648,
+      "example_id": "aab6e3b1dcab2261ae6d783a39b356522fa6e32c6b4b0579",
+      "length_bucket": "0-4k",
+      "manifest_index": 166,
+      "task": "lcc",
+      "task_example_order": 1,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 73,
+      "dataset_length": 833,
+      "example_id": "50511e2d36d05cdb890a54b72403a62d4a131cdfd6350426",
+      "length_bucket": "0-4k",
+      "manifest_index": 167,
+      "task": "lcc",
+      "task_example_order": 2,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 97,
+      "dataset_length": 1411,
+      "example_id": "b1a3b5f96b79841d13ee9fa68ce3fa8ff64333803d491dd6",
+      "length_bucket": "0-4k",
+      "manifest_index": 168,
+      "task": "lcc",
+      "task_example_order": 3,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 98,
+      "dataset_length": 826,
+      "example_id": "50c8a624b72c93ccf1b9dc94cc56cefefc09ed423276260c",
+      "length_bucket": "0-4k",
+      "manifest_index": 169,
+      "task": "lcc",
+      "task_example_order": 4,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 105,
+      "dataset_length": 6878,
+      "example_id": "e34212aa3077645a24fe01119b2d8f3d6d7e068bc2300179",
+      "length_bucket": "4-8k",
+      "manifest_index": 170,
+      "task": "lcc",
+      "task_example_order": 5,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 111,
+      "dataset_length": 4005,
+      "example_id": "6c7fc0dfbb754f9bc08f08a9190c83e8e7012dfd598e020a",
+      "length_bucket": "4-8k",
+      "manifest_index": 171,
+      "task": "lcc",
+      "task_example_order": 6,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 116,
+      "dataset_length": 4434,
+      "example_id": "64bac47b1e1bb0e0c8c9689439872cd09890eb9060b9d0cb",
+      "length_bucket": "4-8k",
+      "manifest_index": 172,
+      "task": "lcc",
+      "task_example_order": 7,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 153,
+      "dataset_length": 5413,
+      "example_id": "a5259ab50b36a4e831982b6a99431c696ecaced8866bf553",
+      "length_bucket": "4-8k",
+      "manifest_index": 173,
+      "task": "lcc",
+      "task_example_order": 8,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 166,
+      "dataset_length": 4125,
+      "example_id": "2197048d64edac7618fb8a6df59fb407b0a27af2a7c74a9a",
+      "length_bucket": "4-8k",
+      "manifest_index": 174,
+      "task": "lcc",
+      "task_example_order": 9,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 235,
+      "dataset_length": 9452,
+      "example_id": "7c4c9949f60f4f327a48f2671410466485a03f060befc851",
+      "length_bucket": "8k+",
+      "manifest_index": 175,
+      "task": "lcc",
+      "task_example_order": 10,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 253,
+      "dataset_length": 9425,
+      "example_id": "510fda46c7dd55d3196a9e71e2f528e1627ff2d61c2ef425",
+      "length_bucket": "8k+",
+      "manifest_index": 176,
+      "task": "lcc",
+      "task_example_order": 11,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 261,
+      "dataset_length": 20316,
+      "example_id": "f08a124a114577d3ad44ab0eb8109ad143afa1725e636790",
+      "length_bucket": "8k+",
+      "manifest_index": 177,
+      "task": "lcc",
+      "task_example_order": 12,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 272,
+      "dataset_length": 11381,
+      "example_id": "8b7ce360028e8b36fb6f5ee805af7d92897c3d743f66e101",
+      "length_bucket": "8k+",
+      "manifest_index": 178,
+      "task": "lcc",
+      "task_example_order": 13,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 279,
+      "dataset_length": 8731,
+      "example_id": "2666edb375a0bdb0c84b3a8c808c36f7ada53856d1793385",
+      "length_bucket": "8k+",
+      "manifest_index": 179,
+      "task": "lcc",
+      "task_example_order": 14,
+      "task_index": 11
+    },
+    {
+      "dataset_index": 1,
+      "dataset_length": 2012,
+      "example_id": "4d2668d05f3f636a1bb6b0389a03b382f3f3e06b19dec51d",
+      "length_bucket": "0-4k",
+      "manifest_index": 180,
+      "task": "repobench-p",
+      "task_example_order": 0,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 5,
+      "dataset_length": 2526,
+      "example_id": "baa8de84ab065678542bc7eba856ad8688646323f9d230bd",
+      "length_bucket": "0-4k",
+      "manifest_index": 181,
+      "task": "repobench-p",
+      "task_example_order": 1,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 28,
+      "dataset_length": 3533,
+      "example_id": "10293155fe04c32cb8085fd71357b5f0ca2693104e6232aa",
+      "length_bucket": "0-4k",
+      "manifest_index": 182,
+      "task": "repobench-p",
+      "task_example_order": 2,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 65,
+      "dataset_length": 2605,
+      "example_id": "56c45bfed224c26bb617b8089df613586ae55fa518b1a991",
+      "length_bucket": "0-4k",
+      "manifest_index": 183,
+      "task": "repobench-p",
+      "task_example_order": 3,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 96,
+      "dataset_length": 2012,
+      "example_id": "4ff1104206a9b1f6a1cb7d9678a99f21614ecc8091c224c4",
+      "length_bucket": "0-4k",
+      "manifest_index": 184,
+      "task": "repobench-p",
+      "task_example_order": 4,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 126,
+      "dataset_length": 5932,
+      "example_id": "6be916e353b46483c181ef52e63b82a1b30edf08ded51e81",
+      "length_bucket": "4-8k",
+      "manifest_index": 185,
+      "task": "repobench-p",
+      "task_example_order": 5,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 135,
+      "dataset_length": 4307,
+      "example_id": "25e27a4553ca2c4de07c1adc6668d82e9973eeb747409030",
+      "length_bucket": "4-8k",
+      "manifest_index": 186,
+      "task": "repobench-p",
+      "task_example_order": 6,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 160,
+      "dataset_length": 4364,
+      "example_id": "c5b3c8bd713b960704e3fe39f8f59a429f3f8b431eab3ca8",
+      "length_bucket": "4-8k",
+      "manifest_index": 187,
+      "task": "repobench-p",
+      "task_example_order": 7,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 172,
+      "dataset_length": 7126,
+      "example_id": "3cd8fefa66ffe61edf15dd8ce125f6e4933fb96d398da6b5",
+      "length_bucket": "4-8k",
+      "manifest_index": 188,
+      "task": "repobench-p",
+      "task_example_order": 8,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 193,
+      "dataset_length": 4061,
+      "example_id": "4518bfc339e5258b92b49b1eb715e0fb08e7ee42c084945a",
+      "length_bucket": "4-8k",
+      "manifest_index": 189,
+      "task": "repobench-p",
+      "task_example_order": 9,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 204,
+      "dataset_length": 12028,
+      "example_id": "ace65979c3c0ae8afbc6363afc51e185369db91ce49614eb",
+      "length_bucket": "8k+",
+      "manifest_index": 190,
+      "task": "repobench-p",
+      "task_example_order": 10,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 252,
+      "dataset_length": 8881,
+      "example_id": "5829ad887bad026190dbd3ef02f586b05826e8ec720bbc47",
+      "length_bucket": "8k+",
+      "manifest_index": 191,
+      "task": "repobench-p",
+      "task_example_order": 11,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 253,
+      "dataset_length": 9203,
+      "example_id": "b2acea6b02472a0a56410ca98ebc6dd1cdbf06755ca7e0d1",
+      "length_bucket": "8k+",
+      "manifest_index": 192,
+      "task": "repobench-p",
+      "task_example_order": 12,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 276,
+      "dataset_length": 10553,
+      "example_id": "3f7ee1f4f34a645dbe506c2cefdd92884333284e3a2946a8",
+      "length_bucket": "8k+",
+      "manifest_index": 193,
+      "task": "repobench-p",
+      "task_example_order": 13,
+      "task_index": 12
+    },
+    {
+      "dataset_index": 291,
+      "dataset_length": 9175,
+      "example_id": "01f7b97f4816935c226b88e63484f4f48a98b76054d3cf45",
+      "length_bucket": "8k+",
+      "manifest_index": 194,
+      "task": "repobench-p",
+      "task_example_order": 14,
+      "task_index": 12
+    }
+  ],
+  "length_bucket_boundaries": {
+    "0-4k": {
+      "maximum_exclusive": 4000,
+      "minimum_inclusive": 0
+    },
+    "4-8k": {
+      "maximum_exclusive": 8000,
+      "minimum_inclusive": 4000
+    },
+    "8k+": {
+      "maximum_exclusive": null,
+      "minimum_inclusive": 8000
+    }
+  },
+  "length_bucket_order": [
+    "0-4k",
+    "4-8k",
+    "8k+"
+  ],
+  "samples_per_length_bucket": 5,
+  "samples_per_task": 15,
+  "sampling_method": "one Python random.Random stream; random.sample without replacement in canonical task and length-bucket order; selected source indexes sorted within each task/bucket",
+  "sampling_seed": 20020305,
+  "schema_version": 1,
+  "task_order": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "gov_report",
+    "multi_news",
+    "trec",
+    "triviaqa",
+    "samsum",
+    "passage_count",
+    "passage_retrieval_en",
+    "lcc",
+    "repobench-p"
+  ]
+}

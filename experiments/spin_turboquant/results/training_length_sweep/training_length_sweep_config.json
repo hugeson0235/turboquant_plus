@@ -1,0 +1,255 @@
+{
+  "activations": {
+    "calibration": {
+      "file_sha256": "79f0773f55e286365c8df136505865e05183d06bdb7cd92fdc2b08d8921bf7b5",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct/activations/calibration.pt",
+      "shared_with_step_80": true
+    },
+    "heldout_tokens_file_sha256": "523d82ee20830f49539a31870957ecfb2237cbea2534d7efb9177ee0c6873a96",
+    "tinystories": {
+      "file_sha256": "6ad114b212ceda4c9a1e3440e142edf271b28640183cf66da6943053fb379a21",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/training_length_sweep/activations/tinystories.pt",
+      "shapes": {
+        "cos": [
+          1024,
+          128
+        ],
+        "input_ids": [
+          4096
+        ],
+        "k": [
+          32,
+          4096,
+          8,
+          128
+        ],
+        "q": [
+          32,
+          1024,
+          32,
+          128
+        ],
+        "sin": [
+          1024,
+          128
+        ],
+        "v": [
+          32,
+          1024,
+          8,
+          128
+        ]
+      },
+      "token_tensor_sha256": "8f12190337b1137495f838f49248726783b9013471f27ec684019e734e9c82bf"
+    },
+    "wikitext": {
+      "file_sha256": "3fa121ac9f3f08fd9a9312fcfdf7c711ec0fc2c97a0f5fcc66cfbf114e514719",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/training_length_sweep/activations/wikitext.pt",
+      "shapes": {
+        "input_ids": [
+          4096
+        ],
+        "k": [
+          32,
+          8,
+          4096,
+          128
+        ]
+      },
+      "token_tensor_sha256": "3ec658a21d78078420838a1dd69d65aa34def35398e68ce267fae770bde2e36b"
+    }
+  },
+  "codebook_hashes": {
+    "2": "4137669113c2fc35cb4b1b819c7ab84389bd96b228b4ac83d5eac0b71a6d16c0",
+    "3": "5a52f03e06c9ea2550345ca129306d95f74e38a5637272622caf300e151b493e",
+    "4": "d73a763347176feecf041ac24ab31bb3e055a55fe803d49bf65f122963d5cf77"
+  },
+  "completion_audit_sha256": "4f5cabe18a9278d9f023b6e0e753a510a1f429b28c56f3999e285c7745803907",
+  "created_at": "2026-08-16T13:09:10.924004+00:00",
+  "environment": {
+    "command": [
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/training_length_sweep.py",
+      "--stage",
+      "report",
+      "--model",
+      "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "--skip-longbench"
+    ],
+    "cuda_runtime": "12.1",
+    "git_commit": "10d2bd41c8a8ef171c5eb5557abae3065e090031",
+    "git_status": [
+      "M experiments/spin_turboquant/longbench.py",
+      "?? experiments/spin_turboquant/results/training_length_sweep/",
+      "?? experiments/spin_turboquant/training_length_sweep.py",
+      "?? tests/test_training_length_sweep.py"
+    ],
+    "gpu": {
+      "capability": [
+        8,
+        0
+      ],
+      "name": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+      "total_memory_bytes": 42412802048
+    },
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "timestamp": "2026-08-16T14:12:30.877847+00:00",
+    "torch": "2.5.1+cu121"
+  },
+  "implementation_hashes": {
+    "base_runner": "dbbb32e4044c4d151ef55c7fba24fa57f477716380d0c19d3a5545be0408da0e",
+    "spin_turboquant_core": "d3c9b083d7557359360d9e3e616f4c4311ea56673fe100f7f8860361ac76f7b2",
+    "sweep_runner": "e87893e743328992b5d5f1b1f01db518e669c36096ec0e6079a03e0700c9452e",
+    "turboquant_codebook": "df0ea41028d1ffbfd7472659a3209ea99c6a8c6bb3dd7688370996afd277834c",
+    "turboquant_rotation": "18fbaea56a9c416dc2228ccc7bb7626b6404ba377467b59cd5678808846c3586"
+  },
+  "model": {
+    "path": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "tokenizer_and_config_hashes": {
+      "config.json": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "special_tokens_map.json": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "tokenizer.json": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "tokenizer_config.json": "24e8a6dc2547164b7002e3125f10b415105644fcf02bf9ad8b674c87b1eaaed6"
+    }
+  },
+  "progress": {
+    "checkpoint_rows": 5040,
+    "complete_runs": 90,
+    "head_rows": 2580480,
+    "missing_runs": 0,
+    "terminal_rows": 90,
+    "training_rows": 5040,
+    "updated_at": "2026-08-16T14:12:50.320175+00:00"
+  },
+  "protocol": {
+    "attention_sequence_length": 1024,
+    "batch_tokens_per_head": 256,
+    "bits": [
+      2,
+      3,
+      4
+    ],
+    "calibration_tokens": 4096,
+    "dimensions": {
+      "head_dim": 128,
+      "model_architecture": "LlamaForCausalLM",
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "num_key_value_heads": 8,
+      "vocabulary_size": 128256
+    },
+    "domain_tokens": 4096,
+    "ema_coefficient": 0.95,
+    "gradient_clip": 1.0,
+    "horizons": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000
+    ],
+    "independent_horizon_restarts": true,
+    "initial_cayley_parameter": "zero",
+    "learning_rate": 0.005,
+    "metric_interval": 10,
+    "minibatch_seed_formula": "seed + bit_width * 100000",
+    "minimum_learning_rate": 0.00025,
+    "model": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "model_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "norm_correction": false,
+    "optimizer": "Adam",
+    "quantization_position": "pre-RoPE key",
+    "reference_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct",
+    "scheduler": "CosineAnnealingLR",
+    "scheduler_t_max": "configured horizon_steps",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "selection": {
+      "domain_regression_threshold": 0.002,
+      "longer_training_adoption_threshold": 0.005,
+      "near_minimum_relative_tolerance": 0.001,
+      "reference_steps": 80,
+      "seed_aggregation": "mean"
+    },
+    "validation_tokens": 4096,
+    "value_cache": "BF16"
+  },
+  "protocol_sha256": "4abed05397b929ee4deac6595391d0310f50b48e133f841010aa1cb4246cf9c8",
+  "reference_step_80": {
+    "calibration_file_sha256": "79f0773f55e286365c8df136505865e05183d06bdb7cd92fdc2b08d8921bf7b5",
+    "rotation_hashes": {
+      "bit2_seed17_h80": {
+        "artifact_file_sha256": "7d3368c4c5dbfad9bfb7a9990a81b13a684fceba830c2e529f758a14b965c1b8",
+        "learned_tensor_sha256": "e18ab5a86759423fc625d799f44268f318490edf756c55e001625fbc441c8ddc",
+        "random_tensor_sha256": "0b1764fcce9cb558920542340c0d6dee3da9cd883b9bd2c208fa794de7a22a17"
+      },
+      "bit2_seed29_h80": {
+        "artifact_file_sha256": "40d4c9638562f8cc3e5343560712aaa76c7991dfc85ba98519947dd2c3ddf228",
+        "learned_tensor_sha256": "c1dd68dad23b2996e4c09628f8d433fd7e10af4c13febf42687124553b0c35b3",
+        "random_tensor_sha256": "7962391c81d3212fbd6e488d0bdf489698b1899b83391322b304560baeede15b"
+      },
+      "bit2_seed43_h80": {
+        "artifact_file_sha256": "ab6ad5a7eb25bd3ddf5da61343a1f5ad4abb183f7b17c34cef5f9a49cff0af1a",
+        "learned_tensor_sha256": "8e4d28763a7e31229413be646a714a837689a9fd4b47d620ee65cc59ae3c1f5f",
+        "random_tensor_sha256": "e6818d3b21cc1758946f66cd78a5fbe752fd5d5107dda5d509e67185ab542314"
+      },
+      "bit3_seed17_h80": {
+        "artifact_file_sha256": "1dc9327a99f4593e69bcd1ea60adea6441c883be3915d0104346f696ef492e1b",
+        "learned_tensor_sha256": "1cd2ec236d7e6546a727fa582beee224113a4e78343ebd6b5b71d1b11670bbc9",
+        "random_tensor_sha256": "0b1764fcce9cb558920542340c0d6dee3da9cd883b9bd2c208fa794de7a22a17"
+      },
+      "bit3_seed29_h80": {
+        "artifact_file_sha256": "088cf7ce2fb6b60eca3ac8573a0cbcae215f327a0aafcb727d236bbb061c6ed5",
+        "learned_tensor_sha256": "2b6576241047f64e5888e567a7b7510e73ea936230131e6b2f1598a8a6bc32f9",
+        "random_tensor_sha256": "7962391c81d3212fbd6e488d0bdf489698b1899b83391322b304560baeede15b"
+      },
+      "bit3_seed43_h80": {
+        "artifact_file_sha256": "3c2879cd04ccec504fe4123f0ab52602b6178d6cb4f74f2560f1ada7e2a4ea33",
+        "learned_tensor_sha256": "e650a7eacf84e878ff07830a999a12518ce7c23b41db22f7ed8bcc66c1c0dd51",
+        "random_tensor_sha256": "e6818d3b21cc1758946f66cd78a5fbe752fd5d5107dda5d509e67185ab542314"
+      },
+      "bit4_seed17_h80": {
+        "artifact_file_sha256": "89eec6bbbf90f3cd3be71c2aa83e0d804fc3d6e9b11c7f1e4b1225adab5b9e92",
+        "learned_tensor_sha256": "bd0e4c224a82ba902e75b2f52e837ced14d4d17d70d43bd1c32e9d0d1942104a",
+        "random_tensor_sha256": "0b1764fcce9cb558920542340c0d6dee3da9cd883b9bd2c208fa794de7a22a17"
+      },
+      "bit4_seed29_h80": {
+        "artifact_file_sha256": "3da39091877326557080207b2fb26dea94b7dee6f8de513623e9d9600b6eb486",
+        "learned_tensor_sha256": "7d052baa32ffc76e571417afd9106abb00f32af9b45714e7e7a0ae951a7e0f2f",
+        "random_tensor_sha256": "7962391c81d3212fbd6e488d0bdf489698b1899b83391322b304560baeede15b"
+      },
+      "bit4_seed43_h80": {
+        "artifact_file_sha256": "5643b57cdde44e701f6a8450876553985367e4a38088e844a373bc6f87554ae1",
+        "learned_tensor_sha256": "ccb8ad18468620c0e768e32b2729235f80292eaf2dafed0bc78e042b6c2def29",
+        "random_tensor_sha256": "e6818d3b21cc1758946f66cd78a5fbe752fd5d5107dda5d509e67185ab542314"
+      }
+    },
+    "run_config_sha256": "64b66a1cd3c994f487f4cebcbe3a9a77bed3db8a57e0b4631f427d27c2fe29a8"
+  },
+  "runtime_estimate": {
+    "average_checkpoint_evaluation_seconds": 0.04371067001061006,
+    "estimated_total_checkpoint_seconds": 220.3017768534747,
+    "estimated_total_optimizer_seconds": 471.20840806514025,
+    "estimated_total_seconds": 691.510184918615,
+    "smoke_checkpoint_count": 11,
+    "smoke_elapsed_seconds": 0.00046018511056900024,
+    "smoke_optimizer_seconds": 0.9519361779093742
+  },
+  "selection_sha256": "e8a47cd44c71624443f515af004fc56fb79d92e8ef8f4881389f0396092ddb84",
+  "specification": {
+    "path": "/home/elicer/SpinTurboQuant/learned_rotation_training_length_sweep_plan.md",
+    "sha256": "6c5b838fdb5e07e4551a3bef946f819e925d68e0aca6812f8d90bc85677e0651"
+  },
+  "status": "complete_with_longbench_skipped",
+  "updated_at": "2026-08-16T14:13:12.929880+00:00"
+}

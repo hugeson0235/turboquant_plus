@@ -1,0 +1,19 @@
+{
+  "bits_requiring_evaluation": [
+    2,
+    3,
+    4
+  ],
+  "partial_progress_predictions": {
+    "full": {
+      "learned_K2_V16_s17": 195,
+      "learned_K2_V16_s29": 60
+    },
+    "smoke": {
+      "learned_K2_V16_s17": 13,
+      "learned_K2_V16_s29": 13
+    }
+  },
+  "reason": "LongBench-E was skipped at the user's explicit request.",
+  "status": "skipped_by_explicit_flag"
+}
