@@ -1,0 +1,36 @@
+{
+  "bit_width": 2,
+  "completed_at": "2026-08-16T14:57:18.098860+00:00",
+  "first_100_minibatch_indices_sha256": "1e0427b962600e0778f843268f2c174748c13c87bfc0447095cb490bfec97e17",
+  "horizon": 10000,
+  "initial_rotation_tensor_sha256": "02bc7e7c99945c466e803b4c0c21031fb5c126b84e7d388c9f8bce208e4559e0",
+  "optimizer_seed": 200035,
+  "protocol_sha256": "4df9c73fde724a23809b7571f0dfd02ff48d3a86f82c0d2bb3bd4db828f8866c",
+  "row_counts": {
+    "checkpoint_metrics": 101,
+    "training_curve": 1001
+  },
+  "scheduler": "cosine",
+  "scheduler_config": {
+    "T_max": 10000,
+    "eta_min": 0.00025,
+    "name": "CosineAnnealingLR"
+  },
+  "seed": 35,
+  "status": "complete",
+  "terminal": {
+    "calibration_mse": 0.0003731112067697495,
+    "configured_steps": 10000,
+    "evaluation_elapsed_seconds": 3.9439512714743614,
+    "generalization_gap": 0.00013004101165314808,
+    "optimizer_elapsed_seconds": 82.4146316871047,
+    "original_scale_validation_mse": 0.3003845272392027,
+    "orthogonality_max_abs": 5.2900617997231336e-08,
+    "rotation_tensor_sha256": "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b",
+    "scheduler": "cosine",
+    "seed": 35,
+    "step": 10000,
+    "wall_elapsed_seconds": 96.59167680889368,
+    "wikitext_validation_mse": 0.0005031522184228976
+  }
+}

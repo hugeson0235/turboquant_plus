@@ -1,0 +1,133 @@
+{
+  "activation_hashes": {
+    "calibration": "79f0773f55e286365c8df136505865e05183d06bdb7cd92fdc2b08d8921bf7b5",
+    "tinystories": "6ad114b212ceda4c9a1e3440e142edf271b28640183cf66da6943053fb379a21",
+    "wikitext": "3fa121ac9f3f08fd9a9312fcfdf7c711ec0fc2c97a0f5fcc66cfbf114e514719"
+  },
+  "codebook_hash": "4137669113c2fc35cb4b1b819c7ab84389bd96b228b4ac83d5eac0b71a6d16c0",
+  "completion_audit_sha256": "982edb8146ec35bde819174d4c5b5d8a61a36dd5a89ea07b3444686e6c8655bd",
+  "created_at": "2026-08-16T14:55:00.869488+00:00",
+  "environment": {
+    "command": [
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/bit2_scheduler_comparison.py",
+      "--stage",
+      "report",
+      "--model",
+      "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77"
+    ],
+    "conda_default_env": "stq",
+    "cuda_runtime": "12.1",
+    "git_commit": "66cf562d4466472167ab249e3667f0023f7b981e",
+    "git_status": [
+      "?? experiments/spin_turboquant/bit2_scheduler_comparison.py",
+      "?? experiments/spin_turboquant/results/bit2_scheduler_10000/",
+      "?? tests/test_bit2_scheduler_comparison.py"
+    ],
+    "gpu": {
+      "capability": [
+        8,
+        0
+      ],
+      "name": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+      "total_memory_bytes": 42412802048
+    },
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "python_prefix": "/home/elicer/miniconda3/envs/stq",
+    "timestamp": "2026-08-16T15:02:11.718458+00:00",
+    "torch": "2.5.1+cu121"
+  },
+  "implementation_hashes": {
+    "codebook": "df0ea41028d1ffbfd7472659a3209ea99c6a8c6bb3dd7688370996afd277834c",
+    "core": "d3c9b083d7557359360d9e3e616f4c4311ea56673fe100f7f8860361ac76f7b2",
+    "rotation": "18fbaea56a9c416dc2228ccc7bb7626b6404ba377467b59cd5678808846c3586",
+    "runner": "9f3a9425862bb1f8affc3decce091f4f7fc42432bf5b4616bb71eb24ab73341e",
+    "training_length_runner": "e87893e743328992b5d5f1b1f01db518e669c36096ec0e6079a03e0700c9452e"
+  },
+  "model": {
+    "path": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "tokenizer_and_config_hashes": {
+      "config.json": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "special_tokens_map.json": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "tokenizer.json": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "tokenizer_config.json": "24e8a6dc2547164b7002e3125f10b415105644fcf02bf9ad8b674c87b1eaaed6"
+    }
+  },
+  "progress": {
+    "phase": "complete",
+    "updated_at": "2026-08-16T15:02:15.389270+00:00"
+  },
+  "protocol": {
+    "attention_sequence_length": 1024,
+    "batch_tokens_per_head": 256,
+    "bit_width": 2,
+    "calibration_tokens": 4096,
+    "cosine": {
+      "T_max": 10000,
+      "eta_min": 0.00025
+    },
+    "domain_tokens": 4096,
+    "ema_coefficient": 0.95,
+    "evaluation_interval": 100,
+    "exponential": {
+      "gamma": 0.9997004716402234
+    },
+    "final_learning_rate": 0.00025,
+    "gradient_clip": 1.0,
+    "initial_learning_rate": 0.005,
+    "log_interval": 10,
+    "minibatch_seed": 200035,
+    "model": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "norm_correction": false,
+    "optimizer": "Adam",
+    "reference_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct",
+    "rotation": "layer/KV-head dense Cayley over shared Haar initialization",
+    "schedulers": [
+      "cosine",
+      "exponential"
+    ],
+    "seed": 35,
+    "selection_relative_tolerance": 0.001,
+    "source_dir": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/training_length_sweep",
+    "steps": 10000,
+    "total_runs": 2,
+    "validation_tokens": 4096,
+    "value_cache": "BF16"
+  },
+  "protocol_sha256": "4df9c73fde724a23809b7571f0dfd02ff48d3a86f82c0d2bb3bd4db828f8866c",
+  "runtime_estimate": {
+    "basis": "paired 100-step smoke runs",
+    "conditions": {
+      "cosine": {
+        "checkpoint_evaluation_seconds": 8.213655889034271,
+        "optimizer_seconds": 95.9309458732605,
+        "total_seconds": 104.14460176229477
+      },
+      "exponential": {
+        "checkpoint_evaluation_seconds": 3.895363610237837,
+        "optimizer_seconds": 82.04694911837578,
+        "total_seconds": 85.94231272861362
+      }
+    },
+    "excludes_checkpoint_replay_tinystories_and_plotting": true,
+    "measured_at": "2026-08-16T15:02:12.500673+00:00",
+    "two_run_training_minutes": 3.1681152415151397,
+    "two_run_training_seconds": 190.08691449090838
+  },
+  "sanity_metrics_sha256": "6101d7d30d7bceead14f40a873920b775f06200e167029422b28abd82c17e524",
+  "selection_sha256": "9cee43d6f51f891e23df21b2fcb1e875bc0f112326d0ffe7003d90a5b16bd72a",
+  "source_config_sha256": "299b9974e1c5ee4f8dc338f56e2fb7f07da2e3653d30f3394d8db70be4355f6f",
+  "specification": {
+    "path": "/home/elicer/SpinTurboQuant/bit2_scheduler_10000_step_plan.md",
+    "sha256": "e6905714176fc42bee2cfd7cb39d5083265683fc915b92fe3dbc619ddf6977aa"
+  },
+  "status": "complete",
+  "training_runtime": {
+    "measurement": "sum of the two per-condition wall clocks",
+    "two_run_wall_minutes": 3.1907681728402775,
+    "two_run_wall_seconds": 191.44609037041664
+  },
+  "updated_at": "2026-08-16T15:02:15.389386+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "audited_at": "2026-08-16T15:02:15.388645+00:00",
+  "checks": {
+    "all_checks_pass": true,
+    "all_replay_hashes_match": true,
+    "all_required_artifacts_exist": true,
+    "both_full_runs_complete": true,
+    "both_lr_endpoints_exact": true,
+    "both_terminal_steps_10000": true,
+    "checkpoint_rows_202": true,
+    "exactly_two_schedulers": true,
+    "finite_training_and_checkpoint_metrics": true,
+    "no_other_full_run_directories": true,
+    "paired_initial_rotation": true,
+    "paired_minibatch_stream": true,
+    "selection_has_both_schedulers": true,
+    "specification_seed_is_35": true,
+    "training_rows_2002": true,
+    "training_runtime_recorded": true,
+    "two_deterministic_artifacts": true,
+    "two_sanity_rows": true
+  },
+  "required_artifacts": [
+    "scheduler_comparison_config.json",
+    "training_curve.csv",
+    "checkpoint_metrics.csv",
+    "selected_checkpoints.json",
+    "sanity_metrics.csv",
+    "plots/learning_rate.png",
+    "plots/validation_mse.png",
+    "plots/scheduler_difference.png",
+    "plots/generalization_gap.png",
+    "report.md"
+  ]
+}
