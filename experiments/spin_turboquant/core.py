@@ -77,6 +77,27 @@ def build_random_rotations(
     return torch.from_numpy(rotations)
 
 
+def build_random_rotation_pair(
+    num_layers: int, num_kv_heads: int, head_dim: int, seed: int
+) -> tuple[torch.Tensor, torch.Tensor]:
+    """Draw independent K then V Haar rotations from one seeded RNG stream."""
+
+    rng = np.random.default_rng(seed)
+
+    def draw() -> torch.Tensor:
+        rotations = np.empty(
+            (num_layers, num_kv_heads, head_dim, head_dim), dtype=np.float32
+        )
+        for layer in range(num_layers):
+            for head in range(num_kv_heads):
+                rotations[layer, head] = random_rotation_dense(head_dim, rng).astype(
+                    np.float32, copy=False
+                )
+        return torch.from_numpy(rotations)
+
+    return draw(), draw()
+
+
 def cayley_rotation(parameters: torch.Tensor, initial: torch.Tensor) -> torch.Tensor:
     """Construct ``(I-A)(I+A)^-1 R0`` with ``A = B-B.T``.
 
@@ -623,6 +644,65 @@ def install_key_codec_hooks(
             )
 
         handles.append(layers[layer_index].self_attn.k_proj.register_forward_hook(hook))
+    try:
+        yield
+    finally:
+        for handle in handles:
+            handle.remove()
+
+
+@contextmanager
+def install_kv_codec_hooks(
+    model: torch.nn.Module,
+    key_rotations: torch.Tensor,
+    value_rotations: torch.Tensor,
+    centroids: torch.Tensor,
+    *,
+    norm_correction: bool = True,
+    counters: dict[str, int] | None = None,
+) -> Iterator[None]:
+    """Temporarily quantize reconstructed pre-RoPE K and projected V.
+
+    Llama writes ``k_proj`` and ``v_proj`` outputs into the cache after the
+    projection hooks have run (and applies RoPE to K in between), so this is a
+    quality-emulation implementation of the K2/V2 cache-write seam.  The
+    reconstructed tensors retain the projection's shape, dtype, and device.
+    """
+
+    layers = model.model.layers
+    expected_prefix = (len(layers),)
+    if key_rotations.ndim != 4 or key_rotations.shape[:1] != expected_prefix:
+        raise ValueError("key_rotations must have one (heads, d, d) tensor per layer")
+    if value_rotations.shape != key_rotations.shape:
+        raise ValueError("key and value rotations must have identical shapes")
+    counts = counters if counters is not None else {}
+    counts.setdefault("key_vectors", 0)
+    counts.setdefault("value_vectors", 0)
+    handles: list[torch.utils.hooks.RemovableHandle] = []
+
+    def register(projection: torch.nn.Module, rotation: torch.Tensor, name: str) -> None:
+        def hook(
+            _module: torch.nn.Module,
+            _inputs: tuple[torch.Tensor, ...],
+            output: torch.Tensor,
+            *,
+            selected_rotation: torch.Tensor = rotation,
+            component: str = name,
+        ) -> torch.Tensor:
+            reconstructed = _projection_codec(
+                output,
+                selected_rotation,
+                centroids,
+                norm_correction=norm_correction,
+            )
+            counts[f"{component}_vectors"] += int(output.shape[0] * output.shape[1])
+            return reconstructed
+
+        handles.append(projection.register_forward_hook(hook))
+
+    for layer_index, layer in enumerate(layers):
+        register(layer.self_attn.k_proj, key_rotations[layer_index], "key")
+        register(layer.self_attn.v_proj, value_rotations[layer_index], "value")
     try:
         yield
     finally:

@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+learned_K2_V2_s35_step10000,learned,2,35,qasper,Single QA,0,b26174d8ec97e8d01421548d3a640e8382db6235eb506661,3411,0-4k,15.0
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_en,Single QA,0,45e06726b160cfb851e2179017f90e37f4f4dec62f346e33,2188,0-4k,60.0
+learned_K2_V2_s35_step10000,learned,2,35,hotpotqa,Multi QA,0,1dae9ec530a93f43f85bd215a5c0e6737dbcf226cd3541d8,3745,0-4k,66.66666666666666
+learned_K2_V2_s35_step10000,learned,2,35,2wikimqa,Multi QA,0,8c17c1259ed0c31bff3ee48ef8a6c4c54469c7769ffbc1c1,2521,0-4k,22.22222222222222
+learned_K2_V2_s35_step10000,learned,2,35,gov_report,Summarization,0,f91242d1926360ba71923587c1ba63e18d6a3ba749e6fbf6,3092,0-4k,27.58620644319203
+learned_K2_V2_s35_step10000,learned,2,35,multi_news,Summarization,0,3cfe6d5139ea2e17d17b9c8d040c015c3db4936578091cf6,951,0-4k,15.819208548740798
+learned_K2_V2_s35_step10000,learned,2,35,trec,Few-shot,0,37ada5a32aa71f2b906e18d53a6b0e82ab87ba4590b65583,1093,0-4k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,triviaqa,Few-shot,0,a6b0e6b9bf53f05d1569572cebd9359a0d4136a026613c7d,3953,0-4k,50.0
+learned_K2_V2_s35_step10000,learned,2,35,samsum,Few-shot,0,158b7db2e111643f66315da64d8459f61ad6dd62f5f24c2c,1909,0-4k,44.44444394513032
+learned_K2_V2_s35_step10000,learned,2,35,passage_count,Synthetic,0,0358aa51ab38acc1b97405f4307203e982cbb19500435368,3615,0-4k,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,0,f363b5cfe63d7095514d7273aaa2e31dbfa73f10a71fd7d8,3446,0-4k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,lcc,Code,0,5a3807e791e54f080c852b4a4ffaa104dc61429725efd608,451,0-4k,0.0
+learned_K2_V2_s35_step10000,learned,2,35,repobench-p,Code,0,2f63d9a3d25c12812b10eb407a92d3744aaa94835463eb5b,2646,0-4k,19.0

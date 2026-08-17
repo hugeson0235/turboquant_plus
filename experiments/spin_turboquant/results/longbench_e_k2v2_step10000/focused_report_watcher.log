@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "condition_id": "learned_K2_V2_s35_step10000",
+  "expected_predictions": 3668,
+  "prediction_count": 3668,
+  "unique_prediction_count": 3668,
+  "score_count": 3668,
+  "task_count": 13,
+  "category_count": 6,
+  "empty_outputs": 0,
+  "error_fields": 0,
+  "nonfinite_scores": 0,
+  "nonfinite_summaries": 0,
+  "wrong_condition_identity_rows": 0,
+  "key_rotation_tensor_sha256": "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b",
+  "value_rotation_tensor_sha256": "9a46e3b1758695a4a0cf5d5c43b369ac590dcef01ae623b90c0a9143f901d0ff",
+  "smoke_prediction_count": 13,
+  "smoke_kv_codec_counters": {
+    "key_vectors": 1661088,
+    "value_vectors": 1661088
+  },
+  "forbidden_condition_directories": [],
+  "failures": []
+}

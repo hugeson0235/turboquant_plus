@@ -32,6 +32,7 @@ import torch
 
 from .core import (
     attention_distortion_metrics,
+    build_random_rotation_pair,
     build_random_rotations,
     cayley_rotation,
     codebook_tensor,
@@ -134,7 +135,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--stage",
-        choices=("validate", "smoke", "train", "select", "sanity", "report", "orchestrate"),
+        choices=("validate", "smoke", "train", "select", "export-step10000", "sanity", "report", "orchestrate"),
         default="orchestrate",
     )
     parser.add_argument("--model", type=Path, required=True)
@@ -964,6 +965,69 @@ def select_stage(args: argparse.Namespace) -> dict[str, Any]:
     return selection
 
 
+def export_step10000_stage(args: argparse.Namespace) -> Path:
+    """Deterministically replay and persist the exact cosine step-10,000 state."""
+
+    validate_stage(args)
+    expected_hash = "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b"
+    path = (
+        args.output_dir
+        / "final_rotation_artifacts"
+        / "cosine_b2_seed35_step10000.pt"
+    )
+    if path.exists():
+        stored = torch.load(path, map_location="cpu", weights_only=True)
+        if (
+            stored.get("scheduler") == "cosine"
+            and stored.get("selected_step") == STEPS
+            and stored.get("rotation_tensor_sha256") == expected_hash
+            and isinstance(stored.get("value"), torch.Tensor)
+            and stored.get("value_rotation_tensor_sha256")
+            == tensor_sha256(stored["value"].reshape(256, 128, 128))
+            and stored.get("value_rotation_tensor_sha256")
+            != tensor_sha256(stored["random"].reshape(256, 128, 128))
+        ):
+            print(f"[{utc_now()}] exact step-10000 artifact already exists: {path}")
+            return path
+        raise RuntimeError(f"existing step-10000 artifact does not match protocol: {path}")
+    inputs = load_normalized_inputs(args)
+    random_rotation, learned_rotation, replay_elapsed = rerun_selected(
+        args, "cosine", STEPS, inputs[0]
+    )
+    expected_random_key, value_rotation = build_random_rotation_pair(32, 8, 128, SEED)
+    if not torch.equal(random_rotation, expected_random_key):
+        raise RuntimeError("replayed random Key rotation does not match seed-35 K stream")
+    learned_hash = tensor_sha256(learned_rotation.reshape(256, 128, 128))
+    if learned_hash != expected_hash:
+        raise RuntimeError(
+            f"step-10000 tensor hash mismatch: {learned_hash} != {expected_hash}"
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    atomic_torch_save(
+        {
+            "random": random_rotation,
+            "value": value_rotation,
+            "learned": learned_rotation,
+            "scheduler": "cosine",
+            "seed": SEED,
+            "bit_width": BIT_WIDTH,
+            "configured_steps": STEPS,
+            "selected_step": STEPS,
+            "model": str(args.model.resolve()),
+            "norm_correction": False,
+            "optimizer_seed": optimizer_seed(),
+            "rotation_tensor_sha256": learned_hash,
+            "value_rotation_tensor_sha256": tensor_sha256(
+                value_rotation.reshape(256, 128, 128)
+            ),
+            "replay_elapsed_seconds": replay_elapsed,
+        },
+        path,
+    )
+    print(f"[{utc_now()}] exported exact step-10000 artifact: {path}")
+    return path
+
+
 def sanity_stage(args: argparse.Namespace) -> list[dict[str, Any]]:
     selection = select_stage(args)
     sanity_path = args.output_dir / "sanity_metrics.csv"
@@ -1258,6 +1322,8 @@ def main(argv: Sequence[str] | None = None) -> None:
         train_stage(args)
     elif args.stage == "select":
         select_stage(args)
+    elif args.stage == "export-step10000":
+        export_step10000_stage(args)
     elif args.stage == "sanity":
         sanity_stage(args)
     elif args.stage in {"report", "orchestrate"}:

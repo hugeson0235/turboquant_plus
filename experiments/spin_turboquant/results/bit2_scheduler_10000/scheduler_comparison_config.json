@@ -5,23 +5,24 @@
     "wikitext": "3fa121ac9f3f08fd9a9312fcfdf7c711ec0fc2c97a0f5fcc66cfbf114e514719"
   },
   "codebook_hash": "4137669113c2fc35cb4b1b819c7ab84389bd96b228b4ac83d5eac0b71a6d16c0",
-  "completion_audit_sha256": "982edb8146ec35bde819174d4c5b5d8a61a36dd5a89ea07b3444686e6c8655bd",
   "created_at": "2026-08-16T14:55:00.869488+00:00",
   "environment": {
     "command": [
       "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/bit2_scheduler_comparison.py",
       "--stage",
-      "report",
+      "export-step10000",
       "--model",
       "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77"
     ],
     "conda_default_env": "stq",
     "cuda_runtime": "12.1",
-    "git_commit": "66cf562d4466472167ab249e3667f0023f7b981e",
+    "git_commit": "59fa18f29d9fd077f96b80f7506216db4dabec59",
     "git_status": [
-      "?? experiments/spin_turboquant/bit2_scheduler_comparison.py",
-      "?? experiments/spin_turboquant/results/bit2_scheduler_10000/",
-      "?? tests/test_bit2_scheduler_comparison.py"
+      "M experiments/spin_turboquant/bit2_scheduler_comparison.py",
+      " M experiments/spin_turboquant/core.py",
+      " M experiments/spin_turboquant/longbench.py",
+      "?? experiments/spin_turboquant/longbench_k2v2_step10000.py",
+      "?? tests/test_longbench_k2v2_step10000.py"
     ],
     "gpu": {
       "capability": [
@@ -35,14 +36,14 @@
     "platform": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
     "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
     "python_prefix": "/home/elicer/miniconda3/envs/stq",
-    "timestamp": "2026-08-16T15:02:11.718458+00:00",
+    "timestamp": "2026-08-16T15:37:23.310260+00:00",
     "torch": "2.5.1+cu121"
   },
   "implementation_hashes": {
     "codebook": "df0ea41028d1ffbfd7472659a3209ea99c6a8c6bb3dd7688370996afd277834c",
-    "core": "d3c9b083d7557359360d9e3e616f4c4311ea56673fe100f7f8860361ac76f7b2",
+    "core": "21b7462ae09e61403ee7e128b81ac71f57045875ba4ad4fc8bb8ed7700d2d8b1",
     "rotation": "18fbaea56a9c416dc2228ccc7bb7626b6404ba377467b59cd5678808846c3586",
-    "runner": "9f3a9425862bb1f8affc3decce091f4f7fc42432bf5b4616bb71eb24ab73341e",
+    "runner": "71564445b6a0000cebbef97a9b42b0f92de78f13ec0e0cd215ecc4f67eae9dd3",
     "training_length_runner": "e87893e743328992b5d5f1b1f01db518e669c36096ec0e6079a03e0700c9452e"
   },
   "model": {
@@ -116,18 +117,11 @@
     "two_run_training_minutes": 3.1681152415151397,
     "two_run_training_seconds": 190.08691449090838
   },
-  "sanity_metrics_sha256": "6101d7d30d7bceead14f40a873920b775f06200e167029422b28abd82c17e524",
-  "selection_sha256": "9cee43d6f51f891e23df21b2fcb1e875bc0f112326d0ffe7003d90a5b16bd72a",
   "source_config_sha256": "299b9974e1c5ee4f8dc338f56e2fb7f07da2e3653d30f3394d8db70be4355f6f",
   "specification": {
     "path": "/home/elicer/SpinTurboQuant/bit2_scheduler_10000_step_plan.md",
     "sha256": "e6905714176fc42bee2cfd7cb39d5083265683fc915b92fe3dbc619ddf6977aa"
   },
   "status": "complete",
-  "training_runtime": {
-    "measurement": "sum of the two per-condition wall clocks",
-    "two_run_wall_minutes": 3.1907681728402775,
-    "two_run_wall_seconds": 191.44609037041664
-  },
-  "updated_at": "2026-08-16T15:02:15.389386+00:00"
+  "updated_at": "2026-08-16T15:37:23.309798+00:00"
 }

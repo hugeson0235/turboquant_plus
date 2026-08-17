@@ -1,0 +1,2 @@
+condition_id,examples,prompt_tokens,generated_tokens,prefill_seconds,decode_seconds,decode_seconds_per_token,total_seconds,peak_gpu_memory_bytes,theoretical_kv_bytes_per_token,actual_cache_dtype,empty_outputs
+learned_K2_V2_s35_step10000,3668,34504564,372156,10997.568291790772,20974.758932419118,0.05692114514561972,32021.538527518594,29827100672,18432,bfloat16 reconstructed-K/V emulation,0

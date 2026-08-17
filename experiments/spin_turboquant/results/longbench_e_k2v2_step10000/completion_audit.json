@@ -1,0 +1,24 @@
+{
+  "category_count": 6,
+  "condition_id": "learned_K2_V2_s35_step10000",
+  "empty_outputs": 0,
+  "error_fields": 0,
+  "expected_predictions": 3668,
+  "failures": [],
+  "forbidden_condition_directories": [],
+  "key_rotation_tensor_sha256": "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b",
+  "nonfinite_scores": 0,
+  "nonfinite_summaries": 0,
+  "prediction_count": 3668,
+  "score_count": 3668,
+  "smoke_kv_codec_counters": {
+    "key_vectors": 1661088,
+    "value_vectors": 1661088
+  },
+  "smoke_prediction_count": 13,
+  "status": "complete",
+  "task_count": 13,
+  "unique_prediction_count": 3668,
+  "value_rotation_tensor_sha256": "9a46e3b1758695a4a0cf5d5c43b369ac590dcef01ae623b90c0a9143f901d0ff",
+  "wrong_condition_identity_rows": 0
+}

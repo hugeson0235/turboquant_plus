@@ -45,6 +45,7 @@ from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 from experiments.spin_turboquant.core import (
     codebook_tensor,
     install_key_codec_hooks,
+    install_kv_codec_hooks,
 )
 
 
@@ -1450,10 +1451,16 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
             raise RuntimeError(
                 f"complete 13-task smoke test is required before {condition.condition_id} full run"
             )
+        if getattr(condition, "value_bit_width", 16) != 16:
+            counters = smoke_config.get("kv_codec_counters", {})
+            if min(counters.get("key_vectors", 0), counters.get("value_vectors", 0)) <= 0:
+                raise RuntimeError(
+                    f"smoke K/V codec counters are missing or zero: {counters}"
+                )
 
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
     model = load_model(args.model, device)
-    rotations: torch.Tensor | None = None
+    rotations: torch.Tensor | tuple[torch.Tensor, torch.Tensor] | None = None
     centroids: torch.Tensor | None = None
     if condition.method != "fp16":
         rotations = load_condition_rotations(
@@ -1462,16 +1469,19 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
         centroids = codebook_tensor(
             int(condition.bit_width), int(assets["model"]["head_dim"]), device=device
         )
-    codec_context = (
-        contextlib.nullcontext()
-        if condition.method == "fp16"
-        else install_key_codec_hooks(
-            model,
-            rotations,
-            centroids,
-            norm_correction=False,
+    kv_codec_counters: dict[str, int] | None = None
+    if condition.method == "fp16":
+        codec_context = contextlib.nullcontext()
+    elif isinstance(rotations, tuple):
+        kv_codec_counters = {}
+        codec_context = install_kv_codec_hooks(
+            model, rotations[0], rotations[1], centroids,
+            norm_correction=True, counters=kv_codec_counters,
         )
-    )
+    else:
+        codec_context = install_key_codec_hooks(
+            model, rotations, centroids, norm_correction=False
+        )
     prompts = assets["prompts"]
     maximum_generation_lengths = assets["maximum_generation_lengths"]
     kv_bytes = theoretical_kv_bytes_per_token(condition, assets["model"])
@@ -1482,6 +1492,7 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
     if pad_token_id is None:
         pad_token_id = 0
 
+    inference_started = time.perf_counter()
     try:
         with codec_context:
             batches = prepared_batches(
@@ -1573,7 +1584,11 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
                             measured["peak_gpu_memory_bytes"]
                         ),
                         "theoretical_kv_bytes_per_token": kv_bytes,
-                        "actual_cache_dtype": "bfloat16 reconstructed-key emulation",
+                        "actual_cache_dtype": (
+                            "bfloat16 reconstructed-K/V emulation"
+                            if isinstance(rotations, tuple)
+                            else "bfloat16 reconstructed-key emulation"
+                        ),
                         "created_at": utc_now(),
                     }
                     missing_fields = set(PREDICTION_FIELDS) - row.keys()
@@ -1598,11 +1613,20 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
                     key = (str(row["task"]), str(row["example_id"]))
                     completed.add(key)
                     existing_lookup[key] = row
-                update_run_status(run_dir, completed_predictions=len(completed))
+                elapsed = time.perf_counter() - inference_started
+                remaining = len(expected) - len(completed)
+                eta_seconds = elapsed * remaining / max(len(completed) - len(existing), 1)
+                update_run_status(
+                    run_dir,
+                    completed_predictions=len(completed),
+                    elapsed_seconds=elapsed,
+                    eta_seconds=eta_seconds,
+                )
                 print(
                     f"[{utc_now()}] {mode} {condition.condition_id} "
                     f"batch={batch_ordinal} {batch_id} size={len(batch)} "
                     f"completed={len(completed)}/{len(expected)} "
+                    f"eta_seconds={eta_seconds:.0f} "
                     f"padded_prompt_tokens={measured['batch_padded_prompt_tokens']} "
                     f"seconds={float(measured['batch_total_seconds']):.3f}",
                     flush=True,
@@ -1622,6 +1646,10 @@ def run_inference(args: argparse.Namespace, mode: str) -> None:
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
+    if kv_codec_counters is not None:
+        if min(kv_codec_counters.get("key_vectors", 0), kv_codec_counters.get("value_vectors", 0)) <= 0:
+            raise RuntimeError(f"K/V codec counters did not both increase: {kv_codec_counters}")
+        update_run_status(run_dir, kv_codec_counters=kv_codec_counters)
     predictions = canonicalize_predictions(prediction_path, expected)
     summary = score_condition(run_dir, predictions, args.longbench_repo)
     update_run_status(
