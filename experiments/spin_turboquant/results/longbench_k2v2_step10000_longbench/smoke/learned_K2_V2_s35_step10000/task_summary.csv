@@ -1,0 +1,22 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+learned_K2_V2_s35_step10000,learned,2,35,narrativeqa,Single QA,1,50.0,50.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,qasper,Single QA,1,0.0,0.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_en,Single QA,1,74.99999999999999,75.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_zh,Single QA,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,hotpotqa,Single QA,1,33.33333333333333,33.33,0.0
+learned_K2_V2_s35_step10000,learned,2,35,2wikimqa,Single QA,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,musique,Single QA,1,0.0,0.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,dureader,Retrieval,1,31.249999570312504,31.25,0.0
+learned_K2_V2_s35_step10000,learned,2,35,gov_report,Summarization,1,34.80825911845529,34.81,0.0
+learned_K2_V2_s35_step10000,learned,2,35,qmsum,Summarization,1,20.134227692986812,20.13,0.0
+learned_K2_V2_s35_step10000,learned,2,35,multi_news,Summarization,1,17.03469984810279,17.03,0.0
+learned_K2_V2_s35_step10000,learned,2,35,vcsum,Summarization,1,26.244343392231944,26.24,0.0
+learned_K2_V2_s35_step10000,learned,2,35,trec,Few-shot,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,triviaqa,Few-shot,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,samsum,Few-shot,1,79.99999952,80.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,lsht,Few-shot,1,0.0,0.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_count,Synthetic,1,0.0,0.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_zh,Synthetic,1,0.0,0.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,lcc,Code,1,100.0,100.0,0.0
+learned_K2_V2_s35_step10000,learned,2,35,repobench-p,Code,1,65.0,65.0,0.0

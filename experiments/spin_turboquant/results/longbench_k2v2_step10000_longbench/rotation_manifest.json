@@ -1,0 +1,10 @@
+{
+  "artifact_file_sha256": "38e078fc0dfd78f642f3bc5e58e23b5c0505a45afad4e5e3f3631143139309d2",
+  "artifact_path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/bit2_scheduler_10000/final_rotation_artifacts/cosine_b2_seed35_step10000.pt",
+  "condition_id": "learned_K2_V2_s35_step10000",
+  "key_rotation_tensor_sha256": "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b",
+  "scheduler": "cosine",
+  "seed": 35,
+  "selected_step": 10000,
+  "value_rotation_tensor_sha256": "9a46e3b1758695a4a0cf5d5c43b369ac590dcef01ae623b90c0a9143f901d0ff"
+}

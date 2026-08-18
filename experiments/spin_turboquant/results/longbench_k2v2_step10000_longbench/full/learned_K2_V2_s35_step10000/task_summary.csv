@@ -1,0 +1,22 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+learned_K2_V2_s35_step10000,learned,2,35,narrativeqa,Single QA,200,24.954782127464476,24.95,29.516873403593742
+learned_K2_V2_s35_step10000,learned,2,35,qasper,Single QA,200,41.95279519412939,41.95,38.23437043850155
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_en,Single QA,150,51.516860422006836,51.52,33.623661751207884
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_zh,Single QA,200,53.258618046199224,53.26,36.558867204366436
+learned_K2_V2_s35_step10000,learned,2,35,hotpotqa,Single QA,200,45.174337609889015,45.17,44.36546526957697
+learned_K2_V2_s35_step10000,learned,2,35,2wikimqa,Single QA,200,29.828891951290657,29.83,39.76260469007146
+learned_K2_V2_s35_step10000,learned,2,35,musique,Single QA,200,20.10819905915814,20.11,34.07159862217604
+learned_K2_V2_s35_step10000,learned,2,35,dureader,Retrieval,200,27.498773277893825,27.5,16.875100090434692
+learned_K2_V2_s35_step10000,learned,2,35,gov_report,Summarization,200,31.299111705116342,31.3,6.114174555903255
+learned_K2_V2_s35_step10000,learned,2,35,qmsum,Summarization,200,24.447219700864547,24.45,7.0622759832088855
+learned_K2_V2_s35_step10000,learned,2,35,multi_news,Summarization,200,26.100984852732125,26.1,6.2689819046483635
+learned_K2_V2_s35_step10000,learned,2,35,vcsum,Summarization,200,16.522971538185516,16.52,4.600750032345388
+learned_K2_V2_s35_step10000,learned,2,35,trec,Few-shot,200,71.0,71.0,45.37620521815371
+learned_K2_V2_s35_step10000,learned,2,35,triviaqa,Few-shot,200,88.89630832130831,88.9,28.279728411263104
+learned_K2_V2_s35_step10000,learned,2,35,samsum,Few-shot,200,40.70073162146835,40.7,16.63981769786705
+learned_K2_V2_s35_step10000,learned,2,35,lsht,Few-shot,200,35.0,35.0,47.69696007084728
+learned_K2_V2_s35_step10000,learned,2,35,passage_count,Synthetic,200,3.5291666666666663,3.53,15.33944115217732
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,200,79.0,79.0,40.7308237088326
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_zh,Synthetic,200,44.0,44.0,49.63869458396343
+learned_K2_V2_s35_step10000,learned,2,35,lcc,Code,500,50.788,50.79,29.163179799191994
+learned_K2_V2_s35_step10000,learned,2,35,repobench-p,Code,500,43.382,43.38,27.05513030831676

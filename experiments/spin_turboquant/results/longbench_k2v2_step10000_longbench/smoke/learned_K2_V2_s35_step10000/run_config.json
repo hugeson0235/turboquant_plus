@@ -1,0 +1,335 @@
+{
+  "completed_at": "2026-08-18T02:06:57.950303+00:00",
+  "completed_predictions": 21,
+  "created_at": "2026-08-18T02:02:32.143847+00:00",
+  "elapsed_seconds": 166.8874385431409,
+  "environment": {
+    "Levenshtein": "0.26.1",
+    "command": [
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/longbench_k2v2_step10000.py",
+      "--stage",
+      "smoke",
+      "--model",
+      "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "--rotation-dir",
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/bit2_scheduler_10000",
+      "--longbench-repo",
+      "/home/elicer/SpinTurboQuant/LongBench_official",
+      "--data-dir",
+      "/home/elicer/SpinTurboQuant/LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data",
+      "--output-dir",
+      "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_k2v2_step10000_longbench",
+      "--device",
+      "cuda",
+      "--dataset-mode",
+      "longbench",
+      "--condition",
+      "learned_K2_V2_s35_step10000",
+      "--batch-size",
+      "8",
+      "--batch-token-budget",
+      "32768"
+    ],
+    "cuda_runtime": "12.1",
+    "fuzzywuzzy": "0.18.0",
+    "gpu": {
+      "capability": [
+        8,
+        0
+      ],
+      "name": "NVIDIA A100 80GB PCIe MIG 3g.40gb",
+      "total_memory_bytes": 42412802048
+    },
+    "jieba": "0.42.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-142-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "rouge": "1.0.1",
+    "timestamp": "2026-08-18T02:02:31.956163+00:00",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.45.2",
+    "turboquant_plus_commit": "4aa95c84384e4b44d2fb4b89943cb393cb96ad0c",
+    "turboquant_plus_status": [
+      "M experiments/spin_turboquant/longbench_k2v2_step10000.py",
+      " M tests/test_longbench_k2v2_step10000.py",
+      "?? experiments/spin_turboquant/results/longbench_k2v2_step10000_longbench/"
+    ]
+  },
+  "eta_seconds": 0.0,
+  "expected_predictions": 21,
+  "kv_codec_counters": {
+    "key_vectors": 6763936,
+    "value_vectors": 6763936
+  },
+  "protocol": {
+    "categories": {
+      "Code": [
+        "lcc",
+        "repobench-p"
+      ],
+      "Few-shot": [
+        "trec",
+        "triviaqa",
+        "samsum",
+        "lsht"
+      ],
+      "Retrieval": [
+        "dureader"
+      ],
+      "Single QA": [
+        "narrativeqa",
+        "qasper",
+        "multifieldqa_en",
+        "multifieldqa_zh",
+        "hotpotqa",
+        "2wikimqa",
+        "musique"
+      ],
+      "Summarization": [
+        "gov_report",
+        "qmsum",
+        "multi_news",
+        "vcsum"
+      ],
+      "Synthetic": [
+        "passage_count",
+        "passage_retrieval_en",
+        "passage_retrieval_zh"
+      ]
+    },
+    "codebook_sha256": "4137669113c2fc35cb4b1b819c7ab84389bd96b228b4ac83d5eac0b71a6d16c0",
+    "condition": {
+      "condition_id": "learned_K2_V2_s35_step10000",
+      "key_bit_width": 2,
+      "method": "learned",
+      "seed": 35,
+      "value_bit_width": 2
+    },
+    "decoding": {
+      "batch_token_budget": 32768,
+      "batching": "contiguous within task; fixed from all examples before resume filtering",
+      "chat_policy": "native instruct template with official LongBench exclusions",
+      "finished_sequence_handling": "compact legacy KV batches after each stop token",
+      "max_context_length": 131072,
+      "maximum_batch_size": 1,
+      "maximum_generation_lengths": {
+        "2wikimqa": 32,
+        "dureader": 128,
+        "gov_report": 512,
+        "hotpotqa": 32,
+        "lcc": 64,
+        "lsht": 64,
+        "multi_news": 512,
+        "multifieldqa_en": 64,
+        "multifieldqa_zh": 64,
+        "musique": 32,
+        "narrativeqa": 128,
+        "passage_count": 32,
+        "passage_retrieval_en": 32,
+        "passage_retrieval_zh": 32,
+        "qasper": 128,
+        "qmsum": 512,
+        "repobench-p": 64,
+        "samsum": 128,
+        "trec": 64,
+        "triviaqa": 32,
+        "vcsum": 512
+      },
+      "middle_truncation": "preserve tokenized front and back halves",
+      "no_chat_tasks": [
+        "lcc",
+        "lsht",
+        "repobench-p",
+        "samsum",
+        "trec",
+        "triviaqa"
+      ],
+      "num_logits_to_keep": 1,
+      "strategy": "greedy_argmax",
+      "task_batch_sizes": {
+        "2wikimqa": 1,
+        "dureader": 1,
+        "gov_report": 1,
+        "hotpotqa": 1,
+        "lcc": 1,
+        "lsht": 1,
+        "multi_news": 1,
+        "multifieldqa_en": 1,
+        "multifieldqa_zh": 1,
+        "musique": 1,
+        "narrativeqa": 1,
+        "passage_count": 1,
+        "passage_retrieval_en": 1,
+        "passage_retrieval_zh": 1,
+        "qasper": 1,
+        "qmsum": 1,
+        "repobench-p": 1,
+        "samsum": 1,
+        "trec": 1,
+        "triviaqa": 1,
+        "vcsum": 1
+      },
+      "temperature": 0
+    },
+    "implementation_hashes": {
+      "focused_runner": "f7c5e6d9b4a7e7bd69b3961ccc8e2443e62a3ee5e15c278a0d5cd1fa517a57b7",
+      "longbench_runner": "67878efae4ea746de801a4b1e42d16edc8d42a79358f38679987d6a8327b9514",
+      "spin_turboquant_core": "21b7462ae09e61403ee7e128b81ac71f57045875ba4ad4fc8bb8ed7700d2d8b1"
+    },
+    "key_rotation_tensor_sha256": "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b",
+    "longbench": {
+      "commit": "2e00731f8d0bff23dc4325161044d0ed8af94c1e",
+      "data_counts": {
+        "2wikimqa": 200,
+        "dureader": 200,
+        "gov_report": 200,
+        "hotpotqa": 200,
+        "lcc": 500,
+        "lsht": 200,
+        "multi_news": 200,
+        "multifieldqa_en": 150,
+        "multifieldqa_zh": 200,
+        "musique": 200,
+        "narrativeqa": 200,
+        "passage_count": 200,
+        "passage_retrieval_en": 200,
+        "passage_retrieval_zh": 200,
+        "qasper": 200,
+        "qmsum": 200,
+        "repobench-p": 500,
+        "samsum": 200,
+        "trec": 200,
+        "triviaqa": 200,
+        "vcsum": 200
+      },
+      "data_hashes": {
+        "2wikimqa": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37",
+        "dureader": "09d1054f8b2610ffd3f5f0b7710e8c77a58c3afeb90c3da60ffda5ad7e94eedf",
+        "gov_report": "d28112beb3a9b41d80aa390837fa1a31c9e3da84a5262009c97585cc49f597c4",
+        "hotpotqa": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f",
+        "lcc": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1",
+        "lsht": "b57834ed102ce3a6dbc501f4005016b1fe883371ba48b381c1d1f698291a4bdd",
+        "multi_news": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b",
+        "multifieldqa_en": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f",
+        "multifieldqa_zh": "e5b4fd1a437c53c1c9e4e31eda7a259110b06d14be79c3ec455008c11fb9fab5",
+        "musique": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd",
+        "narrativeqa": "0fb8d08ba5cdad4b74244224b0dc2e8b41ee6b850d954a13eb2d282621ce2f71",
+        "passage_count": "0455a8f1e8e99d63a86bdc6bdb8b943b22509e3102bbef65ce6794045e03bbcd",
+        "passage_retrieval_en": "0f34d2955bfc9bd21ccaa3f4c5aa4e41263aaf83d3fb6002ff7118c134f1eabd",
+        "passage_retrieval_zh": "d71c1f71f9fee4c2108f822e9c58ac3cef94db47902c40ddfe168ecb5aab3cc0",
+        "qasper": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+        "qmsum": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113",
+        "repobench-p": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+        "samsum": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc",
+        "trec": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4",
+        "triviaqa": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa",
+        "vcsum": "d7412361c418794607c801067c7542254ed5220e1f3ec174dfddc6710ded0e50"
+      },
+      "dataset_revision": "5e628be450b7e67fb7ae6e201bd6d8f7056f7672",
+      "repository": "/home/elicer/SpinTurboQuant/LongBench_official"
+    },
+    "mode": "smoke",
+    "model": {
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "head_dim": 128,
+      "max_position_embeddings": 131072,
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "num_key_value_heads": 8,
+      "path": "/home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "torch_dtype": "torch.bfloat16"
+    },
+    "quantization": {
+      "cache_storage": "quality emulation stores reconstructed K/V in model dtype",
+      "codebook": "local fixed TurboQuant Lloyd-Max",
+      "component": "pre-RoPE keys and post-projection values",
+      "implementation": "turboquant_plus head-wise PolarQuant emulation",
+      "norm_correction": true,
+      "prompt_and_generated_tokens": true
+    },
+    "rotation_artifact_key": "learned",
+    "rotation_artifact_sha256": "38e078fc0dfd78f642f3bc5e58e23b5c0505a45afad4e5e3f3631143139309d2",
+    "specification": {
+      "path": "/home/elicer/SpinTurboQuant/longbench_experiment_plan.md",
+      "sha256": "d628ceb1d861f45a245edc1fd025fa25a1dfdc9739b99e8d8e81d95adfd06391"
+    },
+    "subset": {
+      "examples_per_condition": 4750,
+      "manifest": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_k2v2_step10000_longbench/subset_manifest.json",
+      "manifest_sha256": "8656954cd14022aa240a5d66b181156b4a5ba395ded958f791b6ca292a0cec93",
+      "samples_per_length_bucket": 0,
+      "samples_per_task": 4750,
+      "sampling_seed": 35
+    },
+    "task_order": [
+      "narrativeqa",
+      "qasper",
+      "multifieldqa_en",
+      "multifieldqa_zh",
+      "hotpotqa",
+      "2wikimqa",
+      "musique",
+      "dureader",
+      "gov_report",
+      "qmsum",
+      "multi_news",
+      "vcsum",
+      "trec",
+      "triviaqa",
+      "samsum",
+      "lsht",
+      "passage_count",
+      "passage_retrieval_en",
+      "passage_retrieval_zh",
+      "lcc",
+      "repobench-p"
+    ],
+    "value_rotation_tensor_sha256": "9a46e3b1758695a4a0cf5d5c43b369ac590dcef01ae623b90c0a9143f901d0ff"
+  },
+  "protocol_sha256": "80123afa18b1ef1f6ca0b16380fab5dec8eecc53481c8a64347baead705f40e0",
+  "status": "complete",
+  "summary": {
+    "category_scores": {
+      "Code": 82.5,
+      "Few-shot": 69.99999988,
+      "Retrieval": 31.249999570312504,
+      "Single QA": 51.19047619047619,
+      "Summarization": 24.55538251294421,
+      "Synthetic": 33.333333333333336
+    },
+    "empty_outputs": 0,
+    "length_scores": {
+      "0-4k": 58.40693996962055,
+      "4-8k": 60.85570453549781,
+      "8k+": 37.563593541433306
+    },
+    "overall_macro_average": 49.18118392740108,
+    "task_scores": {
+      "2wikimqa": 100.0,
+      "dureader": 31.249999570312504,
+      "gov_report": 34.80825911845529,
+      "hotpotqa": 33.33333333333333,
+      "lcc": 100.0,
+      "lsht": 0.0,
+      "multi_news": 17.03469984810279,
+      "multifieldqa_en": 74.99999999999999,
+      "multifieldqa_zh": 100.0,
+      "musique": 0.0,
+      "narrativeqa": 50.0,
+      "passage_count": 0.0,
+      "passage_retrieval_en": 100.0,
+      "passage_retrieval_zh": 0.0,
+      "qasper": 0.0,
+      "qmsum": 20.134227692986812,
+      "repobench-p": 65.0,
+      "samsum": 79.99999952,
+      "trec": 100.0,
+      "triviaqa": 100.0,
+      "vcsum": 26.244343392231944
+    }
+  },
+  "updated_at": "2026-08-18T02:06:57.950477+00:00"
+}

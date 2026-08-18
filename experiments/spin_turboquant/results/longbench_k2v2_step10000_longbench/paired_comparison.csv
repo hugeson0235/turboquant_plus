@@ -1,0 +1,2 @@
+status,reason,learned_condition_id,reference_condition_id,difference,confidence_interval_low,confidence_interval_high
+unavailable,random_K2_V2_s35 was forbidden by explicit override,learned_K2_V2_s35_step10000,random_K2_V2_s35,,,

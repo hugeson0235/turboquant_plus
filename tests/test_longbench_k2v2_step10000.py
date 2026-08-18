@@ -81,11 +81,13 @@ def test_k2v2_theoretical_cache_bytes_and_child_condition():
     assert theoretical_kv_bytes_per_token(Condition(), dimensions) == 18_432
     args = argparse.Namespace(
         model="model", rotation_dir="rotations", longbench_repo="longbench",
-        data_dir="data", output_dir="output", device="cuda", batch_size=8,
-        batch_token_budget=32768, max_context_length=None,
+        data_dir="data", output_dir="output", device="cuda", dataset_mode="longbench_e",
+        batch_size=8, batch_token_budget=32768, max_context_length=None,
     )
     command = child_command(args, "smoke")
+    assert command[command.index("-m") + 1] != "__main__"
     assert command[command.index("--condition") + 1] == CONDITION_ID
+    assert command[command.index("--dataset-mode") + 1] == "longbench_e"
     assert not any(excluded in command for excluded in (
         "fp16_K16_V16", "identity_K2_V2", "random_K2_V2_s35"
     ))
@@ -100,7 +102,7 @@ def _write_auditable_fixture(root):
     base.write_json(smoke / "run_config.json", {"status": "complete", "protocol": protocol, "kv_codec_counters": {"key_vectors": 1, "value_vectors": 1}})
     predictions = []
     scores = []
-    for index in range(3668):
+    for index in range(len(base.TASKS) * 3):
         task = base.TASKS[index % len(base.TASKS)]
         row = {"condition_id": CONDITION_ID, "task": task, "example_id": str(index), "prediction": "ok"}
         predictions.append(row)
@@ -116,9 +118,9 @@ def test_completion_audit_accepts_exact_learned_singleton(tmp_path):
     _write_auditable_fixture(tmp_path)
     audit, _ = audit_completed_run(tmp_path)
     assert audit["status"] == "complete"
-    assert audit["unique_prediction_count"] == 3668
-    assert audit["task_count"] == 13
-    assert audit["category_count"] == 6
+    assert audit["unique_prediction_count"] == len(base.TASKS) * 3
+    assert audit["task_count"] == len(base.TASKS)
+    assert audit["category_count"] == len(base.CATEGORIES)
     assert audit["failures"] == []
 
 
@@ -133,7 +135,9 @@ def test_completion_audit_rejects_forbidden_directory_without_touching_it(tmp_pa
 
 
 def test_report_stage_is_in_child_command_and_orchestrator_sequence_is_pinned():
-    args = argparse.Namespace(model="m", rotation_dir="r", longbench_repo="l", data_dir="d", output_dir="o", device="cuda", batch_size=8, batch_token_budget=32768, max_context_length=None)
+    args = argparse.Namespace(model="m", rotation_dir="r", longbench_repo="l", data_dir="d", output_dir="o", dataset_mode="longbench", device="cuda", batch_size=8, batch_token_budget=32768, max_context_length=None)
     command = child_command(args, "report")
+    assert command[command.index("-m") + 1] != "__main__"
     assert command[command.index("--stage") + 1] == "report"
     assert command[command.index("--condition") + 1] == CONDITION_ID
+    assert command[command.index("--dataset-mode") + 1] == "longbench"

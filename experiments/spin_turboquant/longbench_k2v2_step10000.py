@@ -1,4 +1,4 @@
-"""Focused LongBench-E runner for learned_K2_V2_s35_step10000 only."""
+"""Focused learned-K2/V2 step-10000 runner for the LongBench dataset."""
 
 from __future__ import annotations
 
@@ -16,6 +16,11 @@ from typing import Any, Sequence
 import torch
 from transformers import AutoTokenizer
 
+if __package__ in (None, ""):
+    _ROOT = Path(__file__).resolve().parents[2]
+    if str(_ROOT) not in sys.path:
+        sys.path.insert(0, str(_ROOT))
+
 from experiments.spin_turboquant import longbench as base
 from experiments.spin_turboquant.training_length_sweep import tensor_sha256
 
@@ -23,10 +28,260 @@ from experiments.spin_turboquant.training_length_sweep import tensor_sha256
 CONDITION_ID = "learned_K2_V2_s35_step10000"
 EXPECTED_KEY_HASH = "824ac9f487464ed7837281b833bb7ce777e761fbbc66cdfa37cc125221af928b"
 EXPECTED_VALUE_HASH = "9a46e3b1758695a4a0cf5d5c43b369ac590dcef01ae623b90c0a9143f901d0ff"
-EXPECTED_EXAMPLES = 3668
 FORBIDDEN_CONDITIONS = ("fp16_K16_V16", "identity_K2_V2", "random_K2_V2_s35")
-SPECIFICATION_PATH = Path(__file__).resolve().parents[3] / "longbench_e_k2v2_step10000_plan.md"
+DATASET_MODE_LONGBENCH_E = "longbench_e"
+DATASET_MODE_LONGBENCH = "longbench"
+
+SPECIFICATION_PATHS = {
+    DATASET_MODE_LONGBENCH_E: Path(__file__).resolve().parents[3]
+    / "longbench_e_k2v2_step10000_plan.md",
+    DATASET_MODE_LONGBENCH: Path(__file__).resolve().parents[3]
+    / "longbench_experiment_plan.md",
+}
+
+TASKS_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: (
+        "qasper",
+        "multifieldqa_en",
+        "hotpotqa",
+        "2wikimqa",
+        "gov_report",
+        "multi_news",
+        "trec",
+        "triviaqa",
+        "samsum",
+        "passage_count",
+        "passage_retrieval_en",
+        "lcc",
+        "repobench-p",
+    ),
+    DATASET_MODE_LONGBENCH: (
+        "narrativeqa",
+        "qasper",
+        "multifieldqa_en",
+        "multifieldqa_zh",
+        "hotpotqa",
+        "2wikimqa",
+        "musique",
+        "dureader",
+        "gov_report",
+        "qmsum",
+        "multi_news",
+        "vcsum",
+        "trec",
+        "triviaqa",
+        "samsum",
+        "lsht",
+        "passage_count",
+        "passage_retrieval_en",
+        "passage_retrieval_zh",
+        "lcc",
+        "repobench-p",
+    ),
+}
+
+METRIC_NAMES_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: {
+        "qasper": "qa_f1_score",
+        "multifieldqa_en": "qa_f1_score",
+        "hotpotqa": "qa_f1_score",
+        "2wikimqa": "qa_f1_score",
+        "gov_report": "rouge_score",
+        "multi_news": "rouge_score",
+        "trec": "classification_score",
+        "triviaqa": "qa_f1_score",
+        "samsum": "rouge_score",
+        "passage_count": "count_score",
+        "passage_retrieval_en": "retrieval_score",
+        "lcc": "code_sim_score",
+        "repobench-p": "code_sim_score",
+    },
+    DATASET_MODE_LONGBENCH: {
+        "narrativeqa": "qa_f1_score",
+        "qasper": "qa_f1_score",
+        "multifieldqa_en": "qa_f1_score",
+        "multifieldqa_zh": "qa_f1_zh_score",
+        "hotpotqa": "qa_f1_score",
+        "2wikimqa": "qa_f1_score",
+        "musique": "qa_f1_score",
+        "dureader": "rouge_zh_score",
+        "gov_report": "rouge_score",
+        "qmsum": "rouge_score",
+        "multi_news": "rouge_score",
+        "vcsum": "rouge_zh_score",
+        "trec": "classification_score",
+        "triviaqa": "qa_f1_score",
+        "samsum": "rouge_score",
+        "lsht": "classification_score",
+        "passage_count": "count_score",
+        "passage_retrieval_en": "retrieval_score",
+        "passage_retrieval_zh": "retrieval_zh_score",
+        "lcc": "code_sim_score",
+        "repobench-p": "code_sim_score",
+    },
+}
+
+CATEGORIES_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: {
+        "Single QA": ("qasper", "multifieldqa_en"),
+        "Multi QA": ("hotpotqa", "2wikimqa"),
+        "Summarization": ("gov_report", "multi_news"),
+        "Few-shot": ("trec", "triviaqa", "samsum"),
+        "Synthetic": ("passage_count", "passage_retrieval_en"),
+        "Code": ("lcc", "repobench-p"),
+    },
+    DATASET_MODE_LONGBENCH: {
+        "Single QA": (
+            "narrativeqa",
+            "qasper",
+            "multifieldqa_en",
+            "multifieldqa_zh",
+            "hotpotqa",
+            "2wikimqa",
+            "musique",
+        ),
+        "Summarization": (
+            "gov_report",
+            "qmsum",
+            "multi_news",
+            "vcsum",
+        ),
+        "Few-shot": ("trec", "triviaqa", "samsum", "lsht"),
+        "Synthetic": (
+            "passage_count",
+            "passage_retrieval_en",
+            "passage_retrieval_zh",
+        ),
+        "Code": ("lcc", "repobench-p"),
+        "Retrieval": ("dureader",),
+    },
+}
+
+TASK_BATCH_SIZES_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: {
+        "qasper": 1,
+        "multifieldqa_en": 1,
+        "hotpotqa": 1,
+        "2wikimqa": 1,
+        "gov_report": 4,
+        "multi_news": 4,
+        "trec": 8,
+        "triviaqa": 8,
+        "samsum": 8,
+        "passage_count": 4,
+        "passage_retrieval_en": 8,
+        "lcc": 8,
+        "repobench-p": 8,
+    },
+    DATASET_MODE_LONGBENCH: {
+        "narrativeqa": 1,
+        "qasper": 1,
+        "multifieldqa_en": 1,
+        "multifieldqa_zh": 1,
+        "hotpotqa": 1,
+        "2wikimqa": 1,
+        "musique": 1,
+        "dureader": 4,
+        "gov_report": 4,
+        "qmsum": 4,
+        "multi_news": 4,
+        "vcsum": 4,
+        "trec": 8,
+        "triviaqa": 8,
+        "samsum": 8,
+        "lsht": 8,
+        "passage_count": 4,
+        "passage_retrieval_en": 8,
+        "passage_retrieval_zh": 8,
+        "lcc": 8,
+        "repobench-p": 8,
+    },
+}
+
+NO_CHAT_TASKS_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: {"trec", "triviaqa", "samsum", "lcc", "repobench-p"},
+    DATASET_MODE_LONGBENCH: {"trec", "triviaqa", "samsum", "lsht", "lcc", "repobench-p"},
+}
+
+FIRST_LINE_TASKS_BY_MODE = {
+    DATASET_MODE_LONGBENCH_E: {"trec", "triviaqa", "samsum"},
+    DATASET_MODE_LONGBENCH: {"trec", "triviaqa", "samsum", "lsht"},
+}
+
+TASK_BATCH_SIZE_DEFAULT = 1
+ACTIVE_DATASET_MODE = DATASET_MODE_LONGBENCH_E
 ORIGINAL_PROTOCOL_PAYLOAD = base.protocol_payload
+
+
+def dataset_mode_name(mode: str) -> str:
+    return "LongBench-E" if mode == DATASET_MODE_LONGBENCH_E else "LongBench"
+
+
+def dataset_file_suffix(mode: str) -> str:
+    return "_e" if mode == DATASET_MODE_LONGBENCH_E else ""
+
+
+def validate_dataset_mode(mode: str) -> str:
+    if mode not in (DATASET_MODE_LONGBENCH_E, DATASET_MODE_LONGBENCH):
+        raise ValueError(
+            f"unknown dataset mode: {mode}. expected {DATASET_MODE_LONGBENCH_E} or {DATASET_MODE_LONGBENCH}"
+        )
+    return mode
+
+
+def apply_dataset_mode(mode: str) -> None:
+    global ACTIVE_DATASET_MODE
+    mode = validate_dataset_mode(mode)
+    ACTIVE_DATASET_MODE = mode
+    base.TASKS = TASKS_BY_MODE[mode]
+    categories = CATEGORIES_BY_MODE[mode]
+    base.CATEGORIES = categories
+    base.TASK_TO_CATEGORY = {
+        task: category for category, tasks in categories.items() for task in tasks
+    }
+    base.TASK_BATCH_SIZES = {
+        task: TASK_BATCH_SIZES_BY_MODE[mode].get(task, TASK_BATCH_SIZE_DEFAULT)
+        for task in base.TASKS
+    }
+    base.NO_CHAT_TASKS = NO_CHAT_TASKS_BY_MODE[mode]
+    base.METRIC_NAMES = METRIC_NAMES_BY_MODE[mode]
+    base.FIRST_LINE_TASKS = FIRST_LINE_TASKS_BY_MODE[mode]
+
+
+def active_specification_path() -> Path:
+    return SPECIFICATION_PATHS[ACTIVE_DATASET_MODE]
+
+
+def load_examples_for_mode(data_dir: Path, task: str, dataset_mode: str) -> list[dict[str, Any]]:
+    path = data_dir / f"{task}{dataset_file_suffix(dataset_mode)}.jsonl"
+    examples: list[dict[str, Any]] = []
+    with path.open(encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            if not line.strip():
+                continue
+            value = json.loads(line)
+            required = {
+                "input",
+                "context",
+                "answers",
+                "length",
+                "all_classes",
+                "_id",
+            }
+            missing = required - value.keys()
+            if missing:
+                raise ValueError(f"{path}:{line_number} is missing {sorted(missing)}")
+            examples.append(value)
+    if not examples:
+        raise ValueError(f"LongBench task is empty: {path}")
+    ids = [str(example["_id"]) for example in examples]
+    if len(ids) != len(set(ids)):
+        raise ValueError(f"duplicate example IDs in {path}")
+    return examples
+
+
+def load_examples(data_dir: Path, task: str) -> list[dict[str, Any]]:
+    return load_examples_for_mode(data_dir, task, ACTIVE_DATASET_MODE)
 
 
 @dataclass(frozen=True)
@@ -82,7 +337,9 @@ def build_full_manifest(
     return {
         "schema_version": 2,
         "sampling_seed": 35,
-        "sampling_method": "none; every LongBench-E example in canonical task/source order",
+        "sampling_method": (
+            f"none; every {dataset_mode_name(ACTIVE_DATASET_MODE)} example in canonical task/source order"
+        ),
         "samples_per_length_bucket": 0,
         "samples_per_task": len(rows),
         "example_count": len(rows),
@@ -104,10 +361,6 @@ def ensure_full_manifest(
     expected = build_full_manifest(
         data_dir, dataset_revision=dataset_revision, data_hashes=data_hashes
     )
-    if expected["example_count"] != 3668:
-        raise RuntimeError(
-            f"pinned LongBench-E data must contain 3668 examples, got {expected['example_count']}"
-        )
     path = output_dir / "full_manifest.json"
     existing = base.read_json(path)
     if existing is None:
@@ -125,7 +378,7 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
         "rotation directory": args.rotation_dir,
         "LongBench repository": args.longbench_repo,
         "LongBench data directory": args.data_dir,
-        "specification": SPECIFICATION_PATH,
+        "specification": active_specification_path(),
     }.items():
         if not path.exists():
             raise FileNotFoundError(f"{label} does not exist: {path}")
@@ -170,7 +423,7 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
         )
     del artifact, key_rotation, value_rotation
     data_hashes = {
-        task: base.sha256_file(args.data_dir / f"{task}_e.jsonl") for task in base.TASKS
+        task: base.sha256_file(args.data_dir / f"{task}{dataset_file_suffix(ACTIVE_DATASET_MODE)}.jsonl") for task in base.TASKS
     }
     codebook = base.codebook_tensor(2, 128, device="cpu").numpy()
     return {
@@ -184,7 +437,10 @@ def validate_assets(args: argparse.Namespace, *, deep: bool = True) -> dict[str,
             "longbench_runner": base.sha256_file(Path(base.__file__)),
             "spin_turboquant_core": base.sha256_file(Path(base.__file__).with_name("core.py")),
         },
-        "specification": {"path": str(SPECIFICATION_PATH), "sha256": base.sha256_file(SPECIFICATION_PATH)},
+        "specification": {
+            "path": str(active_specification_path()),
+            "sha256": base.sha256_file(active_specification_path()),
+        },
         "longbench": {
             "repository": str(args.longbench_repo), "commit": actual_commit,
             "dataset_revision": args.dataset_revision, "data_hashes": data_hashes,
@@ -240,6 +496,12 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--batch-token-budget", type=int, default=32768)
     parser.add_argument("--bootstrap-samples", type=int, default=10000)
+    parser.add_argument(
+        "--dataset-mode",
+        default=DATASET_MODE_LONGBENCH_E,
+        choices=(DATASET_MODE_LONGBENCH_E, DATASET_MODE_LONGBENCH),
+        help="longbench_e for LongBench-E, longbench for the full LongBench benchmark",
+    )
     parser.add_argument("--dataset-revision", default=base.LONG_BENCH_DATASET_REVISION)
     parser.add_argument("--longbench-commit", default=base.LONG_BENCH_COMMIT)
     return parser.parse_args(argv)
@@ -254,16 +516,34 @@ def install_patches() -> None:
     base.load_condition_rotations = load_condition_rotations
     base.theoretical_kv_bytes_per_token = theoretical_kv_bytes_per_token
     base.protocol_payload = protocol_payload
+    base.load_examples = load_examples
+
+
+def _self_command_invocation() -> list[str]:
+    script_or_module = []
+    if __package__:
+        script_or_module = ["-m", f"{__package__}.{Path(__file__).stem}"]
+    else:
+        script_or_module = [str(Path(__file__).resolve())]
+    return [sys.executable, *script_or_module]
 
 
 def child_command(args: argparse.Namespace, stage: str) -> list[str]:
-    command = [sys.executable, "-m", __name__, "--stage", stage]
+    command = [* _self_command_invocation(), "--stage", stage]
     for flag in ("model", "rotation_dir", "longbench_repo", "data_dir", "output_dir", "device"):
         command.extend(["--" + flag.replace("_", "-"), str(getattr(args, flag))])
+    command.extend(["--dataset-mode", getattr(args, "dataset_mode", DATASET_MODE_LONGBENCH_E)])
     command.extend(["--condition", CONDITION_ID, "--batch-size", str(args.batch_size), "--batch-token-budget", str(args.batch_token_budget)])
     if args.max_context_length is not None:
         command.extend(["--max-context-length", str(args.max_context_length)])
     return command
+
+
+def expected_examples_from_manifest(output_dir: Path) -> int:
+    manifest = base.read_json(output_dir / "full_manifest.json", {})
+    if manifest:
+        return int(manifest.get("example_count", 0))
+    return 0
 
 
 def _identity_issues(row: dict[str, Any], *, label: str) -> list[str]:
@@ -292,6 +572,9 @@ def _identity_issues(row: dict[str, Any], *, label: str) -> list[str]:
 
 def audit_completed_run(output_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     """Audit existing outputs without invoking inference or changing result rows."""
+    expected_predictions = expected_examples_from_manifest(output_dir)
+    if not expected_predictions:
+        expected_predictions = None
     full_dir = output_dir / "full" / CONDITION_ID
     smoke_dir = output_dir / "smoke" / CONDITION_ID
     full_config = base.read_json(full_dir / "run_config.json", {})
@@ -312,19 +595,29 @@ def audit_completed_run(output_dir: Path) -> tuple[dict[str, Any], dict[str, Any
 
     prediction_keys = [(str(row.get("task")), str(row.get("example_id"))) for row in predictions]
     score_keys = [(str(row.get("task")), str(row.get("example_id"))) for row in scores]
-    if len(predictions) != EXPECTED_EXAMPLES:
-        failures.append(f"prediction count is {len(predictions)}, expected {EXPECTED_EXAMPLES}")
-    if len(set(prediction_keys)) != EXPECTED_EXAMPLES:
-        failures.append(f"unique prediction identity count is {len(set(prediction_keys))}, expected {EXPECTED_EXAMPLES}")
-    if len(scores) != EXPECTED_EXAMPLES or set(score_keys) != set(prediction_keys):
+    if expected_predictions is not None and len(predictions) != expected_predictions:
+        failures.append(
+            f"prediction count is {len(predictions)}, expected {expected_predictions}"
+        )
+    if expected_predictions is not None and len(set(prediction_keys)) != expected_predictions:
+        failures.append(
+            f"unique prediction identity count is {len(set(prediction_keys))}, expected {expected_predictions}"
+        )
+    if expected_predictions is not None:
+        expected_scores = expected_predictions
+    else:
+        expected_scores = len(predictions)
+    if len(scores) != expected_scores or len(prediction_keys) != len(score_keys) or set(score_keys) != set(prediction_keys):
         failures.append("score rows are not a one-to-one match for predictions")
     tasks = {task for task, _ in prediction_keys}
     if tasks != set(base.TASKS):
         failures.append(f"prediction task set differs: {sorted(tasks)}")
     if len(task_rows) != len(base.TASKS) or {row.get("task") for row in task_rows} != set(base.TASKS):
-        failures.append("task_summary.csv does not contain exactly all 13 tasks")
+        failures.append("task_summary.csv does not contain exactly all benchmark tasks")
     if len(category_rows) != len(base.CATEGORIES) or {row.get("category") for row in category_rows} != set(base.CATEGORIES):
-        failures.append("category_summary.csv does not contain exactly all 6 categories")
+        failures.append(
+            f"category_summary.csv does not contain exactly all {len(base.CATEGORIES)} categories"
+        )
 
     empty_count = sum(not str(row.get("prediction", "")).strip() for row in predictions)
     error_count = sum(bool(row.get(key)) for row in predictions for key in ("error", "generation_error", "scoring_error"))
@@ -374,7 +667,7 @@ def audit_completed_run(output_dir: Path) -> tuple[dict[str, Any], dict[str, Any
     audit = {
         "status": "complete" if not failures else "incomplete",
         "condition_id": CONDITION_ID,
-        "expected_predictions": EXPECTED_EXAMPLES,
+        "expected_predictions": expected_predictions,
         "prediction_count": len(predictions),
         "unique_prediction_count": len(set(prediction_keys)),
         "score_count": len(scores),
@@ -404,7 +697,7 @@ def _write_singleton_plots(output_dir: Path, overall: float, category_rows: Sequ
     plots.mkdir(parents=True, exist_ok=True)
     fig, axis = plt.subplots(figsize=(5, 4))
     axis.bar([CONDITION_ID], [overall])
-    axis.set_ylabel("LongBench-E task macro score")
+    axis.set_ylabel(f"{dataset_mode_name(ACTIVE_DATASET_MODE)} task macro score")
     axis.tick_params(axis="x", rotation=15)
     fig.tight_layout()
     fig.savefig(plots / "overall_comparison.png", dpi=180)
@@ -453,7 +746,7 @@ def write_completion_report(args: argparse.Namespace) -> dict[str, Any]:
     study_config = {
         "status": "complete", "scope": "learned-only explicit override",
         "condition_ids": [CONDITION_ID], "forbidden_condition_ids": list(FORBIDDEN_CONDITIONS),
-        "expected_examples": EXPECTED_EXAMPLES, "model": protocol["model"],
+        "expected_examples": len(rows["predictions"]), "model": protocol["model"],
         "longbench": protocol["longbench"], "decoding": protocol["decoding"],
         "quantization": protocol["quantization"], "specification": protocol["specification"],
     }
@@ -470,7 +763,7 @@ def write_completion_report(args: argparse.Namespace) -> dict[str, Any]:
     overall = statistics.fmean(task_values)
     base.write_csv(args.output_dir / "overall_summary.csv", [{
         "condition_id": CONDITION_ID, "method": "learned", "key_bit_width": 2,
-        "value_bit_width": 2, "seed": 35, "examples": EXPECTED_EXAMPLES,
+        "value_bit_width": 2, "seed": 35, "examples": len(rows["predictions"]),
         "tasks": len(base.TASKS), "categories": len(base.CATEGORIES), "task_macro_average": overall,
         "paired_comparison_status": "unavailable_random_forbidden",
     }])
@@ -494,8 +787,9 @@ def write_completion_report(args: argparse.Namespace) -> dict[str, Any]:
     }])
     _write_singleton_plots(args.output_dir, overall, rows["category_rows"])
     report = "\n".join([
-        "# LongBench-E learned K2/V2 step-10000 report", "",
-        f"- Completion status: complete", f"- Predictions: {EXPECTED_EXAMPLES} unique rows",
+        f"# {dataset_mode_name(ACTIVE_DATASET_MODE)} learned K2/V2 step-10000 report", "",
+        f"- Completion status: complete",
+        f"- Predictions: {len(rows['predictions'])} rows",
         f"- Coverage: {len(base.TASKS)} tasks and {len(base.CATEGORIES)} categories",
         f"- Learned task macro average: {overall:.6f}", "- Empty outputs/errors/non-finite scores: 0/0/0",
         f"- Key rotation tensor SHA-256: `{actual_key_hash}`", f"- Value rotation tensor SHA-256: `{actual_value_hash}`", "",
@@ -513,6 +807,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     args = parse_args(argv)
     for field in ("model", "rotation_dir", "longbench_repo", "data_dir", "output_dir"):
         setattr(args, field, getattr(args, field).resolve())
+    apply_dataset_mode(args.dataset_mode)
     install_patches()
     if args.stage == "validate":
         assets = validate_assets(args)

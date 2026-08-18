@@ -1,0 +1,22 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+learned_K2_V2_s35_step10000,learned,2,35,narrativeqa,Single QA,0,341d214a2c377691bf20e5a30b8f7979696bd19141ad9c9f,22692,8k+,50.0
+learned_K2_V2_s35_step10000,learned,2,35,qasper,Single QA,0,3ac3eef636db11635a21a61804cb28e92c546a5686dd1e12,3141,0-4k,0.0
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_en,Single QA,0,c29e95ab6195406aceecf3874186150cb1b8b26db5bcd0e4,819,0-4k,74.99999999999999
+learned_K2_V2_s35_step10000,learned,2,35,multifieldqa_zh,Single QA,0,5b1b8e937b83c3ff9b75ac386fae9c4575c4b9f26a4fbdad,9593,8k+,100.0
+learned_K2_V2_s35_step10000,learned,2,35,hotpotqa,Single QA,0,fc6267db9ba02bbb251960231bc87251c581110e4e2b5f3f,8616,8k+,33.33333333333333
+learned_K2_V2_s35_step10000,learned,2,35,2wikimqa,Single QA,0,41ac2a4beb0af8f58d01863a62b90692f7c7d74b5e3a58d9,4696,4-8k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,musique,Single QA,0,4c114f84ca41284c0845705943adc10b70a4fd3e8d0ca295,11054,8k+,0.0
+learned_K2_V2_s35_step10000,learned,2,35,dureader,Retrieval,0,12278555b79f2eccb08cbc05e5eb1e3db6dd6656a6dfc903,14094,8k+,31.249999570312504
+learned_K2_V2_s35_step10000,learned,2,35,gov_report,Summarization,0,4bd6930b3b65caf89aa127d679a80294f31f9cfa7cdab703,8537,8k+,34.80825911845529
+learned_K2_V2_s35_step10000,learned,2,35,qmsum,Summarization,0,fdd371de2668a6f1e7914fe9a67aef33927ecc392fdc2606,7341,4-8k,20.134227692986812
+learned_K2_V2_s35_step10000,learned,2,35,multi_news,Summarization,0,e45abfcb82a3c862c0f772e6f461866839955c11ea2f46a8,2099,0-4k,17.03469984810279
+learned_K2_V2_s35_step10000,learned,2,35,vcsum,Summarization,0,240e3ec8f40837591cb0cb5d70a1e0e66e8c29161261c2fe,8812,8k+,26.244343392231944
+learned_K2_V2_s35_step10000,learned,2,35,trec,Few-shot,0,bb86302b1936b14c09091143ce6e0d4d4013c4789ece0230,3806,0-4k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,triviaqa,Few-shot,0,c6270c6ae570ce9459e98f4c704e3d86d510a755f6ce5443,3835,0-4k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,samsum,Few-shot,0,5da5f97a6782e2f4559618a1ac96a0eaa98ff99ae2f5b189,6406,4-8k,79.99999952
+learned_K2_V2_s35_step10000,learned,2,35,lsht,Few-shot,0,9b60df93b387e861804fbc9f71c94d9868f03eb01ee77d99,15596,8k+,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_count,Synthetic,0,96387e4ae15da043d51ef61053087ad39e7b4f01fba3f2a2,11221,8k+,0.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,0,f440b317fe84ec87132b316031ad47925a6ae33e0ef0ee3a,8525,8k+,100.0
+learned_K2_V2_s35_step10000,learned,2,35,passage_retrieval_zh,Synthetic,0,f951c270fb212ec46982cbbe2292ca317478d25e6248e802,6478,4-8k,0.0
+learned_K2_V2_s35_step10000,learned,2,35,lcc,Code,0,28ce5cf5e0beeb47248c6cba20ae17fa71d60d402770d464,5243,4-8k,100.0
+learned_K2_V2_s35_step10000,learned,2,35,repobench-p,Code,0,03b9c503110e4dc8f2d7690f56be9e9b2733744da1a855ff,6425,4-8k,65.0
