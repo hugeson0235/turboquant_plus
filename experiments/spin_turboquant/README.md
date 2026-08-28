@@ -99,6 +99,43 @@ fixed-cap tasks; variable-length QA remains batch size 1. Batch membership is
 fixed before resume filtering, and implementation, dataset, codebook, model,
 and rotation hashes are recorded in the run configuration.
 
+## LongBench-E rotation-allocation experiment
+
+`../../../longbench_e_rotation_allocation_12_condition_plan.md` is implemented
+by `experiments.spin_turboquant.longbench_e_rotation_allocation`. The runner
+creates one immutable 734-example manifest by sampling exactly 20% within each
+LongBench-E task and context-length bucket, then evaluates 12 conditions: the
+Identity, Random, and Learned Key variants of uniform 2-bit, fixed 32/96
+2/4-bit, adaptive 2-means 2/4-bit, and uniform 3-bit K/V allocation. The four
+Learned conditions train allocation-specific Key rotations for 10,000 steps;
+each paired Value path remains byte-identical to its Random condition.
+
+Validation generates the channel statistics, K/V partitions, group-wise
+random rotations, learned Key rotations, manifests, hashes, and storage
+accounting under the output directory. All 12 conditions must pass a 13-task
+smoke gate before the 8,808 primary predictions run. Conditions execute in
+fresh processes and append predictions example by example, so rerunning the
+same command validates the durable protocol and resumes only missing work.
+
+Run from the `turboquant_plus` repository root:
+
+```bash
+cd /home/elicer/SpinTurboQuant/turboquant_plus
+conda activate stq
+python -m experiments.spin_turboquant.longbench_e_rotation_allocation \
+  --stage orchestrate \
+  --model /home/elicer/.cache/huggingface/hub/models--NousResearch--Meta-Llama-3.1-8B-Instruct/snapshots/d10aef7999a2b5ba950ab3974312feeedbfe0b77 \
+  --source-dir experiments/spin_turboquant/results/instruct \
+  --longbench-repo ../LongBench_official \
+  --data-dir ../LongBench_data/5e628be450b7e67fb7ae6e201bd6d8f7056f7672/data \
+  --output-dir experiments/spin_turboquant/results/longbench_e_rotation_allocation_12
+```
+
+Allow approximately 22--24 hours on one A100. This is a quality-emulation
+experiment: quantized K/V are reconstructed before model-dtype cache storage.
+Packed bytes and effective BPE are theoretical accounting; measured GPU memory
+and latency are not packed low-bit kernel results.
+
 ## Analytic PCA LongBench pilot
 
 `../../../LongBenchAnalytic.md` is implemented separately so the completed
