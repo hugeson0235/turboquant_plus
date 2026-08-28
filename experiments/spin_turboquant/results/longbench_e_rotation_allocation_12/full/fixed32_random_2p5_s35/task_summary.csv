@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+fixed32_random_2p5_s35,random,2,35,qasper,Single QA,45,41.655084877419654,41.66,34.29227460152374
+fixed32_random_2p5_s35,random,2,35,multifieldqa_en,Single QA,30,49.761009863687704,49.76,33.31826752915936
+fixed32_random_2p5_s35,random,2,35,hotpotqa,Multi QA,60,47.279942279942276,47.28,44.57679613838402
+fixed32_random_2p5_s35,random,2,35,2wikimqa,Multi QA,60,39.67507151717678,39.68,43.31174311135048
+fixed32_random_2p5_s35,random,2,35,gov_report,Summarization,60,31.324835401797642,31.32,5.1188851187114714
+fixed32_random_2p5_s35,random,2,35,multi_news,Summarization,59,24.79270673341924,24.79,5.395247381760914
+fixed32_random_2p5_s35,random,2,35,trec,Few-shot,60,73.33333333333333,73.33,44.22166387140533
+fixed32_random_2p5_s35,random,2,35,triviaqa,Few-shot,60,88.76190476190476,88.76,25.48193081746242
+fixed32_random_2p5_s35,random,2,35,samsum,Few-shot,60,42.614666884122194,42.61,15.828169419898773
+fixed32_random_2p5_s35,random,2,35,passage_count,Synthetic,60,9.916666666666666,9.92,28.08086042524734
+fixed32_random_2p5_s35,random,2,35,passage_retrieval_en,Synthetic,60,98.33333333333333,98.33,12.801909579781015
+fixed32_random_2p5_s35,random,2,35,lcc,Code,60,56.733333333333334,56.73,31.3458485643988
+fixed32_random_2p5_s35,random,2,35,repobench-p,Code,60,49.88333333333333,49.88,27.593532857456935

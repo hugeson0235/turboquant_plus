@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+uniform2_random_s35,random,2,35,qasper,Single QA,1,8e5e6c35689e17e9f50df76ada506a4c05be9ed081c883d4,3732,0-4k,0.0
+uniform2_random_s35,random,2,35,multifieldqa_en,Single QA,2,dee63735510f6958f4c5bf318421c9b9fac0bc8b3e341a4a,2952,0-4k,80.0
+uniform2_random_s35,random,2,35,hotpotqa,Multi QA,1,b2af3aefc3bc4f5ba5340eca87389e8dcaa6fa1834110aaf,3669,0-4k,0.0
+uniform2_random_s35,random,2,35,2wikimqa,Multi QA,3,4adca5ba1654b740d1e25c6e73d45aa2f3621537bed9086b,2858,0-4k,0.0
+uniform2_random_s35,random,2,35,gov_report,Summarization,5,73b6c24236aac5d34a6f3aff9b258afd4be6ca8d1bdd2830,2786,0-4k,29.76190429024944
+uniform2_random_s35,random,2,35,multi_news,Summarization,5,3358fb88c31046f04005237c69fcb14adb6b6b9ff68ca036,2033,0-4k,25.892856674107144
+uniform2_random_s35,random,2,35,trec,Few-shot,10,e660419e55969f5f323ad0dd25559df5127ac5ec4d792757,1967,0-4k,100.0
+uniform2_random_s35,random,2,35,triviaqa,Few-shot,0,a6b0e6b9bf53f05d1569572cebd9359a0d4136a026613c7d,3953,0-4k,50.0
+uniform2_random_s35,random,2,35,samsum,Few-shot,2,66fe3774d3686f64c487b2b42c83421d10367deeb6bfed00,1714,0-4k,31.999999500000005
+uniform2_random_s35,random,2,35,passage_count,Synthetic,15,1795269f5f7efef8da447c1797cfe8082c5fec5fbc13a587,1940,0-4k,0.0
+uniform2_random_s35,random,2,35,passage_retrieval_en,Synthetic,2,871d9417ba06b98b501a20f626a0744f6ba0713376630258,3315,0-4k,100.0
+uniform2_random_s35,random,2,35,lcc,Code,1,d1cdb285b1f1b73f8d637fde4adf331aa839bb2e31eb8599,475,0-4k,98.0
+uniform2_random_s35,random,2,35,repobench-p,Code,9,3a25616cb5ea03ff9da80a9e67105c5d33a5d27f5481b048,2640,0-4k,48.0

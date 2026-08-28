@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+fixed32_identity_2p5,identity,2,,qasper,Single QA,1,15.384615384615383,15.38,0.0
+fixed32_identity_2p5,identity,2,,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+fixed32_identity_2p5,identity,2,,hotpotqa,Multi QA,1,100.0,100.0,0.0
+fixed32_identity_2p5,identity,2,,2wikimqa,Multi QA,1,100.0,100.0,0.0
+fixed32_identity_2p5,identity,2,,gov_report,Summarization,1,31.81818133471075,31.82,0.0
+fixed32_identity_2p5,identity,2,,multi_news,Summarization,1,23.22580595513008,23.23,0.0
+fixed32_identity_2p5,identity,2,,trec,Few-shot,1,100.0,100.0,0.0
+fixed32_identity_2p5,identity,2,,triviaqa,Few-shot,1,50.0,50.0,0.0
+fixed32_identity_2p5,identity,2,,samsum,Few-shot,1,23.880596547115175,23.88,0.0
+fixed32_identity_2p5,identity,2,,passage_count,Synthetic,1,0.0,0.0,0.0
+fixed32_identity_2p5,identity,2,,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+fixed32_identity_2p5,identity,2,,lcc,Code,1,25.0,25.0,0.0
+fixed32_identity_2p5,identity,2,,repobench-p,Code,1,18.0,18.0,0.0

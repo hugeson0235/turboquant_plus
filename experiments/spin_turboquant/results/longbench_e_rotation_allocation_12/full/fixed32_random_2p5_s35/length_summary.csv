@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+fixed32_random_2p5_s35,random,2,35,0-4k,13,253,50.097261304826084
+fixed32_random_2p5_s35,random,2,35,4-8k,13,254,52.07526540793313
+fixed32_random_2p5_s35,random,2,35,8k+,13,227,46.32851572876529

@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+kmeans2_learned_mixed_s35_step10000,learned,2,35,qasper,Single QA,45,38.54725775959349,38.55,37.06511631831783
+kmeans2_learned_mixed_s35_step10000,learned,2,35,multifieldqa_en,Single QA,30,50.68575733382867,50.69,32.27615435164193
+kmeans2_learned_mixed_s35_step10000,learned,2,35,hotpotqa,Multi QA,60,37.816438191438195,37.82,41.77819863182601
+kmeans2_learned_mixed_s35_step10000,learned,2,35,2wikimqa,Multi QA,60,40.2063492063492,40.21,43.90113925303977
+kmeans2_learned_mixed_s35_step10000,learned,2,35,gov_report,Summarization,60,31.343225803668386,31.34,5.658900152762438
+kmeans2_learned_mixed_s35_step10000,learned,2,35,multi_news,Summarization,59,24.46318917186466,24.46,5.310030908012321
+kmeans2_learned_mixed_s35_step10000,learned,2,35,trec,Few-shot,60,76.66666666666667,76.67,42.295258468165066
+kmeans2_learned_mixed_s35_step10000,learned,2,35,triviaqa,Few-shot,60,87.67948717948717,87.68,29.416132357373822
+kmeans2_learned_mixed_s35_step10000,learned,2,35,samsum,Few-shot,60,39.94893193432556,39.95,16.872057967225757
+kmeans2_learned_mixed_s35_step10000,learned,2,35,passage_count,Synthetic,60,7.361111111111111,7.36,19.190303460695464
+kmeans2_learned_mixed_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,60,93.33333333333333,93.33,24.94438257849294
+kmeans2_learned_mixed_s35_step10000,learned,2,35,lcc,Code,60,48.7,48.7,26.406627955875017
+kmeans2_learned_mixed_s35_step10000,learned,2,35,repobench-p,Code,60,38.766666666666666,38.77,22.60410483862512

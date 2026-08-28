@@ -1,0 +1,121 @@
+{
+  "accumulation_contract": "channel statistics use float64 mean(abs(BF16 activation))",
+  "activations": {
+    "calibration": {
+      "capture_protocol": {
+        "capture_implementation_sha256": "932073cdf6f27b2e3d1a910d826bd40c5da6d9a0934631c9f5d87d6e06e5cc07",
+        "diagnostic_tokens": 0,
+        "input_ids_sha256": "a6d3e5d14489c852d2eb52cad9544e8dd0756fbcc641acf3b2c2722eca2ab57b",
+        "key_location": "k_proj output before RoPE",
+        "model_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+        "schema_version": 1,
+        "split": "calibration",
+        "token_manifest_file_sha256": "0fb1eeb2bc200b0fab02fcd662f902f11663233e60a1ceba5af732d6f7b58c1a",
+        "value_location": "v_proj output before cache write"
+      },
+      "capture_protocol_sha256": "e15ba8c8c1b7f9de04ba269a02cb8fe9123901b2cdf848cc7484ac8d5b4d4a49",
+      "file_sha256": "b1da79e708fcd34b9660feb653355f29cc1a7f7caf8aa5333c67b090f1153455",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/activations/calibration.pt",
+      "shapes": {
+        "input_ids": [
+          4096
+        ],
+        "k": [
+          32,
+          8,
+          4096,
+          128
+        ],
+        "v": [
+          32,
+          8,
+          4096,
+          128
+        ]
+      },
+      "tensor_hashes": {
+        "input_ids": "a6d3e5d14489c852d2eb52cad9544e8dd0756fbcc641acf3b2c2722eca2ab57b",
+        "k": "5aa1d61da0444c4d5ecbfb427367f28db151f54a4ed934a51c136b2f4829acd0",
+        "v": "3cb8ab57510ec5e818bfd849de3bb975adaa7b9e3befeb03d3bc0e9e4fb17b70"
+      }
+    },
+    "validation": {
+      "capture_protocol": {
+        "capture_implementation_sha256": "932073cdf6f27b2e3d1a910d826bd40c5da6d9a0934631c9f5d87d6e06e5cc07",
+        "diagnostic_tokens": 256,
+        "input_ids_sha256": "9c2ed4e2dac69d9e21370a9e95b6dc2e16da592754c0eab0911fe148d88951f7",
+        "key_location": "k_proj output before RoPE",
+        "model_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+        "schema_version": 1,
+        "split": "validation",
+        "token_manifest_file_sha256": "0fb1eeb2bc200b0fab02fcd662f902f11663233e60a1ceba5af732d6f7b58c1a",
+        "value_location": "v_proj output before cache write"
+      },
+      "capture_protocol_sha256": "946f6100c5a023791c962ccc93fee2ef559b648693085a779ba79fcad498d7ea",
+      "file_sha256": "d46e87242ea904b1fd5528a30533758758235dbd569ca2655dd0d83ca6d644cf",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/activations/validation.pt",
+      "shapes": {
+        "cos": [
+          256,
+          128
+        ],
+        "input_ids": [
+          4096
+        ],
+        "k": [
+          32,
+          8,
+          4096,
+          128
+        ],
+        "q": [
+          32,
+          256,
+          32,
+          128
+        ],
+        "sin": [
+          256,
+          128
+        ],
+        "v": [
+          32,
+          8,
+          4096,
+          128
+        ]
+      },
+      "tensor_hashes": {
+        "cos": "6f410841dbb40e2fc30573d80310f3644858aa2dad32a6d1138ed45cd64103b1",
+        "input_ids": "9c2ed4e2dac69d9e21370a9e95b6dc2e16da592754c0eab0911fe148d88951f7",
+        "k": "7d308b4dd0cfb5bacfbcb8bfb382b257390fe544d40c5cf312520af38f1a4855",
+        "q": "6513ea72de00f0cf2ea189d9daccb3ec10e5f9b304a658ee131167ae151386a9",
+        "sin": "974b5057e2495de887789ba35342227c7d24e8424824a22457e7a66bb210dda6",
+        "v": "d9f39eeaaaf7844e47dabb93bafa1c8513d96c26c22760d9fe5a2ca237e4a32e"
+      }
+    }
+  },
+  "diagnostic_protocol": "first 256 validation tokens; causal attention; bounded because full 4096x4096 diagnostics are quadratic",
+  "model_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+  "schema_version": 1,
+  "token_manifest": {
+    "calibration_tensor_sha256": "a6d3e5d14489c852d2eb52cad9544e8dd0756fbcc641acf3b2c2722eca2ab57b",
+    "calibration_tokens": 4096,
+    "created_from": {
+      "calibration": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct/tokens.pt",
+      "validation": "Salesforce/wikitext:wikitext-2-raw-v1:validation"
+    },
+    "dataset": {
+      "configuration": "wikitext-2-raw-v1",
+      "joining": "BOS once; nonempty raw rows; EOS between rows; first 4096 IDs",
+      "repository": "Salesforce/wikitext",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+    },
+    "disjoint_tensor_streams": true,
+    "schema_version": 1,
+    "tokenizer_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+    "validation_tensor_sha256": "9c2ed4e2dac69d9e21370a9e95b6dc2e16da592754c0eab0911fe148d88951f7",
+    "validation_tokens": 4096
+  },
+  "token_manifest_sha256": "0fb1eeb2bc200b0fab02fcd662f902f11663233e60a1ceba5af732d6f7b58c1a"
+}

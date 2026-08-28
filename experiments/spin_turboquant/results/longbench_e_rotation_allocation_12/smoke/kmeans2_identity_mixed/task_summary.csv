@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+kmeans2_identity_mixed,identity,2,,qasper,Single QA,1,0.0,0.0,0.0
+kmeans2_identity_mixed,identity,2,,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+kmeans2_identity_mixed,identity,2,,hotpotqa,Multi QA,1,66.66666666666666,66.67,0.0
+kmeans2_identity_mixed,identity,2,,2wikimqa,Multi QA,1,0.0,0.0,0.0
+kmeans2_identity_mixed,identity,2,,gov_report,Summarization,1,21.052631146814413,21.05,0.0
+kmeans2_identity_mixed,identity,2,,multi_news,Summarization,1,10.169491115196799,10.17,0.0
+kmeans2_identity_mixed,identity,2,,trec,Few-shot,1,100.0,100.0,0.0
+kmeans2_identity_mixed,identity,2,,triviaqa,Few-shot,1,50.0,50.0,0.0
+kmeans2_identity_mixed,identity,2,,samsum,Few-shot,1,33.33333283420139,33.33,0.0
+kmeans2_identity_mixed,identity,2,,passage_count,Synthetic,1,0.0,0.0,0.0
+kmeans2_identity_mixed,identity,2,,passage_retrieval_en,Synthetic,1,0.0,0.0,0.0
+kmeans2_identity_mixed,identity,2,,lcc,Code,1,97.0,97.0,0.0
+kmeans2_identity_mixed,identity,2,,repobench-p,Code,1,35.0,35.0,0.0

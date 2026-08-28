@@ -1,0 +1,157 @@
+condition_id,allocation,method,task,category,examples,mean_score,official_score_rounded,population_stddev
+uniform2_identity,uniform2,identity,qasper,Single QA,45,2.272812558660214,2.27,3.3788628298963186
+uniform2_identity,uniform2,identity,multifieldqa_en,Single QA,30,5.091273095641037,5.09,7.346565950028883
+uniform2_identity,uniform2,identity,hotpotqa,Multi QA,60,2.4337611588027355,2.43,5.771896472226064
+uniform2_identity,uniform2,identity,2wikimqa,Multi QA,60,1.796006281300399,1.8,5.194657362507293
+uniform2_identity,uniform2,identity,gov_report,Summarization,60,4.941313992532821,4.94,3.1772087860389764
+uniform2_identity,uniform2,identity,multi_news,Summarization,59,3.727614500138068,3.73,4.619212654645662
+uniform2_identity,uniform2,identity,trec,Few-shot,60,10.0,10.0,30.0
+uniform2_identity,uniform2,identity,triviaqa,Few-shot,60,5.689171939171939,5.69,15.72744160187967
+uniform2_identity,uniform2,identity,samsum,Few-shot,60,6.20777833716186,6.21,7.615741156794791
+uniform2_identity,uniform2,identity,passage_count,Synthetic,60,0.3333333333333333,0.33,2.560381915956203
+uniform2_identity,uniform2,identity,passage_retrieval_en,Synthetic,60,0.15151515151515152,0.15,1.163809961798274
+uniform2_identity,uniform2,identity,lcc,Code,60,29.766666666666666,29.77,21.90081175563033
+uniform2_identity,uniform2,identity,repobench-p,Code,60,25.816666666666666,25.82,17.869426092879674
+uniform2_random_s35,uniform2,random,qasper,Single QA,45,33.761390115797674,33.76,37.18211199231442
+uniform2_random_s35,uniform2,random,multifieldqa_en,Single QA,30,49.19392127916156,49.19,35.32706390573096
+uniform2_random_s35,uniform2,random,hotpotqa,Multi QA,60,22.34926136241926,22.35,37.64622904449957
+uniform2_random_s35,uniform2,random,2wikimqa,Multi QA,60,24.678084099136733,24.68,39.78959383005766
+uniform2_random_s35,uniform2,random,gov_report,Summarization,60,26.20208671930533,26.2,5.9139801410425346
+uniform2_random_s35,uniform2,random,multi_news,Summarization,59,23.143743242819564,23.14,5.955298488180371
+uniform2_random_s35,uniform2,random,trec,Few-shot,60,71.66666666666667,71.67,45.06168611531925
+uniform2_random_s35,uniform2,random,triviaqa,Few-shot,60,75.05555555555556,75.06,38.66997910460539
+uniform2_random_s35,uniform2,random,samsum,Few-shot,60,37.240478557545494,37.24,16.51006573945051
+uniform2_random_s35,uniform2,random,passage_count,Synthetic,60,6.96969696969697,6.97,24.91675764929905
+uniform2_random_s35,uniform2,random,passage_retrieval_en,Synthetic,60,25.0,25.0,43.30127018922193
+uniform2_random_s35,uniform2,random,lcc,Code,60,39.733333333333334,39.73,22.176464000276408
+uniform2_random_s35,uniform2,random,repobench-p,Code,60,39.71666666666667,39.72,27.021036043958212
+uniform2_learned_s35_step10000,uniform2,learned,qasper,Single QA,45,49.275252273602675,49.28,38.472712615757025
+uniform2_learned_s35_step10000,uniform2,learned,multifieldqa_en,Single QA,30,51.44504672079414,51.45,35.05081875636289
+uniform2_learned_s35_step10000,uniform2,learned,hotpotqa,Multi QA,60,40.9421280473912,40.94,42.601374350707694
+uniform2_learned_s35_step10000,uniform2,learned,2wikimqa,Multi QA,60,28.457671957671955,28.46,43.062793790100365
+uniform2_learned_s35_step10000,uniform2,learned,gov_report,Summarization,60,30.0022758841703,30.0,5.9418283920215895
+uniform2_learned_s35_step10000,uniform2,learned,multi_news,Summarization,59,24.02474092892044,24.02,5.208780905139373
+uniform2_learned_s35_step10000,uniform2,learned,trec,Few-shot,60,66.66666666666667,66.67,47.14045207910317
+uniform2_learned_s35_step10000,uniform2,learned,triviaqa,Few-shot,60,91.0,91.0,23.900255693657805
+uniform2_learned_s35_step10000,uniform2,learned,samsum,Few-shot,60,40.538727355698576,40.54,16.56095360859303
+uniform2_learned_s35_step10000,uniform2,learned,passage_count,Synthetic,60,1.6666666666666667,1.67,12.801909579781015
+uniform2_learned_s35_step10000,uniform2,learned,passage_retrieval_en,Synthetic,60,80.0,80.0,40.0
+uniform2_learned_s35_step10000,uniform2,learned,lcc,Code,60,57.11666666666667,57.12,27.616475557576535
+uniform2_learned_s35_step10000,uniform2,learned,repobench-p,Code,60,42.2,42.2,25.82815001763257
+fixed32_identity_2p5,fixed32,identity,qasper,Single QA,45,31.800829481127586,31.8,35.242180331171646
+fixed32_identity_2p5,fixed32,identity,multifieldqa_en,Single QA,30,33.84820181690988,33.85,30.008760092835953
+fixed32_identity_2p5,fixed32,identity,hotpotqa,Multi QA,60,30.83570669096985,30.84,43.02895564243671
+fixed32_identity_2p5,fixed32,identity,2wikimqa,Multi QA,60,28.509126351231615,28.51,41.17726167564206
+fixed32_identity_2p5,fixed32,identity,gov_report,Summarization,60,23.500725497541527,23.5,5.209922100022292
+fixed32_identity_2p5,fixed32,identity,multi_news,Summarization,59,21.699447422195455,21.7,4.991960355849098
+fixed32_identity_2p5,fixed32,identity,trec,Few-shot,60,60.0,60.0,48.98979485566356
+fixed32_identity_2p5,fixed32,identity,triviaqa,Few-shot,60,87.38888888888889,87.39,30.54499817613756
+fixed32_identity_2p5,fixed32,identity,samsum,Few-shot,60,40.12135722245802,40.12,14.55276361091391
+fixed32_identity_2p5,fixed32,identity,passage_count,Synthetic,60,5.151515151515151,5.15,21.790807743450664
+fixed32_identity_2p5,fixed32,identity,passage_retrieval_en,Synthetic,60,40.833333333333336,40.83,48.72684635347906
+fixed32_identity_2p5,fixed32,identity,lcc,Code,60,36.43333333333333,36.43,21.718169556592215
+fixed32_identity_2p5,fixed32,identity,repobench-p,Code,60,40.766666666666666,40.77,24.126311133053242
+fixed32_random_2p5_s35,fixed32,random,qasper,Single QA,45,41.655084877419654,41.66,34.29227460152374
+fixed32_random_2p5_s35,fixed32,random,multifieldqa_en,Single QA,30,49.761009863687704,49.76,33.31826752915936
+fixed32_random_2p5_s35,fixed32,random,hotpotqa,Multi QA,60,47.279942279942276,47.28,44.57679613838402
+fixed32_random_2p5_s35,fixed32,random,2wikimqa,Multi QA,60,39.67507151717678,39.68,43.31174311135048
+fixed32_random_2p5_s35,fixed32,random,gov_report,Summarization,60,31.324835401797642,31.32,5.1188851187114714
+fixed32_random_2p5_s35,fixed32,random,multi_news,Summarization,59,24.79270673341924,24.79,5.395247381760914
+fixed32_random_2p5_s35,fixed32,random,trec,Few-shot,60,73.33333333333333,73.33,44.22166387140533
+fixed32_random_2p5_s35,fixed32,random,triviaqa,Few-shot,60,88.76190476190476,88.76,25.48193081746242
+fixed32_random_2p5_s35,fixed32,random,samsum,Few-shot,60,42.614666884122194,42.61,15.828169419898773
+fixed32_random_2p5_s35,fixed32,random,passage_count,Synthetic,60,9.916666666666666,9.92,28.08086042524734
+fixed32_random_2p5_s35,fixed32,random,passage_retrieval_en,Synthetic,60,98.33333333333333,98.33,12.801909579781015
+fixed32_random_2p5_s35,fixed32,random,lcc,Code,60,56.733333333333334,56.73,31.3458485643988
+fixed32_random_2p5_s35,fixed32,random,repobench-p,Code,60,49.88333333333333,49.88,27.593532857456935
+fixed32_learned_2p5_s35_step10000,fixed32,learned,qasper,Single QA,45,38.087856212914254,38.09,34.12059320950407
+fixed32_learned_2p5_s35_step10000,fixed32,learned,multifieldqa_en,Single QA,30,54.9640797203474,54.96,33.56740968781888
+fixed32_learned_2p5_s35_step10000,fixed32,learned,hotpotqa,Multi QA,60,44.263125763125764,44.26,43.624417951563956
+fixed32_learned_2p5_s35_step10000,fixed32,learned,2wikimqa,Multi QA,60,38.68253968253968,38.68,42.723456985243686
+fixed32_learned_2p5_s35_step10000,fixed32,learned,gov_report,Summarization,60,32.13350277699259,32.13,5.674760924403496
+fixed32_learned_2p5_s35_step10000,fixed32,learned,multi_news,Summarization,59,25.241737385444427,25.24,5.5655351074025265
+fixed32_learned_2p5_s35_step10000,fixed32,learned,trec,Few-shot,60,71.66666666666667,71.67,45.06168611531925
+fixed32_learned_2p5_s35_step10000,fixed32,learned,triviaqa,Few-shot,60,89.92857142857142,89.93,26.061272211790662
+fixed32_learned_2p5_s35_step10000,fixed32,learned,samsum,Few-shot,60,42.33347241009223,42.33,16.43264414644272
+fixed32_learned_2p5_s35_step10000,fixed32,learned,passage_count,Synthetic,60,8.88888888888889,8.89,23.8080025969068
+fixed32_learned_2p5_s35_step10000,fixed32,learned,passage_retrieval_en,Synthetic,60,100.0,100.0,0.0
+fixed32_learned_2p5_s35_step10000,fixed32,learned,lcc,Code,60,55.21666666666667,55.22,30.925227925145876
+fixed32_learned_2p5_s35_step10000,fixed32,learned,repobench-p,Code,60,53.61666666666667,53.62,26.69525030579202
+kmeans2_identity_mixed,kmeans2,identity,qasper,Single QA,45,10.95362692023309,10.95,28.65975299418788
+kmeans2_identity_mixed,kmeans2,identity,multifieldqa_en,Single QA,30,30.87730091540048,30.88,31.402873208087122
+kmeans2_identity_mixed,kmeans2,identity,hotpotqa,Multi QA,60,15.466269841269842,15.47,27.066799345815834
+kmeans2_identity_mixed,kmeans2,identity,2wikimqa,Multi QA,60,26.14471911530735,26.14,36.38891455351634
+kmeans2_identity_mixed,kmeans2,identity,gov_report,Summarization,60,18.705065936989545,18.71,5.2120234018234095
+kmeans2_identity_mixed,kmeans2,identity,multi_news,Summarization,59,19.019694662461294,19.02,4.905633019542119
+kmeans2_identity_mixed,kmeans2,identity,trec,Few-shot,60,43.333333333333336,43.33,49.55356249106168
+kmeans2_identity_mixed,kmeans2,identity,triviaqa,Few-shot,60,77.34126984126985,77.34,36.716755281720324
+kmeans2_identity_mixed,kmeans2,identity,samsum,Few-shot,60,31.50155702589156,31.5,14.834461014965706
+kmeans2_identity_mixed,kmeans2,identity,passage_count,Synthetic,60,3.3333333333333335,3.33,17.950549357115012
+kmeans2_identity_mixed,kmeans2,identity,passage_retrieval_en,Synthetic,60,5.0,5.0,21.79449471770337
+kmeans2_identity_mixed,kmeans2,identity,lcc,Code,60,38.68333333333333,38.68,24.533305027157585
+kmeans2_identity_mixed,kmeans2,identity,repobench-p,Code,60,35.18333333333333,35.18,24.47140621668935
+kmeans2_random_mixed_s35,kmeans2,random,qasper,Single QA,45,29.791641668466717,29.79,35.87565844110956
+kmeans2_random_mixed_s35,kmeans2,random,multifieldqa_en,Single QA,30,46.6873437000989,46.69,33.50747474254428
+kmeans2_random_mixed_s35,kmeans2,random,hotpotqa,Multi QA,60,40.41138028638029,40.41,42.67683039130389
+kmeans2_random_mixed_s35,kmeans2,random,2wikimqa,Multi QA,60,40.53174603174603,40.53,45.195894407038836
+kmeans2_random_mixed_s35,kmeans2,random,gov_report,Summarization,60,30.646319878675058,30.65,5.344468361562596
+kmeans2_random_mixed_s35,kmeans2,random,multi_news,Summarization,59,24.652058868107943,24.65,5.19580172875822
+kmeans2_random_mixed_s35,kmeans2,random,trec,Few-shot,60,65.0,65.0,47.69696007084728
+kmeans2_random_mixed_s35,kmeans2,random,triviaqa,Few-shot,60,85.22486772486772,85.22,30.087220870634976
+kmeans2_random_mixed_s35,kmeans2,random,samsum,Few-shot,60,38.170021914650384,38.17,15.815014961235779
+kmeans2_random_mixed_s35,kmeans2,random,passage_count,Synthetic,60,3.6527777777777777,3.65,14.504223256829391
+kmeans2_random_mixed_s35,kmeans2,random,passage_retrieval_en,Synthetic,60,75.0,75.0,43.30127018922193
+kmeans2_random_mixed_s35,kmeans2,random,lcc,Code,60,36.93333333333333,36.93,28.695450665373578
+kmeans2_random_mixed_s35,kmeans2,random,repobench-p,Code,60,39.65,39.65,25.07178028514662
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,qasper,Single QA,45,38.54725775959349,38.55,37.06511631831783
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,multifieldqa_en,Single QA,30,50.68575733382867,50.69,32.27615435164193
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,hotpotqa,Multi QA,60,37.816438191438195,37.82,41.77819863182601
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,2wikimqa,Multi QA,60,40.2063492063492,40.21,43.90113925303977
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,gov_report,Summarization,60,31.343225803668386,31.34,5.658900152762438
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,multi_news,Summarization,59,24.46318917186466,24.46,5.310030908012321
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,trec,Few-shot,60,76.66666666666667,76.67,42.295258468165066
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,triviaqa,Few-shot,60,87.67948717948717,87.68,29.416132357373822
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,samsum,Few-shot,60,39.94893193432556,39.95,16.872057967225757
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,passage_count,Synthetic,60,7.361111111111111,7.36,19.190303460695464
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,passage_retrieval_en,Synthetic,60,93.33333333333333,93.33,24.94438257849294
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,lcc,Code,60,48.7,48.7,26.406627955875017
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,repobench-p,Code,60,38.766666666666666,38.77,22.60410483862512
+uniform3_identity,uniform3,identity,qasper,Single QA,45,1.8757028328148584,1.88,5.052054547422775
+uniform3_identity,uniform3,identity,multifieldqa_en,Single QA,30,5.99593329056153,6.0,14.01270357495393
+uniform3_identity,uniform3,identity,hotpotqa,Multi QA,60,2.1951041255380956,2.2,5.752705506608713
+uniform3_identity,uniform3,identity,2wikimqa,Multi QA,60,7.881419549376205,7.88,12.594889043583288
+uniform3_identity,uniform3,identity,gov_report,Summarization,60,0.6411592567089675,0.64,2.127549765361661
+uniform3_identity,uniform3,identity,multi_news,Summarization,59,1.49396250223748,1.49,3.708254581392334
+uniform3_identity,uniform3,identity,trec,Few-shot,60,40.0,40.0,48.98979485566356
+uniform3_identity,uniform3,identity,triviaqa,Few-shot,60,20.847039017627253,20.85,35.34589177052713
+uniform3_identity,uniform3,identity,samsum,Few-shot,60,21.657827422965987,21.66,14.150802774963557
+uniform3_identity,uniform3,identity,passage_count,Synthetic,60,2.3333333333333335,2.33,8.762292952063277
+uniform3_identity,uniform3,identity,passage_retrieval_en,Synthetic,60,0.8333333333333334,0.83,6.400954789890507
+uniform3_identity,uniform3,identity,lcc,Code,60,26.383333333333333,26.38,20.442677308893657
+uniform3_identity,uniform3,identity,repobench-p,Code,60,21.583333333333332,21.58,20.38814334089519
+uniform3_random_s35,uniform3,random,qasper,Single QA,45,45.745252486764464,45.75,32.6322705746096
+uniform3_random_s35,uniform3,random,multifieldqa_en,Single QA,30,56.44766282640564,56.45,31.680264953802038
+uniform3_random_s35,uniform3,random,hotpotqa,Multi QA,60,48.27472201001613,48.27,44.92424180925863
+uniform3_random_s35,uniform3,random,2wikimqa,Multi QA,60,32.350649350649356,32.35,42.447196355316756
+uniform3_random_s35,uniform3,random,gov_report,Summarization,60,33.222625568346615,33.22,4.886111270934126
+uniform3_random_s35,uniform3,random,multi_news,Summarization,59,25.227050443977866,25.23,5.288645495751458
+uniform3_random_s35,uniform3,random,trec,Few-shot,60,75.0,75.0,43.30127018922193
+uniform3_random_s35,uniform3,random,triviaqa,Few-shot,60,87.41847041847042,87.42,28.39052107071493
+uniform3_random_s35,uniform3,random,samsum,Few-shot,60,41.5471740051976,41.55,14.666213016389873
+uniform3_random_s35,uniform3,random,passage_count,Synthetic,60,8.351190476190476,8.35,25.596193919030025
+uniform3_random_s35,uniform3,random,passage_retrieval_en,Synthetic,60,96.66666666666667,96.67,17.950549357115012
+uniform3_random_s35,uniform3,random,lcc,Code,60,63.016666666666666,63.02,26.400436654638035
+uniform3_random_s35,uniform3,random,repobench-p,Code,60,56.78333333333333,56.78,26.319885806912023
+uniform3_learned_s35_step10000,uniform3,learned,qasper,Single QA,45,49.974088628505335,49.97,36.49958671207096
+uniform3_learned_s35_step10000,uniform3,learned,multifieldqa_en,Single QA,30,56.36234199789792,56.36,34.06157515196647
+uniform3_learned_s35_step10000,uniform3,learned,hotpotqa,Multi QA,60,53.85714285714286,53.86,43.11782297723308
+uniform3_learned_s35_step10000,uniform3,learned,2wikimqa,Multi QA,60,36.14800599011126,36.15,42.1294718157197
+uniform3_learned_s35_step10000,uniform3,learned,gov_report,Summarization,60,34.605777258698716,34.61,5.981814034661929
+uniform3_learned_s35_step10000,uniform3,learned,multi_news,Summarization,59,25.198047683375776,25.2,5.570152315747199
+uniform3_learned_s35_step10000,uniform3,learned,trec,Few-shot,60,75.0,75.0,43.30127018922193
+uniform3_learned_s35_step10000,uniform3,learned,triviaqa,Few-shot,60,87.65873015873015,87.66,27.15598285623043
+uniform3_learned_s35_step10000,uniform3,learned,samsum,Few-shot,60,44.17290723020354,44.17,17.269823491482594
+uniform3_learned_s35_step10000,uniform3,learned,passage_count,Synthetic,60,9.451058201058201,9.45,26.37474574918009
+uniform3_learned_s35_step10000,uniform3,learned,passage_retrieval_en,Synthetic,60,100.0,100.0,0.0
+uniform3_learned_s35_step10000,uniform3,learned,lcc,Code,60,60.86666666666667,60.87,28.941012805743725
+uniform3_learned_s35_step10000,uniform3,learned,repobench-p,Code,60,52.1,52.1,26.58865672926458

@@ -1,0 +1,641 @@
+{
+  "cluster_distribution": {
+    "fixed32": {
+      "key": {
+        "histogram": {
+          "32": 256
+        },
+        "max": 32,
+        "mean": 32.0,
+        "min": 32,
+        "rows": 256
+      },
+      "value": {
+        "histogram": {
+          "32": 256
+        },
+        "max": 32,
+        "mean": 32.0,
+        "min": 32,
+        "rows": 256
+      }
+    },
+    "kmeans2": {
+      "key": {
+        "histogram": {
+          "1": 38,
+          "10": 5,
+          "11": 4,
+          "12": 5,
+          "13": 3,
+          "14": 3,
+          "15": 3,
+          "17": 3,
+          "18": 1,
+          "2": 29,
+          "20": 1,
+          "27": 1,
+          "3": 20,
+          "31": 1,
+          "32": 1,
+          "35": 2,
+          "37": 1,
+          "4": 35,
+          "43": 2,
+          "44": 1,
+          "5": 28,
+          "51": 1,
+          "6": 25,
+          "7": 24,
+          "8": 14,
+          "9": 5
+        },
+        "max": 51,
+        "mean": 6.4765625,
+        "min": 1,
+        "rows": 256
+      },
+      "value": {
+        "histogram": {
+          "1": 72,
+          "10": 2,
+          "11": 6,
+          "12": 3,
+          "13": 5,
+          "14": 4,
+          "15": 6,
+          "16": 1,
+          "17": 2,
+          "18": 3,
+          "19": 6,
+          "2": 21,
+          "20": 4,
+          "21": 4,
+          "22": 1,
+          "23": 2,
+          "24": 3,
+          "25": 1,
+          "28": 2,
+          "3": 16,
+          "30": 3,
+          "31": 2,
+          "33": 1,
+          "34": 2,
+          "35": 1,
+          "4": 20,
+          "41": 1,
+          "42": 3,
+          "44": 1,
+          "45": 3,
+          "46": 1,
+          "48": 2,
+          "49": 2,
+          "5": 10,
+          "50": 2,
+          "56": 1,
+          "6": 11,
+          "7": 8,
+          "8": 13,
+          "9": 5
+        },
+        "max": 56,
+        "mean": 9.87890625,
+        "min": 1,
+        "rows": 256
+      }
+    },
+    "uniform2": {
+      "key": {
+        "histogram": {
+          "0": 256
+        },
+        "max": 0,
+        "mean": 0.0,
+        "min": 0,
+        "rows": 256
+      },
+      "value": {
+        "histogram": {
+          "0": 256
+        },
+        "max": 0,
+        "mean": 0.0,
+        "min": 0,
+        "rows": 256
+      }
+    },
+    "uniform3": {
+      "key": {
+        "histogram": {
+          "0": 256
+        },
+        "max": 0,
+        "mean": 0.0,
+        "min": 0,
+        "rows": 256
+      },
+      "value": {
+        "histogram": {
+          "0": 256
+        },
+        "max": 0,
+        "mean": 0.0,
+        "min": 0,
+        "rows": 256
+      }
+    }
+  },
+  "condition_coverage": {
+    "fixed32_identity_2p5": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "fixed32_learned_2p5_s35_step10000": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "fixed32_random_2p5_s35": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "kmeans2_identity_mixed": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "kmeans2_learned_mixed_s35_step10000": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "kmeans2_random_mixed_s35": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform2_identity": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 1,
+      "error_outputs": 0,
+      "failures": [
+        "empty outputs=1"
+      ],
+      "nonfinite_scores": 0,
+      "partition_sha256": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform2_learned_s35_step10000": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform2_random_s35": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform3_identity": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 11,
+      "error_outputs": 0,
+      "failures": [
+        "empty outputs=11"
+      ],
+      "nonfinite_scores": 0,
+      "partition_sha256": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform3_learned_s35_step10000": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    },
+    "uniform3_random_s35": {
+      "categories": 6,
+      "duplicate_predictions": 0,
+      "empty_outputs": 0,
+      "error_outputs": 0,
+      "failures": [],
+      "nonfinite_scores": 0,
+      "partition_sha256": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "predictions": 734,
+      "prompt_truncations": 0,
+      "scores": 734,
+      "subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+      "tasks": 13,
+      "unique_predictions": 734
+    }
+  },
+  "condition_partition_hashes": {
+    "fixed32": {
+      "identity": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "learned": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "random": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd"
+    },
+    "kmeans2": {
+      "identity": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "learned": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "random": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0"
+    },
+    "uniform2": {
+      "identity": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "learned": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "random": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc"
+    },
+    "uniform3": {
+      "identity": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "learned": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "random": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa"
+    }
+  },
+  "condition_subset_hashes": {
+    "fixed32_identity_2p5": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "fixed32_learned_2p5_s35_step10000": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "fixed32_random_2p5_s35": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "kmeans2_identity_mixed": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "kmeans2_learned_mixed_s35_step10000": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "kmeans2_random_mixed_s35": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform2_identity": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform2_learned_s35_step10000": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform2_random_s35": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform3_identity": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform3_learned_s35_step10000": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+    "uniform3_random_s35": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d"
+  },
+  "empty_outputs": 12,
+  "error_fields": 0,
+  "expected_predictions": 8808,
+  "failures": [
+    "empty output count=12",
+    "uniform2_identity: empty outputs=1",
+    "uniform3_identity: empty outputs=11"
+  ],
+  "missing_artifacts": [],
+  "nonfinite_scores": 0,
+  "paired_comparisons": 12,
+  "prediction_count": 8808,
+  "prompt_truncations": 0,
+  "random_learned_value_hashes": {
+    "fixed32": {
+      "identity": "9efa11b27f45f665ad265ebf82fd1a693b3d168fa0e4bc98e19b8032f900f246",
+      "learned": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2",
+      "random": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2"
+    },
+    "kmeans2": {
+      "identity": "4440107628464630e354d73c220f72dcf51c78f0fea5662d5af692f0d641939e",
+      "learned": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189",
+      "random": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189"
+    },
+    "uniform2": {
+      "identity": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae",
+      "learned": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4",
+      "random": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4"
+    },
+    "uniform3": {
+      "identity": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae",
+      "learned": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498",
+      "random": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+    }
+  },
+  "required_artifacts": [
+    "study_config.json",
+    "subset_manifest.json",
+    "token_manifest.json",
+    "tokens.pt",
+    "activation_manifest.json",
+    "activations/calibration.pt",
+    "activations/validation.pt",
+    "channel_statistics.json",
+    "fixed32_partitions.pt",
+    "kmeans2_partitions.pt",
+    "partition_manifest.json",
+    "random_rotation_manifest.json",
+    "learned_rotation_manifest.json",
+    "codebook_manifest.json",
+    "training_curves.csv",
+    "offline_diagnostics.csv",
+    "predictions.jsonl",
+    "example_scores.csv",
+    "task_summary.csv",
+    "category_summary.csv",
+    "length_summary.csv",
+    "condition_summary.csv",
+    "storage_summary.csv",
+    "cluster_size_summary.csv",
+    "paired_comparisons.csv",
+    "bootstrap_summary.csv",
+    "paired_example_scores.csv",
+    "system_metrics.csv",
+    "completion_audit.json",
+    "report.md",
+    "plots/condition_scores.png",
+    "plots/learned_minus_random.png",
+    "plots/score_bpe_pareto.png"
+  ],
+  "score_count": 8808,
+  "shared_subset_manifest_sha256": "689d949457b923ef64bb1df415edb617f61dbae920ea9c74016f891caf53ed3d",
+  "status": "incomplete",
+  "step10000_artifacts": {
+    "fixed32": {
+      "failures": [],
+      "file_sha256": "fcbc45190b2567ff7700ae8e3dc74383fce24681a426ce4e430012ce2551d500",
+      "latest_checkpoint_file_sha256": "8e863f28e5a24379adc197a038796a9752daa5917ee9b4ed6e4e9d9c3579f941",
+      "learned_completed_step": 10000,
+      "manifest_file_sha256": "fcbc45190b2567ff7700ae8e3dc74383fce24681a426ce4e430012ce2551d500",
+      "partition_sha256": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/rotation_artifacts/fixed32.pt",
+      "rotation_hashes": {
+        "identity": {
+          "key": "0b496fe134713d0226fb0f6fbdcbceb65b166688536c7265739654131e670e16",
+          "value": "9efa11b27f45f665ad265ebf82fd1a693b3d168fa0e4bc98e19b8032f900f246"
+        },
+        "learned": {
+          "key": "ba0f447c36d68ed1c551564556df6c0f724409c19b859fc5e144ea4c9dfe7f0e",
+          "value": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2"
+        },
+        "random": {
+          "key": "c9fa69a2f540c4fd2f2980d05bace2b95f0cfdb57854207a984b04aebcda3e47",
+          "value": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2"
+        }
+      },
+      "step": 10000,
+      "step10000_checkpoint_file_sha256": "637981c4fc61815f11d8a6c1693d4bdca57ca1cc2a743a464d3417e9d03301d6"
+    },
+    "kmeans2": {
+      "failures": [],
+      "file_sha256": "37ec7d5348b05896abb800c3671c34178137ac811378ea6d9c0ea904babb3186",
+      "latest_checkpoint_file_sha256": "ea81f84f4ebe068e5d438e4a9b35ace3460c1cbf5a036903bf8c61c89fdb644c",
+      "learned_completed_step": 10000,
+      "manifest_file_sha256": "37ec7d5348b05896abb800c3671c34178137ac811378ea6d9c0ea904babb3186",
+      "partition_sha256": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/rotation_artifacts/kmeans2.pt",
+      "rotation_hashes": {
+        "identity": {
+          "key": "9a3c879a449e43cd1e7209daeddc96386b74da765a04fa6be99270f449c0a8d1",
+          "value": "4440107628464630e354d73c220f72dcf51c78f0fea5662d5af692f0d641939e"
+        },
+        "learned": {
+          "key": "2e379b514c07d505facf4d4c6df1e3f144a48e24ce33a889518a8d5a65f7c2ec",
+          "value": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189"
+        },
+        "random": {
+          "key": "ee0b92fa399749fca4aed4d5d245cde5d6a0c42b176347224b6bedd44babbdad",
+          "value": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189"
+        }
+      },
+      "step": 10000,
+      "step10000_checkpoint_file_sha256": "2812ba127f522bbd6364725449a783c47e37bf5109dac48fdbde8b3c5d4c28a6"
+    },
+    "uniform2": {
+      "failures": [],
+      "file_sha256": "3be867f6728c34084368cd81cf2c69f370f661391524f76843969d1272d529e0",
+      "latest_checkpoint_file_sha256": "433b5256f9865b75bf0d24ddde187bea7b378552155fdd004f322edf61c24de0",
+      "learned_completed_step": 10000,
+      "manifest_file_sha256": "3be867f6728c34084368cd81cf2c69f370f661391524f76843969d1272d529e0",
+      "partition_sha256": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/rotation_artifacts/uniform2.pt",
+      "rotation_hashes": {
+        "identity": {
+          "key": "fbcee5f8b7f622bee87e9ea69c58af78754aa1d4a64216dc134838e19bebc7b4",
+          "value": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae"
+        },
+        "learned": {
+          "key": "4bdf0dbabf93900fa94dabca449f82e5c1b578daae4151ad5c36db5ec00e2b5a",
+          "value": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4"
+        },
+        "random": {
+          "key": "b284e1af85bf6925b2de010e3967fc08297e1bb97bb7fe5fee901ee3f7efc98b",
+          "value": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4"
+        }
+      },
+      "step": 10000,
+      "step10000_checkpoint_file_sha256": "354fde2eae95bb09baa54ea1457d2490e200f267007a0d20ba5ba4d47c2383f9"
+    },
+    "uniform3": {
+      "failures": [],
+      "file_sha256": "3dbabeb8a0fba1308c67194f403dc9675b6792abc008588150d312e0dd0684a2",
+      "latest_checkpoint_file_sha256": "2569fe8221c673a9612ce6544659d14d31d603dc32213ea78acf75de977be12d",
+      "learned_completed_step": 10000,
+      "manifest_file_sha256": "3dbabeb8a0fba1308c67194f403dc9675b6792abc008588150d312e0dd0684a2",
+      "partition_sha256": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "path": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/rotation_artifacts/uniform3.pt",
+      "rotation_hashes": {
+        "identity": {
+          "key": "fbcee5f8b7f622bee87e9ea69c58af78754aa1d4a64216dc134838e19bebc7b4",
+          "value": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae"
+        },
+        "learned": {
+          "key": "0d75614e443e5fc0bcb46b4231f3d4bad7ae1b05641450d9ee1cfd6e75ae4f6f",
+          "value": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+        },
+        "random": {
+          "key": "07e4e6089b9600d72586b4b589e46f1edfac11d9fe3df670bdc5440980678c9c",
+          "value": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+        }
+      },
+      "step": 10000,
+      "step10000_checkpoint_file_sha256": "dde3ba72aab7698a90f0d0837596c73604b81089bbd3e53a1fd1dc046b6ed1c0"
+    }
+  },
+  "storage": {
+    "fixed32": {
+      "allocation": "fixed32",
+      "key_alignment_bpe": 0.0,
+      "key_effective_bpe": 2.75,
+      "key_index_bpe": 2.5,
+      "key_norm_bpe": 0.25,
+      "key_packed_bytes_per_head_vector": 44.0,
+      "key_theoretical_bytes_per_token": 11264,
+      "kv_average_effective_bpe": 2.75,
+      "kv_average_index_bpe": 2.5,
+      "norm_bits": 16,
+      "packing": "each group index payload is byte-aligned per layer/head/token vector",
+      "quality_emulation": true,
+      "static_partition_bytes_bool_masks": 65536,
+      "static_rotation_bytes_fp32": 20971520,
+      "theoretical_kv_bytes_per_token": 22528,
+      "value_alignment_bpe": 0.0,
+      "value_effective_bpe": 2.75,
+      "value_index_bpe": 2.5,
+      "value_norm_bpe": 0.25,
+      "value_packed_bytes_per_head_vector": 44.0,
+      "value_theoretical_bytes_per_token": 11264
+    },
+    "kmeans2": {
+      "allocation": "kmeans2",
+      "key_alignment_bpe": 0.0396728515625,
+      "key_effective_bpe": 2.390869140625,
+      "key_index_bpe": 2.1011962890625,
+      "key_norm_bpe": 0.25,
+      "key_packed_bytes_per_head_vector": 38.25390625,
+      "key_theoretical_bytes_per_token": 9793,
+      "kv_average_effective_bpe": 2.417724609375,
+      "kv_average_index_bpe": 2.127777099609375,
+      "norm_bits": 16,
+      "packing": "each group index payload is byte-aligned per layer/head/token vector",
+      "quality_emulation": true,
+      "static_partition_bytes_bool_masks": 65536,
+      "static_rotation_bytes_fp32": 29976776,
+      "theoretical_kv_bytes_per_token": 19806,
+      "value_alignment_bpe": 0.04022216796875,
+      "value_effective_bpe": 2.444580078125,
+      "value_index_bpe": 2.15435791015625,
+      "value_norm_bpe": 0.25,
+      "value_packed_bytes_per_head_vector": 39.11328125,
+      "value_theoretical_bytes_per_token": 10013
+    },
+    "uniform2": {
+      "allocation": "uniform2",
+      "key_alignment_bpe": 0.0,
+      "key_effective_bpe": 2.125,
+      "key_index_bpe": 2.0,
+      "key_norm_bpe": 0.125,
+      "key_packed_bytes_per_head_vector": 34.0,
+      "key_theoretical_bytes_per_token": 8704,
+      "kv_average_effective_bpe": 2.125,
+      "kv_average_index_bpe": 2.0,
+      "norm_bits": 16,
+      "packing": "each group index payload is byte-aligned per layer/head/token vector",
+      "quality_emulation": true,
+      "static_partition_bytes_bool_masks": 65536,
+      "static_rotation_bytes_fp32": 33554432,
+      "theoretical_kv_bytes_per_token": 17408,
+      "value_alignment_bpe": 0.0,
+      "value_effective_bpe": 2.125,
+      "value_index_bpe": 2.0,
+      "value_norm_bpe": 0.125,
+      "value_packed_bytes_per_head_vector": 34.0,
+      "value_theoretical_bytes_per_token": 8704
+    },
+    "uniform3": {
+      "allocation": "uniform3",
+      "key_alignment_bpe": 0.0,
+      "key_effective_bpe": 3.125,
+      "key_index_bpe": 3.0,
+      "key_norm_bpe": 0.125,
+      "key_packed_bytes_per_head_vector": 50.0,
+      "key_theoretical_bytes_per_token": 12800,
+      "kv_average_effective_bpe": 3.125,
+      "kv_average_index_bpe": 3.0,
+      "norm_bits": 16,
+      "packing": "each group index payload is byte-aligned per layer/head/token vector",
+      "quality_emulation": true,
+      "static_partition_bytes_bool_masks": 65536,
+      "static_rotation_bytes_fp32": 33554432,
+      "theoretical_kv_bytes_per_token": 25600,
+      "value_alignment_bpe": 0.0,
+      "value_effective_bpe": 3.125,
+      "value_index_bpe": 3.0,
+      "value_norm_bpe": 0.125,
+      "value_packed_bytes_per_head_vector": 50.0,
+      "value_theoretical_bytes_per_token": 12800
+    }
+  },
+  "system_metrics": 8808,
+  "unique_prediction_count": 8808
+}

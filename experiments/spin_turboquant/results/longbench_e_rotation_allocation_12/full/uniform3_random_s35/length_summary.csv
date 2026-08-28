@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+uniform3_random_s35,random,3,35,0-4k,13,253,52.28718910933678
+uniform3_random_s35,random,3,35,4-8k,13,254,53.43659402615488
+uniform3_random_s35,random,3,35,8k+,13,227,47.39249804085622

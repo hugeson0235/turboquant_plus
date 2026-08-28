@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+kmeans2_random_mixed_s35,random,2,35,0-4k,13,253,45.341761403674795
+kmeans2_random_mixed_s35,random,2,35,4-8k,13,254,43.78669229626092
+kmeans2_random_mixed_s35,random,2,35,8k+,13,227,37.946091898268556

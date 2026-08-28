@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+uniform3_learned_s35_step10000,learned,3,35,qasper,Single QA,45,49.974088628505335,49.97,36.49958671207096
+uniform3_learned_s35_step10000,learned,3,35,multifieldqa_en,Single QA,30,56.36234199789792,56.36,34.06157515196647
+uniform3_learned_s35_step10000,learned,3,35,hotpotqa,Multi QA,60,53.85714285714286,53.86,43.11782297723308
+uniform3_learned_s35_step10000,learned,3,35,2wikimqa,Multi QA,60,36.14800599011126,36.15,42.1294718157197
+uniform3_learned_s35_step10000,learned,3,35,gov_report,Summarization,60,34.605777258698716,34.61,5.981814034661929
+uniform3_learned_s35_step10000,learned,3,35,multi_news,Summarization,59,25.198047683375776,25.2,5.570152315747199
+uniform3_learned_s35_step10000,learned,3,35,trec,Few-shot,60,75.0,75.0,43.30127018922193
+uniform3_learned_s35_step10000,learned,3,35,triviaqa,Few-shot,60,87.65873015873015,87.66,27.15598285623043
+uniform3_learned_s35_step10000,learned,3,35,samsum,Few-shot,60,44.17290723020354,44.17,17.269823491482594
+uniform3_learned_s35_step10000,learned,3,35,passage_count,Synthetic,60,9.451058201058201,9.45,26.37474574918009
+uniform3_learned_s35_step10000,learned,3,35,passage_retrieval_en,Synthetic,60,100.0,100.0,0.0
+uniform3_learned_s35_step10000,learned,3,35,lcc,Code,60,60.86666666666667,60.87,28.941012805743725
+uniform3_learned_s35_step10000,learned,3,35,repobench-p,Code,60,52.1,52.1,26.58865672926458

@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+uniform2_learned_s35_step10000,learned,2,35,qasper,Single QA,1,0.0,0.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,hotpotqa,Multi QA,1,100.0,100.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,2wikimqa,Multi QA,1,100.0,100.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,gov_report,Summarization,1,42.471041990429484,42.47,0.0
+uniform2_learned_s35_step10000,learned,2,35,multi_news,Summarization,1,19.999999512800013,20.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,trec,Few-shot,1,100.0,100.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,triviaqa,Few-shot,1,50.0,50.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,samsum,Few-shot,1,42.857142362882655,42.86,0.0
+uniform2_learned_s35_step10000,learned,2,35,passage_count,Synthetic,1,0.0,0.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,lcc,Code,1,28.999999999999996,29.0,0.0
+uniform2_learned_s35_step10000,learned,2,35,repobench-p,Code,1,40.0,40.0,0.0

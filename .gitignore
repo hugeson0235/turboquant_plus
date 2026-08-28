@@ -19,6 +19,9 @@ coverage.xml
 .ipynb_checkpoints/
 experiments/spin_turboquant/results/*/activations/
 experiments/spin_turboquant/results/*/rotations/
+# LongBench-E rotation-allocation tensors are large/regenerable artifacts.
+experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/*.pt
+experiments/spin_turboquant/results/longbench_e_rotation_allocation_12/**/*.pt
 niah_reference_v1/
 niah_results*/
 scripts/.turbo-diag-venv/

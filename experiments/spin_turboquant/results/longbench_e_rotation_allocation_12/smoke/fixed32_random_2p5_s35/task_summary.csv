@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+fixed32_random_2p5_s35,random,2,35,qasper,Single QA,1,7.4074074074074066,7.41,0.0
+fixed32_random_2p5_s35,random,2,35,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+fixed32_random_2p5_s35,random,2,35,hotpotqa,Multi QA,1,100.0,100.0,0.0
+fixed32_random_2p5_s35,random,2,35,2wikimqa,Multi QA,1,0.0,0.0,0.0
+fixed32_random_2p5_s35,random,2,35,gov_report,Summarization,1,31.020407674668892,31.02,0.0
+fixed32_random_2p5_s35,random,2,35,multi_news,Summarization,1,16.91176427897925,16.91,0.0
+fixed32_random_2p5_s35,random,2,35,trec,Few-shot,1,100.0,100.0,0.0
+fixed32_random_2p5_s35,random,2,35,triviaqa,Few-shot,1,50.0,50.0,0.0
+fixed32_random_2p5_s35,random,2,35,samsum,Few-shot,1,41.37930985434007,41.38,0.0
+fixed32_random_2p5_s35,random,2,35,passage_count,Synthetic,1,0.0,0.0,0.0
+fixed32_random_2p5_s35,random,2,35,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+fixed32_random_2p5_s35,random,2,35,lcc,Code,1,25.0,25.0,0.0
+fixed32_random_2p5_s35,random,2,35,repobench-p,Code,1,42.0,42.0,0.0

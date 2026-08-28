@@ -1,0 +1,19 @@
+{
+  "calibration_tensor_sha256": "a6d3e5d14489c852d2eb52cad9544e8dd0756fbcc641acf3b2c2722eca2ab57b",
+  "calibration_tokens": 4096,
+  "created_from": {
+    "calibration": "/home/elicer/SpinTurboQuant/turboquant_plus/experiments/spin_turboquant/results/instruct/tokens.pt",
+    "validation": "Salesforce/wikitext:wikitext-2-raw-v1:validation"
+  },
+  "dataset": {
+    "configuration": "wikitext-2-raw-v1",
+    "joining": "BOS once; nonempty raw rows; EOS between rows; first 4096 IDs",
+    "repository": "Salesforce/wikitext",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+  },
+  "disjoint_tensor_streams": true,
+  "schema_version": 1,
+  "tokenizer_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+  "validation_tensor_sha256": "9c2ed4e2dac69d9e21370a9e95b6dc2e16da592754c0eab0911fe148d88951f7",
+  "validation_tokens": 4096
+}

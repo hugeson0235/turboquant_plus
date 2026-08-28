@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,45,38.087856212914254,38.09,34.12059320950407
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,30,54.9640797203474,54.96,33.56740968781888
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,60,44.263125763125764,44.26,43.624417951563956
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,60,38.68253968253968,38.68,42.723456985243686
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,60,32.13350277699259,32.13,5.674760924403496
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,59,25.241737385444427,25.24,5.5655351074025265
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,60,71.66666666666667,71.67,45.06168611531925
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,60,89.92857142857142,89.93,26.061272211790662
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,60,42.33347241009223,42.33,16.43264414644272
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,60,8.88888888888889,8.89,23.8080025969068
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,60,100.0,100.0,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,60,55.21666666666667,55.22,30.925227925145876
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,60,53.61666666666667,53.62,26.69525030579202

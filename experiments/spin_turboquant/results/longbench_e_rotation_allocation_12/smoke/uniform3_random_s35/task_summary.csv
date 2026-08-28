@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+uniform3_random_s35,random,3,35,qasper,Single QA,1,60.0,60.0,0.0
+uniform3_random_s35,random,3,35,multifieldqa_en,Single QA,1,0.0,0.0,0.0
+uniform3_random_s35,random,3,35,hotpotqa,Multi QA,1,100.0,100.0,0.0
+uniform3_random_s35,random,3,35,2wikimqa,Multi QA,1,0.0,0.0,0.0
+uniform3_random_s35,random,3,35,gov_report,Summarization,1,30.662020443807748,30.66,0.0
+uniform3_random_s35,random,3,35,multi_news,Summarization,1,17.424241990358137,17.42,0.0
+uniform3_random_s35,random,3,35,trec,Few-shot,1,100.0,100.0,0.0
+uniform3_random_s35,random,3,35,triviaqa,Few-shot,1,50.0,50.0,0.0
+uniform3_random_s35,random,3,35,samsum,Few-shot,1,30.136985851003946,30.14,0.0
+uniform3_random_s35,random,3,35,passage_count,Synthetic,1,0.0,0.0,0.0
+uniform3_random_s35,random,3,35,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+uniform3_random_s35,random,3,35,lcc,Code,1,98.0,98.0,0.0
+uniform3_random_s35,random,3,35,repobench-p,Code,1,40.0,40.0,0.0

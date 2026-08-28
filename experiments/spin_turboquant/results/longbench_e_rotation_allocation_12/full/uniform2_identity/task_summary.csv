@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+uniform2_identity,identity,2,,qasper,Single QA,45,2.272812558660214,2.27,3.3788628298963186
+uniform2_identity,identity,2,,multifieldqa_en,Single QA,30,5.091273095641037,5.09,7.346565950028883
+uniform2_identity,identity,2,,hotpotqa,Multi QA,60,2.4337611588027355,2.43,5.771896472226064
+uniform2_identity,identity,2,,2wikimqa,Multi QA,60,1.796006281300399,1.8,5.194657362507293
+uniform2_identity,identity,2,,gov_report,Summarization,60,4.941313992532821,4.94,3.1772087860389764
+uniform2_identity,identity,2,,multi_news,Summarization,59,3.727614500138068,3.73,4.619212654645662
+uniform2_identity,identity,2,,trec,Few-shot,60,10.0,10.0,30.0
+uniform2_identity,identity,2,,triviaqa,Few-shot,60,5.689171939171939,5.69,15.72744160187967
+uniform2_identity,identity,2,,samsum,Few-shot,60,6.20777833716186,6.21,7.615741156794791
+uniform2_identity,identity,2,,passage_count,Synthetic,60,0.3333333333333333,0.33,2.560381915956203
+uniform2_identity,identity,2,,passage_retrieval_en,Synthetic,60,0.15151515151515152,0.15,1.163809961798274
+uniform2_identity,identity,2,,lcc,Code,60,29.766666666666666,29.77,21.90081175563033
+uniform2_identity,identity,2,,repobench-p,Code,60,25.816666666666666,25.82,17.869426092879674

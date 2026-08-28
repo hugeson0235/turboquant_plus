@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+uniform2_identity,identity,2,,Single QA,2,1.1363636363636362
+uniform2_identity,identity,2,,Multi QA,2,0.0
+uniform2_identity,identity,2,,Summarization,2,9.303721255984751
+uniform2_identity,identity,2,,Few-shot,3,0.0
+uniform2_identity,identity,2,,Synthetic,2,5.555555555555555
+uniform2_identity,identity,2,,Code,2,9.0

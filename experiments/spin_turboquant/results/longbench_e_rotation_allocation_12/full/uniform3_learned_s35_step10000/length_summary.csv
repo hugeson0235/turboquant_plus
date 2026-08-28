@@ -1,0 +1,4 @@
+condition_id,method,bit_width,seed,length_bucket,tasks,examples,macro_average
+uniform3_learned_s35_step10000,learned,3,35,0-4k,13,253,53.77479225103373
+uniform3_learned_s35_step10000,learned,3,35,4-8k,13,254,52.87055996826925
+uniform3_learned_s35_step10000,learned,3,35,8k+,13,227,49.48435867595082

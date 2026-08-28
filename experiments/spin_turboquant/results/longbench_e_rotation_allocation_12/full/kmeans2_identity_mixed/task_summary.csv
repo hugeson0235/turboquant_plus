@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+kmeans2_identity_mixed,identity,2,,qasper,Single QA,45,10.95362692023309,10.95,28.65975299418788
+kmeans2_identity_mixed,identity,2,,multifieldqa_en,Single QA,30,30.87730091540048,30.88,31.402873208087122
+kmeans2_identity_mixed,identity,2,,hotpotqa,Multi QA,60,15.466269841269842,15.47,27.066799345815834
+kmeans2_identity_mixed,identity,2,,2wikimqa,Multi QA,60,26.14471911530735,26.14,36.38891455351634
+kmeans2_identity_mixed,identity,2,,gov_report,Summarization,60,18.705065936989545,18.71,5.2120234018234095
+kmeans2_identity_mixed,identity,2,,multi_news,Summarization,59,19.019694662461294,19.02,4.905633019542119
+kmeans2_identity_mixed,identity,2,,trec,Few-shot,60,43.333333333333336,43.33,49.55356249106168
+kmeans2_identity_mixed,identity,2,,triviaqa,Few-shot,60,77.34126984126985,77.34,36.716755281720324
+kmeans2_identity_mixed,identity,2,,samsum,Few-shot,60,31.50155702589156,31.5,14.834461014965706
+kmeans2_identity_mixed,identity,2,,passage_count,Synthetic,60,3.3333333333333335,3.33,17.950549357115012
+kmeans2_identity_mixed,identity,2,,passage_retrieval_en,Synthetic,60,5.0,5.0,21.79449471770337
+kmeans2_identity_mixed,identity,2,,lcc,Code,60,38.68333333333333,38.68,24.533305027157585
+kmeans2_identity_mixed,identity,2,,repobench-p,Code,60,35.18333333333333,35.18,24.47140621668935

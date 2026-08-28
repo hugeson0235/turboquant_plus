@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+uniform3_learned_s35_step10000,learned,3,35,Single QA,2,53.16821531320163
+uniform3_learned_s35_step10000,learned,3,35,Multi QA,2,45.00257442362706
+uniform3_learned_s35_step10000,learned,3,35,Summarization,2,29.901912471037246
+uniform3_learned_s35_step10000,learned,3,35,Few-shot,3,68.94387912964457
+uniform3_learned_s35_step10000,learned,3,35,Synthetic,2,54.7255291005291
+uniform3_learned_s35_step10000,learned,3,35,Code,2,56.483333333333334

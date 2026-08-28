@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+fixed32_identity_2p5,identity,2,,Single QA,2,32.824515649018736
+fixed32_identity_2p5,identity,2,,Multi QA,2,29.672416521100732
+fixed32_identity_2p5,identity,2,,Summarization,2,22.600086459868493
+fixed32_identity_2p5,identity,2,,Few-shot,3,62.50341537044897
+fixed32_identity_2p5,identity,2,,Synthetic,2,22.992424242424242
+fixed32_identity_2p5,identity,2,,Code,2,38.599999999999994

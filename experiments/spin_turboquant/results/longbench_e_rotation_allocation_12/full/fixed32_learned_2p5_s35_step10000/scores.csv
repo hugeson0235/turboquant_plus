@@ -1,0 +1,735 @@
+condition_id,method,bit_width,seed,task,category,example_index,example_id,dataset_length,length_bucket,score
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,1,8e5e6c35689e17e9f50df76ada506a4c05be9ed081c883d4,3732,0-4k,54.54545454545454
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,7,1bd9a082bd7b5ab6c152dbda3db38c0c3bc92cddf82383a3,2720,0-4k,34.78260869565217
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,12,a3db996005cb6103e9e3a8d19712c6866285e0df89a1b264,3815,0-4k,18.181818181818183
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,16,4ec441a68f88d757c758ad09d9c710c7af94895bb544f3b6,3409,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,19,bd1fcb1c0f33cf6bc44554bff4ec86fed2a4fc90e8d18cdf,2836,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,32,d1aa1132439bd292965634095bf1c9943e062bb6645ff78c,3307,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,35,a98bc410d113f968de393f3da14435b31b34a8ce2ccec169,3158,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,36,86d091f9a2a36e97ae2f587ff9e1beb3e41c34862d70451e,3570,0-4k,54.23728813559322
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,42,c5692a8d9bf0880f0cb4d893511e2b9245a914f828cebcf6,2009,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,43,ba8b9314903599bb79e4a4148ebae6ae59c5d717a1a2a936,1899,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,46,3e0ebe8cd7c6ad2ed6b011e47c1a06464ae4eed1b47c9d37,2361,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,55,83246d680e84d965de12202eeca2955546e9261630d543c5,1671,0-4k,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,67,5a66bf2184751add62aab933cf9076dc61faf39f716d2e72,1912,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,70,33c06a5e9eb93d7a970d8e42e3ab04467182eef7113c5c5f,3846,0-4k,18.181818181818183
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,72,a62a087ff34f25cc4f76205a1431eb4c2254d4ad01c630d4,2759,0-4k,57.14285714285713
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,74,7dbc40699fa6742050f798cfeea408507ca4b90811be532d,2823,0-4k,18.181818181818183
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,83,37c0ca334bad96a1cf17879108e112591f7088f3794b6533,3160,0-4k,57.14285714285714
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,91,e2b21e6c72b2a258c8d8dd7b7f94ee08b4a1edd012ccce04,1541,0-4k,25.925925925925924
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,95,ab031ab8495d8200afcf794d5368ed54353ec254b176d190,2435,0-4k,31.746031746031743
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,96,aefe71d17866995c454d51362893d2fb48de1a3d55d3cdb0,1514,0-4k,15.384615384615383
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,101,b88143528621f772f4673e1d5249faa750e66bd3d25dc48a,4820,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,102,536136d642ecfb95aa51b8057018d9e41fbc39100f4ae120,4460,4-8k,85.71428571428571
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,103,9b239d896d4e14a1119ff7a96adf888b3ee3672b9890917d,4106,4-8k,44.44444444444444
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,106,9b74d12df29676d618b03e2da39919e522a4bcdf638e7977,4173,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,109,210d7e49f1b17fdad67a9a09194869f85065ed34e59062b8,4924,4-8k,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,110,ce0c9192b838497901c0360f9f775aaaa8711369f3ef9ed2,4581,4-8k,6.896551724137931
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,112,fbc4a45ff813e0a9578becabc2079b8da6de5193d5827cd9,4704,4-8k,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,120,10f5ce4c9054e6a2508cc67328ca303d3b5ee57bae2b7fd9,4779,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,121,34876cd63f0e18aebfa721150cc5e3e83c4d46aad5327a28,4109,4-8k,24.242424242424242
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,130,77d5b65213c33d96b4c145e035798509a2d46c7d01756f8d,4841,4-8k,57.14285714285715
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,141,ddc6bc30de561312913bb1868a4613a33d0a09adefbd8de6,4286,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,143,44a094746f7f8f2b2d019500cc03e680dd5d17620691e914,4133,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,147,01a9ec56805c938ec7ad3cc00bd2d02b8347194fd7e6a0a4,4489,4-8k,34.48275862068966
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,161,d7906e115d8431133b71ebc7153d10a816d90301d0def756,4481,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,163,dcadecc0543ae52be074ae5faf2f33c684278cef100a96b2,4746,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,165,a4fb3e0fa052620263db39d9a236e26a4d7217452498793c,4475,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,172,fea2cbfb8a37b19a11e07eaa90128173b42221db70044e00,4063,4-8k,26.666666666666668
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,186,57e90555e82551bb8d4b0dfaaf6b559927d8af2a86ab1b79,4592,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,192,c46903fbc4bcb0a45688ed9064c20cc2f5a3c8df9601dd36,4857,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,193,d8fa56cc40d195ace5ae35d187db59d7480cf969938ad3db,5092,4-8k,17.91044776119403
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,202,0da153430cc4d3999a6c67e8299d79be643e6248512ca37a,10349,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,205,1af3bf48e725d85d4a07cc397290bdd995f78051e050b29e,12950,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,209,074b526f101518a8f5c810fed1e28f757dacb7805b161e22,14472,8k+,25.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,211,7298df1684edcba5ed943763da3920e06b63260de694add2,13401,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,qasper,Single QA,218,c3925faf84892de7224e37e3990407cfe488855ff7f5ce11,13391,8k+,55.99999999999999
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,2,dee63735510f6958f4c5bf318421c9b9fac0bc8b3e341a4a,2952,0-4k,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,9,322b4b2b074049aac101086797d655a21671ef5a9f366353,669,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,16,ce720011515773e6bd7b4b355c52a7215ad2920f18a1ec14,1852,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,20,d5422b0fdbed42c0f1d2213edb6c7637802452e4ca7287eb,812,0-4k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,24,420ce59c7a0c084e938dd69dfacf59f61ac3ebbd237780c8,1856,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,25,69e69439e349a539ca4cff96ae35aa8499ca61886801d488,1414,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,38,235a5c99cd7fae9e2b410ad99c1b1fafea43799d3f1138a8,1810,0-4k,46.15384615384615
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,39,fe952dfd723c9b88f1ed4665679b7a13987729fa1c37b0e3,2409,0-4k,28.571428571428577
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,49,d70ca68d05af951cd8ff2052095597d1b4dca557bfb0b40b,2431,0-4k,56.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,56,238c4efe738cecd8346abfdc57707996aef30f9b43d1a577,2103,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,63,fc1544761460f97af3a338bbf3e3c648c00ec27b8b297069,1193,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,64,b321c147c0e0a8a35ee8738ad89326ecad1509bf591b4233,2616,0-4k,92.3076923076923
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,65,b41aef2d0475f46a78a3168c6c8a614170975f82507cf2e4,2490,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,71,120cb783c796fbedbc76f04cf9be3318e54a63cd642c4401,6235,4-8k,23.80952380952381
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,72,9ac60cf60d4bae1dc93b09f374b74b3dec8b1b333397d7cd,6240,4-8k,78.26086956521739
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,79,ddfed65e5495d0257b22a9537993c3453d8590cc94b8e0d6,6444,4-8k,9.09090909090909
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,81,b16c38bf627891a3bf60ee57f9f3c2f5730f4ea3a0f44b0e,6766,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,91,6ee1971ac8c7c0ee4a5add9ec201557d28d3c2f66b176fb4,7321,4-8k,11.76470588235294
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,92,229b5bf2402ae2950c72494dcfd5f1c825c396205b49ca50,6539,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,95,4d6cd243b10a8460d2e2239182b797420ccc36335a74d23e,4017,4-8k,30.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,110,91c198d5820bfba5caf396532a0b30a531e9d09a7a9005a4,5088,4-8k,69.56521739130434
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,121,917f18543035ee1b9161cded1d3352531dbf3b249b5f0a18,5009,4-8k,38.46153846153846
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,125,69ea47e54e2cedec193247f452f5d3bbef2566a93f1dd353,4334,4-8k,24.000000000000004
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,127,b5b0eb150f44a4d7641b9adf9267ca0c2492ea46626449b3,6202,4-8k,44.44444444444445
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,128,aeb6cb26b11fc386727a529761d9d233ec7ba8dea9800b0f,6097,4-8k,34.375
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,130,37dfd65b9a8316b9569875b8bcfc5a8bd65e044a88b2e894,5225,4-8k,61.53846153846153
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,131,c18fe208b75f8f5b4214e2cb17420d75bf525e176e425fc0,6308,4-8k,54.54545454545454
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,137,a9f124fabc341d61e359af8e8badf79dd63a97896c28842e,9607,8k+,32.786885245901644
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,141,110688fd7522324ef26cbf3ec4f4b7ab29aa0b687aa1ade5,8366,8k+,56.41025641025642
+fixed32_learned_2p5_s35_step10000,learned,2,35,multifieldqa_en,Single QA,147,25d54c0a145838996b56def82126f35b3fabe3e100d10fc0,10003,8k+,10.169491525423728
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,1,b2af3aefc3bc4f5ba5340eca87389e8dcaa6fa1834110aaf,3669,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,2,8a8f9b9a86f187871fec7c7adf266d2f5e8a657933b690b1,2697,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,3,ebbd87b5c458cf749032bb57bb69ba30cd54ac841b39153d,734,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,10,4bed97d5daa9f4078353a6cd57e7427f4a854bffa5c09234,3711,0-4k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,12,df9c97f6d1531f7868982667505b92012d0919604b6fe131,111,0-4k,25.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,14,4238125ba7385b441a08dedeb5cf574bf64bfe06e8d578e6,2800,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,16,88ecef6a544abe95c7d7b3130586c02359d2a3efa43fd1f5,3177,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,21,0f1a738be89f269824727205b57bbd6a919c1624dce1ef75,3769,0-4k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,22,c16d4b1878bbdb269cbee8cb555ce4ab1c3235feffd45569,2389,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,28,6a19ad6f564ebfc50447ee4315ab9a246aeb472906728777,3741,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,31,f349d7bdea5f38b858c69ddae4698a287f9d201869c14919,1541,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,59,4f5b0bbb79b41096e3c08dc389fa73bed986646fbdd433f1,455,0-4k,57.14285714285715
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,62,742da520ae9d71cce87bd2fe8b9e1f379159e6d8aa5b9e76,3618,0-4k,33.33333333333333
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,64,63dbf610a548f46c6ab48873e867d8ac279baed6641602e2,3708,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,74,c4060a84a9f2595ffbb355e4a5cc6dea19235ab2adb3156d,3332,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,78,c6d7b3b756c44de21e714d0d2e76444a864e7537944085b8,2053,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,85,34d08a67ba7f669a04efb1c32fd70f739db7f82091725db7,2998,0-4k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,89,4d11069ad20503043d9ea9325e22a7453cd0ae5e13010e41,3829,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,92,32ad36b963ce30dc10af96f5fd49615a08f314fd96498faf,1760,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,96,ad3b0ce8a9aaed70ba9db2fdae6d812ae61d39b7cb409376,3730,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,106,36b7e445832590b8ddf74995162cd5e94f7f620cdfc992dd,7169,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,121,5fdd140211b5a3c1c879875b2c782e573cf4df4f68c8408e,6445,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,135,d3493a99d0e83a5431e4a5d829bb241692bae70fe1d3bf17,6106,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,137,b54ac67dca39af1dd1a86e7e4ee7e1bc9f35ea6716ab4811,4553,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,143,3eac2334d7487e0af820564d78caebec2622d63fd8022b46,7158,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,149,524d2df4e388792739e2486b131d791c9966e797f4dd9492,5564,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,150,53ece48014dc927d7323861f5ae124b12d85aef7167fd61e,5564,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,156,e165b7488915cd9a46cf08559023a2817cf8f8f990d1c1d7,6616,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,161,3ee69bccf187ffef58557d9b803ad4d02c91d9f243b123e6,6641,4-8k,76.92307692307692
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,163,83064e2a0fb5187950fe03a49d84d1f936642098ec26050c,7955,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,164,edd45d630ff415b7bd90c0065eca6f7612385c14f24d1054,6289,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,166,707ae5ee488227619cbd0c8bbd094b00f71042170a4a6e5a,7951,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,168,780f15259479e8965d474efc011eb220ac4078da86e8dc19,6091,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,169,c18c76f9efb43dc4d15ce54891af6a60178be55f1eec2656,7002,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,177,612961d8f4c473a6be137dca843cdd647da01c26898aff1c,6023,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,179,4ca4c647a9e240cc57709696edd881c49eb11fef88ad9a3d,5539,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,187,3b8cdf73ba6193a99f558f6c3436f4fb6337eb509cbc0c20,6427,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,189,09221499868bb9e1a230f8530fa4759e812e5f2738d12942,6951,4-8k,33.333333333333336
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,194,0108dc554454ee9588a103ed696da4a5b64baabaf365c0c7,5267,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,196,9dcf45062f2d1dfd6e6ff6773f094c49bd8e9192e19579e2,6376,4-8k,14.285714285714285
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,200,7504ff847adb8044a6217e1cee5d4e7f5d3b80a7adb9d9fe,12402,8k+,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,210,96ce2b141e2b896cb4fbe983da329a08e30c0e26435a3490,11927,8k+,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,212,511cc0ce50a9d666a125314767f8cc676db17946184647c6,8582,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,213,ce41e73398410371a755f618a953a68b14f75b8f2e8a62cc,11543,8k+,25.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,229,92be640857b6dd2e6beef9c07b7c3805d358192150971dda,9507,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,244,b382a3ff1ff044c91cba6eafbbae2a2be82e107109d35688,10307,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,247,347631d4064c4de0fd85f68be4c485d493832a0993e15c8a,8397,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,248,2535d2242d639673fd521b46e330d67a5ebfc00d336b8148,9348,8k+,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,257,8149fb371e91a3c4e6776957a8591519d55910bb5029e267,12126,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,258,adde6fd9958589ef78af9e192aeffd8e48dfbd8d35014f4f,11278,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,269,8624d9d6e32f86e7fb8f13e128a1b602b4e3d3524fb51285,12247,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,272,a2d25d651cee56af2fe24ed869f0274b0d67da4df39aa766,8662,8k+,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,276,27fa190091460428cd374c49583b9721fbd4a742e0e5e66e,8101,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,278,88e3bc9e0eee130cd7cd23ebed32a425fd76a7bc566a64bd,10365,8k+,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,283,e71fd79076da6ff2259a596d154b78301488419a5736ac21,8655,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,286,52159c74eaf34175bef4c0c07531f5908ba3eb1d390ca97d,9438,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,287,09178d7f5a8d0871547a5c3959d36176d1fdbf7df05cc70d,8723,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,289,726f8ef3f7163c31b7a13fd8cbd5f6d2a2a8f1f39dea3669,11880,8k+,30.76923076923077
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,293,d8587b6f618731d635c0e9d5cac40a523b31103e63aa5613,9415,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,hotpotqa,Multi QA,299,e8d216d8aacd34ecc573741090194f0f0e5762918c9856c4,11638,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,3,4adca5ba1654b740d1e25c6e73d45aa2f3621537bed9086b,2858,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,7,7a0b2aa530cd3c6c74154e334e96c8aae27f68fa12d65bb1,2258,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,13,fbbe6a3e39955eca34caa6cf37d147f6af697a70eb83a30c,2990,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,15,e9a287057b6f318c6cef9d0e2b12256c7b9473f4b783d38d,2424,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,20,126e59f70d78a02c20e400e5b0ad54b85643c1d6bae5ac01,1960,0-4k,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,22,10bc38f76e4c289c34c3bad79da384763efb03b79c19d98b,2246,0-4k,20.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,31,13544cb436cbe98f1b565d58244f53f8b38eb63b4a5177e4,3193,0-4k,28.571428571428577
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,39,54a23d6cb838dd2a56c1ef30e4b4ecf742735f659c470879,2666,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,44,b18a8d110828baf5ddd8cb6c3f7bc31fa54f8e47523cf13f,3582,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,52,6ed335d2f7555854fe36dce42f97d56693aba9a53fe82406,2916,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,54,08329413599479c4da9c37f070361d36e0a440aa56deda69,3787,0-4k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,58,853a76d5cce07034f8d10c1f94bd8beb70f4e34f4a5638ee,2816,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,59,41787a3d84bc8bec3d0d10839881ec35adfb4142d49b5482,1252,0-4k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,63,72b0975d7878f72d5b0142cf8e1551a8b8f124eaaa99a715,2980,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,68,c67a466a8e3d23bf26e8943352ef9239007495c8bd6febec,3515,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,71,8e5c5292e42825f60d52f62ffc53006513725eb27a831c48,2436,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,77,62b8538f15d1af02f2e87a24e7ee549034906c5a870cac97,3934,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,88,16b98a59e06d1c72b4da73f79e5c99f936e8c2fdbee29a0b,3543,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,89,f479830ec67206a7edd48ae2ac6f8fc1f639da89caf1a0d2,1405,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,91,313350f4cf6f6589899303d892f49d9f83a79df302126841,3994,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,112,1f69042b1b5c54db57567137b3cc824c3cf27504897bd17d,4003,4-8k,20.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,118,9354c44bd9db99cfb2b8f803def7504f1a8bf16e182b5514,4864,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,126,ffb74b527f19f9e8c0fdc8a392174309f50696c95cbd7c97,4993,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,129,d64ce42f72497e502a412d395566e55a3793d05b35004cb4,6417,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,131,d524ca109e5ac6284dec16931f2403ef7859225cfde19e9e,5848,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,133,d8a4ba25a31cde41c5ce4581f3c4cbd827cc6fc61b31ffe1,5645,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,141,3ff90e4a03bbab1ee558b8f8c49f99ede2a353921d9a63ad,4141,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,150,73a910a9f551d4d274e6f329d3f8a5049561120fae602224,4374,4-8k,28.57142857142857
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,151,fabab5b0e03630edd99d2b2ea223ff953d0d8de032a11bb1,4038,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,156,154a6622a73d4e3db1f02476113b94d8c527b7d0ac01ed9a,4881,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,164,977a06fd17dadfff5c389d40fdd5a91ffcc56a45dd53fa35,5307,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,165,8d85a890f8b65203743e4e9411416d216e2bdf65f626cf23,4733,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,166,6a1b88bdf6b4452fbdbbc79f52f47b1ef42fa1c058e9d236,4110,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,169,daaf2e7324a8339d157f22a8060117f70cc05a0e87ff37d1,5428,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,186,7022cbda00a72169cc470d7879da58fc0673ff175aa1f19f,7764,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,191,379a5df5053403945db30c234b02d7d7087a593b070abb95,4787,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,193,4e1520d379bc44b174f44482a9f512db0a7f9db46b7b68b7,5217,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,194,70601344d5c269a97df44b9d3429bfcc5230800d6c97ac3a,5047,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,197,abcece2a80908d35b2f960f69df896560b7945225fd8f8e7,7761,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,199,32482945828a5aab162d7534d56b2b39f5292f6cd0fe0587,4584,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,200,57d950b45a45d065fadfe4f352de3f11fcf3d7f57b89e322,9522,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,212,ee48c43c95fa56bfe9b01e1972a65fe143f6e0905bb9da7f,11780,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,218,3795313abd01d109fcd48784fd0930d7af60a7caa223cdfe,9433,8k+,57.14285714285715
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,224,ff147ffa9d6d295cdd0bfe0d0c99ec8dc6c212c3a4d3086a,10856,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,225,e3b48ce573be703c885c575899651a98ec7317b8d788e92d,10039,8k+,20.000000000000004
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,226,8dd616390124afd4e969f4764bf8fe02b8f4a60a3443c061,9041,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,228,a404b5f1c4663d5e1aca2ddf6e5cc0f2b00a45c53c9181c9,8017,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,233,49f7b1a3cba0780245fe5dd975a3d396cf0301be50fe624c,9815,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,245,4ced3912f614aca56f95eb0431c22e53c24c05717bf75f62,10959,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,253,9586d46352803a35f5726af431ea649bdd71efec91590036,9472,8k+,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,256,df369bbc837532888f001476535df2eb80cdbfaed0c6f294,10771,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,257,005c463249f9b25799798627fade1ca97e3dede4f8245a23,9189,8k+,33.33333333333333
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,268,3028780b1d61923e9791e81da2147de86a3be9e559e3bd73,9675,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,273,5679a28af119c49eef128407fce019942c46a7bfb755b130,10244,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,275,0874617ba73c23542f0abc0a68c4792cf2c535bbec0e11b5,9757,8k+,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,276,3217ac618975993bd935ed6711f8aeaa1b310d4157667829,8599,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,278,31cd60e0e4f7769a631584652127f3f626f55edc8d85887a,9519,8k+,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,289,c8196f55c719e2e4e3b10439d7b124a90f9f4b3c1cd39db9,10632,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,294,4b564dc097e7bbbd647ac1a6e70a11ab76351cc8415a733f,12120,8k+,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,2wikimqa,Multi QA,297,91e951fe724d2850c40cfc8c0ad4357f5ab5a6068ab7f6e6,9895,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,5,73b6c24236aac5d34a6f3aff9b258afd4be6ca8d1bdd2830,2786,0-4k,34.628974800134856
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,6,fa5a9d9cd641dccda7580dc34bdcc204b4adf85d2fd0004f,3956,0-4k,28.630704983755447
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,7,2562c68308e254c936f0c6e40ef0cd6136e98adb74ed8651,3955,0-4k,27.091633033308998
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,10,d1d5498b810d6a3e59553c6813a13a3f4371bd3a9fda0a91,2202,0-4k,30.02544482308076
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,15,c7c111ee767712e436fe4a357a47b5070ea7622e25cef977,2723,0-4k,22.740524290729212
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,21,c6381b4e3611955f928d30059f280a02a053c559cafeac7b,3481,0-4k,27.01421759062016
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,36,ebda9c3124b57e62c596151d4c9be2183f4f696ce1c09211,2545,0-4k,23.369564777882804
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,41,d84a12d7167676ad022cb901284b58a21fcd8208b545c348,2478,0-4k,29.00432859249265
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,46,41e4b254869a0f7f23eb68ddd57ff4fca6066f8d71840fa2,2238,0-4k,31.226765334088807
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,47,a3e31f3e367f2a3c656ff833c4ec78e6560f8d8f2fa4c168,2326,0-4k,51.42857092867348
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,48,ac3beec6d8ea16fc38a432eef50ad9d8df9c5b7d3334123f,2622,0-4k,36.858005557123434
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,49,4bc237ff27097bb1872f494816e8494583bf4edd6dfff967,2641,0-4k,31.808278434884972
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,54,a3a11ee5de13be1f6ab405e8e1b29f2cd07929fe9112561a,3679,0-4k,24.22907452497623
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,58,36dc87af316023680644ff7828414683f49c81830bf6193b,3961,0-4k,38.0952376101909
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,60,32ad6299b8d6ce84c15670ba9487d9222e69cefbdf035cee,3556,0-4k,31.20879076532786
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,69,db16fc26b2d7fe46dfad58d4022c88cd1b7e50270b9e8fbc,3383,0-4k,34.381550933094246
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,72,75dc6cf404ef349b77d2b336aa429d67dbb8a5cf68cef804,2710,0-4k,35.732009495754546
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,79,ccf692dbfe40b63bf3a97185921f097b8feb95d23a417a2a,2634,0-4k,31.288343076367198
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,93,954367708a9ca3e7a6ac3e47a86bfcdf183fd199e5a54137,2524,0-4k,30.238726333795356
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,98,9109471d244170c7df2c1bef1f8bd51a11e4c7e89812b0f8,2951,0-4k,24.797843212153364
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,101,0cc65ede09b9e7b90e4cfae55ff5fd655dcb080ff695cca5,6036,4-8k,31.408775587133114
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,102,117a2b9d8c8e3acae1f98ece49be831311df2909531472f7,4452,4-8k,36.87150791290846
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,103,d5e09c7a5155d25dc6320e9dd1a5b62766cc3ebd2a5e38b2,5949,4-8k,37.80821872600488
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,111,bdbebb2c94702c393b619f9146005d58fe1291474800355f,7173,4-8k,24.852070562795422
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,114,1231ee78575d7c89cedcde393289ddeada21418687316722,7628,4-8k,32.08791163324236
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,115,853f2aeea6f082063fb56b19aed190649d4c860388489296,7063,4-8k,40.358743970721314
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,117,f32c632cbdad9751714801ef4e2c8549db4b37d6f15857ba,4027,4-8k,45.108695161404185
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,119,e1c3cc7ce5dcbe10bb907e13bf9c2f669f27e5549a8a6f90,5031,4-8k,34.56221155296353
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,133,0cf41123735ff291e9a6f237f8a8b91ebd2e2ce1b49c4486,6873,4-8k,34.216867013801725
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,139,25e3311e87f666cef19fbbd2c3d031085dedcd05321b63da,6951,4-8k,26.262625797645146
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,142,f834b32d69422847913a39da5df46701738207e5d073d58b,4490,4-8k,31.63538825806267
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,144,24581c7640a62446ef310e19c657fde28f428e2cdde9927c,4743,4-8k,33.2552689048259
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,151,ac0a8e87aeea6c9cf9269e14c30968561173afe52c992ff2,6004,4-8k,36.59147822051369
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,158,78bd40bc1941dfa756213525eb8497a29457cf86a3b26010,4503,4-8k,29.999999576404964
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,159,93976b3d6c09c86df9d0b685ae6bc5805ae0246316558548,5036,4-8k,31.004366332402135
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,162,3c09f44fe2f7dc7563ac11f27610cf4893b251a8617b2ce1,6933,4-8k,30.42393969515115
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,171,b204a5760688891ab38a661093b98c76996a6dc2d6ac56b2,7028,4-8k,27.01525010617949
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,174,41377c889af26748393fa4497cff69da8b95a22f3434014b,5569,4-8k,39.0624995114068
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,189,abbf8c9f065979e10b55d2af4068e6edd071449e326902b4,6075,4-8k,28.641974848955957
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,195,9e125ceebc835431bd6a537a6fcd9a4b37fa6f1ceb11555e,6795,4-8k,30.607965989196984
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,205,adfe552eef14103cfb54b03aab01e8ac813a684867e14c00,8385,8k+,42.22737774226022
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,207,02b7582767c101b98fac43ea50a9cc739eeef42070abc1b6,10074,8k+,28.162290708437528
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,209,993c62b6063cbb6a3a99f14be76faab03fc9da02bd29e4c8,14544,8k+,38.79310300052951
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,215,a45171285df0194fff7ebccdfde7c82851e6d0188a783cfe,8266,8k+,33.33333283514446
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,227,271a9c0cfb468525ee2b1d0dd2465702ff45d5d26aa4ae7b,9038,8k+,28.35051498624987
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,236,fabb238c5ee34601c06d95a8ef66bceec13eaff260d4f68f,16749,8k+,24.890829331620303
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,242,9e2f00f9d4e9260a36fd263ddfabad32e5b52bac4e3e4166,18933,8k+,17.563738882873643
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,244,9558cdc42e5d0eef948ebbb81976c85e2bc3456ae434f570,10410,8k+,34.532373627774035
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,249,61926eab1bd79fe5c4eb1c37944964fc8f372db469472e4e,8179,8k+,35.37117855612022
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,254,00e1a8b8cfeaabd963a2c0596046c334791e0d0b4ce7b99d,10211,8k+,33.95225418525424
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,257,c40c350f0ed3bdb1262fa475b4a106b6f0c90af166f83682,13010,8k+,26.339285250159445
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,265,009e8130134cd82ca09bd7ca7aabd5c583c65de5024270eb,10657,8k+,33.248081368515386
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,266,671618f0994ac2ebb6200595a9c19f635f6e6f812629b34f,17130,8k+,37.5838922012522
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,271,7ae531670a9820f79525e82025cbb622e67cf448dce93aae,8802,8k+,28.09917307394001
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,276,9390bf94b7a10035b814b9c7b3e1eb79c9f1415ace35b44a,18930,8k+,38.64734253717707
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,280,42e71d5aa0c5c74c2a39066ae556458834977699a11ad4b6,8308,8k+,31.7718936303732
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,290,ba6567bdb74b0dc2048315126532d985693003e70c12b2cc,9310,8k+,31.687242338667893
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,296,2d74ce64491ea67c0b42a06ef439cd49bc7da7f9768661a4,22560,8k+,31.635388296099304
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,297,c5e2c9e4fb59bf37eeafcab5cc9dc3d18327eab8d5719587,13400,8k+,36.009731892730926
+fixed32_learned_2p5_s35_step10000,learned,2,35,gov_report,Summarization,299,615b86063863952bd39f41c4b5d2cd0ab4d2f71780b76527,8054,8k+,30.23679371422126
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,5,3358fb88c31046f04005237c69fcb14adb6b6b9ff68ca036,2033,0-4k,21.374045365887778
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,8,085a98bc87cecb5a34bc4bad17eb8a0e90bc5d577f58086d,1543,0-4k,31.460673658076637
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,9,7d60cab38bf3dfe2d804fb4fb9b74d4b7303468a3b3de025,1122,0-4k,26.498422215565892
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,11,c2488f5c54c48f0c50fa314134062ac0ed9dd3dcd8cc824d,428,0-4k,26.905829133825332
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,19,84657617cef5cbfc4cfdb3f62beb99c2dd0969da3b61faf6,1782,0-4k,26.771653073098157
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,25,7a583216f10de86a7447d31eac510c9ee604fc97daa07879,1396,0-4k,20.253164099343063
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,29,8df78078e29034333f411ce1c024f3af276f7a5d47bfc157,2749,0-4k,31.343283082200944
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,33,fec43c9d6b2e735c38ef4a9f53d4a0530d0f17d2b7ae1adf,1594,0-4k,27.96352533598175
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,38,c226967dace7bed3a9520d2d6b51d545db7b0928adff93aa,1125,0-4k,22.222221734819865
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,40,5c8c8d3158f3342ca74e9ce9da1508e49fe9a5abb156a80c,2356,0-4k,22.335024891545785
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,45,e15e50d70d4a64727bc687f79114263f60d4e3c57987a5df,1817,0-4k,33.84615334911242
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,46,b512878e8e93311926e4fae69f7aca10293ebd6914cd69c5,2672,0-4k,27.918781227447248
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,48,c25dcbeaf05a9fa1d89c499fb3d3099ed2cf00bed267d6e1,2343,0-4k,29.81366409820223
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,54,7716f4cbdbd22287cc1d0793d5870a7cf511e68bf6d63283,1460,0-4k,30.898875914357404
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,62,d9f437028f67a9850f6c0e6696e528c919e62f72b8a59081,2344,0-4k,19.390581225926763
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,72,4f9fb40ba3a4ea202edfe8c7c1c19c80a5afa8f0ffb8d9a2,3153,0-4k,29.345371961069873
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,84,f8f03e369cc6325e8ddddc203767afe6f33b532dde410f51,2270,0-4k,28.947367923216767
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,90,b284f77807027c80d9052f3116a5f1945a921b333262a44f,1375,0-4k,20.809248058187723
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,93,8b2628d7b4f5c1c01d3bfba4b4708d876fd1639fbb31d034,2745,0-4k,24.929177977674172
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,96,4df578eab381a9fc7acab6e3dd9e278ee76cbac0a23321b1,999,0-4k,38.372092524624804
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,109,a16c4c4f21a8aff6700f991f55c90a2d442db96d3fbbf7e4,5180,4-8k,33.9943337843655
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,118,c0a8a1d30915b87ad83276cbbd6c2fd8661fc3f222da6803,6733,4-8k,28.184281342851484
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,119,d9cec6ce22fb450c177b618193791a4b17d4adfef3ed7982,4037,4-8k,28.07017493950415
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,120,76a22580c924a14073a119c8d24ed89e0a4e68d68325225a,4910,4-8k,22.56097512330831
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,122,e4248a577665c8f67f2875981264fc46e9aa1ff2c97621c4,4501,4-8k,15.498154503669625
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,124,e1fbb01b1869db16e8f5b9209844a8488038ed59c7618022,7378,4-8k,17.961164549498083
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,135,c73e8174e5abc833097bf49f3351ab4ef5aa82d097d63a80,4056,4-8k,19.4174752293336
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,146,1edbe11b5a2d2f70bd299d3d1277d08f3c73635803a5bc25,5123,4-8k,18.295217813909876
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,147,59b239f39dccea621d6e581c6df110bad126be5258d0da11,4873,4-8k,25.205478958363674
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,153,e6428339303ad2f09a020a58ee4c78ee03995a73be5aedb9,6819,4-8k,28.81355882664624
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,154,f268844ee19ae37398a8d4df6e613b52a07f1df15b2e3ee0,4339,4-8k,25.139664307527866
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,156,f7431c0b06be738121014ffc051dfdab356590a5694b41ac,4344,4-8k,23.312882972016265
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,157,3eed975e61a930aeafa932c046f731360b647a453a8b9847,6399,4-8k,35.44857719399183
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,160,fbe04e6aaec586d01aedd000f6f486a4911178c96439972f,4643,4-8k,19.944597840348074
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,163,1139c29ed1042dbdf8ec7a05c0d9e85cc9fb1c8fe0d719a5,4792,4-8k,22.285713786302054
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,164,23d2310138b1897a018af026757aa339963aa196252a582e,5758,4-8k,31.466666167267558
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,182,0b45b934e77d72ba196d30a9332f3465d71d31e26c3205e5,5665,4-8k,29.090908593894632
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,187,682752793b2c600521dae3843ce722f869f7d1bc98684944,5592,4-8k,19.580419083747657
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,190,08fd858ac2a2fe76b679bacf9a505745fba306bc5d153bb8,5085,4-8k,23.09859104961715
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,198,8c4266ab879869dde3f2ae3d1b4dafe762adfc6eb0594589,5075,4-8k,29.45736384429355
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,200,0e05cc18a8cb83168b2027b1734f77c9328fac1b3f6ff608,26589,8k+,24.207492299379624
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,205,b969d44361ef74b7f1a1d7f3918a1a8a42be06e7762d61eb,10933,8k+,22.495605862101993
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,223,13fffaa30c5a70c301713331b10614be7aedbcbad29afce4,8290,8k+,23.834196414870203
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,226,d7a887575fd560c637df062eba428da550ee09fd2f533f8d,11402,8k+,28.14371207529851
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,228,a2e7da4aad2326c788ea9f40701a870155e5358ac4426924,12573,8k+,30.913348450745637
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,229,ead1d9eaea3634444dd2387c0f9db71d206b6645744a07fb,11703,8k+,32.41895212009875
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,230,6ffd667f56771966d69444d453a0ea47155c7fd5edb229f9,8604,8k+,27.135677904888773
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,234,902f0954213482512f8d7737a2cd7b97528284ce3a7528cb,10366,8k+,22.362868725239913
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,236,b4b2f8cc86acce7961fd4a36f0c444aa3278aa12143bd289,12301,8k+,18.94736792554018
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,237,0e6ceee93e8d0ca2b37af1593344755c9e61ac2508878951,10635,8k+,27.378189755352317
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,240,183f975473276ac5455b59d398da0659f11160be1a4f6435,14781,8k+,12.472159867480833
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,252,ceda957dd07f5ce14bcb4aa39398030bd058f4458c96f41c,8684,8k+,20.10869515506854
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,259,b22189533c27ba0a810969211e53747d68392c6e765f928f,8135,8k+,28.81844330473636
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,263,bdaddc2a7890f334604f25c851178459ca0eb40e386aff1d,27973,8k+,20.833332855034733
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,264,e5dd96e502d78f8f514e850d401879c3e553cf8660976051,8813,8k+,29.023746204774408
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,267,2c65023a50d1c41ee518d051aaa5a773cdba4630c5a85aba,10244,8k+,12.195121456978008
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,269,32122db7ae55f564f38f97c0906d82d50e82a8ab1ed9da64,11500,8k+,15.041782233067732
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,270,6c6af9fdbd21aea264a79c89ccc9e00aadafbc249534cfdc,13626,8k+,30.107526387501448
+fixed32_learned_2p5_s35_step10000,learned,2,35,multi_news,Summarization,289,bc7d64cd697d6337ea796624b94229516b9ff841f4567750,10405,8k+,24.598929982441604
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,10,e660419e55969f5f323ad0dd25559df5127ac5ec4d792757,1967,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,14,84ff8506c130bf6985e0b423cc9fd841c21c64a8a79dc8d4,3454,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,17,a73f9622799addf2bea4304a8772b05f77dbde5ccb9ab240,3609,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,22,7c23598d1969c809dc61b21067f96177bbc1276e54dfbb8b,1990,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,23,2c803c3186a4e1274de0fd098886ecd042b944e8337a4b85,808,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,27,3f210c79fb95d23d329ead587ff0c8bf452bbae7f8abab01,1128,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,32,a208cb2e43d1ed4ff69bd69e39e27ae21d2bb33a020f2cfc,2655,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,34,739a6e9805d027428e9a688a0a9493ab11ebfab966c8097e,3494,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,37,000cbbd276a0783e96e7b1bdac8c038e26aced25ee9157d7,987,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,39,4721bfff9aa6ee1c5b9737c7888d75537210d4c301f19fa2,3349,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,42,461788fd69a99e5f89905760c0f8650e9bc1d75cc68e9c4f,3349,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,46,f22beadff20b7f9e53d6b956dabb1c50563e481f098f8c98,1054,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,47,f19f00ecedfed2f4ed6bd87c1ea239d0a369c7d1b1e4173b,3721,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,49,7dfc677d5d152f68d56844b67c26eae5ade79afb3e99f801,3725,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,63,67e0121d83e2b8f3f87ece5a9c26d92cfde36a552b0067c9,1229,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,72,6bf7613c871a1cf7b019fcb13e622e34b8d5f1b2130ca617,2594,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,76,3224876a6b70a8e3e635cf65c150705e62f8e739a1c04c7d,3519,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,79,8aaf0d6fd5b8bc24e21328d23bf3b47114761a1e00b5cf2b,1610,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,87,00d89171ccd33d74d91ade71aa13472c0c5167620f61a1db,3630,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,98,f6928484791855eaafa05bf0e14fda717f1326cd4a5b954d,1764,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,101,a1c964702b1d4bc09a734ccd4957fe5f6ee031d0f288cf40,4870,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,113,2d3decd7c5e7a0daaa9be62250b942181e10155b35f2a4bb,4314,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,117,b2dd53b1174c0d5199840d4c4a5027129016506708dd7ed2,6399,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,118,3359d75c3d48898cc401d4f40a784e1e50db579892f79a62,4799,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,121,94a8661be1cf2e682bd868625ca4a8d010dff98320a96ae4,7071,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,122,4029f6395e9048f5f683b213797a38915b76ecfeaf5c9972,6112,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,124,515749c999fc11267e44295d0098d503d23e2b6057457f4c,5430,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,125,38595c21ed5dfd17fdc30c4a71647d67568ea09e52abb406,6381,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,135,fac553ce8a7c108a1de56506c4c2e3f2324ee3ba2e568c48,5695,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,137,97b7a005d77ba555139b13e36540c4a184f665d8e59b5c63,5866,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,143,71633c0f6ed6a2e8e85e700040de594a18e850343a370214,4501,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,153,062aaffcb762ca5559b3f11c9a7f9d28133ccf814df7be2f,4835,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,157,ad3a0f37af7e9df6a117d0c558a5f1f8a6d903eab9a3e188,5118,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,159,93d19f1f81db95b3a1c5b2fc098973de242ec19e9eb3f266,5754,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,160,555c27c6c1b5c9c211f002305c32ee1a2aceffbdd4dbb147,4214,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,163,97674cda8a07805819c70f7b8b2db02a1f4cccbaec0c6038,7188,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,175,fee1d49dabfe3c43a89947d6932c20cf9fdf0b359d48039e,7433,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,178,a35bb195b7e3776af77e2cfeaef4ab133e0b6a227ebcd937,5747,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,188,099dc6f0b644df54a941b3b679a687b35248d76fc85d319c,6401,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,197,50456a7c27c94c95d96ef4d681ba513cda242b95dc75f3a1,4038,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,207,dad1f1c38bf5fcf9c341f68ef995f98acba22ee61cfd086c,11731,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,209,da1759a1f0a9e54830b6de603ec5a93d28b43734f64996bb,12631,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,217,258d9a8a7ae6938881999b39e940a9a81bc27e2e276c1e67,9384,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,230,48025a5bfb9c7712539abe4e8d4c2ff64c09b7f0ec69ae51,12683,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,236,e757cea52dbfc0bf28348bf0f1d0f1beff5191e16368463c,12921,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,239,85becb1cf0dda646aa19939edbc6f805ffd8aa985f229705,10494,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,243,c116b9fad380b16c1da5f567d789ff269fff9bc579389801,12462,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,252,496cfe454ee4b6c960f15ce6af8cec7f5b446c456ed0823d,12100,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,258,05e531e8aa028bc5551b4e8f56f4384fc2c85504fe9032f8,10920,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,261,f84dda7bd6decc80e34ba65b8af0eecdcc8707f83eaaf359,10354,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,262,49d3a1bf97e4beace53a6b779c909b82e9f67b6c074fe57f,10362,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,272,c394d29d2d6df5949cdab451eb80aed7510c8f68d0716487,9699,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,273,5c4edd68039dfa71fcd29990b54ddcbbe9ef6f33c733d46d,8058,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,278,9ccc59f1d6cfa837bcb644fedcb2fd9b4808942dc18348a7,8620,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,280,4a7ac075e32f903449611fde9e4767dc7a99f1dc66d68e16,10371,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,282,74e24f089073fe4049fb67529984a93d76044bae7a03da06,8325,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,290,5bb5dc6d40c4c410c40d74f4f2db74d7d51abd67f2fba765,8757,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,293,5621b4b49632163698c252c3ab3042ae87d1e88497c3c5f4,12806,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,297,296462cf2d588617c449ef9d4a96d40c57ea48b65782788a,10407,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,trec,Few-shot,298,d05be8a38f1ea2533f7902935e1f6c99d1194450d10d45e7,11425,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,0,a6b0e6b9bf53f05d1569572cebd9359a0d4136a026613c7d,3953,0-4k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,2,4eea3cbcc28d2e2b3588987ce428800a798ba798e2eb6f5d,2992,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,8,b905fd37b7ff3be088f96529a40cb48faab9fe584a6544a8,2408,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,9,c392f62eb05235efcd5d07680c3cd7acc53f50726004165d,3056,0-4k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,16,9508e9685fd6b984c56ddddb5eb90f235715dd801272c375,3816,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,18,b099e7017b5ca90fd7733d19de6c73cf43458bb5527fb695,2600,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,19,10b46ba322d1d3087af3ac259c78251ce11034c65818348d,3121,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,23,265ea3f54487af5925b96621ea6996f05d7bb855acf0b462,3405,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,25,37a77de08c5dc62fc4b4d08ab6066e178e82d32387ce084f,3179,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,31,a73fb21e88b89752cf78e2ff4f158b13c6d0deca71b088fc,1657,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,32,f59935dcbf0164432f91845606f42c9b88f1c79fb162ff55,993,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,39,db616c3e69c66cbc24ecf7b5b88799cee02ef2083f97dfad,2838,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,45,07ad9f5ccc6a03a32c84278956e139f47af88fa05fe941b4,3811,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,46,70ac7675b0747602cd69a04263e985c771529f7826c33c98,2670,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,64,abe9b676cfd78b5ef768fa0d8df981d4984c3eb55abbb325,3972,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,73,b8dd3e8a46f8c1af662475c0e261fe8209e2dfa6412623ea,1913,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,75,73ac95b50862953bff6e7a350902f65a52c57e176acc8a36,3800,0-4k,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,77,160950609bcb843a8d7b7ed9247f325cd7558dc7e2fa9e15,1310,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,91,f6f381412c3dcdb7a9c1c7739cf02528d435ee9f152e0ea0,1113,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,97,1a61756a389c0fa418663b0e087074f2daa76faf7e74809f,3413,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,103,24e4a2bb6b981fad0bd71c8974512c65ee7defd515f0af47,5625,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,107,6b056473c38137074b7af33c57f2101b4c8056453db8cfd9,7654,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,111,9a3a82a8ed02095e6377c229d228b6d7b7e3e6cdc6dbcbd6,6077,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,120,2766b25313efd8c16c0a519250151c0e23906747b659c1d9,4191,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,132,bd51313596feec0e2ed933c6b481888897651f922ad46ad9,4392,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,133,b96fa0f48d421e116d9b032d66693c545be5045525ca4565,7966,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,135,90a6831f079f795ee9e86a9772c3cd07ee0708823982f4a6,4735,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,141,9605771a090d9b7a2347ec8d8ca5ff88c4689d60ccf3df14,4974,4-8k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,142,338a919fca9020df306535087efd95a77d5cd1d8d1a57cb2,6470,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,147,9018807f19ee02d865950c595bf1a259de22640430bc74ed,6427,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,149,a087cf6febd8868d7efc755d30e7fdae77cce41cef815912,4785,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,151,c2af6bef28c208a40d08c1b37f30641fe0cb5784a057b634,7843,4-8k,66.66666666666666
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,152,f65cfa9585af67313194973a9d2f1678ae4f26fb3494bc1c,7284,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,159,4faf9576d851ff48686f0237c88900a6c127217633b765f3,5865,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,162,35b238576cc74a72aa356405aebe58ff8b486e8642933a85,7036,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,168,8e99db0c68c29c8ff686632b85456132846e83fa5f1e05ce,6658,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,177,baecc08d58bfa79e6ba36cbde8cfcd3d7f7f453e267eddef,6615,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,180,19468b6e4998b6c859111004f751c6b4eee4f4d929c5f153,4948,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,184,c05989b7756c51729fb16584586a5e7b3cc6e4c942b41c1a,5396,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,187,354d9591b3f36ad57e6bfe8ebf66d6783d8dd02b17f07148,4298,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,211,beeecce51a6a327771865f33923d910df9a1874881233c61,12055,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,224,2a9467f9ddd6efa01069b920521869c454347e5a2b2f9281,11856,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,228,263b9c9c27b92df93edce15f6c63f48f00fd2d550d09c0f1,9446,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,232,6f480ba320c86ed13156854c5770ceaf5290efe5a87c759b,13294,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,237,2e4a52f08d91a9e27e03f90283ed060ddb238c9a9a4f7346,10482,8k+,80.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,240,2edf7b5e290e4e6db9d048280d672cf3232b014d202a32df,11850,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,244,1709da4d547be39f12232053ba5730320e3d9527546092dc,12163,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,247,8301cddbc64e22f4169bf768b6365f13f3f25c574ad58a63,11883,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,250,bd8a96aa58c93ef2128a424f1cc9c700e0d9db5b72018c04,11993,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,256,3ce398376d1a64072763eacac6167d3d44cbf46567607c9e,14355,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,264,907f2c4f6b83279b01ac51237af9cabccee8783ab7d1056d,10359,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,265,045f6bbd5f7a8470d6b3f4cc56af7b790695fff2cd6629dc,15960,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,267,a3903fe7b43c056c702d3131e738e5db68ddd1e1aab3f287,8045,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,270,80f0f25da0109067669aae2fa094e07da142a01a15b22bcd,8788,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,271,d8ddb4f2e1cd943212face175e5e6232288f9d5919ab0cfd,14125,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,273,10985e1f237cd98d8d5a7b103e9bae9aea49d2c68b952280,15767,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,276,c6018417059d58ad7cf398138c33839739385c8cbf19d36e,11806,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,277,30ff94bafae574dc57db9db4644f01450a2428a187a3ea70,12564,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,290,ee606dca7a956b661e19b36859b1916cd0f1cfbef4352380,9846,8k+,85.71428571428571
+fixed32_learned_2p5_s35_step10000,learned,2,35,triviaqa,Few-shot,299,006ecdf0575e2872db18a87823c21443a15d5016696dd0c8,14813,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,2,66fe3774d3686f64c487b2b42c83421d10367deeb6bfed00,1714,0-4k,41.509433463866145
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,9,5f86fde517cb1bb6803596ffd30eff78d16d3f4a1a56b3e8,2648,0-4k,18.181817734525225
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,16,4b8f0021028368a37b2ae640d2f0811f61b51f9ff94ea1de,3481,0-4k,49.99999950000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,18,745c536cfcd6f88d588216c38f08bc928bd36d957e589724,3135,0-4k,52.17391256710776
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,20,4ce53ed05cf46a6f6fc1a4372f9e9ed80c3aa05f51ee185a,3771,0-4k,31.24999950781251
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,24,229813fd42feee3e7b2aac3de3ada57331ab038272eba2e1,2550,0-4k,13.636363173553734
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,25,223fde1aeb7007a6e1f27eab60c1b647fffe96f09330eef3,1604,0-4k,77.77777727777779
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,35,a300ad045cf083fbe6763b240ff4820702d08b0deb2b8df5,3974,0-4k,44.444444000000004
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,50,584a1aadbc7520610c42df9039a637414d43ed693264739f,3108,0-4k,46.51162741373716
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,56,10f9417eff2bc0fc8b50765a24223de2ba162e688f4fae2e,1865,0-4k,37.64705833522491
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,63,dfe05502cbf34317ee38a9ffbf20b827efa9ad7a4d67eeb8,2155,0-4k,38.09523759637189
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,64,e7a2c1671fe34a94fe9e11841fef86e37ba165e965549065,1927,0-4k,55.17241329369797
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,70,b11d90d8797bd3624a7222663cb644c0647c47031d4ccdb4,1577,0-4k,25.806451113423527
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,75,7ab38fee6e84e1f7961171ce1ba210db3b0ab4068a075f17,2109,0-4k,38.29787184065189
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,80,e27d681e57e3119e47840d60fe4747f472280e4cfa974fe3,3741,0-4k,43.478260415879014
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,82,8085db06bb055a126c86d7f90801ab95a7803f8fd1b67751,3835,0-4k,32.14285669451531
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,87,182a7ce1ff46dcba27ab7fd26a0ea73c04f36ed7bc775a5d,2091,0-4k,27.0270266092038
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,89,982a8057dcf8707ee1d1f2d3bcb3f295bb2751a1eca7dbcd,2784,0-4k,46.153845680473374
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,93,8e8f49c9467266bcd89798452bfbc83e03e294269c3dd311,2024,0-4k,76.19047569160999
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,94,4e7e1be065408cb208f304b1fc7e2bb7768d823f179fafe9,1369,0-4k,55.813952990805845
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,110,54668fd7a0e40fa94648787206d9a7866309aa521c3da3dc,4289,4-8k,42.10526265927979
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,112,a2e1fe73dcec4210d841e0611be5356397659df3a2b60adf,6036,4-8k,43.478260378071845
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,113,12ed449be6a18cd41754ffc6fa39ef8d5455e514836b789e,6914,4-8k,53.06122399500208
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,127,e3765236a30f7d09067ea53877373f8e2a405cc832030557,6002,4-8k,16.216215745799868
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,131,5f699daf837a4559b885743c3d3e8d0b14ba4f2a690d3f7e,7897,4-8k,61.11111064969137
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,132,6f9b39ec94a4146a978018f7d86a47913119393854ef90d2,7656,4-8k,39.999999506530614
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,136,207ab0f785fa3f7629724f783487d5d9afe07ebf9037d5a9,7035,4-8k,34.999999505000005
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,138,46cbb91f855819d2efe512e789fdd8b396e01410b16a2362,7924,4-8k,49.99999950500001
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,148,27c8eb48640c4ae71bcae2896d8a76aa2418704132d90f61,6238,4-8k,38.09523759977325
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,155,55a2550c5994d0dc89295210d4ecea34554c34e53b633977,5382,4-8k,69.999999505
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,159,e882b085581c16d79b9fe816338a5e28fa9bada73da157b4,4688,4-8k,31.24999953125
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,167,8a977a28e317f94495fdd2011be61b432a3ebb96157f6fe6,4300,4-8k,38.88888839506173
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,168,719eee42955c9d3602c720f8644ffd10e0af4776be3dc046,6750,4-8k,16.666666166666683
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,170,51c7ceec70dcbd7ebbae5f57e04cd2c99f252e450597c167,5888,4-8k,30.76923027218935
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,172,694acb099ad12bae7161cf4ac8d7fb920d6de7ce1857a246,6608,4-8k,76.92307642307694
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,178,53288fa1b74f9e294d25fda05653264869576b9ac133a49f,4187,4-8k,54.54545409322314
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,185,ff7614bd5ef81f179c6a6d2cd81f4c8cb28b61c5f8d3dfd0,5433,4-8k,71.99999952000002
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,195,08a9881a615a3ec040eaf48a7575b320ae0bb1b4d1ab71bb,4686,4-8k,33.33333284222223
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,197,9f23c657fed0a96028cdb7c81cdfa829991368b74657313f,7276,4-8k,43.478260415879014
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,198,001917899daa12caa0813b2530f568a652eea16745381f4a,6875,4-8k,47.619047129251705
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,202,eff8a85ede13ab11df6e505dad77103540fb8530388240a2,9352,8k+,70.58823479584775
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,205,5e92a882f4774e6c529b52f48d2420fb62748521166e5564,8206,8k+,28.571428104489797
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,217,4a36bb00aa2318c3fbafdd12168c2631cf36dfc04848d5fa,10630,8k+,28.571428071428578
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,218,a3b55d2048d35befeb8ebb08930c372546d87f69a6bef08c,9360,8k+,25.39682501788864
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,220,0c5ef0430cfb35865d7a7089d0680dffca5c6fc47617d4d1,9891,8k+,35.294117148788935
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,222,8dc3aacf4a9d43b7776a62f87488386af96641ffa717b6a8,9176,8k+,48.275861574316295
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,223,0eccaa2a8dbdee58e8ab354921b2d9b074c33bf138e4e4cd,10786,8k+,17.77777736691359
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,241,94d09a2a180177bfebf3b9f9834e8b04043c5944353114b9,8520,8k+,64.99999951125001
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,242,4d68dcf2ddc22917a641aeea6d3d9edca79be7fbfde17210,8868,8k+,51.8518513580247
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,249,ecaccb6fd9abb96842a1872d5482b91c687ac4546b6da026,10256,8k+,33.33333284722222
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,254,e9a4efff9424101558a5750b3ef08850785d3d5f07469a11,8697,8k+,34.78260819659736
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,262,68562e3a35dc1bbbf43566b3c41bae5063a40b2fc0487715,11302,8k+,53.33333283950618
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,265,695b553aabf087b6349bb22d44cc9a1f55f9fc783f55ad6b,9936,8k+,75.86206847086801
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,266,bdc7aa0d30ac0241bc79cab089c586b38b9bf3a3124ff9ae,10023,8k+,47.99999952000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,271,79263f81377ef5e48059808dc794c0a0483228254c480e9b,8089,8k+,24.999999511250007
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,279,4cd9ee9d3b87f33bf529a4f4b072436dff87278548a9519c,11074,8k+,9.523809115646275
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,286,e207f0cd648c4dd4516b519a490faacd3dae921aac636340,9574,8k+,31.578946890581726
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,288,77304e965d3b1f961a103e6cdbfb27c926df2ff6d4615aa7,9554,8k+,36.84210478531856
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,289,aaf4938b43d60e19478a27285d60fe7b794b232d4076e117,8885,8k+,36.734693394419
+fixed32_learned_2p5_s35_step10000,learned,2,35,samsum,Few-shot,296,e27b2372f67f5a30bcd86f6110cfaf279b7f4e1d5e7c3e62,8599,8k+,37.8378373469686
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,15,1795269f5f7efef8da447c1797cfe8082c5fec5fbc13a587,1940,0-4k,16.666666666666664
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,17,1aa7aac093fccb8c81b386b732131d7369ea691d6fde9a49,2906,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,27,bc84939098d7b7b2a9281c2d3285c4c14fc400828c526597,2567,0-4k,25.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,34,66ad65384cc56d1cc0248007f6ae4e1153ebad02c3ca86d6,3773,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,39,2d42519cde960e97c7fbac956fb3de191fe12ce75dd5576a,3202,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,43,3e1812cd381a9bf8ed824129c7f5573a38750f193f53259c,1488,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,44,eaa6f4f5a40f8dc1fbeba6b1a529af732b893f94cf07b2d1,3080,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,48,9dd6dce168fd5151a9c1f8a776fbce5e92b85611edbdfb5f,3923,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,49,4f33f4d1d7d8ae1101daea37320fc52e5df9fec8d8d544bf,3413,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,51,c9f6a11ff94e485480ef3e6fc327c0081d0c6c90740c2a15,2792,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,64,1b686413964841c81ac3906d53cd4583c834f38b7a417676,1906,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,74,b7dd8ed217e148fa3d3c78e82a83645300bfda7fe86a9140,3153,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,77,6e76455fc56cd6f7caac93703e8a2e1d2e56277099188e37,3262,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,78,a856257dbe75aece5a0e1d84429c1b253bc3276cda17a070,3644,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,81,d2fcd75fd9aaf968081ef5184880a2db0e7abc4d5308b37c,3637,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,84,292511097c2acdea2de38487c8e58c3e907c3a1509eb2671,3900,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,88,d50e378285ffe6f2eb6ea81e130fe710246d93408b867267,1627,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,90,76518693dd0e54940760545b20931ac42128b6ed70a0c175,3569,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,92,ceb5722eb84fcc841ea454ae645027a5c080f18662f2dd45,3120,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,93,35fc98f020eced6fe7ea47ca14e7371dd78198c7c868dc49,3602,0-4k,25.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,101,df5d21ba8a0c55a59e500bd46f8c019ec30bc9c23cf9e1e7,5968,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,102,06fb0cfed204fbb2fd5120e6e3088d9c41e39c234b976a99,4826,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,105,bef7f39f2932da728bdceb9c15f65f7c6c5d636336c92477,7066,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,108,71ac013c8555828d33f28509f6641b9471f94730565377a4,5904,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,112,060b2ee2ae4859bf8d06c2a1a7234862deac6d9908c506c2,5738,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,120,4b3d448ef335d8be747a106d3014837f0fac3dc3ff912459,5948,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,124,250ef8a8d6ae3e72c860f38817dc19700f4be55498de887b,5078,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,132,399c1693d887bc15ed45f43ac7d8fcac1ec208a003abb0c5,4831,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,133,4be94a242018e3e06070b24408e255717ecd2ca6cd457b3c,4527,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,152,692ddd9a69d835195877606cb2df22722d3408e3e5bef86d,5814,4-8k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,158,bc627c8d1e0ecce74510f82c83d6c5612f0502e63613e7f9,5636,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,159,06252c9a219038a4f56c1a004636e907e962be200baa3bb1,6154,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,160,bc2418fbba5df2e53627335d6c324b7e229516f256ea2d07,7804,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,164,c5671a1f6453fcbf768f89353522b2aa2b800ab1402ff237,4256,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,167,e4c5b7927a87de32a0986530a7130fd0760ccd57f93494b4,6250,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,168,f585832d9c78624dd328e1ad307cb6a6a33f3ef90f350c42,6770,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,182,e7c32ebbfa5319736f5e86c8da7854e47220a79626fae869,6597,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,183,62bec0ed21c9de3347a7c810b6c70fa58275a7cef20716f9,6381,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,184,1c1c0e0a10ab3ad3f49b0abe2600d755e9f607dd3d668e5f,5795,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,189,79387080d5060e45034f4b9e48849de320ee5987f5ecc0a4,4638,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,202,cf42618fd7afcae9079bf9e45ecf7b4a8d101be1407aa8f6,8602,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,203,1515a4183be281231aa3288063597dde66bce7786409a6c5,8559,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,206,a63961442b8474b552da851ead93a24eaf27ad38c045c4dc,9229,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,214,8ea4a507b131b2f8770360c9568652bad67e1411207d48ab,14537,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,215,52b607e833dc69f47744b132fde49642fd4cde8b2d1742c7,8945,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,223,95c45216c0f6fd534fa4f5cb96edef2119590564929e9a18,8947,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,226,950d1c486e058932a87fa49d51cf4dd872556f81acbcd361,12317,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,227,1139af7f4ece24b2c877f0cafb12c3952907d387002b5e44,9506,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,230,ccfbefbb4dea70d947f8f6be0b9d863fec425473ac03afe2,8265,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,232,9da5946385cd7495320e056d0f102592e5ef446d3fa98c86,8121,8k+,33.33333333333333
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,246,d309e35893ff9fcde18af2faba077ee05ef3c7bcc05f31b4,8941,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,248,9257294f738fd5ccbed674b18aa2f4ab0301d77e4e3d8290,8152,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,254,955448cee6b0af873a810966bce07ef9913f833747b8689f,10280,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,258,bd4cc2f0ee54ff30ca7c9989eb2f04fbe131bf5e5ca1b497,11059,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,265,a2b046ae757b358217c8772ade69c1430b7e21ff8fbc174d,10708,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,270,826bbdb89bc83ba8c88478c367418e3a3a690cb4f0bbe1fc,8108,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,271,f584c3548a79a6e81a0b5092bd38dc9ff2c3e597994319d8,9051,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,277,6b7245c15e3f2c2227ea6eb29a7d018c8e9240fdb4e02169,10058,8k+,33.33333333333333
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,289,d140101c2b8ed617f3a0fe728f0a3f9c9e46aae23293ead1,8809,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_count,Synthetic,292,5b89c59e612d5a2d2425c427a2e2d8e22c4145e38c3fb6c4,9224,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,2,871d9417ba06b98b501a20f626a0744f6ba0713376630258,3315,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,3,707ae2fed6a206720c3afb70facc02c376eeca4fd6859740,3428,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,10,46a23c4e0aac896a129ec04f2958247d5110ed8f6f40fa57,3803,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,11,914f104aa00de19ab09e6fa1214ed7eeb0c50e7f0078fddf,3934,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,22,92e2b4456d9d03b10b4cdc1d676ac1a811dcccc6210d5503,3797,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,31,a1d308c5c355e0fdb4ba546280e459a5a50b696a3a6eb10b,3116,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,34,411771705a8c584adfda256f30514ebaf8a587eac6be9623,3022,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,39,b5029fc27862396d45a7b698154c52c544f31b48d899fca3,2887,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,42,e76dfa479902ed7538fd64855456b7d4ff3831d2d2c701aa,3351,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,47,b87a17caac9f72707af0dd2218b9a39ca0aeb134d1343e7f,3239,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,59,cc3afdddf51c3def11af4ba5df8c9718becd1ebb4fa3ca4f,3611,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,70,c061333422958078686828eac8506ea4cc2fb98266390ffa,3213,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,80,0e8c69019805819444bf646f6b76ad392e294a7973c4a542,2949,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,81,1871d3f08523229c63046369c673822eeaa03b218dc7fee3,3113,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,82,031a0eeb0ec2beb89d7262db6ed715ffea285eec518f8a8d,3720,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,87,3360840c325e1ae8dd1d73e490c11b9d69f463e2ebec9e89,3478,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,91,9fb4b8ec1064b4d898c5abdce7ede9d94b95648d42a8b36c,3308,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,92,f499993290da21987d19ce8b47d71a699649d282ee281564,3532,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,95,d9dea1ce2f354fa4142bb4d7954bd700da304d90c9df818a,2906,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,97,e000641ea859405cfea09c7ca509e38e4afc118e2fc0495b,3352,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,101,8e14dccc08e40bb309d48d155645f1cc5252d94a6c90041d,7254,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,102,655a606b442004ce01f02fd3060d8d243c5659a44908178e,6605,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,109,63f51ad777ae342acc9df26f0224daf5b469ddb0087c2692,7218,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,117,ab5ca22dfbcc05424bd3332f2cd56343c8ef7c7487a99561,4637,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,119,e068d7d120cdbe14e54c8fe95823a94ca4388f5ac10874a9,5264,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,120,f05b3f579a3853667208609ceace8f84b34f39c90d29f662,6576,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,121,15bea5614344e37d6157ed6d2b604496555f0c35ef84c94a,6421,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,132,b7b47f3da1b114fc381f933fa989d36958adc0ae8926b860,5568,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,146,9d4dbee146588a444b7bac1c05908a6a9a6e2e3c1b865990,5719,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,151,12ebf35ca0e71e4fcbee2b3244ceeb08bc0da9242ca65906,6235,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,152,896abad7f02cb16de432968554810e1e69546a23458b984b,5731,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,157,4927cc4d3a3558dd52e9c254291bd819a0e3ed8877afb2b7,6030,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,160,971a21dceec4d97e08b3c19d1d200ebe3c2abb45c474eb66,7297,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,169,6643e514e454e85491bbdac3a52955ef916568e019cb3a98,4166,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,172,e76d7773479217bc8bfe72c28b02a9fc4dd6aff61204039a,5064,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,173,5c3c65235a6f6585dd229cf69283c1e2105626aac2d1dd71,7071,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,176,792a6a2e2954fabd061b492ca8746afdf0837b9f5e530173,6777,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,183,6c67b45e947ec5561a6fb036f5567f88904853a172d8303e,4148,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,193,e694ba69ad244fe9778736f6e32e7a3fe5d825287bb3f37f,7880,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,195,6166423e45a780bb852595d66e2703f9feac69f6fabfaacf,6027,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,210,7ac43cb8b7511fe54e44982cd92c3ae4fcedc242b06c9aaa,10244,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,214,4c4a226811e4bdb07227adb0ac3efc888a362f2b2de7695b,8804,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,217,602e05890f8b25ce305b93fa9da6ef669fca6f4e165f7b92,8941,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,224,ae58b22e9648e7f5daebad76cdb8c58831243ba861b55a65,9183,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,234,e7811d73665185de5603a598104524b57714146d3f462bae,8638,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,239,763cf6ac464e16d4f5d61b69b685a6771fef3cfbe5fc326d,8723,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,241,be00adeeffcad8daaccc6a38ebed198d6fb9ec7a5c9b45e7,8313,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,244,d7e7f1a580211adc3e285436ea0ea050f517295b44b3873d,8138,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,250,e43207ead78dff438a2c02a45fe0036e58262d649ad77cd9,8300,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,256,0558770af31e1af3d7754b33a2e2fd09c21452664bffd536,8791,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,257,39baddd024bff34c01e5e07a9a024a3ae2389bd352deaf68,9809,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,266,12a3582eafa8ed4c04e820bce51dab92cc4aed3c7111db81,9807,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,267,6801ef085bce7cbf2561b9019892784dde99bc33059de016,9849,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,271,ca930cc5a87a4c30583b3ea148cde22fd39cafe0eb74d6b3,9926,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,272,aaade4add8c7db17c2d36ddca6b8c1c9a0271e7862caebff,9313,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,273,a8840415a24e555ee60651465471bd97740ab86966ce31ae,8711,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,284,9ffc457a98f9ff48c1c671e361202f819337c35d1c825f4c,8415,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,285,2dca86e4858483b4b2dde86f486bb055c47e4921ca331621,8539,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,288,dad48481e1f11b872a0aba904e6717977df25aa36afa021e,8583,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,passage_retrieval_en,Synthetic,298,02028456d1e96b38270ca099d5b26b59dfad767d6314f035,9120,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,1,d1cdb285b1f1b73f8d637fde4adf331aa839bb2e31eb8599,475,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,2,2332b1a0569df7051e4f8442139c2dbbdf7b27bf1ef7cd16,545,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,8,aa71378f81d8fee260faf0e1cf25590c02b8a2f4ff5ded68,1042,0-4k,44.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,13,19ce7eea60fb00ea9e13296e05d1b64301152439fb8a88f2,3344,0-4k,28.999999999999996
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,14,bcd0194211a51191ba420ba81d1fbd3578d39821783bd335,1316,0-4k,98.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,17,e7f7901dba75ce27695abf8291df5b472f155e4b7cf57569,939,0-4k,98.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,22,eed31a60b2b619d0d6e7f0a366fbd64a29d110c6a51d5a73,960,0-4k,14.000000000000002
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,23,afc69ae78edec70b690890e285882cf26620106e9a4ecc3d,577,0-4k,23.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,25,da7e49792f3a2d27863309727df4e926e397b98ea5c7a30e,783,0-4k,45.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,41,016acda6d2273fce43a10dc6e2ad33d83b7ffccc9151ac09,805,0-4k,55.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,50,558f671494850fdb1783371aa9016d6202151b1b538c13a5,676,0-4k,33.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,52,32695d486ee42a0b353779c1630f31bd4c2d1f8cedfd08a6,1212,0-4k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,58,b2821f4a0fef62fd70ef5f4e22b1d56b272a3581d330dac8,1336,0-4k,56.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,61,15f8dc07ac00de89bef4a540779a97a1c2e491a16ec5d225,568,0-4k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,64,0d3afb189bb00a990623e240ef8ba5471967cad0f74be49a,524,0-4k,32.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,65,d2b99a092efbc978ff9dd59d6420db92fd3f7d95a5769348,450,0-4k,19.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,78,2d9194c77a619cfea6ab57817de1e00fa23d7a47b317043a,2176,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,84,9e99b91db2d990fbd559f63ba39622bf1c97aaa7f105a287,599,0-4k,99.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,92,dc6be0ef58abc3144c039a40c84dddabd1490e8457051e1c,648,0-4k,56.99999999999999
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,95,f543c290a8be15fe20be426000cfed4819911e0cccae9626,983,0-4k,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,102,e14e35f177d9ba393959b9d478b3ae2f2d56e104c871bd73,5586,4-8k,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,103,99a5312912d8af14418c3beb93dd8fdebd2654a2f1e3357a,4724,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,107,a4bf3f805b8466b1223216081b5cf014eeddec9df3c3867e,6204,4-8k,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,111,6c7fc0dfbb754f9bc08f08a9190c83e8e7012dfd598e020a,4005,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,113,1d864d8dd6e3b3f8fae4066f5f2cf765b3cf2c43bb7c4751,5074,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,125,a9e464837370ca19c97405285a0c2d75e5a33c11a1aafc12,5175,4-8k,46.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,130,6db294b63c7ab23de37dff9e04724eb68d907ebb6dae1161,4072,4-8k,96.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,138,7ee41d167b9013f2f2b803434f95932a5681b00d38e17be2,4064,4-8k,27.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,146,5455869eec2d0c881812fbf248aa937ad8c14f035b582329,5791,4-8k,38.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,148,87e75cc2012fecb0f328356d63aafe9bd5c8945fb34e5c09,4101,4-8k,54.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,149,63d973d14e2cb59ec34670bb1ff04f733f3634cd4625ce3a,5727,4-8k,55.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,160,ecaeaa9e3094860fecd69a5572e6bac80ccc445e259a0bf1,4854,4-8k,78.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,167,a363e21e464e5110be3b3f4cf865cccac4c92da1a120477f,7135,4-8k,78.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,168,5a749e396f550f4bec16d4540fa6a5f7481f7eefc63ad143,4282,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,170,439fbc9cb88cc21b405b43d66d63ba60c7640c45f6fb3857,5391,4-8k,43.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,172,81d4954c159fd26217cf1fad09bf74e524b82d5e62cfb94c,4288,4-8k,57.99999999999999
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,176,933a81430106f5e4e53aef7d76f8ede54492413f6722c87e,5532,4-8k,22.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,186,645ab552d4c99e65670b1301bf0b423dc7ee6b9d178f1386,4276,4-8k,33.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,190,9d2dc3f573ad7cc64d1c54bc8ecdfbb2868c114b8086c98c,6278,4-8k,48.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,198,2a92d790a85caf339156fe3897d0198a6b211798490142c5,4173,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,200,692e9501102ef27c44a9accb212ec7031a41e5324cd843a2,9124,8k+,20.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,201,c39c8ce5bb3ecea7093b620844eb10baf34aebda37104493,8996,8k+,56.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,207,d5119d291024c6c23d0a2c14f328ff4cd89641fb653fb509,8020,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,216,3c7bc02c365f5f8a98e9f29a9401a0b90832b709781e22c1,8696,8k+,38.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,217,d700d0a6c77d8cec0b9ffe05f9eea7b58a8b2af36fbaa29d,11431,8k+,20.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,224,5e257dacb588eede1548b87c86d7d1948fce16bb407c74bc,10722,8k+,22.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,228,f7f9c73cbeb87190ba7533fe99a7e1d11d8e9b15427feb37,8094,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,240,0952fb1cf4d43242a0ca796a775a4bbd7612664101b5441e,8562,8k+,45.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,244,a650514c9f435ab364b6442c3205b71e9e853eec0257a7f9,10896,8k+,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,256,38cd3e2cf8256291ffa65453250d3756eead761a8ca8761a,16705,8k+,47.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,258,44ad206402cbad485db6d26a02afd264eaa149f17e5c574b,8301,8k+,88.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,263,866ef2395db510677aaf95209d2798262b2f5f6057fa4995,8249,8k+,90.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,264,139f57683edf8f8a05836622c4222ad2da0a394e14225f24,9563,8k+,45.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,266,f02cb7479ef7bd9de982ba97759cba6fa04fd340f5bd7e6d,14273,8k+,26.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,271,5000466fd0e978528df5dc9cc04c64e82de28800ef7404d1,9404,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,273,47372aee575d933a7ca74a66c0300cb8016920d00cc89938,10347,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,275,b716a299c1c7658241057478b48c06af6a5c86f62fbb472a,9203,8k+,45.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,278,71331528c62d298dbe8bec79a50ac4116f0816bb3cac52cc,15198,8k+,41.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,279,2666edb375a0bdb0c84b3a8c808c36f7ada53856d1793385,8731,8k+,41.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,lcc,Code,299,056351f8553a75ef1f3616070faa31f09fdb5d4a1fc276d2,9136,8k+,31.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,9,3a25616cb5ea03ff9da80a9e67105c5d33a5d27f5481b048,2640,0-4k,64.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,18,5342b06bc9ef391b79807b10296251b1b02924ec256969ac,1868,0-4k,85.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,20,f4b1a640cc8ba965011a362255c3157375b90cdb0f7c4e06,3894,0-4k,41.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,25,540e570d6c2fc76fbe07ffed28b8a4e856ede57ac633d5f7,1561,0-4k,28.000000000000004
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,29,057de216e0e7575eec3457f9e92a67f4bf7157d2b0c6edbe,1743,0-4k,33.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,31,f362d7ca9f6cbc26ea032bb9b7623345c2e5b9c5e87cdd83,2184,0-4k,31.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,32,42112168fb1213c3b53dd4bf6da5239697e148f9aa0a79bc,3452,0-4k,93.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,35,bcaa9f716f84f9b5980acf0cb06cb64a431557744a2cdcd5,1723,0-4k,28.000000000000004
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,43,f949655ebd54e3a718afd2bc502e1b633727db03b86ffd26,1043,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,49,e52768fb279b3ee3b37bd0b166cbb82d47024e30438a8563,1771,0-4k,59.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,54,12e8bbb259d78efa8de3bcd57ceb0b4d255e0b3f6d93d68c,1874,0-4k,23.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,63,f69aefc95d38f5b289043282c44611c96b533e97a8a7f48b,3197,0-4k,48.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,64,8bdb4903740c13b8b28717dd2d3042830565ce341f6041ca,1700,0-4k,57.99999999999999
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,76,d3e06b7c06b53895a9f8832f583702defd61235a3fb53cf6,1863,0-4k,15.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,81,27cd0a16be37c12e0e06753c69a76d29a06204fb969890c3,3764,0-4k,74.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,82,28cc0558deb112476f35aadd40309503e6fd131e89a9bcf2,3804,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,87,bee428fb7bb5ddfeac36cb9792f82abae80eae1b8c9df850,1696,0-4k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,89,dc61536f13d40f843c5651cf0c7057d8d1cfed4d72fafafa,1292,0-4k,46.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,95,575cb85f0d0daced2e3372a6afa034adfcf4a6545208c89c,2265,0-4k,79.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,97,5339ec1fe1b1ff7b6215857f2518f13d4520b1bdecbb1329,3043,0-4k,35.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,100,74dd4be422031471c7a6854f35d1041be35bafaf3b30d5b9,6404,4-8k,30.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,110,d9857d64f2dfa3c3822abfa78e09e4856be5d473e3dbd04e,6104,4-8k,64.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,116,5264ce24ca0b79e68f36d4f4b043f17a9903f760d2cc80f6,4523,4-8k,38.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,119,1197edc4a216f5ac4fab10c0c6e8446af2b437fd842379f3,5226,4-8k,16.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,124,ddef85987756dc1bb67dcb2378d22fef73e412672cecf8ee,5691,4-8k,57.99999999999999
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,127,e755162b251a745c460dd18d59dd0e47a185f0561a921727,6396,4-8k,41.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,132,6c6d4c0309b4c7a05d179b62b0d512c886d01563b36da427,5279,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,133,1988b0250bccaa631658bad2ead4cd8fc62e80cad97a1955,6070,4-8k,43.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,136,45d46a317a6af5516a9f431be6958eccfb6e8ef5f8a5a1cf,6424,4-8k,48.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,139,7155bb8419c09969cf66ef0157bc2b5d0829437fc4d1aedb,4388,4-8k,49.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,140,2d63cc05f3535b31ef584d8f750e324ed2302a91e612ed9c,4127,4-8k,39.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,143,a2ed9fac7e00146af143608355de935559661a84bc2a6aac,4410,4-8k,23.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,145,e704e9f70d7fa9c3e922049ac8c129d6f8f74308cb7533eb,6686,4-8k,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,152,984400e426bed8697810c3bfb0fff610ef9ae493bd9c8d16,4312,4-8k,30.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,157,9f6872317773ed743975547a17d67bcd94d078ef3e2eca84,5462,4-8k,59.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,165,5126bf8256db3f2ef7f4a98b91961828b9ce0aeded932b71,6656,4-8k,52.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,186,d423e584803ba3093566869aa47e726a0b86718b9f58ad2f,5205,4-8k,61.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,190,e7614759e2f3cea6f0170b61076e1fe9778d51b5759592a8,5969,4-8k,70.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,192,a529bc9ac51b70286575bc750d8926a8a8df235711088401,7424,4-8k,34.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,198,3338d76855859f2b827662abe35e38291b8e47a799a0ac34,4542,4-8k,30.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,200,7dc6eb492792197b595eb1b0d40e4926aef02b780310f3a7,8603,8k+,16.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,209,bfde0c2112623ac7299ffb791e3e50c2356273d1afc941cc,8069,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,211,1e569d939518f81d0bf0c0fe1943f1f754a82de0d2d8ed11,8337,8k+,40.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,215,9919593ce4d8e1ed1f0fd045cb876793a93fa009619e6fb8,10770,8k+,95.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,216,8aea8877e306036cae02eb7b51698639fc1965690e3a96d6,12407,8k+,0.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,217,2285f4ac300733e49a164a8d4f60130e48e69515a67d742c,9934,8k+,30.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,219,a8200418132996de3cec4b30ef10a18b4456d76e31e06f66,8189,8k+,61.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,223,ae7f62b2885477cee198daf63f804869b4e74e9fb8b73e67,9910,8k+,96.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,242,8d077d16f8ed3248b4a4325e635d6a0e6dd4d071d641e60b,10205,8k+,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,243,75d23e78ccc018dcfe8ee25ebe3199500550408604a971f2,16486,8k+,31.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,246,af2669b222596585e3a2e8823efbf477fa9095c9f44b95c0,12610,8k+,42.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,247,f43f78d4b64eb12efa7bb91ad18b40533ffb0599ba3d85c9,8124,8k+,56.00000000000001
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,250,82835656a00f4dec3b750a7d2b33452f34c511d6ac6d56fa,11914,8k+,28.999999999999996
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,255,321582582277171985817a7c2cd4b5ce868cb7e5b638e407,16841,8k+,38.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,258,f206845f51e8a4ef5ee79e4d183cd893656443ff4dc0c013,13065,8k+,67.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,263,7e3c1dc1e7c3c2d80065d7180b2ea0500ee25016a829609c,13200,8k+,84.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,265,a66cf5253f8cd1588ee6d306cff3268245d8ed1630cd1a01,11315,8k+,54.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,269,e5b40d119cb626c1a0d681b036b7e6f43d6f4b32865b4479,9272,8k+,83.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,283,34c853dd5a262fdc66b091e0946ad6c5c58991728782c695,9452,8k+,46.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,repobench-p,Code,291,01f7b97f4816935c226b88e63484f4f48a98b76054d3cf45,9175,8k+,24.0

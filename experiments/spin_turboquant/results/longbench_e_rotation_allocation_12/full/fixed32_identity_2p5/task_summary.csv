@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+fixed32_identity_2p5,identity,2,,qasper,Single QA,45,31.800829481127586,31.8,35.242180331171646
+fixed32_identity_2p5,identity,2,,multifieldqa_en,Single QA,30,33.84820181690988,33.85,30.008760092835953
+fixed32_identity_2p5,identity,2,,hotpotqa,Multi QA,60,30.83570669096985,30.84,43.02895564243671
+fixed32_identity_2p5,identity,2,,2wikimqa,Multi QA,60,28.509126351231615,28.51,41.17726167564206
+fixed32_identity_2p5,identity,2,,gov_report,Summarization,60,23.500725497541527,23.5,5.209922100022292
+fixed32_identity_2p5,identity,2,,multi_news,Summarization,59,21.699447422195455,21.7,4.991960355849098
+fixed32_identity_2p5,identity,2,,trec,Few-shot,60,60.0,60.0,48.98979485566356
+fixed32_identity_2p5,identity,2,,triviaqa,Few-shot,60,87.38888888888889,87.39,30.54499817613756
+fixed32_identity_2p5,identity,2,,samsum,Few-shot,60,40.12135722245802,40.12,14.55276361091391
+fixed32_identity_2p5,identity,2,,passage_count,Synthetic,60,5.151515151515151,5.15,21.790807743450664
+fixed32_identity_2p5,identity,2,,passage_retrieval_en,Synthetic,60,40.833333333333336,40.83,48.72684635347906
+fixed32_identity_2p5,identity,2,,lcc,Code,60,36.43333333333333,36.43,21.718169556592215
+fixed32_identity_2p5,identity,2,,repobench-p,Code,60,40.766666666666666,40.77,24.126311133053242

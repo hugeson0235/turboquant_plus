@@ -1,0 +1,14 @@
+condition_id,method,bit_width,seed,task,category,examples,mean_score,official_score_rounded,population_stddev
+kmeans2_random_mixed_s35,random,2,35,qasper,Single QA,1,0.0,0.0,0.0
+kmeans2_random_mixed_s35,random,2,35,multifieldqa_en,Single QA,1,80.0,80.0,0.0
+kmeans2_random_mixed_s35,random,2,35,hotpotqa,Multi QA,1,100.0,100.0,0.0
+kmeans2_random_mixed_s35,random,2,35,2wikimqa,Multi QA,1,0.0,0.0,0.0
+kmeans2_random_mixed_s35,random,2,35,gov_report,Summarization,1,26.495726001899346,26.5,0.0
+kmeans2_random_mixed_s35,random,2,35,multi_news,Summarization,1,19.889502265010236,19.89,0.0
+kmeans2_random_mixed_s35,random,2,35,trec,Few-shot,1,100.0,100.0,0.0
+kmeans2_random_mixed_s35,random,2,35,triviaqa,Few-shot,1,50.0,50.0,0.0
+kmeans2_random_mixed_s35,random,2,35,samsum,Few-shot,1,42.857142362882655,42.86,0.0
+kmeans2_random_mixed_s35,random,2,35,passage_count,Synthetic,1,0.0,0.0,0.0
+kmeans2_random_mixed_s35,random,2,35,passage_retrieval_en,Synthetic,1,100.0,100.0,0.0
+kmeans2_random_mixed_s35,random,2,35,lcc,Code,1,26.0,26.0,0.0
+kmeans2_random_mixed_s35,random,2,35,repobench-p,Code,1,53.0,53.0,0.0

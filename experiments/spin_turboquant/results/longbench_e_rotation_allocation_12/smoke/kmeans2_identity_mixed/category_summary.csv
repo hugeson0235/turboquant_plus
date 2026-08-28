@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+kmeans2_identity_mixed,identity,2,,Single QA,2,0.0
+kmeans2_identity_mixed,identity,2,,Multi QA,2,33.33333333333333
+kmeans2_identity_mixed,identity,2,,Summarization,2,15.611061131005606
+kmeans2_identity_mixed,identity,2,,Few-shot,3,61.1111109447338
+kmeans2_identity_mixed,identity,2,,Synthetic,2,0.0
+kmeans2_identity_mixed,identity,2,,Code,2,66.0

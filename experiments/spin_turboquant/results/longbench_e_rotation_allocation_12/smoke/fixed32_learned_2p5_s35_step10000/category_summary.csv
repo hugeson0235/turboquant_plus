@@ -1,0 +1,7 @@
+condition_id,method,bit_width,seed,category,tasks,macro_average
+fixed32_learned_2p5_s35_step10000,learned,2,35,Single QA,2,67.27272727272727
+fixed32_learned_2p5_s35_step10000,learned,2,35,Multi QA,2,100.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,Summarization,2,27.70896802985788
+fixed32_learned_2p5_s35_step10000,learned,2,35,Few-shot,3,60.94527347590406
+fixed32_learned_2p5_s35_step10000,learned,2,35,Synthetic,2,50.0
+fixed32_learned_2p5_s35_step10000,learned,2,35,Code,2,38.0

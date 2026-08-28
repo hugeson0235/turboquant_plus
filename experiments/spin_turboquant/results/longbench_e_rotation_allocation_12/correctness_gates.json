@@ -1,0 +1,3211 @@
+{
+  "artifacts": {
+    "fixed32": {
+      "allocation": "fixed32",
+      "failures": [],
+      "learned_key_hash": "ba0f447c36d68ed1c551564556df6c0f724409c19b859fc5e144ea4c9dfe7f0e",
+      "learned_value_hash": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2",
+      "learned_value_matches_random_bitwise": true,
+      "orthogonality_tolerance": 5e-05,
+      "partition_diagnostics": {
+        "key": {
+          "outlier_counts": [
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          ],
+          "outlier_max": 32,
+          "outlier_mean": 32.0,
+          "outlier_min": 32
+        },
+        "value": {
+          "outlier_counts": [
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          ],
+          "outlier_max": 32,
+          "outlier_mean": 32.0,
+          "outlier_min": 32
+        }
+      },
+      "partition_hash": "24538c0d172bc88dac6ab2693c1d3af9f46d852b6fa78a134a73938e5300c3fd",
+      "random_key_hash": "c9fa69a2f540c4fd2f2980d05bace2b95f0cfdb57854207a984b04aebcda3e47",
+      "random_value_hash": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2",
+      "rotation_diagnostics": {
+        "identity": {
+          "key_sha256": "0b496fe134713d0226fb0f6fbdcbceb65b166688536c7265739654131e670e16",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 0.0,
+          "value_sha256": "9efa11b27f45f665ad265ebf82fd1a693b3d168fa0e4bc98e19b8032f900f246"
+        },
+        "learned": {
+          "key_sha256": "ba0f447c36d68ed1c551564556df6c0f724409c19b859fc5e144ea4c9dfe7f0e",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 8.557818453880373e-08,
+          "value_sha256": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2"
+        },
+        "random": {
+          "key_sha256": "c9fa69a2f540c4fd2f2980d05bace2b95f0cfdb57854207a984b04aebcda3e47",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 5.6822637040099266e-08,
+          "value_sha256": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2"
+        }
+      },
+      "status": "passed",
+      "step0_key_matches_random_bitwise": true,
+      "storage": {
+        "key": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 2.75,
+          "index_bpe": 2.5,
+          "norm_bpe": 0.25,
+          "outlier_channels_max": 32,
+          "outlier_channels_mean": 32.0,
+          "outlier_channels_min": 32,
+          "packed_bytes_per_head_vector_mean": 44.0,
+          "theoretical_bytes_per_token": 11264,
+          "unaligned_effective_bpe": 2.75
+        },
+        "kv_average_effective_bpe": 2.75,
+        "kv_average_index_bpe": 2.5,
+        "theoretical_kv_bytes_per_token": 22528,
+        "value": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 2.75,
+          "index_bpe": 2.5,
+          "norm_bpe": 0.25,
+          "outlier_channels_max": 32,
+          "outlier_channels_mean": 32.0,
+          "outlier_channels_min": 32,
+          "packed_bytes_per_head_vector_mean": 44.0,
+          "theoretical_bytes_per_token": 11264,
+          "unaligned_effective_bpe": 2.75
+        }
+      },
+      "synthetic_codec": {
+        "cases": {
+          "identity_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "identity_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          }
+        },
+        "failures": [],
+        "padding_compaction_decode_cases": {
+          "key": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          },
+          "value": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          }
+        },
+        "status": "passed"
+      }
+    },
+    "kmeans2": {
+      "allocation": "kmeans2",
+      "failures": [],
+      "learned_key_hash": "2e379b514c07d505facf4d4c6df1e3f144a48e24ce33a889518a8d5a65f7c2ec",
+      "learned_value_hash": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189",
+      "learned_value_matches_random_bitwise": true,
+      "orthogonality_tolerance": 5e-05,
+      "partition_diagnostics": {
+        "key": {
+          "outlier_counts": [
+            [
+              35,
+              4,
+              5,
+              13,
+              8,
+              43,
+              1,
+              27
+            ],
+            [
+              51,
+              37,
+              14,
+              43,
+              32,
+              35,
+              18,
+              17
+            ],
+            [
+              6,
+              2,
+              4,
+              5,
+              7,
+              44,
+              4,
+              2
+            ],
+            [
+              12,
+              17,
+              1,
+              7,
+              2,
+              4,
+              15,
+              1
+            ],
+            [
+              8,
+              5,
+              4,
+              7,
+              4,
+              9,
+              2,
+              6
+            ],
+            [
+              4,
+              8,
+              9,
+              3,
+              11,
+              4,
+              7,
+              3
+            ],
+            [
+              3,
+              11,
+              2,
+              12,
+              1,
+              5,
+              5,
+              6
+            ],
+            [
+              3,
+              2,
+              4,
+              4,
+              2,
+              5,
+              15,
+              1
+            ],
+            [
+              8,
+              5,
+              7,
+              2,
+              7,
+              5,
+              8,
+              7
+            ],
+            [
+              8,
+              9,
+              1,
+              7,
+              10,
+              5,
+              6,
+              5
+            ],
+            [
+              3,
+              3,
+              11,
+              7,
+              3,
+              1,
+              6,
+              3
+            ],
+            [
+              1,
+              4,
+              2,
+              4,
+              3,
+              2,
+              4,
+              5
+            ],
+            [
+              6,
+              2,
+              1,
+              4,
+              10,
+              1,
+              1,
+              1
+            ],
+            [
+              12,
+              5,
+              13,
+              7,
+              4,
+              5,
+              5,
+              5
+            ],
+            [
+              6,
+              5,
+              2,
+              3,
+              5,
+              3,
+              7,
+              12
+            ],
+            [
+              4,
+              7,
+              10,
+              13,
+              17,
+              6,
+              6,
+              5
+            ],
+            [
+              5,
+              1,
+              8,
+              1,
+              6,
+              14,
+              8,
+              3
+            ],
+            [
+              7,
+              2,
+              3,
+              3,
+              6,
+              8,
+              5,
+              4
+            ],
+            [
+              6,
+              3,
+              6,
+              4,
+              7,
+              5,
+              1,
+              4
+            ],
+            [
+              5,
+              4,
+              2,
+              4,
+              11,
+              7,
+              20,
+              3
+            ],
+            [
+              7,
+              1,
+              5,
+              7,
+              4,
+              3,
+              3,
+              4
+            ],
+            [
+              3,
+              2,
+              1,
+              8,
+              2,
+              8,
+              4,
+              7
+            ],
+            [
+              8,
+              1,
+              6,
+              5,
+              4,
+              4,
+              2,
+              7
+            ],
+            [
+              1,
+              6,
+              4,
+              6,
+              1,
+              5,
+              6,
+              14
+            ],
+            [
+              4,
+              1,
+              1,
+              2,
+              6,
+              7,
+              6,
+              15
+            ],
+            [
+              4,
+              7,
+              3,
+              10,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              4,
+              6,
+              8,
+              2,
+              2,
+              5
+            ],
+            [
+              1,
+              9,
+              2,
+              7,
+              6,
+              10,
+              1,
+              8
+            ],
+            [
+              2,
+              2,
+              1,
+              7,
+              2,
+              2,
+              6,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              1,
+              2,
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              1,
+              4,
+              9,
+              6,
+              4,
+              4,
+              6
+            ],
+            [
+              2,
+              31,
+              5,
+              1,
+              5,
+              6,
+              12,
+              7
+            ]
+          ],
+          "outlier_max": 51,
+          "outlier_mean": 6.4765625,
+          "outlier_min": 1
+        },
+        "value": {
+          "outlier_counts": [
+            [
+              13,
+              1,
+              31,
+              3,
+              20,
+              4,
+              1,
+              2
+            ],
+            [
+              14,
+              2,
+              6,
+              42,
+              4,
+              41,
+              30,
+              24
+            ],
+            [
+              1,
+              11,
+              2,
+              1,
+              15,
+              1,
+              1,
+              3
+            ],
+            [
+              45,
+              2,
+              3,
+              35,
+              4,
+              20,
+              4,
+              13
+            ],
+            [
+              14,
+              2,
+              17,
+              1,
+              8,
+              42,
+              1,
+              1
+            ],
+            [
+              5,
+              9,
+              10,
+              5,
+              15,
+              16,
+              1,
+              4
+            ],
+            [
+              4,
+              5,
+              4,
+              5,
+              3,
+              15,
+              2,
+              15
+            ],
+            [
+              4,
+              7,
+              12,
+              11,
+              3,
+              5,
+              8,
+              8
+            ],
+            [
+              19,
+              3,
+              13,
+              8,
+              1,
+              4,
+              2,
+              12
+            ],
+            [
+              8,
+              45,
+              5,
+              6,
+              6,
+              4,
+              19,
+              18
+            ],
+            [
+              21,
+              1,
+              4,
+              4,
+              8,
+              3,
+              18,
+              7
+            ],
+            [
+              3,
+              8,
+              9,
+              24,
+              4,
+              21,
+              7,
+              5
+            ],
+            [
+              30,
+              7,
+              9,
+              1,
+              4,
+              5,
+              13,
+              11
+            ],
+            [
+              10,
+              15,
+              11,
+              6,
+              23,
+              2,
+              2,
+              17
+            ],
+            [
+              4,
+              6,
+              6,
+              6,
+              5,
+              20,
+              7,
+              12
+            ],
+            [
+              2,
+              11,
+              6,
+              1,
+              1,
+              6,
+              22,
+              3
+            ],
+            [
+              2,
+              1,
+              30,
+              2,
+              7,
+              2,
+              8,
+              2
+            ],
+            [
+              6,
+              1,
+              1,
+              15,
+              1,
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              1,
+              7,
+              23,
+              45,
+              3,
+              9,
+              5
+            ],
+            [
+              2,
+              3,
+              1,
+              3,
+              8,
+              1,
+              42,
+              2
+            ],
+            [
+              1,
+              31,
+              1,
+              8,
+              14,
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              1,
+              1,
+              11,
+              1,
+              1,
+              1
+            ],
+            [
+              21,
+              2,
+              2,
+              8,
+              1,
+              34,
+              1,
+              50
+            ],
+            [
+              8,
+              1,
+              21,
+              1,
+              19,
+              49,
+              4,
+              1
+            ],
+            [
+              28,
+              1,
+              8,
+              4,
+              48,
+              56,
+              1,
+              1
+            ],
+            [
+              1,
+              50,
+              6,
+              18,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              19,
+              7,
+              1,
+              1,
+              1,
+              9,
+              33
+            ],
+            [
+              19,
+              24,
+              3,
+              25,
+              1,
+              48,
+              34,
+              1
+            ],
+            [
+              1,
+              4,
+              2,
+              1,
+              1,
+              1,
+              4,
+              1
+            ],
+            [
+              28,
+              44,
+              1,
+              1,
+              1,
+              1,
+              2,
+              14
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              46,
+              13,
+              1,
+              1
+            ],
+            [
+              1,
+              4,
+              1,
+              19,
+              20,
+              1,
+              1,
+              49
+            ]
+          ],
+          "outlier_max": 56,
+          "outlier_mean": 9.87890625,
+          "outlier_min": 1
+        }
+      },
+      "partition_hash": "846e19671e6ca0ad57905dbb927d7a2000b2fea8614a352a29b1fa61e00b85e0",
+      "random_key_hash": "ee0b92fa399749fca4aed4d5d245cde5d6a0c42b176347224b6bedd44babbdad",
+      "random_value_hash": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189",
+      "rotation_diagnostics": {
+        "identity": {
+          "key_sha256": "9a3c879a449e43cd1e7209daeddc96386b74da765a04fa6be99270f449c0a8d1",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 0.0,
+          "value_sha256": "4440107628464630e354d73c220f72dcf51c78f0fea5662d5af692f0d641939e"
+        },
+        "learned": {
+          "key_sha256": "2e379b514c07d505facf4d4c6df1e3f144a48e24ce33a889518a8d5a65f7c2ec",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 1.3413825761254827e-07,
+          "value_sha256": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189"
+        },
+        "random": {
+          "key_sha256": "ee0b92fa399749fca4aed4d5d245cde5d6a0c42b176347224b6bedd44babbdad",
+          "matrix_count": 1024,
+          "orthogonality_max_abs": 8.652241234585745e-08,
+          "value_sha256": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189"
+        }
+      },
+      "status": "passed",
+      "step0_key_matches_random_bitwise": true,
+      "storage": {
+        "key": {
+          "alignment_bpe": 0.0396728515625,
+          "effective_bpe": 2.390869140625,
+          "index_bpe": 2.1011962890625,
+          "norm_bpe": 0.25,
+          "outlier_channels_max": 51,
+          "outlier_channels_mean": 6.4765625,
+          "outlier_channels_min": 1,
+          "packed_bytes_per_head_vector_mean": 38.25390625,
+          "theoretical_bytes_per_token": 9793,
+          "unaligned_effective_bpe": 2.3511962890625
+        },
+        "kv_average_effective_bpe": 2.417724609375,
+        "kv_average_index_bpe": 2.127777099609375,
+        "theoretical_kv_bytes_per_token": 19806,
+        "value": {
+          "alignment_bpe": 0.04022216796875,
+          "effective_bpe": 2.444580078125,
+          "index_bpe": 2.15435791015625,
+          "norm_bpe": 0.25,
+          "outlier_channels_max": 56,
+          "outlier_channels_mean": 9.87890625,
+          "outlier_channels_min": 1,
+          "packed_bytes_per_head_vector_mean": 39.11328125,
+          "theoretical_bytes_per_token": 10013,
+          "unaligned_effective_bpe": 2.40435791015625
+        }
+      },
+      "synthetic_codec": {
+        "cases": {
+          "identity_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "identity_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          }
+        },
+        "failures": [],
+        "padding_compaction_decode_cases": {
+          "key": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          },
+          "value": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          }
+        },
+        "status": "passed"
+      }
+    },
+    "uniform2": {
+      "allocation": "uniform2",
+      "failures": [],
+      "learned_key_hash": "4bdf0dbabf93900fa94dabca449f82e5c1b578daae4151ad5c36db5ec00e2b5a",
+      "learned_value_hash": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4",
+      "learned_value_matches_random_bitwise": true,
+      "orthogonality_tolerance": 5e-05,
+      "partition_diagnostics": {
+        "key": {
+          "outlier_counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "outlier_max": 0,
+          "outlier_mean": 0.0,
+          "outlier_min": 0
+        },
+        "value": {
+          "outlier_counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "outlier_max": 0,
+          "outlier_mean": 0.0,
+          "outlier_min": 0
+        }
+      },
+      "partition_hash": "994790feb925261f4a0360780298e087d0aad4c0fa5bd297763729bcc03c6dcc",
+      "random_key_hash": "b284e1af85bf6925b2de010e3967fc08297e1bb97bb7fe5fee901ee3f7efc98b",
+      "random_value_hash": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4",
+      "rotation_diagnostics": {
+        "identity": {
+          "key_sha256": "fbcee5f8b7f622bee87e9ea69c58af78754aa1d4a64216dc134838e19bebc7b4",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 0.0,
+          "value_sha256": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae"
+        },
+        "learned": {
+          "key_sha256": "4bdf0dbabf93900fa94dabca449f82e5c1b578daae4151ad5c36db5ec00e2b5a",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 5.963663096686389e-08,
+          "value_sha256": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4"
+        },
+        "random": {
+          "key_sha256": "b284e1af85bf6925b2de010e3967fc08297e1bb97bb7fe5fee901ee3f7efc98b",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 3.302899576063112e-08,
+          "value_sha256": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4"
+        }
+      },
+      "status": "passed",
+      "step0_key_matches_random_bitwise": true,
+      "storage": {
+        "key": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 2.125,
+          "index_bpe": 2.0,
+          "norm_bpe": 0.125,
+          "outlier_channels_max": 0,
+          "outlier_channels_mean": 0.0,
+          "outlier_channels_min": 0,
+          "packed_bytes_per_head_vector_mean": 34.0,
+          "theoretical_bytes_per_token": 8704,
+          "unaligned_effective_bpe": 2.125
+        },
+        "kv_average_effective_bpe": 2.125,
+        "kv_average_index_bpe": 2.0,
+        "theoretical_kv_bytes_per_token": 17408,
+        "value": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 2.125,
+          "index_bpe": 2.0,
+          "norm_bpe": 0.125,
+          "outlier_channels_max": 0,
+          "outlier_channels_mean": 0.0,
+          "outlier_channels_min": 0,
+          "packed_bytes_per_head_vector_mean": 34.0,
+          "theoretical_bytes_per_token": 8704,
+          "unaligned_effective_bpe": 2.125
+        }
+      },
+      "synthetic_codec": {
+        "cases": {
+          "identity_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "identity_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          }
+        },
+        "failures": [],
+        "padding_compaction_decode_cases": {
+          "key": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          },
+          "value": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          }
+        },
+        "status": "passed"
+      }
+    },
+    "uniform3": {
+      "allocation": "uniform3",
+      "failures": [],
+      "learned_key_hash": "0d75614e443e5fc0bcb46b4231f3d4bad7ae1b05641450d9ee1cfd6e75ae4f6f",
+      "learned_value_hash": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498",
+      "learned_value_matches_random_bitwise": true,
+      "orthogonality_tolerance": 5e-05,
+      "partition_diagnostics": {
+        "key": {
+          "outlier_counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "outlier_max": 0,
+          "outlier_mean": 0.0,
+          "outlier_min": 0
+        },
+        "value": {
+          "outlier_counts": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "outlier_max": 0,
+          "outlier_mean": 0.0,
+          "outlier_min": 0
+        }
+      },
+      "partition_hash": "009955d4123a8ef9f2e0fd195f3f6358ad259e0ea4d190e451259f365cbc33fa",
+      "random_key_hash": "07e4e6089b9600d72586b4b589e46f1edfac11d9fe3df670bdc5440980678c9c",
+      "random_value_hash": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498",
+      "rotation_diagnostics": {
+        "identity": {
+          "key_sha256": "fbcee5f8b7f622bee87e9ea69c58af78754aa1d4a64216dc134838e19bebc7b4",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 0.0,
+          "value_sha256": "6ce542b4287856ab7dd068124b5bb8ff12a25ca5cd957a25d741bdd0c3e442ae"
+        },
+        "learned": {
+          "key_sha256": "0d75614e443e5fc0bcb46b4231f3d4bad7ae1b05641450d9ee1cfd6e75ae4f6f",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 6.261211749070128e-08,
+          "value_sha256": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+        },
+        "random": {
+          "key_sha256": "07e4e6089b9600d72586b4b589e46f1edfac11d9fe3df670bdc5440980678c9c",
+          "matrix_count": 512,
+          "orthogonality_max_abs": 3.416055038840682e-08,
+          "value_sha256": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+        }
+      },
+      "status": "passed",
+      "step0_key_matches_random_bitwise": true,
+      "storage": {
+        "key": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 3.125,
+          "index_bpe": 3.0,
+          "norm_bpe": 0.125,
+          "outlier_channels_max": 0,
+          "outlier_channels_mean": 0.0,
+          "outlier_channels_min": 0,
+          "packed_bytes_per_head_vector_mean": 50.0,
+          "theoretical_bytes_per_token": 12800,
+          "unaligned_effective_bpe": 3.125
+        },
+        "kv_average_effective_bpe": 3.125,
+        "kv_average_index_bpe": 3.0,
+        "theoretical_kv_bytes_per_token": 25600,
+        "value": {
+          "alignment_bpe": 0.0,
+          "effective_bpe": 3.125,
+          "index_bpe": 3.0,
+          "norm_bpe": 0.125,
+          "outlier_channels_max": 0,
+          "outlier_channels_mean": 0.0,
+          "outlier_channels_min": 0,
+          "packed_bytes_per_head_vector_mean": 50.0,
+          "theoretical_bytes_per_token": 12800,
+          "unaligned_effective_bpe": 3.125
+        }
+      },
+      "synthetic_codec": {
+        "cases": {
+          "identity_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "identity_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "learned_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_key": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          },
+          "random_value": {
+            "device_preserved": true,
+            "dtype_preserved": true,
+            "finite": true,
+            "quantization_changed_nonzero": true,
+            "repeat_bitwise_equal": true,
+            "shape_preserved": true,
+            "zero_preserved": true
+          }
+        },
+        "failures": [],
+        "padding_compaction_decode_cases": {
+          "key": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          },
+          "value": {
+            "compacted_batch_finite": true,
+            "compaction_consistent": true,
+            "padded_batch_finite": true,
+            "repeat_bitwise_equal": true,
+            "single_token_decode_consistent": true,
+            "single_token_decode_finite": true,
+            "zero_padding_preserved": true
+          }
+        },
+        "status": "passed"
+      }
+    }
+  },
+  "failures": [],
+  "random_learned_value_hashes": {
+    "fixed32": "142de9f0e35b528d7b5eb9f20a6a3afd773ef0b15f2b59b21d870f681a2f05a2",
+    "kmeans2": "e2d84538f6633419c33ec96a454e9bdc3d6f06d6c093c95ae977579506015189",
+    "uniform2": "d4e550654253654fbb6863d71782037b0618450625489016bd78c53aaa197bc4",
+    "uniform3": "6becc87727f289b1159c68726784848eb3e107c8eebaae10f2ac965cb8ec8498"
+  },
+  "root_seed": 35,
+  "sampling": {
+    "longbench_excluded_from_training": true,
+    "subset_count": true,
+    "subset_exact_bucket_counts": true,
+    "subset_unique": true
+  },
+  "static_status": "passed"
+}

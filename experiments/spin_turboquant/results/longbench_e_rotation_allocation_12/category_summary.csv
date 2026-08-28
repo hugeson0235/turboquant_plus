@@ -1,0 +1,73 @@
+condition_id,allocation,method,category,tasks,macro_average
+uniform2_identity,uniform2,identity,Single QA,2,3.6820428271506254
+uniform2_identity,uniform2,identity,Multi QA,2,2.114883720051567
+uniform2_identity,uniform2,identity,Summarization,2,4.334464246335445
+uniform2_identity,uniform2,identity,Few-shot,3,7.298983425444599
+uniform2_identity,uniform2,identity,Synthetic,2,0.24242424242424243
+uniform2_identity,uniform2,identity,Code,2,27.791666666666664
+uniform2_random_s35,uniform2,random,Single QA,2,41.47765569747962
+uniform2_random_s35,uniform2,random,Multi QA,2,23.513672730777998
+uniform2_random_s35,uniform2,random,Summarization,2,24.672914981062448
+uniform2_random_s35,uniform2,random,Few-shot,3,61.320900259922574
+uniform2_random_s35,uniform2,random,Synthetic,2,15.984848484848484
+uniform2_random_s35,uniform2,random,Code,2,39.725
+uniform2_learned_s35_step10000,uniform2,learned,Single QA,2,50.36014949719841
+uniform2_learned_s35_step10000,uniform2,learned,Multi QA,2,34.69990000253158
+uniform2_learned_s35_step10000,uniform2,learned,Summarization,2,27.01350840654537
+uniform2_learned_s35_step10000,uniform2,learned,Few-shot,3,66.06846467412176
+uniform2_learned_s35_step10000,uniform2,learned,Synthetic,2,40.833333333333336
+uniform2_learned_s35_step10000,uniform2,learned,Code,2,49.65833333333333
+fixed32_identity_2p5,fixed32,identity,Single QA,2,32.824515649018736
+fixed32_identity_2p5,fixed32,identity,Multi QA,2,29.672416521100732
+fixed32_identity_2p5,fixed32,identity,Summarization,2,22.600086459868493
+fixed32_identity_2p5,fixed32,identity,Few-shot,3,62.50341537044897
+fixed32_identity_2p5,fixed32,identity,Synthetic,2,22.992424242424242
+fixed32_identity_2p5,fixed32,identity,Code,2,38.599999999999994
+fixed32_random_2p5_s35,fixed32,random,Single QA,2,45.70804737055368
+fixed32_random_2p5_s35,fixed32,random,Multi QA,2,43.477506898559525
+fixed32_random_2p5_s35,fixed32,random,Summarization,2,28.05877106760844
+fixed32_random_2p5_s35,fixed32,random,Few-shot,3,68.23663499312009
+fixed32_random_2p5_s35,fixed32,random,Synthetic,2,54.125
+fixed32_random_2p5_s35,fixed32,random,Code,2,53.30833333333334
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Single QA,2,46.52596796663083
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Multi QA,2,41.47283272283272
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Summarization,2,28.687620081218512
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Few-shot,3,67.9762368351101
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Synthetic,2,54.44444444444444
+fixed32_learned_2p5_s35_step10000,fixed32,learned,Code,2,54.41666666666667
+kmeans2_identity_mixed,kmeans2,identity,Single QA,2,20.915463917816783
+kmeans2_identity_mixed,kmeans2,identity,Multi QA,2,20.805494478288594
+kmeans2_identity_mixed,kmeans2,identity,Summarization,2,18.86238029972542
+kmeans2_identity_mixed,kmeans2,identity,Few-shot,3,50.72538673349825
+kmeans2_identity_mixed,kmeans2,identity,Synthetic,2,4.166666666666667
+kmeans2_identity_mixed,kmeans2,identity,Code,2,36.93333333333333
+kmeans2_random_mixed_s35,kmeans2,random,Single QA,2,38.23949268428281
+kmeans2_random_mixed_s35,kmeans2,random,Multi QA,2,40.471563159063166
+kmeans2_random_mixed_s35,kmeans2,random,Summarization,2,27.6491893733915
+kmeans2_random_mixed_s35,kmeans2,random,Few-shot,3,62.79829654650604
+kmeans2_random_mixed_s35,kmeans2,random,Synthetic,2,39.326388888888886
+kmeans2_random_mixed_s35,kmeans2,random,Code,2,38.291666666666664
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Single QA,2,44.61650754671108
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Multi QA,2,39.0113936988937
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Summarization,2,27.903207487766522
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Few-shot,3,68.09836192682646
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Synthetic,2,50.34722222222222
+kmeans2_learned_mixed_s35_step10000,kmeans2,learned,Code,2,43.733333333333334
+uniform3_identity,uniform3,identity,Single QA,2,3.9358180616881944
+uniform3_identity,uniform3,identity,Multi QA,2,5.03826183745715
+uniform3_identity,uniform3,identity,Summarization,2,1.0675608794732239
+uniform3_identity,uniform3,identity,Few-shot,3,27.501622146864417
+uniform3_identity,uniform3,identity,Synthetic,2,1.5833333333333335
+uniform3_identity,uniform3,identity,Code,2,23.983333333333334
+uniform3_random_s35,uniform3,random,Single QA,2,51.09645765658505
+uniform3_random_s35,uniform3,random,Multi QA,2,40.31268568033274
+uniform3_random_s35,uniform3,random,Summarization,2,29.22483800616224
+uniform3_random_s35,uniform3,random,Few-shot,3,67.98854814122267
+uniform3_random_s35,uniform3,random,Synthetic,2,52.50892857142858
+uniform3_random_s35,uniform3,random,Code,2,59.9
+uniform3_learned_s35_step10000,uniform3,learned,Single QA,2,53.16821531320163
+uniform3_learned_s35_step10000,uniform3,learned,Multi QA,2,45.00257442362706
+uniform3_learned_s35_step10000,uniform3,learned,Summarization,2,29.901912471037246
+uniform3_learned_s35_step10000,uniform3,learned,Few-shot,3,68.94387912964457
+uniform3_learned_s35_step10000,uniform3,learned,Synthetic,2,54.7255291005291
+uniform3_learned_s35_step10000,uniform3,learned,Code,2,56.483333333333334

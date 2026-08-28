@@ -1,0 +1,13 @@
+comparison_id,allocation,contrast,difference,confidence_interval_low,confidence_interval_high,bootstrap_samples,bootstrap_seed
+uniform2_random_minus_identity,uniform2,random_minus_identity,28.96022852973184,26.503775566809747,31.412451962578775,10000,35
+uniform2_learned_minus_random,uniform2,learned_minus_random,9.8942275846265,7.4774161010201174,12.29582052273783,10000,35
+uniform2_learned_minus_identity,uniform2,learned_minus_identity,38.85445611435834,36.40067365012439,41.36358184742953,10000,35
+fixed32_random_minus_identity,fixed32,random_minus_identity,13.321237727946073,10.923010895302435,15.746942752799345,10000,35
+fixed32_learned_minus_random,fixed32,learned_minus_random,0.07373476534203333,-1.9722496631572353,2.0814021650842505,10000,35
+fixed32_learned_minus_identity,fixed32,learned_minus_identity,13.394972493288105,10.967415116333564,15.790751675626653,10000,35
+kmeans2_random_minus_identity,kmeans2,random_minus_identity,15.44681950707291,12.893366042651447,17.924573366482747,10000,35
+kmeans2_learned_minus_random,kmeans2,learned_minus_random,4.551301782632999,2.3555782321977383,6.717466920478531,10000,35
+kmeans2_learned_minus_identity,kmeans2,learned_minus_identity,19.998121289705907,17.52949571910535,22.46640506205019,10000,35
+uniform3_random_minus_identity,uniform3,random_minus_identity,39.71769099396319,37.24815204016585,42.15644005817998,10000,35
+uniform3_learned_minus_random,uniform3,learned_minus_random,1.1802540322850155,-0.659523554900341,3.013614436228373,10000,35
+uniform3_learned_minus_identity,uniform3,learned_minus_identity,40.89794502624821,38.38254496146513,43.43235688421482,10000,35
